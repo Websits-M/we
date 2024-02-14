@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE =edge">
+    <title>WE</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...your-integrity-hash-here..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+
+    <style>
+        
+      *{
+       padding: 0;
+       margin: 0;
+       text-decoration: none;
+       list-style: none;
+       box-sizing: border-box;
+     }
+     
+     body{
+     font-family: Arial ;
+     }
+     
+     
+     nav{
+         background: linear-gradient(to right, rgb(21, 3, 113), rgb(76, 0, 255), rgb(96, 18, 141));
+       
+       height: 80px;
+       width: 100%;
+       position: fixed;
+       z-index: 999;
+       opacity: 0.8;
+     }
+     
+     label.logo{
+       color: white;
+       font-size: 30px;
+       line-height: 80px;
+       padding: 0 100px;
+       font-weight: bold;
+     }
+     
+     nav ul{
+       float: right;
+       margin-right: 20px;
+     }
+     
+     nav ul li{
+       display: inline-block;
+       line-height: 80px;
+       margin: 0 5px;
+     }
+     
+     nav ul li a{
+       color: white;
+       font-size: 17px;
+       padding: 7px 13px;
+       border-radius: 3px;
+     
+     }
+     li a.active,a:hover{
+       color: #ffffff;  
+       font-weight: 100;
+       background : linear-gradient
+       (90deg, rgba(2, 0, 2, 0.21) 
+       40%, rgba(0, 242, 255, 0.238) 100%);
+     
+       transition: .5s; 
+       box-shadow: 1px 1px 1px 1px 
+       rgba(2, 2, 92, 0.354);
+     }
+     .checkbtn{
+       font-size: 30px;
+       color: white;
+       float: right;
+       line-height: 80px;
+       margin-right: 40px;
+       cursor: pointer;
+       display: none;
+     }
+     #check{
+       display: none;
+     }
+     @media (max-width: 952px){
+       label.logo{
+        
+         font-size: 18px;
+         padding-left: 50px;
+       }
+       nav ul li a{
+         font-size: 16px;
+       }
+     }
+     
+     
+     @media (max-width: 1070px){
+       .checkbtn{
+         display: block;
+       }
+       ul{
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         background: #000000ea;
+         top: 80px;
+         left: -100%;
+         text-align: center;
+         transition: all .5s;
+       }
+       nav ul li{
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+       }
+       nav ul li a{
+         font-size: 20px;
+       }
+       a:hover,a.active{
+         background: none;
+         color: #0082e6;
+     
+         
+       }
+       #check:checked ~ ul{
+         left: 0;
+       }
+     }
+     
+       </style>
+  </head>
+  <body>
+
+  <nav>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <label class="logo">
+    WE 
+    <i class="fa fa-braille" aria-hidden="true"></i>
+    Traninng</label>
+   
+    <ul>
+      <li><a class="active" href="#"  id="sr" onclick="{add}"> Home</a></li>
+      <li><a href="index2.html" title="صور للاسألة">Pic Of Questions</a></li>
+      <li><a href="index3.html" title="Search App">Services</a></li>
+      <li><a target="_blank" href="https://xceedcceg.sharepoint.com/:f:/r/sites/we-universal/Shared%20Documents/Training%20Materials/Day%2007%20-%20Tools%20and%20Follow%20Up?csf=1&web=1&e=PxtFoX" > Xceed</a></li>
+    </ul>
+  </nav>
+<!-- /////////////////////////////////////////// -->
+
+  <div class="contanier">
+    <div>
+      <div class="title">
+        <h1>Home Page</h1>
+        <div class="line"></div>
+
+        <div class="btnf">
+          <button id="close">اخفاء الرساله</button>
+          <a href="index3.html">اضغط هنا لعرض تطبيق الاسألة</a>
+          <i class="fa-regular fa-hand-point-up ico"></i>
+        </div>
+      </div>
+      
+
+     
+     <h2>pdf Day 3</h2>
+     <br>
+     <iframe src="https://xceedcceg.sharepoint.com/sites/we-universal/_layouts/15/embed.aspx?UniqueId=efbb8d3c-df4f-402d-9a5d-efa536338feb" width="100%" height="560" frameborder="0" scrolling="no" allowfullscreen title="14-Network Fundamentals.pdf"></iframe>
+     <br>
+     <hr>
+     <br>
+     <h2>pdf Day 4</h2>
+     <iframe src="https://xceedcceg.sharepoint.com/sites/we-universal/_layouts/15/embed.aspx?UniqueId=c3113005-9f25-4dd3-8482-7643151a0ffd" width="100%" height="560" frameborder="0" scrolling="no" allowfullscreen title="07-FV BSS Check availability.pdf"></iframe> 
+     <br>
+     <hr>
+     <br>
+     <h2>pdf Day 5</h2>
+     <iframe src="https://xceedcceg.sharepoint.com/sites/we-universal/_layouts/15/embed.aspx?UniqueId=10a3b21e-178f-476f-9e68-18095d10fc22" width="100%" height="560" frameborder="0" scrolling="no" allowfullscreen title="04-Billing Part 1.pdf"></iframe>
+     <br>
+     <p class="red"></p>
+     <br>
+     <h2>pdf Day 6</h2>
+     <iframe src="https://xceedcceg.sharepoint.com/sites/we-universal/_layouts/15/embed.aspx?UniqueId=855c59d4-04f2-4ff6-b25f-0bf657255486" width="100%" height="560" frameborder="0" scrolling="no" allowfullscreen title="12-Branches and IVR.pdf"></iframe>
+     <br>
+     <hr>
+     <br>
+     <h2>pdf Day 7</h2>
+     <iframe src="https://xceedcceg.sharepoint.com/sites/we-universal/_layouts/15/embed.aspx?UniqueId=cd287f44-46e8-4b3d-a6f7-81c772905314" width="100%" height="560" frameborder="0" scrolling="no" allowfullscreen title="04-Follow New Account.pdf"></iframe>
+    </div>
+    </div>
+    </section>
+    
+
+
+
+
+    <footer>
+      <p>&copy;Created By : Mostafa mahmoud</p>
+    </footer>
+    <script src="JS/Script.js"></script>
+  </body>
+</html>
