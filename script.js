@@ -519,8 +519,7 @@ let pro = [
   },
   {
     title: "118- Cst has Ticket Data Down with Update ( Close Code (82): External problem- cable maintenance needed ) , So CCA will Inform cst  SLA : ",
-    answer: "• Case escalated to the responsible team and we are waiting for their update with 3 days SLA
-",
+    answer: "• Case escalated to the responsible team and we are waiting for their update with 3 days SLA",
   },
   {
     title: "119- While follow with cst WACP Case and Cst Line Status is Down and Matrix Status is also Down so the next step is : ",
