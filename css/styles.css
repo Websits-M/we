@@ -143,9 +143,11 @@ body {
     flex-direction: column;
     height: 400px;
     justify-content: space-evenly;
+    text-align: center;
   }
   .title1 {
     font-size: 40px;
+    text-align: center;
   }
   .content div {
     display: flex;
@@ -154,5 +156,15 @@ body {
     justify-content: space-evenly;
     height: 200px;
   }
-}
+  body{
+    background-image: url(../images/contact-img.svg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial;
+    background-color: #b1aeae;
+  }
+  }
+
 
