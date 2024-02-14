@@ -490,44 +490,44 @@ let pro = [
     answer: "• power led not working or working with red color",
   },
   {
-    title: " In Case CCA will Re-escalate WCAP to IU as a second escalation , So the right SLA is :",
+    title: "111- In Case CCA will Re-escalate WCAP to IU as a second escalation , So the right SLA is :",
     answer: "• 1 Day",
   },
   {
-    title: " In case CCA follow WCAP case and Cst  Line Status from main : Down and Matrix : UP, No have Logs , So CCA right action :",
+    title: "112- In case CCA follow WCAP case and Cst  Line Status from main : Down and Matrix : UP, No have Logs , So CCA right action :",
     answer: "• Escalate to IU",
   },
   {
-    title: " If the Customer number belongs to Hayah Karima project and cst has Major Fault with no estimated time , SLA will be :",
+    title: "113- If the Customer number belongs to Hayah Karima project and cst has Major Fault with no estimated time , SLA will be :",
     answer: "• 5 Days",
   },
   {
-    title: " customer which has Major Fault update with no estimated time should follow on his case with us : ",
+    title: "114- customer which has Major Fault update with no estimated time should follow on his case with us : ",
     answer: "• TRUE",
   },
   {
-    title: " In case WCAP CST disconnect phone cable from CPE and ADSL still UP , It is CPE Problem : ",
+    title: "115- In case WCAP CST disconnect phone cable from CPE and ADSL still UP , It is CPE Problem : ",
     answer: "• TRUE",
   },
   {
-    title: " In case the ticket returned with updated CPE problem close code 74  , Cst from Cairo and insist to check with another available CPE , CCA right action is :",
+    title: "116- In case the ticket returned with updated CPE problem close code 74  , Cst from Cairo and insist to check with another available CPE , CCA right action is :",
     answer: "• will inform the customer that he should check the CPE on CSO 'Mandatory'",
   },
   {
-    title: " In case ticket returned with update ( Outside TEData ) , CCA right action according to the customer's case : ",
+    title: "117- In case ticket returned with update ( Outside TEData ) , CCA right action according to the customer's case : ",
     answer: "• will create the below SR ( Broadband>Technical>ADSL/VDSL>CC service Activation>CPE Configuration )هنعمل ال SR دى ( Broadband>Technical>ADSL/VDSL>CC service Activation>CPE Configuration )",
   },
   {
-    title: " Cst has Ticket Data Down with Update ( Close Code (82): External problem- cable maintenance needed ) , So CCA will Inform cst  SLA : ",
+    title: "118- Cst has Ticket Data Down with Update ( Close Code (82): External problem- cable maintenance needed ) , So CCA will Inform cst  SLA : ",
     answer: "• Case escalated to the responsible team and we are waiting for their update with 3 days SLA
 ",
   },
   {
-    title: " While follow with cst WACP Case and Cst Line Status is Down and Matrix Status is also Down so the next step is : ",
+    title: "119- While follow with cst WACP Case and Cst Line Status is Down and Matrix Status is also Down so the next step is : ",
     answer: "• Troubleshoot as Data Down",
   },
   {
-    title: " In wrong card and port or disable lines, CCA shouldn't search on Matrix using ADSL & customer account no. to avoid any indeterminate for duplicated matrix : ",
+    title: "120- In wrong card and port or disable lines, CCA shouldn't search on Matrix using ADSL & customer account no. to avoid any indeterminate for duplicated matrix : ",
     answer: "• FALSE",
   },
 ];
