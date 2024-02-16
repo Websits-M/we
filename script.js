@@ -564,11 +564,7 @@ let pro = [
     title:
       "In wrong card and port or disable lines, CCA shouldn't search on Matrix using ADSL & customer account no. to avoid any indeterminate for duplicated matrix : ",
     answer: "• FALSE",
-  },
-  {
-    title: "dd  ",
-    answer: "• FALSE",
-  },
+  }
 ];
 
 function drowItem() {
