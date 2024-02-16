@@ -8,9 +8,10 @@
 
 /* ----------------------------------------------------- */
 body {
-  background-image: url(../images/contact-img.svg);
-  background-position: left;
+  background-image: url(../images/Pngtre.jpg);
+  background-position: right;
   background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial;
   background-color: #b1aeae;
