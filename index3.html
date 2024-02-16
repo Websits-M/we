@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="css/all.css" />
   </head>
-  <body>
+  <body id="bd">
     <nav>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
@@ -37,7 +37,7 @@
             >فتح الترجمه</a
           >
         </li>
-        <li><a href="index3.html" id="link">Services</a></li>
+        <li><a href="#">Services</a></li>
         <li>
           <a
             target="_blank"
@@ -50,16 +50,36 @@
     </nav>
 
     <section id="home">
+      <div class="div2">
+        <div>
+          <span>Mood : <input type="checkbox" id="show" /></span>
+        </div>
+        <div>مُضاف <span id="n"></span> سؤال حتي الان</div>
+      </div>
       <div class="container">
         <div class="col col-sm col-md col-lg">
           <div class="search-box">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search" class="search-input" onkeyup="search()"/>
+            <input
+              type="text"
+              placeholder="Search"
+              class="search-input"
+              onkeyup="search()"
+            />
           </div>
-          <div class="product-list"></div>
+          <div class="product-list">
+            <div class="product">
+              <div class="product-deatils">
+                <h5></h5>
+                <p><mark></mark></p>
+                <hr />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <footer>
       <p>&copy;Created By : Mostafa mahmoud</p>
       <div><img src="images/logo-no-background.png" alt="" /></div>
