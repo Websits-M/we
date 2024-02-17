@@ -15,6 +15,10 @@ function search() {
     }
   }
 }
+//--------------------------------
+
+
+//------------------------
 
 let productlist = document.querySelector(".product-list");
 
@@ -564,7 +568,92 @@ let pro = [
     title:
       "In wrong card and port or disable lines, CCA shouldn't search on Matrix using ADSL & customer account no. to avoid any indeterminate for duplicated matrix : ",
     answer: "• FALSE",
-  }
+  },
+  {
+    title: " while troubleshooting physical instability , Clear View Result After Search 'No DSL Physical Layer is detected ' ,next action is :",
+    answer: "• Check last fix date according to TTS and customer input at same time",
+  },
+  {
+    title: "CST has Physical Instability ticket in your pool , and problem still the same , after troubleshooting , CCA will ​​Re Escalate ticket again to IU ,, right SR is :",
+    answer:"• FBB Tech Problem > ​​Physical Instability > ​​Re Escalation"
+  },
+  {
+    title: "while troubleshooting physical instability ,CCA found Landline bills is 80 LE and passed the grace period , CCA stop troubleshooting and inform CST that he has to pay his bills first, right SR is :",
+    answer:"• FBB Tech Problem > ​​Physical Instability >TE-Billing"
+  },
+  {
+    title: "Before escalating Physical Instability Case , should be check Voice Verification  ?",
+    answer:"• TRUE"
+  },
+  {
+    title: "SLA for Physical Instability Contradiction Case  ?",
+    answer:"• 2 H"
+  },
+  {
+    title: "While troubleshooting physical instability, After run clear view result is : Run Real Time Profile Optimization, right action is :",
+    answer:"• Check Voice Verification then Escalate to IU"
+  },
+  {
+    title: "If there 5 logs exist during last 12 hours with 1 log during last 3 hours  . Handle as ?",
+    answer:"• physical instability"
+  },
+  {
+    title: "while troubleshooting Physical Instability, CCA found voice is down ,  ticket will escalated as :",
+    answer:"• Voice Down"
+  },
+  {
+    title: "Physical Instability will be escalated to :",
+    answer:"• IU"
+  },
+  {
+    title: "Time Frame For Visit Performed Cases in Physical Instability  Case :",
+    answer:"• 5 days"
+  },
+  {
+    title: "Power led not existed",
+    answer:"• Power led not working or working with red color"
+  },
+  {
+    title: "If CST called us and informed that he has cut cable you will follow normal troubleshoot in ticket maker:",
+    answer:"• FALSE"
+  },
+  {
+    title: "If CST has Data and Voice Down case after connect from main wall outlet problem solved you will:",
+    answer:"• Create TT for internal wiring"
+  },
+  {
+    title: "If CST with another CPE and not necessary it's original adapter",
+    answer:"• Check with another CPE with it's original adapter"
+  },
+  {
+    title: "If we run SELT and customer's line connected with exchange you will measure distance with:",
+    answer:"• 150 meters"
+  },
+  {
+    title: "If CST has Data Down case and when you checked SELT you found that CST is not supported by ASSIA you will:",
+    answer:"• Check connection type"
+  },
+  {
+    title: "If CPE restarted automatically and power LED turned off while CPE restarted you will consider it as:",
+    answer:"• Power Failure"
+  },
+  {
+    title: "If customer's line in ASSIA no provisioned that means",
+    answer:"• CST is not supported by ASSIA"
+  },
+  {
+    title: "If powe led is down and CST uses original adapter next step will be:",
+    answer:"• Try in another wall-plug"
+  },
+  {
+    title: "SLA for internal wiring TT:",
+    answer:"• 2 hours"
+  },
+  // {
+  //   title: "",
+  //   answer:"• "
+  // },
+  
 ];
 
 function drowItem() {
