@@ -649,6 +649,82 @@ let pro = [
     title: "SLA for internal wiring TT:",
     answer:"• 2 hours"
   },
+  {
+    title: "While Escalating Physical instabillity Case to IU , SLA will be :",
+    answer:"• 1 Day"
+  },
+  {
+    title: "Customer has ticket Physical instability in IU , CAA informed him that he within SLA , Right SR is :",
+    answer:"• FBB Tech problem > physical instability > Follow Up"
+  },
+  {
+    title: "While escalating physical instobility CCA Must inform customer to keep his CPE turned on :",
+    answer:"• FALSE"
+  },
+  {
+    title: "CCA must Ask customer for 2 mobiles numbers while escalating Physical instability case :",
+    answer:"• TRUE"
+  },
+  {
+    title: "In physical instability case we will escalate the ticket to ( Pilpt-Follow Up ) when problem solved after CST connected from main wall outlet :",
+    answer:"• TRUE"
+  },
+  {
+    title: "while troubleshooting physical instability , clear view result after search Technical dispatch is recommended , nex action is :",
+    answer:"• Check connection type"
+  },
+  {
+    title: "While Escalating Physical instability Case to IU for third time , SLA will be :",
+    answer:"• 1 Day"
+  },
+  {
+    title: "While troubleshooting physical instability, connection type : wall outlet , the next step is :",
+    answer:"• Check if connection right or wrong"
+  },
+  {
+    title: "while troubleshooting physical instability , connection is right the next step is :",
+    answer:"• Check splitter existence before cpe"
+  },
+  {
+    title: "CST has BLQ Case, Customer operational speed is 12 Mb after make selt result was 800 M so you will :",
+    answer:"• Follow voice verification then escalate BLQ"
+  },
+  {
+    title: "CST has ASSIA output: Line is out of sync, CCA action as first step:",
+    answer:"• Ensure that the CPE is on"
+  },
+  {
+    title: "CST has BLQ ,line supported by ASSIA clear view after search Technician Dispatch is recommended the next step will :",
+    answer:"• Check connection type"
+  },
+  {
+    title: "In Case Ticket BLQ have Update ( Main wire changed ) and Cst still have the same problem, noting that line Supported by ASSIA and no change in the connection setup after our technician visit’s, so the right action is :",
+    answer:"• Re-Run the appropriate mode of Clear View"
+  },
+  {
+    title: "Need Optimization case will Escalate to :",
+    answer:"• Pilot-SLS"
+  },
+  {
+    title: "If Customer complaint within TS BLQ case from Bad Box issue , the right SR is :",
+    answer:"• Fbb Tech Problem>BLQ>Bad Box"
+  },
+  {
+    title: "it's not mandatory to take screenshots from selected Clear View mode and its result ",
+    answer:"• TRUE"
+  },
+  {
+    title: "In case escalation of Need Optimization case ask customer to leave the CPE power turned on",
+    answer:"• TRUE"
+  },
+  {
+    title: "While TS BLQ case and CCA Check Line stability from line details from Assia and found that customer's line is Unstable so the next step is :",
+    answer:"• Inform Customer to wait 3 days until tests done on the line"
+  },
+  {
+    title: "CCA should check voice verification before Escalate BLQ case to confirm on voice status :",
+    answer:"• TRUE"
+  },
   // {
   //   title: "",
   //   answer:"• "
