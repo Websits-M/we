@@ -6,18 +6,18 @@ function search() {
   let productlist = document.querySelector(".product-list");
   let product = document.querySelectorAll(".product");
   let productName = document.getElementsByTagName("h4");
-
   for (let i = 0; i < productName.length; i++) {
-    if (productName[i].innerHTML.toUpperCase().indexOf(searchBar) >= 0) {
+    if (productName[i].innerHTML.toUpperCase().indexOf(searchBar)>= 0) {
       product[i].style.display = "";
     } else {
       product[i].style.display = "none";
     }
   }
 }
+
 //--------------------------------
 
-
+ 
 //------------------------
 
 let productlist = document.querySelector(".product-list");
@@ -570,166 +570,284 @@ let pro = [
     answer: "• FALSE",
   },
   {
-    title: " while troubleshooting physical instability , Clear View Result After Search 'No DSL Physical Layer is detected ' ,next action is :",
-    answer: "• Check last fix date according to TTS and customer input at same time",
+    title:
+      " while troubleshooting physical instability , Clear View Result After Search 'No DSL Physical Layer is detected ' ,next action is :",
+    answer:
+      "• Check last fix date according to TTS and customer input at same time",
   },
   {
-    title: "CST has Physical Instability ticket in your pool , and problem still the same , after troubleshooting , CCA will ​​Re Escalate ticket again to IU ,, right SR is :",
-    answer:"• FBB Tech Problem > ​​Physical Instability > ​​Re Escalation"
+    title:
+      "CST has Physical Instability ticket in your pool , and problem still the same , after troubleshooting , CCA will ​​Re Escalate ticket again to IU ,, right SR is :",
+    answer: "• FBB Tech Problem > ​​Physical Instability > ​​Re Escalation",
   },
   {
-    title: "while troubleshooting physical instability ,CCA found Landline bills is 80 LE and passed the grace period , CCA stop troubleshooting and inform CST that he has to pay his bills first, right SR is :",
-    answer:"• FBB Tech Problem > ​​Physical Instability >TE-Billing"
+    title:
+      "while troubleshooting physical instability ,CCA found Landline bills is 80 LE and passed the grace period , CCA stop troubleshooting and inform CST that he has to pay his bills first, right SR is :",
+    answer: "• FBB Tech Problem > ​​Physical Instability >TE-Billing",
   },
   {
-    title: "Before escalating Physical Instability Case , should be check Voice Verification  ?",
-    answer:"• TRUE"
+    title:
+      "Before escalating Physical Instability Case , should be check Voice Verification  ?",
+    answer: "• TRUE",
   },
   {
     title: "SLA for Physical Instability Contradiction Case  ?",
-    answer:"• 2 H"
+    answer: "• 2 H",
   },
   {
-    title: "While troubleshooting physical instability, After run clear view result is : Run Real Time Profile Optimization, right action is :",
-    answer:"• Check Voice Verification then Escalate to IU"
+    title:
+      "While troubleshooting physical instability, After run clear view result is : Run Real Time Profile Optimization, right action is :",
+    answer: "• Check Voice Verification then Escalate to IU",
   },
   {
-    title: "If there 5 logs exist during last 12 hours with 1 log during last 3 hours  . Handle as ?",
-    answer:"• physical instability"
+    title:
+      "If there 5 logs exist during last 12 hours with 1 log during last 3 hours  . Handle as ?",
+    answer: "• physical instability",
   },
   {
-    title: "while troubleshooting Physical Instability, CCA found voice is down ,  ticket will escalated as :",
-    answer:"• Voice Down"
+    title:
+      "while troubleshooting Physical Instability, CCA found voice is down ,  ticket will escalated as :",
+    answer: "• Voice Down",
   },
   {
     title: "Physical Instability will be escalated to :",
-    answer:"• IU"
+    answer: "• IU",
   },
   {
-    title: "Time Frame For Visit Performed Cases in Physical Instability  Case :",
-    answer:"• 5 days"
+    title:
+      "Time Frame For Visit Performed Cases in Physical Instability  Case :",
+    answer: "• 5 days",
   },
   {
     title: "Power led not existed",
-    answer:"• Power led not working or working with red color"
+    answer: "• Power led not working or working with red color",
   },
   {
-    title: "If CST called us and informed that he has cut cable you will follow normal troubleshoot in ticket maker:",
-    answer:"• FALSE"
+    title:
+      "If CST called us and informed that he has cut cable you will follow normal troubleshoot in ticket maker:",
+    answer: "• FALSE",
   },
   {
-    title: "If CST has Data and Voice Down case after connect from main wall outlet problem solved you will:",
-    answer:"• Create TT for internal wiring"
+    title:
+      "If CST has Data and Voice Down case after connect from main wall outlet problem solved you will:",
+    answer: "• Create TT for internal wiring",
   },
   {
     title: "If CST with another CPE and not necessary it's original adapter",
-    answer:"• Check with another CPE with it's original adapter"
+    answer: "• Check with another CPE with it's original adapter",
   },
   {
-    title: "If we run SELT and customer's line connected with exchange you will measure distance with:",
-    answer:"• 150 meters"
+    title:
+      "If we run SELT and customer's line connected with exchange you will measure distance with:",
+    answer: "• 150 meters",
   },
   {
-    title: "If CST has Data Down case and when you checked SELT you found that CST is not supported by ASSIA you will:",
-    answer:"• Check connection type"
+    title:
+      "If CST has Data Down case and when you checked SELT you found that CST is not supported by ASSIA you will:",
+    answer: "• Check connection type",
   },
   {
-    title: "If CPE restarted automatically and power LED turned off while CPE restarted you will consider it as:",
-    answer:"• Power Failure"
+    title:
+      "If CPE restarted automatically and power LED turned off while CPE restarted you will consider it as:",
+    answer: "• Power Failure",
   },
   {
     title: "If customer's line in ASSIA no provisioned that means",
-    answer:"• CST is not supported by ASSIA"
+    answer: "• CST is not supported by ASSIA",
   },
   {
-    title: "If powe led is down and CST uses original adapter next step will be:",
-    answer:"• Try in another wall-plug"
+    title:
+      "If powe led is down and CST uses original adapter next step will be:",
+    answer: "• Try in another wall-plug",
   },
   {
     title: "SLA for internal wiring TT:",
-    answer:"• 2 hours"
+    answer: "• 2 hours",
   },
   {
     title: "While Escalating Physical instabillity Case to IU , SLA will be :",
-    answer:"• 1 Day"
+    answer: "• 1 Day",
   },
   {
-    title: "Customer has ticket Physical instability in IU , CAA informed him that he within SLA , Right SR is :",
-    answer:"• FBB Tech problem > physical instability > Follow Up"
+    title:
+      "Customer has ticket Physical instability in IU , CAA informed him that he within SLA , Right SR is :",
+    answer: "• FBB Tech problem > physical instability > Follow Up",
   },
   {
-    title: "While escalating physical instobility CCA Must inform customer to keep his CPE turned on :",
-    answer:"• FALSE"
+    title:
+      "While escalating physical instobility CCA Must inform customer to keep his CPE turned on :",
+    answer: "• FALSE",
   },
   {
-    title: "CCA must Ask customer for 2 mobiles numbers while escalating Physical instability case :",
-    answer:"• TRUE"
+    title:
+      "CCA must Ask customer for 2 mobiles numbers while escalating Physical instability case :",
+    answer: "• TRUE",
   },
   {
-    title: "In physical instability case we will escalate the ticket to ( Pilpt-Follow Up ) when problem solved after CST connected from main wall outlet :",
-    answer:"• TRUE"
+    title:
+      "In physical instability case we will escalate the ticket to ( Pilpt-Follow Up ) when problem solved after CST connected from main wall outlet :",
+    answer: "• TRUE",
   },
   {
-    title: "while troubleshooting physical instability , clear view result after search Technical dispatch is recommended , nex action is :",
-    answer:"• Check connection type"
+    title:
+      "while troubleshooting physical instability , clear view result after search Technical dispatch is recommended , nex action is :",
+    answer: "• Check connection type",
   },
   {
-    title: "While Escalating Physical instability Case to IU for third time , SLA will be :",
-    answer:"• 1 Day"
+    title:
+      "While Escalating Physical instability Case to IU for third time , SLA will be :",
+    answer: "• 1 Day",
   },
   {
-    title: "While troubleshooting physical instability, connection type : wall outlet , the next step is :",
-    answer:"• Check if connection right or wrong"
+    title:
+      "While troubleshooting physical instability, connection type : wall outlet , the next step is :",
+    answer: "• Check if connection right or wrong",
   },
   {
-    title: "while troubleshooting physical instability , connection is right the next step is :",
-    answer:"• Check splitter existence before cpe"
+    title:
+      "while troubleshooting physical instability , connection is right the next step is :",
+    answer: "• Check splitter existence before cpe",
   },
   {
-    title: "CST has BLQ Case, Customer operational speed is 12 Mb after make selt result was 800 M so you will :",
-    answer:"• Follow voice verification then escalate BLQ"
+    title:
+      "CST has BLQ Case, Customer operational speed is 12 Mb after make selt result was 800 M so you will :",
+    answer: "• Follow voice verification then escalate BLQ",
   },
   {
-    title: "CST has ASSIA output: Line is out of sync, CCA action as first step:",
-    answer:"• Ensure that the CPE is on"
+    title:
+      "CST has ASSIA output: Line is out of sync, CCA action as first step:",
+    answer: "• Ensure that the CPE is on",
   },
   {
-    title: "CST has BLQ ,line supported by ASSIA clear view after search Technician Dispatch is recommended the next step will :",
-    answer:"• Check connection type"
+    title:
+      "CST has BLQ ,line supported by ASSIA clear view after search Technician Dispatch is recommended the next step will :",
+    answer: "• Check connection type",
   },
   {
-    title: "In Case Ticket BLQ have Update ( Main wire changed ) and Cst still have the same problem, noting that line Supported by ASSIA and no change in the connection setup after our technician visit’s, so the right action is :",
-    answer:"• Re-Run the appropriate mode of Clear View"
+    title:
+      "In Case Ticket BLQ have Update ( Main wire changed ) and Cst still have the same problem, noting that line Supported by ASSIA and no change in the connection setup after our technician visit’s, so the right action is :",
+    answer: "• Re-Run the appropriate mode of Clear View",
   },
   {
     title: "Need Optimization case will Escalate to :",
-    answer:"• Pilot-SLS"
+    answer: "• Pilot-SLS",
   },
   {
-    title: "If Customer complaint within TS BLQ case from Bad Box issue , the right SR is :",
-    answer:"• Fbb Tech Problem>BLQ>Bad Box"
+    title:
+      "If Customer complaint within TS BLQ case from Bad Box issue , the right SR is :",
+    answer: "• Fbb Tech Problem>BLQ>Bad Box",
   },
   {
-    title: "it's not mandatory to take screenshots from selected Clear View mode and its result ",
-    answer:"• TRUE"
+    title:
+      "it's not mandatory to take screenshots from selected Clear View mode and its result ",
+    answer: "• TRUE",
   },
   {
-    title: "In case escalation of Need Optimization case ask customer to leave the CPE power turned on",
-    answer:"• TRUE"
+    title:
+      "In case escalation of Need Optimization case ask customer to leave the CPE power turned on",
+    answer: "• TRUE",
   },
   {
-    title: "While TS BLQ case and CCA Check Line stability from line details from Assia and found that customer's line is Unstable so the next step is :",
-    answer:"• Inform Customer to wait 3 days until tests done on the line"
+    title:
+      "While TS BLQ case and CCA Check Line stability from line details from Assia and found that customer's line is Unstable so the next step is :",
+    answer: "• Inform Customer to wait 3 days until tests done on the line",
   },
   {
-    title: "CCA should check voice verification before Escalate BLQ case to confirm on voice status :",
-    answer:"• TRUE"
+    title:
+      "CCA should check voice verification before Escalate BLQ case to confirm on voice status :",
+    answer: "• TRUE",
+  },
+  {
+    title:
+      "CST has ticket Need Optimization escalated in 10.00 PM and CST calling at 11.30 PM in same day so you will :",
+    answer: "• Inform CST waiting SLA",
+  },
+  {
+    title: "CST has Ticket in IU pool and passed SLA so you will:",
+    answer: "• Create delay ticket and inform cst sla with 1 day",
+  },
+  {
+    title:
+      "We should inform CST to leave CPE turned on while escalating BLQ case?",
+    answer: "• FALSE",
+  },
+  {
+    title: "Second time Escalation SLA in BLQ case is:",
+    answer: "• 1 Day",
+  },
+  {
+    title: "Line code for ADSL2+ is :",
+    answer: "• G-992-5",
+  },
+  {
+    title:
+      "In BLQ case Clear View Result After Search is ( Technical dispatch is recommended ) , and after running the appropriate mode of Clear View result became ( No DSL Physical Layer is detected ) right action is :",
+    answer: "• Check Diagnostic Tab in Line Details",
+  },
+  {
+    title:
+      "CST has BLQ ticket with update ( working from exchange ) without a visit update , right action is :",
+    answer: "• Re-escalate case to IU pool",
+  },
+  {
+    title: "line code is must set to adsl2+ or vdsl according to cst port",
+    answer: "• TRUE",
+  },
+  {
+    title:
+      'If customer has ADSL package , VDSL CPE and Port is ADSL , CCA should follow change offering process to change port from ADSL to VDSL in addition to handling the main case "BLQ"',
+    answer: "• TRUE",
+  },
+  {
+    title:
+      "ASSIA clear view result is, No immediate action is recommended, your action is?",
+    answer:
+      "• inform customer to wait 3 days until tests done on the line ( inform customer to leave CPE on during the 3 days )",
+  },
+  {
+    title: 'SLA for change speed need to Change Port is',
+    answer:'• 48 Hours'
+  },
+  {
+    title: 'SLA for change speed need to Change Port and Card is',
+    answer:'• 5 WD'
+  },
+  {
+    title: 'Customer can change Speed from VDSL to ADSL ?',
+    answer:'• FALSE'
+  },
+  {
+    title: 'SLA if CST need to make change package Not require Change Port with Lower Amount after due date',
+    answer:'• On Spot'
+  },
+  {
+    title: 'There is no required data for Change phone number ?',
+    answer:'• FALSE'
+  },
+  {
+    title: 'We can check Change phone number activity  from',
+    answer:'• OM & BSS Order query'
+  },
+  {
+    title: 'If CST need to change contact name but his account status is suspend  What is the right action ?',
+    answer:'• Inform cst to pay all his due amount first'
+  },
+  {
+    title: 'No required paper needed for changing data via stores ?',
+    answer:'• FALSE'
+  },
+  {
+    title: 'Cst asked about Extra Quota ( Recurring Recharge ), SR is…',
+    answer:'• FBB Non-Tech Inquiry---Quota----Extra Quota Recurring'
+  },
+  {
+    title: 'Extra Quota ( Recurring Recharge ) renews every month automatically',
+    answer:'• TRUE'
   },
   // {
-  //   title: "",
-  //   answer:"• "
+  //   title: '',
+  //   answer:'• '
   // },
-  
 ];
 
 function drowItem() {
