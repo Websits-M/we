@@ -136,6 +136,8 @@ section {
   .div2 {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 5px;
   font-size: 14px;  
 }
