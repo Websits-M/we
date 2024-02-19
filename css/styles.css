@@ -150,7 +150,8 @@ body {
   .content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 400px;
+    width: 300px;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
