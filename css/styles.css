@@ -151,10 +151,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 400px;
-    width: 400px;
+    width: 410px;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
+     padding: 10px;
   }
   .title1 {
     font-size: 40px;
