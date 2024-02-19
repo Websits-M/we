@@ -7,7 +7,7 @@ function search() {
   let product = document.querySelectorAll(".product");
   let productName = document.getElementsByTagName("h4");
   for (let i = 0; i < productName.length; i++) {
-    if (productName[i].innerHTML.toUpperCase().indexOf(searchBar)>= 0) {
+    if (productName[i].innerHTML.toUpperCase().indexOf(searchBar) >= 0) {
       product[i].style.display = "";
     } else {
       product[i].style.display = "none";
@@ -17,7 +17,6 @@ function search() {
 
 //--------------------------------
 
- 
 //------------------------
 
 let productlist = document.querySelector(".product-list");
@@ -805,44 +804,47 @@ let pro = [
       "• inform customer to wait 3 days until tests done on the line ( inform customer to leave CPE on during the 3 days )",
   },
   {
-    title: 'SLA for change speed need to Change Port is',
-    answer:'• 48 Hours'
+    title: "SLA for change speed need to Change Port is ……",
+    answer: "• 48 Hours",
   },
   {
-    title: 'SLA for change speed need to Change Port and Card is',
-    answer:'• 5 WD'
+    title: "SLA for change speed need to Change Port and Card is ……",
+    answer: "• 5 WD",
   },
   {
-    title: 'Customer can change Speed from VDSL to ADSL ?',
-    answer:'• FALSE'
+    title: "Customer can change Speed from VDSL to ADSL ?",
+    answer: "• FALSE",
   },
   {
-    title: 'SLA if CST need to make change package Not require Change Port with Lower Amount after due date',
-    answer:'• On Spot'
+    title:
+      "SLA if CST need to make change package Not require Change Port with Lower Amount after due date ………..",
+    answer: "• On Spot",
   },
   {
-    title: 'There is no required data for Change phone number ?',
-    answer:'• FALSE'
+    title: "There is no required data for Change phone number ?",
+    answer: "• FALSE",
   },
   {
-    title: 'We can check Change phone number activity  from',
-    answer:'• OM & BSS Order query'
+    title: "We can check Change phone number activity  from ……..",
+    answer: "• OM & BSS Order query",
   },
   {
-    title: 'If CST need to change contact name but his account status is suspend  What is the right action ?',
-    answer:'• Inform cst to pay all his due amount first'
+    title:
+      "If CST need to change contact name but his account status is suspend  What is the right action ?",
+    answer: "• Inform cst to pay all his due amount first",
   },
   {
-    title: 'No required paper needed for changing data via stores ?',
-    answer:'• FALSE'
+    title: "No required paper needed for changing data via stores ?",
+    answer: "• FALSE",
   },
   {
-    title: 'Cst asked about Extra Quota ( Recurring Recharge ), SR is…',
-    answer:'• FBB Non-Tech Inquiry---Quota----Extra Quota Recurring'
+    title: "Cst asked about Extra Quota ( Recurring Recharge ), SR is…",
+    answer: "• FBB Non-Tech Inquiry---Quota----Extra Quota Recurring",
   },
   {
-    title: 'Extra Quota ( Recurring Recharge ) renews every month automatically',
-    answer:'• TRUE'
+    title:
+      "Extra Quota ( Recurring Recharge ) renews every month automatically",
+    answer: "• TRUE",
   },
   // {
   //   title: '',
