@@ -133,6 +133,11 @@ section {
   section {
     width: 90%;
   }
+  .div2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
 }
 
 section::-webkit-scrollbar {
