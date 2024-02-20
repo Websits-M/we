@@ -223,11 +223,6 @@ let pro = [
   },
   {
     title:
-      "DHCP is assigning automatic LAN IP`s to the private devices but NAT is responsible for translating the Private IP into Public IP   :",
-    answer: "• TRUE",
-  },
-  {
-    title:
       "In Cpe configuration  “VDSL” Parameters XDSL Transfer Mode should be ",
     answer: "• PPPOE",
   },
