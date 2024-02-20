@@ -42,10 +42,6 @@ let pro = [
     answer: "• PTM",
   },
   {
-    title: "CST can request to suspend his land line temporary",
-    answer: "• True",
-  },
-  {
     title: "Land line delivery available for all Egypt",
     answer: "• False",
   },
