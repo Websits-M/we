@@ -185,10 +185,6 @@ let pro = [
       "• BSS-->sitemap-->integrated operations(New)-->order management-->order Query",
   },
   {
-    title: "Which service customer can use static ip : ",
-    answer: "• Option pack",
-  },
-  {
     title: "If Line has a problem Connection Cable CCA action will be...?",
     answer: "• inf cst شبكة ارضية - voice line not copper cannot connect data",
   },
