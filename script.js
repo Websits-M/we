@@ -23,8 +23,8 @@ let productlist = document.querySelector(".product-list");
 
 let pro = [
   {
-    title: "Who can choose modify reason Operator Request?",
-    answer: "• Agent",
+    title: "Who can choose modify reason (Operator Request)?",
+    answer: "• Supervisor",
   },
   {
     title:
@@ -848,47 +848,57 @@ let pro = [
   },
   {
     title: "",
-    answer:'• '
+    answer: "• ",
   },
   {
-    title: "Customer Follow up his ticket (Wrong Card and port) and the TKT has update Major Fault passed SLA and still the same Update After Re-Escalation TKT , So tight SR :",
-    answer:'• FBB Tech Problem>Wrong card and port>Major Fault after SLA'
+    title:
+      "Customer Follow up his ticket (Wrong Card and port) and the TKT has update Major Fault passed SLA and still the same Update After Re-Escalation TKT , So tight SR :",
+    answer: "• FBB Tech Problem>Wrong card and port>Major Fault after SLA",
   },
   {
-    title: "While follow with cst WCAP Case and Cst Line Status is Down and Matrix Status is UP , so the next step is :",
-    answer:'• Follow Data status from main step'
+    title:
+      "While follow with cst WCAP Case and Cst Line Status is Down and Matrix Status is UP , so the next step is :",
+    answer: "• Follow Data status from main step",
   },
   {
-    title: "Cst has Ticket with update ( Abuser as per TE ) and Customer said that issue covered , So CCA right action is :",
-    answer:'• Escalate normally'
+    title:
+      "Cst has Ticket with update ( Abuser as per TE ) and Customer said that issue covered , So CCA right action is :",
+    answer: "• Escalate normally",
   },
   {
-    title: "CCA should not stop the escalation to IU due to any reason while making rest & configuration such as CPE page can't be accessed",
-    answer:'• TRUE'
+    title:
+      "CCA should not stop the escalation to IU due to any reason while making rest & configuration such as CPE page can't be accessed",
+    answer: "• TRUE",
   },
   {
-    title: "It's not mandatory to ask customer for 2 mobiles numbers while escalating any physical case",
-    answer:'• FALSE'
+    title:
+      "It's not mandatory to ask customer for 2 mobiles numbers while escalating any physical case",
+    answer: "• FALSE",
   },
   {
-    title: "Customer Follow up escalated ticket (Wrong Card and port) and the TKT still within SLA , So right SR is :",
-    answer:'• FBB Tech Problem>Wrong Card and port>Follow Up'
+    title:
+      "Customer Follow up escalated ticket (Wrong Card and port) and the TKT still within SLA , So right SR is :",
+    answer: "• FBB Tech Problem>Wrong Card and port>Follow Up",
   },
   {
-    title: "Customer Follow up his ticket (Wrong Card and Port) and the TKT Has update Major Fault within First SLA , So right SR :",
-    answer:'• FBB Tech Problem>Wrong card and port>Major Fault within SLA'
+    title:
+      "Customer Follow up his ticket (Wrong Card and Port) and the TKT Has update Major Fault within First SLA , So right SR :",
+    answer: "• FBB Tech Problem>Wrong card and port>Major Fault within SLA",
   },
   {
-    title: "Cst has Ticket WCAP in IU Pool and TKT passed SLA , So CCA will inform cst SLA :",
-    answer:'• 1 Day'
+    title:
+      "Cst has Ticket WCAP in IU Pool and TKT passed SLA , So CCA will inform cst SLA :",
+    answer: "• 1 Day",
   },
   {
-    title: "In case WACP CST disconnect phone cable from CPE and ADSL still UP , It is CPE Problem :",
-    answer:'• TRUE'
+    title:
+      "In case WACP CST disconnect phone cable from CPE and ADSL still UP , It is CPE Problem :",
+    answer: "• TRUE",
   },
   {
-    title: "Cst has TKT Data Down with Update ( Morkzat ) , So CCA will inform cst with SLA :",
-    answer:'• 3 Days'
+    title:
+      "Cst has TKT Data Down with Update ( Morkzat ) , So CCA will inform cst with SLA :",
+    answer: "• 3 Days",
   },
 ];
 
