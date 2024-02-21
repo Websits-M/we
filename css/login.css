@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 5px;
+}
 nav {
   background: linear-gradient(
     to right,
