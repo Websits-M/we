@@ -211,30 +211,8 @@ ul#user-info li a {
   z-index: 111;
 }
 
-@media (max-width: 768px) {
-  .cart {
-    width: 40%;
-    flex-direction: row;
-
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cart i,
-  .cart span {
-    display: inline-flex;
-    margin-left: 24px;
-  }
-
-  .cart span {
-    position: relative;
-    top: 0;
-    right: 0;
-    margin-left: 20px;
-    margin-top: -45px;
-    display: none;
-  }
-  .row {
-    width: 100%;
+@media (max-width: 550px) {
+    .section-form{
+    width: 300px;
   }
 }
