@@ -104,7 +104,9 @@ form input {
 form input[type="submit"]:hover {
   opacity: 0.5;
 }
-
+form input[type="submit"] {
+  font-weight: 800;
+}
 #user-info {
   display: none;
   list-style: none;
@@ -150,66 +152,7 @@ ul#user-info li a {
   top: 11px;
 }
 
-.cart {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
 
-.cart span {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  text-align: center;
-  top: 30px;
-  border-radius: 50%;
-  background-color: gold;
-  color: #222;
-  font-size: 9px;
-  padding: 4px;
-  display: none;
-}
-
-.cart-product {
-  position: absolute;
-  width: 200px;
-  z-index: 111111;
-  transform: translate(40%, 35px);
-  -webkit-transform: translate(40%, 35px);
-  -moz-transform: translate(40%, 35px);
-  -ms-transform: translate(40%, 35px);
-  -o-transform: translate(40%, 35px);
-  background-color: #232323;
-  color: #fff;
-  display: none;
-}
-
-.cart-product a {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  background-color: gold;
-  color: red;
-  font-size: 18px;
-  padding: 5px 0;
-}
-
-#logOut {
-  font-size: 17px;
-  background-color: #613854;
-  padding: 12px;
-  color: #fff !important;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-#clearCartBtn {
-  display: block;
-  z-index: 111;
-}
 
 @media (max-width: 550px) {
     .section-form{
