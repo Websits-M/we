@@ -107,37 +107,7 @@ form input[type="submit"]:hover {
 form input[type="submit"] {
   font-weight: 800;
 }
-#user-info {
-  display: none;
-  list-style: none;
-  margin: auto 0;
-}
 
-#user-info li i {
-  font-size: 25px;
-}
-
-ul#user-info li {
-  width: 130px;
-  color: #fff;
-  margin: auto;
-}
-ul#user-info li a {
-  text-decoration: none;
-  color: gold;
-  font-size: 18px;
-}
-.product {
-  width: 100%;
-  margin-top: 10px;
-  max-height: 500px;
-}
-.card img {
-  width: 300px;
-  height: 250px;
-  padding: 30px;
-  margin: auto;
-}
 
 .check {
   display: flex;
@@ -152,10 +122,11 @@ ul#user-info li a {
   top: 11px;
 }
 
-
-
-@media (max-width: 550px) {
-    .section-form{
-    width: 300px;
+@media (max-width: 768px) {
+  .section-form {
+    width: 250px;
+  }
+  .container{
+    width: 250px;
   }
 }
