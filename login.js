@@ -18,7 +18,7 @@ loginSubmit.addEventListener("click" , function(e){
         window.location = "index2.html";
       },1500)
     }else{
-      alert("sure from data")
+      alert("User name or password is wrong")
     }
   }
 })
