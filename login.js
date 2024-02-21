@@ -15,7 +15,7 @@ loginSubmit.addEventListener("click" , function(e){
   }else{
     if(getUser === userName.value.trim() && getpassward === passward.value){
       setTimeout(()=>{
-        window.location = "index.html";
+        window.location = "index2.html";
       },1500)
     }else{
       alert("sure from data")
