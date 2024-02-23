@@ -15,6 +15,37 @@ function search() {
   }
 }
 
+function select() {
+  var optionL = document.getElementById("optionL");
+  var box1 = document.getElementById("box1");
+  var box2 = document.getElementById("box2");
+  if (optionL.value == 2) {
+    box1.style.display = "none";
+    box2.style.display = "flex";
+    box1.style.borderColor = "none";
+  } else {
+    box1.style.display = "flex";
+    box1.style.borderColor = "red";
+    box2.style.display = "none";
+  }
+}
+function answer() {
+  let searchAnswer = document
+    .querySelector(".input-answer")
+    .value.toUpperCase()
+    .trim();
+  let productlist = document.querySelector(".product-list");
+  let product = document.querySelectorAll(".product");
+  let productName = document.getElementsByTagName("p");
+  for (let i = 0; i < productName.length; i++) {
+    if (productName[i].innerHTML.toUpperCase().indexOf(searchAnswer) >= 0) {
+      product[i].style.display = "";
+    } else {
+      product[i].style.display = "none";
+    }
+  }
+}
+
 //--------------------------------
 
 //------------------------
@@ -834,10 +865,6 @@ let pro = [
     answer: "• TRUE",
   },
   {
-    title: "",
-    answer: "• ",
-  },
-  {
     title:
       "Customer Follow up his ticket (Wrong Card and port) and the TKT has update Major Fault passed SLA and still the same Update After Re-Escalation TKT , So tight SR :",
     answer: "• FBB Tech Problem>Wrong card and port>Major Fault after SLA",
@@ -887,6 +914,125 @@ let pro = [
       "Cst has TKT Data Down with Update ( Morkzat ) , So CCA will inform cst with SLA :",
     answer: "• 3 Days",
   },
+  {
+    title: "In case cst has (No service was found) log on NST TOOL your action",
+
+    answer: "• Escalate to SLS",
+  },
+  {
+    title: "Which actions is supported by HDM tool ??",
+
+    answer: "• Reset CPE",
+  },
+  {
+    title:
+      "CCA should check the internet service when the cpe obtain wan ip in unable to obtain ip case",
+
+    answer: "• True",
+  },
+  {
+    title:
+      "If unable to obtain ip problem solved after make reset and configuration it's mandatory to check MAC address and create suitable sr",
+
+    answer: "• True",
+  },
+  {
+    title:
+      "Unable to obtain ip case escalated to the responsible team, and the tkt have update MAC not Learned what is the right action",
+
+    answer: "• اعداة ضبط مصنع و عمل اعدادات للراوتر",
+  },
+  {
+    title:
+      "Cst has logical case and subscribed in option pack service,, the CCA must transfer cst to option pack Q ?",
+
+    answer: "• True",
+  },
+  {
+    title: "CCA can check if cst subscribed in any VAS from",
+
+    answer: "• BSS Tool",
+  },
+  {
+    title: "All CPE's  support HDM function",
+
+    answer: "• False",
+  },
+  {
+    title:
+      "if the cst is new subscriber and had unable to obtain ip case and we found that Mac learned on matrix tool what is the next step",
+
+    answer: "• إعادة ضبط مصنع و عمل الاعدادات",
+  },
+  {
+    title:
+      "In case we found (Accepted logs with wrong user and suspended account ) in NST Tool …what is your action",
+
+    answer: "• Reconfigure the cpe with the right credentials",
+  },
+  {
+    title: "For Escalation Browsing all site case status Will be  ?",
+
+    answer: "• open",
+  },
+  {
+    title: "For Escalation Browsing (Wrong Nas Port ID) case status Will be  ?",
+
+    answer: "• Waiting for response",
+  },
+  {
+    title:
+      "Before escalation browsing all site case you should Activate ping option on CPE page - if available",
+
+    answer: "• True",
+  },
+  {
+    title: "if cst has redirection  tkt in SLS Pool and cst call after sla",
+
+    answer: "• Will renew sla 72 h",
+  },
+  {
+    title: "ipconfig command  responsible  to delete all DNS caches",
+
+    answer: "• False",
+  },
+  {
+    title:
+      "It's not mandatory to inform Cst Ticket Number during escalation browsing case",
+
+    answer: "• FALSE",
+  },
+  {
+    title:
+      "cst has browsing certain site and after check the web through http://www.iidrn.com the web site is  down ,, next action",
+
+    answer:
+      "• Inform Customer That Might Be A Global Problem In That Site Right Now",
+  },
+  {
+    title:
+      "cst has browsing certain site and after check the web site through proxy ,,the web site is working ,, next action",
+
+    answer:
+      "• Do Trace From Route Server To Customer's Wan IP and Attach It In TTS",
+  },
+  {
+    title:
+      "IF CST make Ping Bras and result is Request timed out from BRAS IP ,,next action is",
+
+    answer: "• Check with another CPE",
+  },
+  {
+    title:
+      "customer can open YouTube / Facebook but contents doesn’t appeared ,,first step is ??",
+
+    answer: "•IF CPE accessed try to adjust MTU and DNS [WE then Google DNS",
+  },
+  {
+    title: "",
+
+    answer: "• ",
+  },
 ];
 
 function drowItem() {
@@ -911,7 +1057,6 @@ for (var num in pro) {
   n.style.fontWeight = "bold";
 }
 drowItem();
-
 let show = document.getElementById("show");
 let bd = document.getElementById("bd");
 
