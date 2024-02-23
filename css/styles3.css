@@ -129,18 +129,18 @@ section {
   overflow-y: scroll;
   margin-top: 100px;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   section {
     width: 90%;
   }
   .div2 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 5px;
-  font-size: 14px;  
-}
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+  }
 }
 
 section::-webkit-scrollbar {
@@ -152,9 +152,18 @@ section::-webkit-scrollbar {
   border-radius: 5px;
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .search-input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+}
+.input-answer {
   border: none;
   outline: none;
   box-shadow: none;
@@ -205,4 +214,22 @@ footer div img {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+}
+#box2 {
+  display: none;
+}
+#optionL {
+  text-align: center;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 0;
+  border-radius: 14px;
+  padding: 3px;
+  outline: none;
+  background-color: #8e00e6;
+  color: #fff;
+}
+input:focus:hover {
+  background-color: #dddddd4d;
+  transition: 1s;
 }
