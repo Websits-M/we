@@ -12,8 +12,12 @@ function search() {
     } else {
       product[i].style.display = "none";
     }
+    
   }
+
+
 }
+
 
 function select() {
   var optionL = document.getElementById("optionL");
@@ -126,7 +130,7 @@ let pro = [
   },
   {
     title: "In case of daley in activity WO Request CCA action will be...?",
-    answer: "• created TT and inform CST SLA 1WD",
+    answer: "• create TT and inform CST SLA 1WD",
   },
   {
     title: "Waiting service is free with WE Ardy 20",
@@ -1029,10 +1033,146 @@ let pro = [
     answer: "•IF CPE accessed try to adjust MTU and DNS [WE then Google DNS",
   },
   {
-    title: "",
+    title: "Escalation of logical instability ( No multiple login ) must be to …",
 
-    answer: "• ",
+    answer: "• SLS",
   },
+  {
+    title: "When we Escalate Logical Instability we must inform CST to leave cpe power turned on",
+
+    answer: "• TRUE",
+  },
+  {
+    title: "In case of escalation logical instability cca must inform cst with TTS ticket ID",
+
+    answer: "• TRUE",
+  },
+  {
+    title: "In case of Delay for logical instability case , which SLA will inform cst",
+
+    answer: "• from 2 to 5 Hr",
+  },
+  {
+    title: "In case cst has many accepted logs in last 24 Hr , cca must be sure that not related to restart port or cpe",
+
+    answer: "• TRUE",
+  },
+  {
+    title: "Way of Communication For Unsupported case",
+
+    answer: "• Phone call",
+  },
+  {
+    title: "When CCA follow logical instability T.S with CST , CST must connect one lap top through wireless",
+
+    answer: "• FALSE",
+  },
+  {
+    title: "in case of Delay for unsupported cases SLA will be..",
+
+    answer: "• 2 H",
+  },
+  {
+    title: "SLA for Unsupported cases is ..",
+
+    answer: "• 2 Hr",
+  },
+  {
+    title: "CCA can check Customer Pool Of His Subscription from NST :",
+
+    answer: "• Query LDAP Profile",
+  },
+  {
+    title: "Escalation Suspended Account case SLA will be :",
+
+    answer: "• 72 H",
+  },
+  {
+    title: "While Cst has ( Wrong Nas Port ID Login ) and CCA will Escalate Ticket, SO SLA will be :",
+
+    answer: "• 2:5 H",
+  },
+  {
+    title: "CCA Can Change DNS from HDM Tool Function",
+
+    answer: "• Wan Settings",
+  },
+  {
+    title: "CCA can Change Default Gateway IP Address from which HDM Function",
+
+    answer: "• DHCP Settings",
+  },
+  {
+    title: "For Escalation Browsing all site case TT Will be ?",
+
+    answer: "• Broadband->Technical->ADSL/VDSL->I Care->Browsing",
+  },
+  {
+    title: "customer can open YouTube / Facebook but contents doesn't appeared ,,first step is ??",
+
+    answer: "• IF CPE accessed try to adjust MTU and DNS [WE then Google DNS]"
+  },
+  {
+    title: "In case Customer input that he paid the package bill within 24 hours, and line is Active on BSS, and Get Online Service in matrix Not blocked.",
+
+    answer: "• Restart Port"
+  },
+  {
+    title: "WE DNS IS ?",
+
+    answer: "• 163.121.128.134 /// 163.121.128.135"
+  },
+  {
+    title: "The first priority goes to ?",
+
+    answer: "• WE DNS"
+  },
+  {
+    title: "CCA can search by account number on BSS Tool?",
+
+    answer: "• False"
+  },
+  {
+    title: "To make Sure that all Installations completed Activity Must be...?",
+
+    answer: "• Call Back To CRM"
+  },
+  {
+    title: "IF cst already Subscribed with us which Automatic TT Will be Created...?",
+
+    answer: "• Automatic TT-FBB ----- WO problem ---- CST Problem - Already Subscribed"
+  },
+  {
+    title: "CCA Can Get CST's Account Number from BSS ONLY?",
+
+    answer: "• FALSE"
+  },
+  {
+    title: "New subscription Order SLA IS ......?",
+
+    answer: "• 48 WH"
+  },
+  {
+    title: "If CST need change Package Before installation it is mandatory to CCA To Verify With Customer",
+    answer:"• True"
+  },
+  {
+    title: "Customer can get US & PW from IVR 3 times per day :",
+    answer: "• FALSE"
+  },
+  {
+    title: "If Cst Solve the problem that happened in order installation CCA action will be ...?",
+    answer: "• Add Midway Comment and create SR/inform CST SLA 1WD"
+  },
+  {
+    title: "",
+    answer: "• "
+  },
+  {
+    title: "",
+    answer: "• "
+  },
+
 ];
 
 function drowItem() {
