@@ -1,143 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE =edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Q - App</title>
-    <link rel="stylesheet" href="css/styles3.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    
-    <link rel="stylesheet" href="css/all.css" />
-  </head>
-  <body id="bd">
-    <section class="section-form">
-      <h1>Login</h1>
-      <form>
-        <input type="text" placeholder="Your Name" id="nameId"/>
-        <input type="text" placeholder="User Name" id="userName" />
-        <div class="check">
-          <input type="password" placeholder="Password" id="password" />
-        </div>
-        <input type="submit" value="Enter" id="sign-in" />
-      </form>
-    </section>
-    <div class="parent">
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      
-      <label class="logo">
-        WE
-        <i class="fa fa-braille" aria-hidden="true"></i>
-        QE</label
-      >
-      <ul id="user_info">
-        <li><i class="fa-solid fa-circle-user us"></i><a href="#" id="user"></a></li>
-        <!-- <li><a href="#" id="logout">LogOut</a></li> -->
-      </ul>
-      <ul>
-        <li><a class="active" href="index2.html"> Home</a></li>
-        <li>
-          <a
-            target="_blank"
-            translate="yes"
-            href="https://translate.google.com.eg/?hl=ar"
-            >فتح الترجمه</a
-          >
-        </li>
-        <li><a href="#">Services</a></li>
-        <li>
-          <a
-            target="_blank"
-            href="https://xceedcceg.sharepoint.com/:f:/r/sites/we-universal/Shared%20Documents/Training%20Materials/Day%2007%20-%20Tools%20and%20Follow%20Up?csf=1&web=1&e=PxtFoX"
-          >
-            Xceed</a
-          >
-        </li>
-      </ul>
-    </nav>
+let username = document.querySelector("#nameId")
 
-    <section id="home">
-      <div class="container">
+let loginSubmit = document.querySelector("#sign-in");
 
-        
-        
-        <div class="div2">
-          <div>
-            <span
-              >Mood : <i class="fa-solid fa-cloud-moon"></i>
-              <input type="checkbox" id="show"
-            /></span>
-          </div>
-          <div>
-            مُضاف <span id="n"></span> سؤال
-            <i class="fa-solid fa-upload"></i>
-          </div>
-          <select id="optionL" onchange="select()">
-            <option hidden>اختر طريقة البحث</option>
-            <option value="1">البحث بالسؤال</option>
-            <option value="2">البحث بالاجابة</option>
-          </select>
-          
-        </div>
-        <div class="container">
-          <div class="col col-sm col-md col-lg">
-            <div class="search-box" id="box1">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" placeholder="البحث بالسؤال" class="search-input" onkeyup="search()"/>
-            </div>
-            <div class="search-box" id="box2">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" placeholder="البحث بالاجابة" class="input-answer" onkeyup="answer()" />
-            </div>
-  
-            <div class="product-list">
-              <div class="product">
-                <div class="product-deatils">
-                  <h5></h5>
-                  <p><mark></mark></p>
-                  <hr />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-    </section>
+localStorage.setItem("userName", "mostafa");
+localStorage.setItem("password", "123");
 
-    <footer>
-      <p>&copy;Created By : Mostafa mahmoud</p>
-      <div><img src="images/logo-no-background.png" alt="" /></div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="login.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="JS/pass.js"></script>
-    <script src="script.js"></script>
-    <script src="JS/Script.js"></script>
-  </body>
-</html>
+// /////////////
+let userName = document.querySelector('#userName')
+let password = document.querySelector('#passward')
+
+let getUsername = localStorage.getItem("userName")
+let getPassword = localStorage.getItem("password")
+
+let nameId = document.querySelector("#nameId")
+
+loginSubmit.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (userName.value === "" || password.value === "" || nameId.value === "") {
+    Swal.fire({
+      title: "Warning!",
+      text: "Please Fill Data",
+      icon: "warning",
+    });
+  } else {
+    if (getUsername === userName.value.trim() && getPassword === password.value && username.value) {
+      // localStorage.setItem("code" , Math.floor(Math.random()*100))
+      localStorage.setItem("username" , username.value)
+      setTimeout(() => {
+        window.location = "index2.html";
+      }, 1500);
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Your work has been saved",
+        showConfirmButton: false,
+        timer: 2000,
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "User Name or Password is wrong!",
+      });
+    }
+  }
+});
+
+function togglePasswordVisibility() {
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+}
