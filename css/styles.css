@@ -104,6 +104,8 @@ body {
   /* box-shadow: 15px 15px 20px 10px #ddd; */
 }
 
+
+
 .title1 {
   font-size: 60px;
   color: #ffffff;
@@ -155,6 +157,7 @@ body {
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
+    padding: 10px;
   }
   .title1 {
     font-size: 40px;
@@ -172,7 +175,7 @@ body {
     margin: auto;
   }
   body {
-    background-image: url(../images/Pngtre.jpg);
+    background-image: url(../images/contact-img.svg) !important;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
