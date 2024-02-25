@@ -12,21 +12,37 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    
     <link rel="stylesheet" href="css/all.css" />
   </head>
   <body id="bd">
+    <section class="section-form">
+      <h1>Login</h1>
+      <form>
+        <input type="text" placeholder="Your Name" id="nameId"/>
+        <input type="text" placeholder="User Name" id="userName" />
+        <div class="check">
+          <input type="password" placeholder="Password" id="password" />
+        </div>
+        <input type="submit" value="Enter" id="sign-in" />
+      </form>
+    </section>
+    <div class="parent">
     <nav>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-
+      
       <label class="logo">
         WE
         <i class="fa fa-braille" aria-hidden="true"></i>
         QE</label
       >
-
+      <ul id="user_info">
+        <li><i class="fa-solid fa-circle-user us"></i><a href="#" id="user"></a></li>
+        <!-- <li><a href="#" id="logout">LogOut</a></li> -->
+      </ul>
       <ul>
         <li><a class="active" href="index2.html"> Home</a></li>
         <li>
@@ -50,45 +66,52 @@
     </nav>
 
     <section id="home">
-      <div class="div2">
-        <div>
-          <span
-            >Mood : <i class="fa-solid fa-cloud-moon"></i>
-            <input type="checkbox" id="show"
-          /></span>
-        </div>
-        <div>
-          مُضاف <span id="n"></span> سؤال
-          <i class="fa-solid fa-upload"></i>
-        </div>
-        <select id="optionL" onchange="select()">
-          <option hidden>اختر طريقة البحث</option>
-          <option value="1">البحث بالسؤال</option>
-          <option value="2">البحث بالاجابة</option>
-        </select>
-      </div>
       <div class="container">
-        <div class="col col-sm col-md col-lg">
-          <div class="search-box" id="box1">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="البحث بالسؤال" class="search-input" onkeyup="search()" />
-          </div>
-          <div class="search-box" id="box2">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="البحث بالاجابة" class="input-answer" onkeyup="answer()" />
-          </div>
 
-          <div class="product-list">
-            <div class="product">
-              <div class="product-deatils">
-                <h5></h5>
-                <p><mark></mark></p>
-                <hr />
+        
+        
+        <div class="div2">
+          <div>
+            <span
+              >Mood : <i class="fa-solid fa-cloud-moon"></i>
+              <input type="checkbox" id="show"
+            /></span>
+          </div>
+          <div>
+            مُضاف <span id="n"></span> سؤال
+            <i class="fa-solid fa-upload"></i>
+          </div>
+          <select id="optionL" onchange="select()">
+            <option hidden>اختر طريقة البحث</option>
+            <option value="1">البحث بالسؤال</option>
+            <option value="2">البحث بالاجابة</option>
+          </select>
+          
+        </div>
+        <div class="container">
+          <div class="col col-sm col-md col-lg">
+            <div class="search-box" id="box1">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="البحث بالسؤال" class="search-input" onkeyup="search()"/>
+            </div>
+            <div class="search-box" id="box2">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="البحث بالاجابة" class="input-answer" onkeyup="answer()" />
+            </div>
+  
+            <div class="product-list">
+              <div class="product">
+                <div class="product-deatils">
+                  <h5></h5>
+                  <p><mark></mark></p>
+                  <hr />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+     
     </section>
 
     <footer>
@@ -110,6 +133,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="login.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="JS/pass.js"></script>
     <script src="script.js"></script>
+    <script src="JS/Script.js"></script>
   </body>
 </html>
