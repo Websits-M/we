@@ -1,23 +1,32 @@
-let userName = document.querySelector("#userName");
-let passward = document.querySelector("#passward");
+let username = document.querySelector("#nameId")
 
 let loginSubmit = document.querySelector("#sign-in");
 
 localStorage.setItem("userName", "mostafa");
 localStorage.setItem("password", "123");
-getUser = localStorage.getItem("userName");
-getpassward = localStorage.getItem("password");
+
+
+// /////////////
+let userName = document.querySelector('#userName')
+let password = document.querySelector('#passward')
+
+let getUsername = localStorage.getItem("userName")
+let getPassword = localStorage.getItem("password")
+
+let nameId = document.querySelector("#nameId")
 
 loginSubmit.addEventListener("click", function (e) {
   e.preventDefault();
-  if (userName.value === "" || passward.value === "") {
+  if (userName.value === "" || password.value === "" || nameId.value === "") {
     Swal.fire({
       title: "Warning!",
       text: "Please Fill Data",
       icon: "warning",
     });
   } else {
-    if (getUser === userName.value.trim() && getpassward === passward.value) {
+    if (getUsername === userName.value.trim() && getPassword === password.value && username.value) {
+      // localStorage.setItem("code" , Math.floor(Math.random()*100))
+      localStorage.setItem("username" , username.value)
       setTimeout(() => {
         window.location = "index2.html";
       }, 1500);
@@ -39,9 +48,9 @@ loginSubmit.addEventListener("click", function (e) {
 });
 
 function togglePasswordVisibility() {
-  if (passward.type === "password") {
-    passward.type = "text";
+  if (password.type === "password") {
+    password.type = "text";
   } else {
-    passward.type = "password";
+    password.type = "password";
   }
 }
