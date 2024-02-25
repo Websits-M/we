@@ -229,7 +229,101 @@ footer div img {
   background-color: #8e00e6;
   color: #fff;
 }
-input:focus:hover {
-  background-color: #dddddd4d;
-  transition: 1s;
+input:focus {
+  outline: 3px solid #8e00e6;
+  border-radius: 10px;
+}
+mark{
+  background-color: red;
+}
+.parent{
+  display: none;
+  /* border: 2px solid red; */
+
+
+}
+.section-form {
+  width: 550px;
+  height: 380px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 8px;
+  padding: 12px;
+  animation: slide-in 2s forwards;
+  box-shadow: 2px 2px 5px 5px #000;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(0, -50%);
+    opacity: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+
+.section-form h1 {
+  text-align: center;
+  color: #e2dfdf;
+  font-weight: 900;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 10px #fff;
+}
+
+form input {
+  display: block;
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+form input[type="submit"]:hover {
+  opacity: 0.5;
+}
+form input[type="submit"] {
+  font-weight: 800;
+}
+
+.check {
+  display: flex;
+  position: relative;
+}
+
+.check #show {
+  height: 27px;
+  width: 30px;
+  position: absolute;
+  right: 5px;
+  top: 11px;
+}
+
+@media (max-width: 768px) {
+  .section-form {
+    width: 90%;
+  }
+}
+.us{
+  font-size: 25px;
+  color: #fff;
 }
