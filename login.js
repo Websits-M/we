@@ -31,7 +31,7 @@ loginSubmit.addEventListener("click", function (e) {
         window.location = "index2.html";
       }, 1500);
       Swal.fire({
-        position: "top-end",
+        position: "top-center",
         icon: "success",
         title: "Your work has been saved",
         showConfirmButton: false,
