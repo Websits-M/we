@@ -3,7 +3,7 @@ let username = document.querySelector("#nameId")
 let loginSubmit = document.querySelector("#sign-in");
 
 localStorage.setItem("userName", "mostafa");
-localStorage.setItem("password", "123");
+localStorage.setItem("password", "12300");
 
 
 // /////////////
