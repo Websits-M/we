@@ -1,3 +1,5 @@
+
+
 function search() {
   let searchBar = document
     .querySelector(".search-input")
@@ -1168,10 +1170,10 @@ let pro = [
     title: "",
     answer: "• "
   },
-  {
-    title: "",
-    answer: "• "
-  },
+  // {
+  //   title: "",
+  //   answer: "• "
+  // },
 
 ];
 
@@ -1209,3 +1211,36 @@ show.onchange = function () {
   home.style.borderWidth = show.checked ? "10px" : "0";
   home.style.border = show.checked ? "solid" : "0";
 };
+
+
+
+localStorage.setItem("userName", "mostafa");
+localStorage.setItem("password", "123");
+// /////////////
+let userName = document.querySelector('#userName')
+let password = document.querySelector('#password')
+
+let getUsername = localStorage.getItem("userName")
+let getPassword = localStorage.getItem("password")
+
+let parent = document.querySelector(".parent")
+let form = document.querySelector(".section-form")
+let addItem = localStorage.getItem("username")? localStorage.getItem("username") : "";
+
+window.onload = function run(){
+  if(localStorage.getItem("username")){
+   
+  }else{
+    window.location = "index.html"
+    
+  }
+}
+run()
+
+/////////////////////////////////
+
+
+
+
+
+
