@@ -117,6 +117,7 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
+
 }
 
 section {
@@ -215,7 +216,7 @@ footer div img {
   justify-content: space-between;
   padding: 15px;
 }
-#box2 {
+#box2{
   display: none;
 }
 #optionL {
@@ -233,15 +234,8 @@ input:focus {
   outline: 3px solid #8e00e6;
   border-radius: 10px;
 }
-mark{
-  background-color: red;
-}
-.parent{
-  display: none;
-  /* border: 2px solid red; */
 
 
-}
 .section-form {
   width: 550px;
   height: 380px;
@@ -326,4 +320,8 @@ form input[type="submit"] {
 .us{
   font-size: 25px;
   color: #fff;
+}
+form p{
+  color: #fff;
+  text-align: center;
 }
