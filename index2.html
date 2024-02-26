@@ -111,6 +111,8 @@
         #check:checked ~ ul {
           left: 0;
         }
+       
+        
       }
       .us{
         font-size: 25px;
@@ -124,17 +126,12 @@
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-
-      <label class="logo">
-        WE
-        <i class="fa fa-braille" aria-hidden="true"></i>
-        Traninng</label
-      >
+       <label class="logo">WE<i class="fa fa-braille" aria-hidden="true"></i>Traninng</label>
+  
+          
+    
       <ul id="user_info">
-        <li><i class="fa-solid fa-circle-user us"></i><a href="index2.html" id="user"></a></li>
-        <!-- <li><a href="#" id="logout">LogOut</a></li> -->
-      </ul>
-      <ul>
+        <li><i class="fa-solid fa-circle-user us"></i><a class="active" href="index2.html" id="user"></a></li>
         <li><a class="active" href="#" id="sr" onclick="{add}"> Home</a></li>
         <li><a href="index3.html" title="Search App">Services</a></li>
       </ul>
@@ -153,9 +150,9 @@
       </div>
     </div>
     <!-- --------------------------------------------------------------- -->
-    <!-- <script src="JS/Script.js"></script> -->
-    <!-- <script src="login.js"></script> -->
-      <script src="JS/Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script src="JS/user.js"></script>
 
    
   </body>
