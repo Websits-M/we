@@ -7,6 +7,15 @@ let links = document.querySelector("#links")
 let logoutBtn = document.querySelector("#logout")
 
 
+function run(){
+  if(localStorage.getItem("username")){
+     
+  }else{
+    window.location = "index.html"
+  }
+}
+run()
+
 if(localStorage.getItem("username")){
     // links.remove()
     userData.style.color ="yollow"
@@ -14,12 +23,7 @@ if(localStorage.getItem("username")){
     userData.innerHTML = localStorage.getItem("username")
     userData.style.textTransform = "capitalize"
 }
-// logoutBtn.addEventListener("click" , function(){
-//     localStorage.clear()
-//     setTimeout(()=>{
-//         // window.location = "register.html"
-//     } , 1000)
-// })
+
 
 
 let sr = document.querySelector("#btn");
@@ -27,7 +31,11 @@ let sr = document.querySelector("#btn");
 sr.addEventListener("click", add);
 
 function add() {
-  // alert("لازال قيد التحديث");
+  Swal.fire({
+    title: "Warning!",
+    text: "لازال قيد التحديث",
+    icon: "warning",
+  });
 }
 
 let close = document.querySelector("#close");
