@@ -15,6 +15,16 @@ let getPassword = localStorage.getItem("password")
 
 let nameId = document.querySelector("#nameId")
 
+
+function run(){
+  if(localStorage.getItem("username")){
+      window.location = "index2.html";
+  }
+}
+run()
+
+
+
 loginSubmit.addEventListener("click", function (e) {
   e.preventDefault();
   if (userName.value === "" || password.value === "" || nameId.value === "") {
@@ -25,7 +35,7 @@ loginSubmit.addEventListener("click", function (e) {
     });
   } else {
     if (getUsername === userName.value.trim() && getPassword === password.value && username.value) {
-      // localStorage.setItem("code" , Math.floor(Math.random()*100))
+      localStorage.setItem("code" , Math.floor(Math.random()*100))
       localStorage.setItem("username" , username.value)
       setTimeout(() => {
         window.location = "index2.html";
