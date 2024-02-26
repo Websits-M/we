@@ -7,6 +7,7 @@ let links = document.querySelector("#links")
 let logoutBtn = document.querySelector("#logout")
 
 
+
 function run(){
   if(localStorage.getItem("username")){
      
@@ -17,14 +18,16 @@ function run(){
 run()
 
 if(localStorage.getItem("username")){
-    // links.remove()
     userData.style.color ="yollow"
     userData.style.fontWeight = "900"
     userData.innerHTML = localStorage.getItem("username")
     userData.style.textTransform = "capitalize"
 }
 
-
+logoutBtn.addEventListener("click" , logout)
+function logout(){
+  localStorage.clear()
+}
 
 let sr = document.querySelector("#btn");
 
@@ -50,3 +53,5 @@ gets.addEventListener('click' , get)
 function get(){
 window.location = "index3.html"
 }
+
+
