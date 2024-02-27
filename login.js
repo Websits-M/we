@@ -30,7 +30,7 @@ loginSubmit.addEventListener("click", function (e) {
       icon: "warning",
     });
   } else {
-    if (userName.value.trim() === "mahmoud22" && password.value === "0722" || userName.value.trim() === "mostafa" && password.value === "66123455") {
+    if (userName.value.trim() === "mahmoudAli22" && password.value === "0722" || userName.value.trim() === "mostafa" && password.value === "66123455") {
       localStorage.setItem("code" , Math.floor(Math.random()*100))
       localStorage.setItem("username" , userName.value)
       setTimeout(() => {
