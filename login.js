@@ -1,9 +1,6 @@
-let username = document.querySelector("#nameId")
+let yourName = document.querySelector("#nameId")
 
 let loginSubmit = document.querySelector("#sign-in");
-
-localStorage.setItem("userName", "mostafa");
-localStorage.setItem("password", "12300");
 
 
 // /////////////
@@ -13,7 +10,6 @@ let password = document.querySelector('#passward')
 let getUsername = localStorage.getItem("userName")
 let getPassword = localStorage.getItem("password")
 
-let nameId = document.querySelector("#nameId")
 
 
 function run(){
@@ -27,16 +23,16 @@ run()
 
 loginSubmit.addEventListener("click", function (e) {
   e.preventDefault();
-  if (userName.value === "" || password.value === "" || nameId.value === "") {
+  if (userName.value === "" || password.value === "" ) {
     Swal.fire({
       title: "Warning!",
       text: "Please Fill Data",
       icon: "warning",
     });
   } else {
-    if (getUsername === userName.value.trim() && getPassword === password.value && username.value) {
+    if (userName.value.trim() === "mahmoud22" && password.value === "0722" || userName.value.trim() === "mostafa" && password.value === "66123455") {
       localStorage.setItem("code" , Math.floor(Math.random()*100))
-      localStorage.setItem("username" , username.value)
+      localStorage.setItem("username" , userName.value)
       setTimeout(() => {
         window.location = "index2.html";
       }, 1500);
