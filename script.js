@@ -1475,7 +1475,7 @@ function drowItem() {
     return `
         <div class="product">
           <div class="product-deatils">
-          <h4>${item.title}</h4>
+          <h4><i class="fa-solid fa-circle-info fa-sm"></i> ${item.title}</h4>
             <p><i class="fa-solid fa-circle-check fa-lg" style="color: #5bc876;"></i> <mark>${item.answer}</mark></p>
             <hr>
           </div>
