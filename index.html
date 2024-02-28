@@ -1,45 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.css"/>
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="index3.html">
-  </head>
-  <body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-   
-      <nav>  
-        <label class="logo">
-          WE
-          <i class="fa fa-braille" aria-hidden="true"></i>
-          TR</label
-        >
-      </nav>
-      <div class="container">
+body {
+  color: white;
+  background-color: #ddd;
+  margin: 0;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-    <section class="section-form">
-      <h1>Login User</h1>
-      <form>
-        <input type="text" placeholder="User Name" id="userName" />
-        <div class="check">
-          <input type="password" placeholder="Password" id="passward" />
-          <input
-            title="Show passward"
-            type="checkbox"
-            id="show"
-            onclick="togglePasswordVisibility()"
-          />
-        </div>
-        <input type="submit" value="Enter" id="sign-in" />
-      </form>
-    </section>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+nav {
+  background: linear-gradient(
+    to right,
+    rgb(21, 3, 113),
+    rgb(76, 0, 255),
+    rgb(96, 18, 141)
+  );
 
-    <script src="login.js"></script>
-  </body>
-</html>
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  opacity: 0.8;
+  margin-bottom: 100px;
+}
+
+label.logo {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 18px;
+    padding-left: 50px;
+}
+}
+
+.section-form {
+  width: 550px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 8px;
+  padding: 12px;
+  animation: slide-in 2s forwards;
+  box-shadow: 2px 2px 5px 5px #000;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(0, -50%);
+    opacity: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+
+.section-form h1 {
+  text-align: center;
+  color: #e2dfdf;
+  font-weight: 900;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 10px #fff;
+}
+
+form input {
+  display: block;
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+form input[type="submit"]:hover {
+  opacity: 0.5;
+}
+form input[type="submit"] {
+  font-weight: 800;
+}
+
+.check {
+  display: flex;
+  position: relative;
+}
+
+.check #show {
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+}
+
+@media (max-width: 768px) {
+  .section-form {
+    width: 90%;
+  }
+}
