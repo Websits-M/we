@@ -171,12 +171,14 @@ section::-webkit-scrollbar {
   align-items: center;
   padding: 10px 2px;
 }
+main{
+  height: 100vh;
+  border: 2px solid red;
+}
 footer {
   background-color: #a511efb6;
   height: 150px;
   margin-top: 50px;
-  display: flex;
-  flex-direction: column;
 
 }
 
@@ -190,15 +192,11 @@ footer p {
 }
 footer div {
   text-align: center;
-  height: 100%;
-
 }
 footer div img {
   width: 110px;
 }
-#home{
-  width: 60%;
-}
+
 .div2 {
   display: flex;
   justify-content: space-between;
@@ -240,7 +238,7 @@ footer div img {
 
 @media (max-width: 768px) {
   #home{
-    width: 95%;
+    width: 90%;
   }
   .div2 {
     font-size: 14px;
@@ -296,7 +294,6 @@ footer div img {
   }
  
 } 
-
 #box2{
   display: none;
 }
