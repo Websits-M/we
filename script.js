@@ -151,11 +151,6 @@ let pro = [
   },
   {
     title:
-      "CCA Must make TT ...in case no technical data found on matrix tool after call back to CRM ",
-    answer: "create Matrix TT",
-  },
-  {
-    title:
       "in instillation follow up cycle follow up team will follow with CST With...SLA, If cast has problem during instillation cycle from his side..",
     answer: "24 H",
   },
@@ -207,10 +202,6 @@ let pro = [
   {
     title: "The Telephone cable ends with RJ :...",
     answer: "11",
-  },
-  {
-    title: "To Review All created tickets CCA can choose...?",
-    answer: "Trouble Ticket",
   },
   {
     title:
@@ -1257,7 +1248,7 @@ let pro = [
     answer: "FBB Tech Problem >> Outage - Data Down >> No estimated time"
   },
   {
-    title: "customer  has Port Time out on Matrix , Customer is UP ,  , no outage , and has voice down ,, right action is :",
+    title: "customer has Port Time out on Matrix , Customer is UP ,  , no outage , and has voice down ,, right action is :",
     answer: "handle Port Time out  and voice down "
   },
   {
@@ -1509,12 +1500,8 @@ let pro = [
     answer: "Check Download Rate In Safe Mode"
   },
   {
-    title: "CST has Has iSSlJe in Streaming your Action",
+    title: " CST has slowness issue in Streaming  your Action :",
     answer: "Check streaming on YouTube on Auto Quality"
-  },
-  {
-    title: "CST has Has issue in Streaming your Action :",
-    answer: "Check streaming on YOUTUbe on Auto Quality"
   },
   {
     title: "If Download Rate Accepted after check it from Safe Mode CCA Action :",
@@ -1580,15 +1567,90 @@ let pro = [
     title: "SLA for Technical concession case",
     answer: "2 WH"
   },
+  {
+    title: "in case customer is asking about wps , So the right SR will be :",
+    answer: "FBB Tech inquiry>Technical Inquiry>CPE-WPS"
+  },
+  {
+    title: "In case cst has slowness ticket in NOC  escalated @ 1 PM and call us to Follow @ 9 PM right SR will Be",
+    answer: "FBB Tech Problem > Slowness > Follow up after SLA"
+  },
+  {
+    title: "If CST using browser in download from first file  and download rate not accepted CCA Action",
+    answer: "Need to download 3 files"
+  },
+  {
+    title: " customer ask to hide WIFI SSID  , action done from HDM ,, right SR is :",
+    answer: "FBB Tech Problem —Wireless Hidden SSID Name"
+  },
+  
+  {
+    title: "CST has Wireless problem , he connected to his WLAN but no internet access , First  action is :",
+    answer: "Check if the internet is working via cable or not"
+  },
+  
+  {
+    title: "We can check slowness in browsing via",
+    answer: "Te.eg"
+  },
+  
+  {
+    title: "CST Complaint From Slowness issue Trace Result 1st Hop = 5MS CCA Action :",
+    answer: "Inform customer that it is CPE problem"
+  },
+  
+  {
+    title: "OTS Sla Will Be :",
+    answer: "5WD"
+  },
+  {
+    title: "In case cst his pop Congested CCA : will inform cst",
+    answer: "في مشكلة حاليا في اجهزتنا الموجودة في السنترال بس مفيش حاليا وقت متوقع لحل المشكلة ممكن حضرتك تتابع معنا بعد اسبوعين"
+  },
+  {
+    title: "Line not supported by assia and cst suffering from instability , DSL Led disconnecting when service became down, its mean cst has Logical instability",
+    answer: "False"
+  },
+  {
+    title: "if CST need to make early renewal CCA should advise him to use mobile app & E-care & IVR for easily way next time",
+    answer: "TRUE"
+  },
+  {
+    title: "if the customer paid through E care or Mobile App and the payment is not clear we will inform CST to Call us After 1 Hour from Payment",
+    answer: "TRUE"
+  },
+  {
+    title: "in case CST recharge by mistake CCA will create IR with sla :",
+    answer: "30 min"
+  },
+  {
+    title: "CST charged Extra Quota and call us after 3 Hr and he didn’t restore his original speed,, CCA Action",
+    answer: "Restart Port هنعمل ريستارت للبورت"
+  },
+  {
+    title: "We can send fraction request for cst maximum",
+    answer: "3 LE"
+  },
+  {
+    title: "CST paid his bill through ( Fawry ) Machine and balance did not add to his account on BSS, No outage was found, CCA Action :",
+    answer: "Will create TT with 48WHs SLA"
+  },
+  {
+    title: "if cst asked about his balance CCA will create SR :",
+    answer: "FBB Non-Tech Inquiry--Billing--Balance"
+  },
+  {
+    title: "SLA for Enabled By Mistake TT is",
+    answer: "2 WH"
+  },
+  {
+    title: "In case customer is inquiring about his offer and already renewed on BBS automatically CCA will create SR :",
+    answer: "FBB Non-Tech Inquiry-- Billing--​Offer Renewed"
+  },
   // {
   //   title: "",
   //   answer: ""
   // },
-  
-  
- 
-  
-
 ];
 
 function drowItem() {
