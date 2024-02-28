@@ -5,7 +5,10 @@
   text-decoration: none;
   list-style: none;
 }
+
 body {
+  /* background-color: #333; */
+
   font-family: Arial;
 }
 nav {
@@ -126,7 +129,7 @@ section {
   overflow-y: scroll;
   margin-top: 100px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   section {
     width: 90%;
   }
@@ -219,7 +222,6 @@ input:focus {
   outline: 3px solid #8e00e6;
   border-radius: 10px;
 }
-
 @media (max-width: 768px) {
   .section-form {
     width: 90%;
