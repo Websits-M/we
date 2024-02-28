@@ -30,7 +30,7 @@ loginSubmit.addEventListener("click", function (e) {
       icon: "warning",
     });
   } else {
-    if (userName.value.trim() === "mahmoudAli22" && password.value === "0722" || userName.value.trim() === "mostafa" && password.value === "66123455" || userName.value.trim() === "AhmedDrahim" && password.value === "4206" || userName.value.trim() === "osamaAhmed" && password.value === "5825" || userName.value.trim() === "abdelrhmanAshraf" && password.value === "4208" || userName.value.trim() === "totySalem" && password.value === "8630" || userName.value.trim() === "nermeenN" && password.value === "5801" || userName.value.trim() === "Ahmed94" && password.value === "2694" || userName.value.trim() === "AmiraRamadan" && password.value === "5824") {
+    if (userName.value.trim() === "mahmoudAli22" && password.value === "0722" || userName.value.trim() === "mostafa" && password.value === "66123455" || userName.value.trim() === "AhmedDrahim" && password.value === "4206" || userName.value.trim() === "osamaAhmed" && password.value === "5825" || userName.value.trim() === "abdelrhmanAshraf" && password.value === "4208" || userName.value.trim() === "totySalem" && password.value === "8630" || userName.value.trim() === "nermeenN" && password.value === "5801" || userName.value.trim() === "Ahmed94" && password.value === "2694" || userName.value.trim() === "AmiraRamadan" && password.value === "5824" || userName.value.trim() === "IbrahemMohamed" && password.value === "5979") {
       localStorage.setItem("code" , Math.floor(Math.random()*100))
       localStorage.setItem("username" , userName.value)
       setTimeout(() => {
