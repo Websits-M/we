@@ -1540,6 +1540,46 @@ let pro = [
     title: "If CST using IDM and download rate is not accepted from the first file CCA Action :",
     answer: "Check download with Safe Mode"
   },
+  {
+    title: "we will call cst in the case of approved concession",
+    answer: "FALSE"
+  },
+  {
+    title: "We Can compensate cst has suspend account",
+    answer: "FALSE"
+  },
+  {
+    title: "if cst ask about stolen cable concession and no data and voice down tkt on TTS ,your action",
+    answer: "we will create TT and inform cst he will receive call or sms within 21 WD"
+  },
+  {
+    title: "The compensation request can be submitted starting from ... for outage issue",
+    answer: "12 h"
+  },
+  {
+    title: "if cst ask about concession and no outage id on CS T 360 and no bss SR related to outage we must check change location in matrix logs",
+    answer: "TRUE"
+  },
+  {
+    title: "complain concession will be created from",
+    answer: "complain team or Team leaders"
+  },
+  {
+    title: "The compensation Cst For Outage starting from",
+    answer: "12 hours"
+  },
+  {
+    title: "concession complain will be Add-ons",
+    answer: "True"
+  },
+  {
+    title: "we can compensate CST for Tkt Wireless issue",
+    answer: "False"
+  },
+  {
+    title: "SLA for Technical concession case",
+    answer: "2 WH"
+  },
   // {
   //   title: "",
   //   answer: ""
