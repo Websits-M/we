@@ -36,10 +36,7 @@ function select() {
   }
 }
 function answer() {
-  let searchAnswer = document
-    .querySelector(".input-answer")
-    .value.toUpperCase()
-    .trim();
+  let searchAnswer = document.querySelector(".input-answer").value.toUpperCase().trim();
   let productlist = document.querySelector(".product-list");
   let product = document.querySelectorAll(".product");
   let productName = document.getElementsByTagName("p");
@@ -1460,9 +1457,93 @@ let pro = [
     answer: "Act as outage rules"
   },
   {
-    title: "",
-    answer: ""
+    title: "Cst can Get compensation for any ticket with :",
+    answer: "Balance Or Free Quota as per cst need"
   },
+  {
+    title: "if cst ask about stolen cable concession and found data and voice down tkt on TTS ,your action",
+    answer: "Follow Technical concession process"
+  },
+  {
+    title: "In Case cst Refused Concession Result CCA Action Will create TT and should Mention",
+    answer: "Secondary mobile & TT serial number"
+  },
+  {
+    title: "SLA For Technical Concession Revalidation   Will Be",
+    answer: "24H"
+  },
+  {
+    title: "In case Normal  cst has Ticket data and voice down with Tittle  (Major Fault Problem ) and call us asked about Concession CCA Right Action",
+    answer: "Create TT  ( FBB Non Technical Request>Billing Adjustment >Tech Concession Global problem or outage )"
+  },
+  {
+    title: "IF CST not satisfied about concession result we will ….",
+    answer: "Create TT and inform cst 24 h"
+  },
+  {
+    title: "Telephonet Cst call us Today and  has Ticket BLQ Closed in 1-3-2022 and need compensation about his ticket CCA Action",
+    answer: "Inform cst Concession Process and Create(FBB Non-Tech Inquiry>Billing Adjustment>Technical"
+  },
+  {
+    title: "We can compensate cst for tkt closed since …..",
+    answer: "3  months"
+  },
+  {
+    title: "We can compensate cst about not paid period",
+    answer: "False"
+  },
+  {
+    title: "if there is no outage ID From CST360 , next step",
+    answer: "we will check BSS SR related to outage"
+  },
+  {
+    title: "CST need to subscribe in Option pack service CCA Action :",
+    answer: "There is no new subscription for Option Pack until further notice"
+  },
+  {
+    title: "Check POP Utilization Status From :",
+    answer: "Matrix Tool"
+  },
+  {
+    title: "After follow slowness case T S, Customer download not accepted CCA Action :",
+    answer: "Check Download Rate In Safe Mode"
+  },
+  {
+    title: "CST has Has iSSlJe in Streaming your Action",
+    answer: "Check streaming on YouTube on Auto Quality"
+  },
+  {
+    title: "CST has Has issue in Streaming your Action :",
+    answer: "Check streaming on YOUTUbe on Auto Quality"
+  },
+  {
+    title: "If Download Rate Accepted after check it from Safe Mode CCA Action :",
+    answer: "Inform the customer that the problem in his os"
+  },
+  {
+    title: "Slowness Case Escalated To :",
+    answer: "NOC"
+  },
+  {
+    title: "In case cst has Ping result from Google IP 35% , and there was packet loss from CPE IP , and the problem solved after make Reset & Reconfigure , So the right SR will be :",
+    answer: "Logical Instability"
+  },
+  {
+    title: "Escalation Speed Variance case SLA will be :",
+    answer: "72 Working Hour"
+  },
+  {
+    title: "Before troubleshooting Slowness case CCA should inform customer to close all opened applications that are using the internet connection :",
+    answer: "TRUE"
+  },
+  {
+    title: "If CST using IDM and download rate is not accepted from the first file CCA Action :",
+    answer: "Check download with Safe Mode"
+  },
+  // {
+  //   title: "",
+  //   answer: ""
+  // },
   
   
  
