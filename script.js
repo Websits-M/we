@@ -1,10 +1,7 @@
 
 
 function search() {
-  let searchBar = document
-    .querySelector(".search-input")
-    .value.toUpperCase()
-    .trim();
+  let searchBar = document.querySelector(".search-input").value.toUpperCase().trim();
   let productlist = document.querySelector(".product-list");
   let product = document.querySelectorAll(".product");
   let productName = document.getElementsByTagName("h4");
@@ -524,10 +521,6 @@ let pro = [
     answer: "Call only",
   },
   {
-    title: "Power led not existed",
-    answer: "power led not working or working with red color",
-  },
-  {
     title:
       "In Case CCA will Re-escalate WCAP to IU as a second escalation , So the right SLA is :",
     answer: "1 Day",
@@ -855,11 +848,6 @@ let pro = [
   },
   {
     title:
-      "Extra Quota ( Recurring Recharge ) renews every month automatically",
-    answer: "TRUE",
-  },
-  {
-    title:
       "Customer Follow up his ticket (Wrong Card and port) and the TKT has update Major Fault passed SLA and still the same Update After Re-Escalation TKT , So tight SR :",
     answer: "FBB Tech Problem>Wrong card and port>Major Fault after SLA",
   },
@@ -926,12 +914,6 @@ let pro = [
   },
   {
     title:
-      "If unable to obtain ip problem solved after make reset and configuration it's mandatory to check MAC address and create suitable sr",
-
-    answer: "True",
-  },
-  {
-    title:
       "Unable to obtain ip case escalated to the responsible team, and the tkt have update MAC not Learned what is the right action",
 
     answer: "اعداة ضبط مصنع و عمل اعدادات للراوتر",
@@ -957,12 +939,6 @@ let pro = [
       "if the cst is new subscriber and had unable to obtain ip case and we found that Mac learned on matrix tool what is the next step",
 
     answer: "إعادة ضبط مصنع و عمل الاعدادات",
-  },
-  {
-    title:
-      "In case we found (Accepted logs with wrong user and suspended account ) in NST Tool …what is your action",
-
-    answer: "Reconfigure the cpe with the right credentials",
   },
   {
     title: "For Escalation Browsing all site case status Will be  ?",
@@ -1156,7 +1132,7 @@ let pro = [
   },
  
   {
-    title: "Ping -t command used to ...",
+    title: "Ping -t command is used to ...",
     answer: "calculate packet loss percentage"
   },
   {
@@ -1372,10 +1348,6 @@ let pro = [
     answer: "CCA will Re-escalate the ticket to IU with updating the customer's input"
   },
   {
-    title: "In Case CCA Check HDM Tool and found it offline so CCA right action",
-    answer: "Restart Port"
-  },
-  {
     title: "Customer POP Utilization Status Within Ratio CCA follow with cst Slowness Case , so CCA right action :",
     answer: "Stop troubleshooting and Inform customer with script"
   },
@@ -1440,7 +1412,7 @@ let pro = [
     answer: "3 WD"
   },
   {
-    title: "In case BSS became down within troubleshooting with customer , CCA will update full troubleshooting steps done on I-Report TKT",
+    title: "In case BSS became down within troubleshooting with customer , CCA will update full troubleshooting steps done on I-Report TKT." || "In case BSS became down within troubleshooting with customer , CCA will update full troubleshooting steps done on I-Report TKT",
     answer: "TRUE"
   },
   {
@@ -1506,10 +1478,6 @@ let pro = [
   {
     title: "If Download Rate Accepted after check it from Safe Mode CCA Action :",
     answer: "Inform the customer that the problem in his os"
-  },
-  {
-    title: "Slowness Case Escalated To :",
-    answer: "NOC"
   },
   {
     title: "In case cst has Ping result from Google IP 35% , and there was packet loss from CPE IP , and the problem solved after make Reset & Reconfigure , So the right SR will be :",
@@ -1647,11 +1615,506 @@ let pro = [
     title: "In case customer is inquiring about his offer and already renewed on BBS automatically CCA will create SR :",
     answer: "FBB Non-Tech Inquiry-- Billing--​Offer Renewed"
   },
+  {
+    title: "If there is an error in the data on the Matrix (for example, if the government code is not the same as the Order) ,, right action is : ",
+    answer: "will create FBB Non Technical Request  >> Internet Service >> Matrix Correction"
+  },
+  {
+    title: "if the cst can't make any TS steps what is the suitable sr ? noting that we help our cst as much as we can",
+    answer: "FBB Tech Problem>Unable to Obtain IP>CST can not troubleshoot"
+  },
+  {
+    title: "If CST informed that WE change his\her phone number but we didn’t found any order on system. What action needed ?",
+    answer: "Create TT"
+  },
+  {
+    title: "if cst problem solved without any TS from our side and the line has no any technical issue what is the suitable sr",
+    answer: "FBB Tech Problem>Unable to obtain IP>Solved without T.S"
+  },
+  {
+    title: "Customer has outage Major Fault and number belongs to Haya Karima  ,,  SLA is",
+    answer: "5 days"
+  },
+  {
+    title: "IF CST not satisfied about concession we will ….",
+    answer: "Create TT and inform cst 24 h"
+  },
+  {
+    title: "In Case CCA Check HDM Tool and found it offline so CCA right action",
+    answer: "Restart Port"
+  },
+  {
+    title: "In case the customer has ticket in 3rd level pool at the same time the pop has related outage ,, your action is :",
+    answer: "inform customer by the 3rd level and outage  SLA "
+  },
+  {
+    title: "If CST make Change phone number with same ADSL number but internet service is not working. What is the right action ?",
+    answer: "Handle case as a technical problem"
+  },
+  {
+    title: "In Case CST has enabled account On MATRIX Tool and at the same time CST has Suspended Service on NST Tool  ....  you will remove the suspension from ",
+    answer: "CST 360"
+  },
+  {
+    title: "in browsing case adsl led must be",
+    answer: "UP"
+  },
+  {
+    title: "After Cst recharges extra quota cst will restore his original speed within…",
+    answer: "1 H"
+  },
+  {
+    title: "ll CPE's  support HDM function",
+    answer: "False"
+  },
+  {
+    title: "Extra Quota ( Recurring Recharge ) renews every month automatically",
+    answer: "TRUE"
+  },
+  {
+    title: "In case we found (Accepted logs with wrong user and suspended account ) in NST Tool …what is your action ",
+    answer: "Reconfigure the cpe with the right credentials"
+  },
+  {
+    title: "if cst has unable to obtain ip problem and cst not beside his cpe the suitable sr is",
+    answer: "FBB Tech Problem>Unable To Obtain>Not beside CPE"
+  },
+  {
+    title: "first step in Redirection page case",
+    answer: "Restart port"
+  },
+  {
+    title: "CST can make change package Before Due Date Via ……",
+    answer: "All of the above = All of the above + Stores + Call Center"
+  },
+  {
+    title: "Before escalation of logical instability, must mention if on call : (Yes) OR   (No",
+    answer: "TRUE"
+  },
+  {
+    title: "Escalation Browsing Certain Site case TT will be ?",
+    answer: "Broadband -> Technical -> ADSL/VDSL -> MCU Call Center -> Browsing"
+  },
+  {
+    title: "While Following Slowness Case With cst has Ping result from Google IP 35% next step will Ping Cpe Ip ,, that mean Cst Issue Is ",
+    answer: "Logical Instability"
+  },
+  {
+    title: "incase cst has (wrong NAS Port ID ) on nst logs and we will escalate the sla will be :",
+    answer: "2:5 H"
+  },
+  {
+    title: "No required paper needed for changing package via stores ?",
+    answer: "FALSE"
+  },
+  {
+    title: "In case customer hasn't Password on CST 360 , right SR is : ",
+    answer: "FBB Tech Inquiry >> ​User name and Password  >> ​No Password on CST 360"
+  },
+  {
+    title: "we can compensate CST  for tkt",
+    answer: "data down"
+  },
+  {
+    title: "if cst ask about concession and no outage id on CST360 and no bss SR related to outage we must check change location in matrix logs ",
+    answer: "TRUE"
+  },
+  {
+    title: "While Following Logical Instability Case( No Multiple logs)  with Cst : we found packet loss from cpe IP = 0 % after , we found packet loss from google was = 35% ,, CCA Action",
+    answer: "Escalate to SLS"
+  },
+  {
+    title: "CCA can handle any technical issue with cst if subscribe on Family Service :",
+    answer: "FALSE"
+  },
+  {
+    title: "we can create outage concession  starting from 12 H for case ",
+    answer: "Data down outage"
+  },
+  {
+    title: "incase we need to escalate unable to obtain ip case at 2 PM, its not mandatory to ask cst about ON Call before escalation ",
+    answer: "True"
+  },
+  {
+    title: "IF Redirection page Case not solved tkt SLA will be ",
+    answer: "72 H"
+  },
+  {
+    title: "Slowness Case Escalated To :",
+    answer: "NOC"
+  },
+  {
+    title: "Customer has  outage Data Down on CST 360 and call us within first 2 hours  ,, right SR is  :",
+    answer: "FBB Tech Problem >> Outage - Data Down>> within SLA"
+  },
+  {
+    title: "in case CCA face any issue in HDM Portal CCA must snapshot of the error and make the Suitable SR",
+    answer: "True "
+  },
+  {
+    title: "If CST need to change contact name but his account status is suspend  What is the right action ?",
+    answer: "Inform cst to pay all his due amount first"
+  },
+  {
+    title: "Cst suffering from instability in ADSL services , Line Supported by ASSIA and clear view result was ( Technical dispatch ) , CCA Action ......",
+    answer: "Handle physical instability problem"
+  },
+  {
+    title: "first step in Redirection page case Redirection",
+    answer: "Restart port"
+  },
+  {
+    title: "Incase CST subscribed on option pack service and at the same time has physical instability case ...you will follow the troubleshoot normally with the CST",
+    answer: "FALSE"
+  },
+  {
+    title: "if CST need to make change package with Higher or Same Amount Not Required Change Port after due date Via 111 CCA should inform cst to Recharge and call us through ….",
+    answer: "1 H or Less"
+  },
+
+  {
+    title: "If unable to obtain ip problem solved after make reset and configuration it's mandatory to check MAC address and create suitable sr",
+    answer: "True"
+  },
+  {
+    title: "we can compensate CST  for tkt",
+    answer: "data down"
+  },
+  {
+    title: "in unable to obtain ip case, ADSL Led in the cpe should be match matrix status",
+    answer: "TRUE"
+  },
+  {
+    title: "concession complain will be Add-ons and amount Add-ons",
+    answer: "FALSE"
+  },
+  {
+    title: "CST can subscribe in  Play Station packages From 111",
+    answer: "FALSE"
+  },
+  {
+    title: "Cst has Issue while watching videos CCA Action Handle Case :",
+    answer: "Slowness In Streaming"
+  },
+  {
+    title: "Incase cst has enabled account on Matrix Tool and has Suspended logs on Nst Tool at the same time and you can remove the suspension  from CST360 Tool  .....what is the right action",
+    answer: "complete the troubleshoot normally"
+  },
+  {
+    title: "if unable to obtain ip case escalated that's mean the cpe configured done and still can't obtain ip",
+    answer: "True"
+  },
+  {
+    title: "The Second priority For DNS Will Be :",
+    answer: "Google DNS"
+  },
+  {
+    title: " in case cst has unable to obtain ip and we found that cst subscribed in family service  .... what is the right action",
+    answer: "Transfer cst to Family service Q"
+  },
+  {
+    title: "CST can Change to a Package with Lower Amount If Account is Suspend due to Life Cycle reason ?",
+    answer: "TRUE"
+  },
+  {
+    title: "Customer has  outage Data Down on CST 360 and call us after  2 hours   ,, right SR is  : ",
+    answer: "FBB Tech Problem >> Outage - Data Down >> No estimated time"
+  },
+ 
+  {
+    title: "IF Redirection page Case not solved tkt will escalated to",
+    answer: "SLS Second Level Suppor"
+  },
+  {
+    title: "In case customer has Delete Matrix and ask about concession , the problem not solved , CCA informed customer when problem solved call us again ,, right SR :",
+    answer: "FBB Non-Tech Inquiry--Billing Adjustment--Disapproved Concession"
+  },
+  {
+    title: "We can check Change phone number activity  from ……..",
+    answer: " OM & BSS Order query"
+  },
+  {
+    title: "we will send SMS to cst in case approved concession or unreachable",
+    answer: "TRUE"
+  },
+  {
+    title: "if cst had unable to obtain ip case and the same time Mac Learned on matrix and the cst isn't new subscriber and did not make any change in cpe page what is the next step",
+    answer: "Escalate direct to NOC"
+  },
+  {
+    title: "SLA for Suspended account CST :",
+    answer: "72 H"
+  },
+  {
+    title: "Browsing Certain Sites is Customer up with no network problem, but can't browse any site?",
+    answer: "False"
+  },
+  {
+    title: "Customer has outage Data Down ,, first SLA is :",
+    answer: "2 Hours"
+  },
+  {
+    title: "CST Can Transfer Points on Old Mobile Number to The New Mobile Number",
+    answer: "True"
+  },
+  {
+    title: "unable to obtain ip tkt with NOC team has update (configure with the right user name and password) what is the right action",
+    answer: "بشكل سليم username & Password كتابة"
+  },
+  {
+    title: "If HDM is not opened with CPE data CCA not mandatory to inform customer to leave his CPE connected",
+    answer: "FALSE"
+  },
+  {
+    title: "Unable To Obtain IP Case will Re-escalate to :",
+    answer: "NOC"
+  },
+  {
+    title: "For Third Escalation Browsing all site case SLA Will be ?",
+    answer: "2:5H"
+  },
+  {
+    title: "CST can change package to super 200 GB Via branches ?",
+    answer: "TRUE"
+  },
+  {
+    title: "Customer has outage Wrong Card and Port „ first SLA is",
+    answer: "No estimated time"
+  },
+  {
+    title: "we will create concession tkt for cst if he has active account on BSS",
+    answer: "TRUE"
+  },
+  {
+    title: "NO need to verify with CST if he/she need to change package through us ?",
+    answer: "FALSE"
+  },
+  {
+    title: "IF browsing Case not solved tkt SLA will be",
+    answer: "2 :5 h"
+  },
+  {
+    title: "If there is an error in the data on the Matrix (for example, if the government code is not the same as the Order) „ right action is :",
+    answer: "will create FBB Non Technical Request >> Internet Service >> Matrix Correction"
+  },
+  {
+    title: "In case order activity is WO problem ( Change phone number order ) . Is it Same Process for Installation follow Up ?",
+    answer: "TRUE"
+  },
+  {
+    title: "Extra Package will be valid for 40 Days",
+    answer: "FALSE"
+  },
+  {
+    title: "It's mandatory for CCA to make logical verification steps before make unable to obtain ip steps",
+    answer: "TRUE"
+  },
+  {
+    title: "CST has Unable to Obtain IP case and at the same time cst Obtained from 2 Pools (WE Pool and Option Pack Pool) what is the right action ?",
+    answer: "Transfer CST to Option Pack Queue"
+  },
+  {
+    title: "CCA Can't Change MTU from HDM Tool :",
+    answer: "False"
+  },
+  {
+    title: "In case Delay in change VDSL port CCA right action is ?",
+    answer: "Create Delay TT"
+  },
+  {
+    title: "Corporate Deal One Invoice CST allowed to subscribe in Extra Quota From 111",
+    answer: "FALSE"
+  },
+  {
+    title: "While Escalate Unable to Obtain IP , CCA right TT :",
+    answer: "Boradband->TechnciaI->ADSL/VDSL->l Care->Unable to obtain IP"
+  },
+  {
+    title: "It's mandatory to inform cst let cpe turned on within escalation logical cases",
+    answer: "TRUE"
+  },
+  {
+    title: "In case there is HDM portal outage, CCA should",
+    answer: "handle all HDM related cases manually"
+  },
+  {
+    title: "Customer has Planned Outage and call us after estimated time but outage still exists on CST 360 „ your action is",
+    answer: "Handle case normally"
+  },
+  {
+    title: "complain concession will be created from complain team or Team leaders",
+    answer: "True"
+  },
+  {
+    title: "TTS should contain any update with Engineering Inspection to create concession for CST",
+    answer: "FALSE"
+  },
+  {
+    title: "if cst has redirection  tkt in SLS Pool and cst call after sla",
+    answer: "Will renew sla 72 h"
+  },
+  {
+    title: "While CCA change number of connected devices from HDM Tool , CPE must be restarted",
+    answer: "TRUE"
+  },
+  {
+    title: "Cst is calling has browsing all site and after Ping Google Domain Not Replay Then Ping Google IP is Reply „ next step",
+    answer: "Do flush Dns Is Using Pc/Laptop OR Add Dns WE"
+  },
+  {
+    title: "Way of communication incase we escalated the suspension case ? ",  
+    answer: "All above"
+  },
+  
+  {
+    title: "incase cst has (wrong NAS : Port ID ) on nst logs and we will escalate the sla will be",
+    answer: "2:5 H"
+  },
+  {
+    title: "we can compensate CST for tkt",
+    answer: "data down"
+  },
+  {
+    title: "Redirection page its meaning that cst",
+    answer: "consumed 80% or 100 % from his quota"
+  },
+  {
+    title: "CST can make change ( mobile number & e-mail ) through",
+    answer: "All of the above"
+  },
+  {
+    title: "Customer has outage Major Fault SLA is",
+    answer: "3 Days"
+  },
+  {
+    title: "Corporate Customer ( individual ) Can change speed from 111 ?",
+    answer: "TRUE"
+  },
+  {
+    title: "we can compensate cst for Data Down tkt starting from 12 hours",
+    answer: "True"
+  },
+  {
+    title: "CCA Can Getting the default CPE page password",
+    answer: "HDM tool"
+  },
+  {
+    title: "while escalate unable to obtain ip case it's not mandatory to check ON Call process before escalation",
+    answer: "FALSE"
+  },
+  {
+    title: "it's mandatory for CCA while escalating unable to obtain ip to inform CST to leave his CPE ON during escalation period",
+    answer: "True"
+  },
+  {
+    title: "No Need Any attach screenshot from Assia While Handle Slowness With Cst",
+    answer: "FALSE"
+  },
+  {
+    title: "CCA can check cst subscription from NST tool from :",
+    answer: "Query LDAP Profile"
+  },
+  {
+    title: "while escalate unsupported case CCA must inform CST with Ticket ID",
+    answer: "TRUE"
+  },
+  {
+    title: "customer has Port Time out on Matrix , Customer is UP , , no outage , and has voice down „ right action is :",
+    answer: "handle Port Time out and voice down"
+  },
+  {
+    title: "if cst has unable to obtain ip and the reason is Wrong Credentials and problem solved after adjust him and the cpe obtained ip and internet working fine what is the suitable sr",
+    answer: " FBB Tech Problem>Unable to obtain IP>Wrong credentials"
+  },
+  {
+    title: "if unable to obtain ip case solved after make cpe configuration what is the suitable sr",
+    answer: "FBB Tech Problem>Unable to Obtain IP>CPE Configuration"
+  },
+  {
+    title: "cst will be compensated with amount or Extra quota",
+    answer: "True"
+  },
+  {
+    title: "CST has Port Time out  on Matrix , there is  Outage Down Management on  CST 360  ,, right action is",
+    answer: "follow TS Port Time out Port Time"
+  },
+  {
+    title: "No need to verify with CST if he/she need to change mobile number ?",
+    answer: "FALSE"
+  },
+  {
+    title: "While handle  Logical Instability Case with Cst : Packet loss For Google Ip percentage was 30% ,, Next step will be..",
+    answer: "ping -t on cpe ip"
+  },
+  {
+    title: "CST can make change package with Higher or Same Amount After Due Date Via ……",
+    answer: "Both of them"
+  },
+  {
+    title: "  CCA must check WPS led from CPE if it's turned on or off for the CPE configuration & Re-configuration scenarios and offer on customer to turn it off for more security",
+    answer: "True"
+  },
+  {
+    title: "If HDM is opened with CPE data but faced any action issue , right SR : ",
+    answer: "FBB Tech Problem>HDM Tool>Function Issue"
+  },
+  {
+    title: "customer has order call back to CRM , and  no  matrix ,, right action is :",
+    answer: "will create FBB Non Technical Request  >> Internet Service >> Matrix Creation"
+  },
+  {
+    title: "We have three type of Change phone number ?",
+    answer: "FALSE"
+  },
+  {
+    title: "if cst subscribed on super 100 G and ask to make early renewal from CSO will be available ?",
+    answer: "FALSE"
+  },
+  {
+    title: "if cst asked about payment methods CCA will create SR :",
+    answer: "FBB Non-Tech Inquiry--Paument Methods-- General Info"
+  },
+  {
+    title: "if the customer paid through Fawry and the payment is not clear If we find Outage we will inform CST to wait 24 h from the time he pay",
+    answer: "TRUE"
+  },
+  {
+    title: "In case customer inquiring about his recharged balance but added on wrong service number CCA will create SR :",
+    answer: "FBB Non-Tech Inquiry --BiIIing--Recharge on Wrong number"
+  },
+  {
+    title: "if cst downgraded by mistake CCA will create TT with sla :",
+    answer: "2 WH"
+  },
+  {
+    title: "If cst asked about renewal date CCA will create SR :",
+    answer: "FBB Non-Tech Inquiry-- Billing-- Renewal date"
+  },
+  {
+    title: "in case CST disabled by mistake CCA will create TT with sla :",
+    answer: "1 WH"
+  },
+  {
+    title: "In case the speed of the customer on the Matrix is less than his speed on BSS, we will make TT with SLA 24 hours",
+    answer: "FALSE"
+  },
+  {
+    title: "We can Compensate cst if he change his offering By mistake through E-care within........... from his Action",
+    answer: "24 h"
+  },
+  {
+    title: "CST asked about ( Bank check ) payment method, SR will be",
+    answer: "FBB Non-Tech Inquiry--Payment Methods--Bank Check"
+  },
   // {
   //   title: "",
   //   answer: ""
   // },
+
 ];
+lastUp= document.querySelector(".LastUp span")
+  lastUp.innerHTML = " (3:46Am) 3/1"
+
 
 function drowItem() {
   let y = pro.map((item) => {
@@ -1688,8 +2151,6 @@ show.onchange = function () {
   home.style.border = show.checked ? "solid" : "0";
 };
 
-
-
 localStorage.setItem("userName", "mostafa");
 localStorage.setItem("password", "123");
 // /////////////
@@ -1712,11 +2173,3 @@ window.onload = function run(){
   }
 }
 run()
-
-/////////////////////////////////
-
-
-
-
-
-
