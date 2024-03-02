@@ -2106,14 +2106,55 @@ let pro = [
     title: "CST asked about ( Bank check ) payment method, SR will be",
     answer: "FBB Non-Tech Inquiry--Payment Methods--Bank Check"
   },
+  {
+    title: "If customer Ask for Suspension , It will be without Required Papers",
+    answer: "FALSE"
+  },
+  {
+    title: "Customer paid his landline bill, matrix disabled and still within the automatic reactivation SLA ,  CCA will create SR:",
+    answer: "FBB Non Tech Inquiry --Disabled Matrix-- Paid TE Bill-within Reactivation SLA"
+  },
+  {
+    title: "In case Customer Want to make  resume the service ( after suspension Upon Customer Request) Can Make It Through :",
+    answer: "111 & Branches"
+  },
+  {
+    title: "In case CST asked about ( resumption after suspension ), Right SR :",
+    answer: "FBB Non-Tech Inquiry>Internet Service>Resumption after Suspension"
+  },
+  {
+    title: "The account on BSS  will be transferred to Deactivation  , if the customer has not paid for …….. days since the last day of the last invoice",
+    answer: "180 Days"
+  },
+  {
+    title: "In Case Cst has suspended account with reason (Fraud Broadband Migration) SLA is :",
+    answer: "3 WD"
+  },
+  {
+    title: "In case cst Type is  (Corporate Individual OR AL ) want to Migration To FTTH CCA Right Action :",
+    answer: "Create TT (Corporate Broadband > Non tech Request > FTTH Migration ) With 24WH"
+  },
+  {
+    title: "In case cst has Order Migration with status (Check Compound Direct support) CCA Right action",
+    answer: "Transfer to FTTH Team Q"
+  },
+  {
+    title: "In case customer account  Black List ,,  customer is available to make :",
+    answer: "He can charge abalance to renew the current package"
+  },
+  {
+    title: "SLA From FTTH Migration Order status ( Survey ) Will be :",
+    answer: "3 WD"
+  },
   // {
   //   title: "",
   //   answer: ""
   // },
 
+
 ];
 lastUp= document.querySelector(".LastUp span")
-  lastUp.innerHTML = " (3:46Am) 3/1"
+  lastUp.innerHTML = " (6:02pm) 3/2"
 
 
 function drowItem() {
@@ -2150,9 +2191,7 @@ show.onchange = function () {
   home.style.borderWidth = show.checked ? "10px" : "0";
   home.style.border = show.checked ? "solid" : "0";
 };
-
-localStorage.setItem("userName", "mostafa");
-localStorage.setItem("password", "123");
+// localStorage.setItem()
 // /////////////
 let userName = document.querySelector('#userName')
 let password = document.querySelector('#password')
@@ -2166,10 +2205,17 @@ let addItem = localStorage.getItem("username")? localStorage.getItem("username")
 
 window.onload = function run(){
   if(localStorage.getItem("username")){
-   
+
   }else{
     window.location = "index.html"
-    
   }
 }
 run()
+
+/////////////////////////////////
+
+
+
+
+
+
