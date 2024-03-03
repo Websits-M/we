@@ -2204,6 +2204,11 @@ let form = document.querySelector(".section-form")
 let addItem = localStorage.getItem("username")? localStorage.getItem("username") : "";
 
 window.onload = function run(){
+  window.alert("تم تسجيل خروجك")
+  if(alert = true){
+    localStorage.clear()
+  }
+  
   if(localStorage.getItem("username")){
 
   }else{
