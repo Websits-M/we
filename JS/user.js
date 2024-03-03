@@ -9,12 +9,17 @@ let logoutBtn = document.querySelector("#logout")
 
 
 function run(){
+  window.alert("تم تسجيل خروجك")
+  if(alert = true){
+    localStorage.clear()
+  }
   if(localStorage.getItem("username")){
      
   }else{
     window.location = "index.html"
   }
 }
+
 run()
 
 if(localStorage.getItem("username")){
