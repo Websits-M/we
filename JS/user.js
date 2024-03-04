@@ -9,10 +9,10 @@ let logoutBtn = document.querySelector("#logout")
 
 
 function run(){
-  window.alert("تم تسجيل خروجك")
-  if(alert = true){
-    localStorage.clear()
-  }
+  // window.alert("تم تسجيل خروجك")
+  // if(alert = true){
+  //   localStorage.clear()
+  // }
   if(localStorage.getItem("username")){
      
   }else{
