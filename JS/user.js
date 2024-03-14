@@ -62,3 +62,8 @@ gets.addEventListener('click' , get)
 function get(){
     window.location = "index3.html"
 }
+
+
+
+
+
