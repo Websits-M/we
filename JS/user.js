@@ -6,13 +6,16 @@ let links = document.querySelector("#links")
 
 let logoutBtn = document.querySelector("#logout")
 
+// function ss(){
+  
+//   if(localStorage.getItem("mostafa")){
+//     localStorage.clear()
+//   }
+// }
+// ss()
 
 
 function run(){
-  // window.alert("تم تسجيل خروجك")
-  // if(alert = true){
-  //   localStorage.clear()
-  // }
   if(localStorage.getItem("username")){
      
   }else{
@@ -21,6 +24,10 @@ function run(){
 }
 
 run()
+
+
+  
+
 
 if(localStorage.getItem("username")){
     userData.style.color ="yollow"
@@ -39,11 +46,8 @@ let sr = document.querySelector("#btn");
 sr.addEventListener("click", add);
 
 function add() {
-  Swal.fire({
-    title: "Warning!",
-    text: "لازال قيد التحديث",
-    icon: "warning",
-  });
+  window.location = "index4.html"
+
 }
 
 let close = document.querySelector("#close");
@@ -56,7 +60,5 @@ close.addEventListener("click", () => {
 let gets = document.getElementById('get')
 gets.addEventListener('click' , get)
 function get(){
-window.location = "index3.html"
+    window.location = "index3.html"
 }
-
-
