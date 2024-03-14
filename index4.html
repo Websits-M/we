@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE =edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Info</title>
+    <link rel="stylesheet" href="css/style4.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body id="bd">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+  
+        <label class="logo">
+          WE
+          <i class="fa fa-braille" aria-hidden="true"></i>
+          Info</label
+        >
+  
+     
+        <ul id="user_info">
+          <li><i class="fa-solid fa-circle-user us"></i><a class="active" href="index2.html" id="user"></a></li>
+          <li><a class="active" href="index2.html" id="sr">Home</a></li>
+          <li><a class="active" href="index3.html">My Tool</a></li>
+          <li id ="logout"><a href="index3.html" title="تسجيل الخروج">LogOut</a></li>
+        </ul>
+        
+      </nav>
+<!-- ////////////////////////////////////////////////////////////////// -->
+     <div class="container">
+      <form>
+      <div class="block a1">
+        <div class="line">
+          <input type="checkbox" id="check1" onchange="showandhid()"> <div class="texx">Data down</div>
+        </div>
+      <div id="hid">
+        <p class="script1">دا كدا الخدمه كلها فاصلة اول حاجه هاخد رقم الارضي واحطه في ال الكاستمور360 عشان اتأكد ان العميل معندوش اوتيج
+          <br>
+          enable  او  disaple  بعدين هشوف الخط 
+          <br>
+          بعد كدا هنفتح ال<bdi>TTS</bdi> عشان نشوف العميل عنده شكوي ولا لا
+        </p>
+        <input type="radio" name="fruit" value="لازم تكون الحاله بتاعتها اوبين" >لو فيه شكوي؟     <br>
+        <input type="radio" name="fruit" value="Case detections هنمشي تيكت ميكر " > لو مفيش شكوي؟<br>
+        <!-- <input type="radio" name="fruit" value="  هنا هيتم اتباع الاجراءات الخاصه بالـ ">Bad Attitude Or wrong info From CCA لو شكوي العميل بخصوص <br> -->
+        <p id="result"></p>
+        <input type="checkbox" id="abc" onclick="checkme()"> Tict Maker
+        <div id="msg">
+          <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">Toggle popover</button>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" title="فحص الاوتج من الكاستمور360" >
+            <label class="form-check-label" for="flexCheckDefault">
+              Check pop outage
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" title="بتشوف العميل عنده شكوي سابقة ولا لا">
+            <label class="form-check-label" for="flexCheckChecked">
+              Check TTS History before starting troubleshooting
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" title="بتعرفها من الكاستمور 360">
+            <label class="form-check-label" for="flexCheckChecked">
+             Line disabled or enabled?
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" title="دي بتعرفها من البي اس اس لو الباقة اكتيف وبتعرفها من الماتريكس">
+            <label class="form-check-label" for="flexCheckChecked">
+             Is the line blocked or not blocked?
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="block a2">
+      <div class="line">
+        <div><input type="checkbox" id="b1" onclick="BSS()"></div><div class="texx"> BSS Tool Info</div>
+      </div>
+      <div id="msg_bss">
+        <p> Susbend and bar (fixed)<br>
+          دي لما اجي اوقف الخط
+        </p> 
+        <p>
+          Resume and Uebar(fixed)<br>
+          دي لما ناجي نشغل الخط
+        </p>
+        <p>
+          Trouble Ticet <br>
+          دي الترابل تيكت ال تمت علي خط العميل
+        </p>
+      </div>
+    </div>
+  </form>
+ <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </div>
+
+
+     
+   
+
+<!-- 
+     Complaint
+
+     (Customer Asked to Cancel)
+
+     quality investigation
+
+
+     ي التيكت وابلاغ العميل ان طلب التعويض هيتم بعد ع مع اضافة -->
+
+
+
+
+
+  
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/user.js"></script>
+   <script src="JS/index4.js"></script>
+  </body>
+</html>
+
