@@ -133,19 +133,20 @@ nav {
 
 #hid{
   display: none;
+  width: fit-content;
 }
 #msg{
   display: none;
   border: 1px solid black;
   width: fit-content;
   /* margin: auto; */
-  padding: 10px;
+  padding: 5px;
 }
 #msg_bss{
   display: none;
   border: 1px solid black;
-  width: 380px;
-  padding: 10px;
+  width: fit-content;
+  padding: 5px;
 }
 .texx{
   padding-left: 5px;
@@ -155,16 +156,16 @@ nav {
   margin-top: 25px;
   text-align: right;
   display: none;
-  border: 2px solid red;
+  border: 1px solid red;
   font-size: 18px;
-  padding: 10px;
-  width: 350px;
+  padding: 5px;
+  width: fit-content;
   /* margin: auto; */
 }
 .script1{
   text-align: right;
-  width: 380px;
-  padding: 10px;
-  border: 2px solid red;
+  width: fit-content;
+  padding: 5px;
+  border: 1px solid red;
   /* margin: auto; */
 }
