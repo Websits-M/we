@@ -25,10 +25,6 @@ function run(){
 
 run()
 
-
-  
-
-
 if(localStorage.getItem("username")){
     userData.style.color ="yollow"
     userData.style.fontWeight = "900"
@@ -41,12 +37,18 @@ function logout(){
   localStorage.clear()
 }
 
-let sr = document.querySelector("#btn");
+let btn1 = document.querySelector("#btn");
 
-sr.addEventListener("click", add);
+btn1.addEventListener("click", add);
 
 function add() {
   window.location = "index4.html"
+
+}
+let sr = document.querySelector("#sr");
+sr.addEventListener("click", addsr);
+function addsr() {
+  window.location = "SR.html"
 
 }
 
