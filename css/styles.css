@@ -68,6 +68,19 @@ body {
   background-color: rgba(0, 0, 255, 0.546);
   color: #fff;
 }
+.btnSR{
+  animation: sr infinite ease-in;
+  animation-duration: 1s;
+}
+@keyframes sr {
+  0%{
+  opacity: 1;
+  }
+  100%{
+    opacity: .5;
+    background-color: red;
+  }
+}
 .btn:hover {
   opacity: 0.8;
   cursor: pointer;
