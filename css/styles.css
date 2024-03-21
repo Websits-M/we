@@ -201,6 +201,12 @@ li a:hover {
   opacity: 0.8;
   cursor: pointer;
 }
+.pdf{
+  padding-top: 80px;
+  width: 95%;
+  margin: auto;
+  height: 100vh;
+}
 @media (max-width: 768px) {
   .ovarley {
     text-align: center;
@@ -241,4 +247,8 @@ li a:hover {
     font-family: Arial;
     background-color: #b1aeae;
   }
+  .pdf{
+    width: fit-content;
+  }
 }
+
