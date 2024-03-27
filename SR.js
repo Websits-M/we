@@ -4,7 +4,7 @@ function search() {
   let searchBar = document.querySelector(".search-input").value.toUpperCase().trim();
   let productlist = document.querySelector(".product-list");
   let product = document.querySelectorAll(".product");
-  let productName = document.getElementsByTagName("p");
+  let productName = document.getElementsByTagName("h6");
   for (let i = 0; i < productName.length; i++) {
     if (productName[i].innerHTML.toUpperCase().indexOf(searchBar) >= 0) {
       product[i].style.display = "";
@@ -276,7 +276,7 @@ function drowItem() {
     return `
         <div class="product">
           <div class="product-deatils">
-          <p><i class="fa-solid fa-earth-americas"></i> ${item.title}</p>
+          <h6><i class="fa-solid fa-earth-americas"></i> ${item.title}</h6>
             <p><i class="fa-solid fa-language fa-fade"></i> <mark>${item.answer}</mark></p>
             <hr>
           </div>
