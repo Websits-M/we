@@ -123,7 +123,7 @@ section {
   height: 600px;
   border-radius: 10px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.6);
-  padding: 20px;
+  padding: 18px;
   overflow-y: scroll;
   margin-top: 100px;
 }
@@ -139,7 +139,6 @@ section::-webkit-scrollbar {
 }
 .search-box {
   width: 100%;
-  border: 1px solid #ddd;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -154,23 +153,16 @@ input[type="search"]{
   outline: none;
   box-shadow: none;
   width: 100%;
-  font-size: 18px;
   padding: 10px;
 }
 
 
 .search-box i {
   margin-left: 10px;
-  cursor: pointer;
   padding: 0 5px;
 }
 .product-list {
   padding: 10px 0;
-}
-.product {
-  display: flex;
-  align-items: center;
-  padding: 10px 2px;
 }
 
 footer {
@@ -197,47 +189,37 @@ footer div img {
 
 .div2 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 5px 0;
 
 }
 .unit1{
   display: flex;
-  align-items: center;
   justify-content: space-around;
   width: 50%;
   
 
 }
-.unit2{
-  display: flex;
-  align-items: center;
 
-}
 .component2{
   display: flex;
   width: 50%;
   justify-content: space-around;
   padding: 0 5px;
+  
 }
-.unit3{
-  display: flex;
-  align-items: center;
-
-}
-.mood{
-  display: flex;
-}
-
 @media (max-width: 768px) {
   #home{
     width: 90%;
+
   }
+  p{
+    font-size: 12px;
+  }
+
   .div2 {
-    font-size: 14px;
     flex-direction: column;
     flex-wrap: wrap;
+    font-size: 12px;
     align-content: center;
     padding: 10px 0;
     width: 100%;
