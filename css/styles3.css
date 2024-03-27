@@ -110,6 +110,7 @@ a:hover {
     background: black;
     border-radius: 10px;
     color: #0082e6;
+
   }
   #check:checked ~ ul {
     left: 0;
@@ -306,18 +307,16 @@ footer div img {
   background-color: #8e00e6;
   color: #fff;
 }
+
 input:focus {
   outline: 3px solid #8e00e6;
   border-radius: 10px;
 }
 .userPhoto{
-  color: #fff;
-  font-size: 25px;
+  color: #0082e6;
+  font-size: 30px;
 }
 
 .srbody{
   background-color: #ddd;
 }
-
-
-
