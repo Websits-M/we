@@ -17,7 +17,6 @@ nav {
 
   height: 80px;
   width: 100%;
-  position: fixed;
   z-index: 999;
   opacity: 0.8;
   /* border: 2px solid red; */
@@ -104,8 +103,9 @@ li a:hover {
   }
   li a:hover,
   li a.active {
-    background: none;
+    background: black;
     color: #0082e6;
+    border-radius: 10px;
   }
   #check:checked ~ ul {
     left: 0;
@@ -116,6 +116,15 @@ li a:hover {
 .us{
   font-size: 25px;
   color: #fff;
+}
+header{
+  /* background-color: gray; */
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+header li i , header li a{
+  padding: 5px;
 }
 /* ----------------------------------------------------- */
 .basic {
