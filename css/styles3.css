@@ -147,11 +147,12 @@ section::-webkit-scrollbar {
   display: none;
 }
 .search-box {
-  width: 100%;
+  width: 70%;
   border-radius: 5px;
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  margin: auto;
+  padding: 10px 0 0 0;
   
 }
 input[type="search"]{
@@ -195,9 +196,19 @@ footer div img {
   width: 110px;
 }
 
+.parint{
+  border: 2px solid white;
+  margin: auto;
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+}
 .div2 {
   display: flex;
   padding: 5px 0;
+  margin: auto;
+  font-size: 18px;
+  width: 70%;
+
 
 }
 .unit1{
@@ -219,6 +230,9 @@ footer div img {
   #home{
     width: 90%;
 
+  }
+  .search-box{
+    width: 100%;
   }
   p{
     font-size: 12px;
