@@ -39,54 +39,60 @@
       </ul>
     </nav>
     <header>
-      <li><i class="fa-solid fa-circle-user us"></i><a class="active" href="#" id="user"></a></li>
-    </header>
-<!-- ---------------------------------------------------------------------------------------- -->
-    <section id="home">
-      <div class="container1">
-
+      <!-- <li><i class="fa-solid fa-circle-user us"></i><a class="active" href="#" id="user"></a></li> -->
+      <div class="container">
+        <div class="parint">
         <div class="div2">
-            <div class="unit1">
-              <span class="mood">Mood &nbsp;&nbsp;<i class="fa-solid fa-cloud-moon"></i>
-                <input type="checkbox" id="show"/>
-              </span>
-              <div>
-                SR  مُضاف <span id="n"></span> 
-                <i class="fa-solid fa-upload fa-bounce"></i>
+          <div class="unit1">
+            <span class="mood">Mood &nbsp;&nbsp;<i class="fa-solid fa-cloud-moon"></i>
+              <input type="checkbox" id="show"/>
+            </span>
+            <div>
+              SR  مُضاف <span id="n"></span> 
+              <i class="fa-solid fa-upload fa-bounce"></i>
+            </div>
+          </div>
+          <!--  -->
+          <div class="component2">
+            <div class="unit2">
+              <div class="select">
+                <select id="optionL" onchange="select()">
+                  <option hidden>اختر طريقة البحث</option>
+                  <option value="1">البحث باللغة الانجليزية</option>
+                  <option value="2">البحث باللغة العربية</option>
+                </select>
               </div>
             </div>
             <!--  -->
-            <div class="component2">
-              <div class="unit2">
-                <div class="select">
-                  <select id="optionL" onchange="select()">
-                    <option hidden>اختر طريقة البحث</option>
-                    <option value="1">البحث باللغة الانجليزية</option>
-                    <option value="2">البحث باللغة العربية</option>
-                  </select>
-                </div>
-              </div>
-              <!--  -->
-              <div class="unit3">
-                <div class="LastUp"><strong>Last update:</strong><span></span></div>
-              </div>
+            <div class="unit3">
+              <div class="LastUp"><strong>Last update:</strong><span></span></div>
             </div>
-          
+          </div>
+        
         </div><!-- /div2 -->
 
-        <div class="container">
-            <div class="col col-sm col-md col-lg mm">
               <div class="box-input">
                 <div class="search-box" id="box1">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <input type="search" placeholder="البحث باللغة الانجليزية" class="search-input" onkeyup="search()"/>
                 </div><!-- /search-box -->
-  
+        
                 <div class="search-box" id="box2">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <input type="text" placeholder="البحث باللغة العربية" class="input-answer" onkeyup="answer()" />
                 </div>
-              </div>
+              </div> 
+          </div> 
+      </div>
+     
+    </header>
+<!-- ---------------------------------------------------------------------------------------- -->
+    <section id="home">
+      <div class="container1">
+
+        <div class="container">
+            <div class="col col-sm col-md col-lg mm">
+           
       
               <div class="product-list">
                 <div class="product">
