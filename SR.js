@@ -4,7 +4,7 @@ function search() {
   let searchBar = document.querySelector(".search-input").value.toUpperCase().trim();
   let productlist = document.querySelector(".product-list");
   let product = document.querySelectorAll(".product");
-  let productName = document.getElementsByTagName("h4");
+  let productName = document.getElementsByTagName("p");
   for (let i = 0; i < productName.length; i++) {
     if (productName[i].innerHTML.toUpperCase().indexOf(searchBar) >= 0) {
       product[i].style.display = "";
@@ -259,10 +259,16 @@ let pro = [
     title: "FBB Non-Tech Inquiry>Quota>Extra Quota One time",
     answer: "لو ضيفنا للعميل باقه اضافيه"
   },
+  // {
+  //   title: "",
+  //   answer: ""
+  // },
+
+
 
 ];
 lastUp= document.querySelector(".LastUp span")
-  lastUp.innerHTML = " (5:10Am) 2024/3/20"
+  lastUp.innerHTML = " (12:10Pm) 2024/3/27"
 
 
 function drowItem() {
@@ -270,7 +276,7 @@ function drowItem() {
     return `
         <div class="product">
           <div class="product-deatils">
-          <h4><i class="fa-solid fa-earth-americas"></i> ${item.title}</h4>
+          <p><i class="fa-solid fa-earth-americas"></i> ${item.title}</p>
             <p><i class="fa-solid fa-language fa-fade"></i> <mark>${item.answer}</mark></p>
             <hr>
           </div>
