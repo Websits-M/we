@@ -19,11 +19,10 @@ nav {
 
   height: 80px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   z-index: 999;
   opacity: 0.8;
-  margin-bottom: 100px;
 }
 
 label.logo {
@@ -108,13 +107,24 @@ a:hover {
   }
   a:hover,
   a.active {
-    background: none;
+    background: black;
+    border-radius: 10px;
     color: #0082e6;
   }
   #check:checked ~ ul {
     left: 0;
   }
 
+}
+header{
+  /* background-color: gray; */
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+header li i , header li a{
+  padding: 5px;
+  
 }
 
 section {
@@ -125,7 +135,6 @@ section {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.6);
   padding: 18px;
   overflow-y: scroll;
-  margin-top: 100px;
 }
 
 .container1{
