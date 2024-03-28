@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE =edge" />
@@ -19,7 +19,7 @@
   
     </script>
   </head>
-  <body id="bd" dir="auto">
+  <body id="bd" dir="rtl">
       <nav>
         <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
@@ -139,48 +139,58 @@
             <div class="radio_content radio_1">
               <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
               <p>  بنطلب من العميل رقم الشكوي او الفترة الكان فيها المشكلة  </p>
-              <ul>
-                <li><bdi>Order Installed</bdi>لازم نتأكد ان الـ</li>
-                <li><bdi>Order Cancellation</bdi>بنتأكد انت مفيش</li>
-                <li><bdi>(FV & FBB)</bdi>بنقدم طلب تعويض عن الفتره المدفوعة فقط لكل من الـ</li>
+              <ul dir="rtl">
+                <li>لازم نتأكد ان الـ Order Installed</li>
+                <li>بنتأكد ان مفيش Order Cancellation</li>
+                <li>
+                  بنقدم طلب تعويض عن الفتره المدفوعة فقط لكل من الـ</li>
+                  <bdi>(FV & FBB)</bdi>
                 <hr>
-                <li>اللي هنقدم بيها الطلب متقدمش بيها قبل كداTTS لازم نتأكد ان الـ</li>
-                <li>والمشكلة اتحلت Closed اللي هنقدم بيها تكون Ticket TTS لازم الـ</li>
+                <li> لازم نتأكد ان TTS الهنقدم بيها الطلب متقدمش بيها قبل كدا</li>
+                <li> لازم الـ Ticket TTS الهنقدم بيها تكون Closed والمشكلة اتحلت<li>
               </ul> 
               
-           <input type="checkbox" id="r2" name="fruit"><label class="box" data-radio="box1" style="color: red;">الحالات التي لا يتم فيها طلب التعويض</label>
-           <div class="kalam2" id="kalam2">
-            <div  id="kalam"></div>
-             <ul>
-               <li> اخري في نفس اليوم لنفس الحالهTicket في حالة فتح</li>
-               <li> حتي لو تم حل المشكلة Open كانت TT في حالة ان الـ</li>
+           <input type="checkbox" id="r2"><label class="box" style="color: red;">الحالات التي لا يتم فيها طلب التعويض</label>
+           <div id="kalam2">
+             <ul dir="rtl">
+               <li> في حالة فتح Ticket اخري في نفس اليوم لنفس الحالة</li>
+               <li> في حالة ان الـ TT كانت Open  حتي لو تم حل المشكلة</li>
              </ul>
-           </div>
+            </div>
            <br>
-           <input type="checkbox" id="r3" name="fruit" ><label> 360 علي  Outage في حالة كان هناك</label>
-           <br>
-           <input type="checkbox" id="r4" name="fruit" ><label> 360 علي  Outage في حالة مفيش </label>
-
+           <input type="checkbox" id="r3" name="fruit" > <label> في حالة كان هناك Outage علي 360 </label>
            <div id="kalam3">
-             <ul>
-               <li>ولا لا Outage Id فيها  Tool بنسأل العميل عن الفترة اللي كان فيها المشكلة ونراجع الـ</li>
-               <li> TT نكتبها في الـ outage id الخاصة بالعميل وهناخد الـ outage بعد كدا بيطلع كل الـ</li>
-               <li> متزيدش عن 3 شهور من تاريخ الانتهاء Ticketلازم الـ </li>
-             </ul>
-           </div>
-           <div id="kalam4">
-            <ul>
-              <li> Concession TT نكتبها في الـ SR من الـ outage id من الفترة المطلوبة وهناخد الـ Outage الخاصة بالـ SRs عشان نشوف الـ BSS هنراجع الـ</li>
+            <ul dir="rtl">
+              <li> بنسأل العميل عن الفترة ال كان فيها المشكلة ونراجع الـ Tool فيها Outage ID ولا لا</li>
+              <li> بعد كدا بيطلع كل الـ Outage الخاصة بالعميل وهناخد الـ Outage ID نكتبها في الـ TT</li>
+              <li> لازم الـ Ticket  متزيدش عن 3 شهور من تاريخ الانتهاء</li>
             </ul>
           </div>
-            </div>           
+           <br>
+           <input type="checkbox" id="r4" name="fruit" > <label>في حالة مفيش Outage علي 360</label>
+           <div id="kalam4">
+            <ul>
+              <li> هنراجع الـ BSS عشان نشوف الـ SRs الخاصة بالـ Outage  من الفترة المطلوبة وهناخد الـ Outage ID من ال SR نكتبها في الـ Concession TT</li>
+            </ul>
+          </div>
+            </div>     
+                  <!-- ---------------------------------------------------------------------- -->
             <div class="radio_content radio_2"  id="r1">
               <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
               <label><strong>شروط التعويض خلال المكالمة</strong></label>
             
                 <ul>
-                  <li>الواحده او الاوتيج الواحد Ticket للـ  lE12 or 20GB يمكن تعويض العميل بحد اقصي </li>
-                  <li>اولا علي العميل وفي حالة رفضة يتم عرض التعويض برصيد Quota يحب عرض التعويض بالـ</li>
+                  <li>يمكن تعويض العميل بحد اقصي 20GB او 12 جنيه للـ Ticket الواحده او للـ Outage الواحد في خلال المكالمة</li>
+                  <li>يجب عرض التعويض بـ الـ Quota اولاً علي العميل وفي حالة رفضه يتم عرض العويض برصيد</li>
+                </ul>
+                <hr>
+                <label><strong>في حالة التعويض بأكثر من ذلك بحد اقصي 50GB او 40 جنيه :</strong></label>
+                <ul>
+                  <li>سيتم عمل IR للـ Team Leader وسيتم تنفيذالطلب في خلال 30 دقيقة</li>
+                  <li>يجب اضافة رقم موبايل للمتابعه مع العميل في الـ IR</li>
+                  <li>في حالة التعويض بأكثر من 50 GB او 40 جنيه يتم اتباع اجرائات الـ Normal Cycle</li>
+                  <li>في حالة النعويض عن مده اقل من 24 ساعة للـ Outage او Ticket يتم تعويض العميل بـ Quota فقط</li>
+                  <li>التعويض بيكون عن الـ Outages او الـ TTS او الـ ADF</li>
                 </ul>
               </div>
             </div>
