@@ -7,7 +7,7 @@ let links = document.querySelector("#links")
 let logoutBtn = document.querySelector("#logout")
 
 function log(){
-  if(localStorage.getItem("username") == ("mostafa")){
+  if(localStorage.getItem("username") == ("mostafa") || localStorage.getItem("username") == ("Ahmed94") || localStorage.getItem("username") == ("MohamedSamy") || localStorage.getItem("username") == ("MohamedSamy")|| localStorage.getItem("username") == ("Shaher")){
     window.alert("انتهت صلاحية حسابك!..يرجي تجديد وصولك لمتابعة استخدامك للموقع")
       window.location = "index.html"
       localStorage.clear()
