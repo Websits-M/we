@@ -115,7 +115,7 @@
        <form>
       <div class="block a1">
         <div class="line">
-          <input type="checkbox" id="check1" onchange="showandhid()"> <div class="texx">Concession</div>
+          <label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label>
         </div>
       <div id="hid">
         <p class="script1"><strong>التعويضات</strong></p> 
@@ -150,7 +150,7 @@
                 <li> لازم الـ Ticket TTS الهنقدم بيها تكون Closed والمشكلة اتحلت<li>
               </ul> 
               
-           <input type="checkbox" id="r2"><label class="box" style="color: red;">الحالات التي لا يتم فيها طلب التعويض</label>
+              <label class="box" style="color: red;"><input type="checkbox" id="r2"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
            <div id="kalam2">
              <ul dir="rtl">
                <li> في حالة فتح Ticket اخري في نفس اليوم لنفس الحالة</li>
@@ -158,7 +158,7 @@
              </ul>
             </div>
            <br>
-           <input type="checkbox" id="r3" name="fruit" > <label> في حالة كان هناك Outage علي 360 </label>
+           <label><input type="checkbox" id="r3" name="fruit" > <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
            <div id="kalam3">
             <ul dir="rtl">
               <li> بنسأل العميل عن الفترة ال كان فيها المشكلة ونراجع الـ Tool فيها Outage ID ولا لا</li>
@@ -167,7 +167,7 @@
             </ul>
           </div>
            <br>
-           <input type="checkbox" id="r4" name="fruit" > <label>في حالة مفيش Outage علي 360</label>
+           <label><input type="checkbox" id="r4" name="fruit" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
            <div id="kalam4">
             <ul>
               <li> هنراجع الـ BSS عشان نشوف الـ SRs الخاصة بالـ Outage  من الفترة المطلوبة وهناخد الـ Outage ID من ال SR نكتبها في الـ Concession TT</li>
