@@ -19,8 +19,7 @@ nav {
   width: 100%;
   z-index: 999;
   opacity: 0.8;
-    position: sticky;
-
+  position: sticky;
   /* border: 2px solid red; */
 }
 
@@ -28,7 +27,7 @@ label.logo {
   color: white;
   font-size: 30px;
   line-height: 80px;
-  padding: 0 100px;
+  padding: 0 50px;
   font-weight: bold;
 }
 
@@ -45,7 +44,7 @@ nav ul li {
 
 nav ul li a {
   color: white;
-  font-size: 17px;
+  font-size: 18px;
   padding: 7px 13px;
   border-radius: 3px;
 }
@@ -54,19 +53,20 @@ li a:hover {
   color: #ffffff;
   font-weight: 100;
   background: linear-gradient
-    (90deg, rgba(2, 0, 2, 0.21) 40%, rgba(0, 242, 255, 0.238) 100%);
+    (90deg, rgba(2, 0, 2, 0.459) 40%, rgba(0, 242, 255, 0.238) 100%);
 
   transition: 0.5s;
-  box-shadow: 1px 1px 1px 1px rgba(2, 2, 92, 0.354);
+  box-shadow: 2px 2px 5px 5px rgba(2, 2, 92, 0.5);
 }
 .checkbtn {
   font-size: 30px;
   color: white;
   float: right;
   line-height: 80px;
-  margin-right: 40px;
+  margin-right: 35px;
   cursor: pointer;
   display: none;
+
 }
 #check {
   display: none;
@@ -89,7 +89,7 @@ li a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #000000ea;
+    background: #000000fe;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -105,7 +105,7 @@ li a:hover {
   }
   li a:hover,
   li a.active {
-    background: black;
+    background: rgba(0, 0, 0, 0.742);
     color: #0082e6;
     border-radius: 10px;
   }
@@ -118,36 +118,40 @@ li a:hover {
 .us{
   font-size: 25px;
   color: #fff;
+
 }
 header{
-  /* background-color: gray; */
   text-align: center;
   font-size: 20px;
   padding: 20px;
+
 }
 header li i , header li a{
   padding: 5px;
+  position: sticky;
+  z-index: 88;
+
+
 }
 /* ----------------------------------------------------- */
 .basic {
   background-image: url(../images/Pngtre.jpg);
   background-position: right;
   background-attachment: fixed;
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   font-family: Arial;
   background-color: #aeb1ae;
   /* border: 2px solid rgb(0, 255, 34); */
   position: relative;
   height: 100vh;
+
 }
 
 
 /* /////////////////////////////////////---------------------------------////////////////////////////////////////////// */
 
 .content {
-  /* width: 300; */
-  height: 180px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -155,7 +159,7 @@ header li i , header li a{
   text-align: center;
   padding: 1px;
   border-radius: 20px;
-  /* border: 2px solid rgb(21, 0, 255); */
+
 
 
 }
@@ -163,16 +167,17 @@ header li i , header li a{
 
 
 .title1 {
-  font-size: 60px;
+  font-size: 55px;
   color: #ffffff;
   letter-spacing: 3px;
   margin-bottom: 25px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 5px 3px 7px #000;
+
 }
 .content span {
-  font-size: 60px;
-  color: #c300ffc0;
+  font-size: 55px;
+  color: #f909f9c0;
   letter-spacing: 3px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -183,7 +188,7 @@ header li i , header li a{
   border-radius: 7px;
   font-size: 17px;
   border: none;
-  margin: 0 14px;
+  margin: 5px 5px;
 }
 .btn1 {
   background-color: rgba(255, 255, 255, 0.808);
@@ -204,7 +209,7 @@ header li i , header li a{
   opacity: 1;
   }
   100%{
-    opacity: .5;
+    opacity: .9;
     background-color: red;
   }
 }
@@ -212,54 +217,63 @@ header li i , header li a{
   opacity: 0.8;
   cursor: pointer;
 }
-.pdf{
-  padding-top: 80px;
-  width: 95%;
-  margin: auto;
-  height: 100vh;
+.ovarley {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* border: 2px solid rgb(13, 238, 178); */
+
 }
+
 @media (max-width: 768px) {
-  .ovarley {
-    text-align: center;
-    display: flex;
-    align-items: center;
+  label.logo {
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
   }
   .content {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 400px;
+    width: 100%;
+    height: fit-content;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
+
   }
   .title1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     text-align: center;
+
   }
   .content div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 200px;
-    width: 300px;
-    padding: 10px;
+    width: fit-content;
+    padding: 7px;
     margin: auto;
   }
-  body {
+  .basic {
     background-image: url(../images/Pngtre2.jpg) !important;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial;
     background-color: #b1aeae;
   }
-  .pdf{
-    width: fit-content;
-  }
+
 }
 
+.pdf{
+  height: 100vh;
+}
