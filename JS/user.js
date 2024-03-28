@@ -8,6 +8,7 @@ let logoutBtn = document.querySelector("#logout")
 
 function log(){
   if(localStorage.getItem("username") == ("mostafa")){
+    window.location = "index.html"
    localStorage.clear()
   }
 }
