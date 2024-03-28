@@ -8,8 +8,10 @@ let logoutBtn = document.querySelector("#logout")
 
 function log(){
   if(localStorage.getItem("username") == ("mostafa")){
-    window.location = "index.html"
-   localStorage.clear()
+    window.alert("انتهت صلاحية حسابك!..يرجي تجديد وصولك لمتابعة استخدامك للموقع")
+      window.location = "index.html"
+      localStorage.clear()
+
   }
 }
 log()
