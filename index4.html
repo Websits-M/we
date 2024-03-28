@@ -123,7 +123,7 @@
         <div class="wrapper">
           <div class="radio_tabs">
             <label class="radio_wrap" data-radio="radio_1">
-              <input type="radio" name="sports" class="input" checked>
+              <input type="radio" name="sports" class="input">
               <span class="radio_mark">
                 Normal Cycle
               </span>
@@ -148,7 +148,7 @@
                 <li>والمشكلة اتحلت Closed اللي هنقدم بيها تكون Ticket TTS لازم الـ</li>
               </ul> 
               
-           <input type="checkbox" id="r2" name="fruit"><label style="color: red;">الحالات التي لا يتم فيها طلب التعويض</label>
+           <input type="checkbox" id="r2" name="fruit"><label class="box" data-radio="box1" style="color: red;">الحالات التي لا يتم فيها طلب التعويض</label>
            <div class="kalam2" id="kalam2">
             <div  id="kalam"></div>
              <ul>
@@ -158,6 +158,9 @@
            </div>
            <br>
            <input type="checkbox" id="r3" name="fruit" ><label> 360 علي  Outage في حالة كان هناك</label>
+           <br>
+           <input type="checkbox" id="r4" name="fruit" ><label> 360 علي  Outage في حالة مفيش </label>
+
            <div id="kalam3">
              <ul>
                <li>ولا لا Outage Id فيها  Tool بنسأل العميل عن الفترة اللي كان فيها المشكلة ونراجع الـ</li>
@@ -165,11 +168,16 @@
                <li> متزيدش عن 3 شهور من تاريخ الانتهاء Ticketلازم الـ </li>
              </ul>
            </div>
+           <div id="kalam4">
+            <ul>
+              <li> Concession TT نكتبها في الـ SR من الـ outage id من الفترة المطلوبة وهناخد الـ Outage الخاصة بالـ SRs عشان نشوف الـ BSS هنراجع الـ</li>
+            </ul>
+          </div>
             </div>           
             <div class="radio_content radio_2"  id="r1">
               <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
-              <p><strong>شروط التعويض خلال المكالمة</strong></p>
-              <div class="kalam" id="kalam5">
+              <label><strong>شروط التعويض خلال المكالمة</strong></label>
+            
                 <ul>
                   <li>الواحده او الاوتيج الواحد Ticket للـ  lE12 or 20GB يمكن تعويض العميل بحد اقصي </li>
                   <li>اولا علي العميل وفي حالة رفضة يتم عرض التعويض برصيد Quota يحب عرض التعويض بالـ</li>
@@ -178,37 +186,16 @@
             </div>
           </div>
         </div>
-
-         <!-- <input type="checkbox"> Normal Cycle -->
         <br>      
         
-   
-            <!-- <input type="checkbox" id="r4" name="fruit" ><label> 360 علي  Outage في حالة مفيش </label>
-            <div id="kalam4">
-              <ul>
-                <li> Concession TT نكتبها في الـ SR من الـ outage id من الفترة المطلوبة وهناخد الـ Outage الخاصة بالـ SRs عشان نشوف الـ BSS هنراجع الـ</li>
-              </ul>
-            </div>
+
+
+      
         </div>
-        <input type="checkbox" id="abc" onclick="checkme()"> Ticket Maker
-        <div id="msg">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" title="فحص الاوتج من الكاستمور360" >
-            <label class="form-check-label" for="flexCheckDefault">
-              <strong>Check pop outage</strong><br>
-              هنشوف الاوتيج من الكاستمور 360
-            </label>
-          </div>
-          <hr>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" title="بتشوف العميل عنده شكوي سابقة ولا لا">
-            <label class="form-check-label" for="flexCheckChecked">
-              <strong>Check TTS History before starting troubleshooting</strong> <br>
-              هنشوف اي شكاوي للعميل قبل منكمل معاه الترابل
-            </label>
-          </div>
-          <hr>
-          <div class="form-check">
+
+
+          <!-- BSS -->
+          <!-- <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" title="بتعرفها من الكاستمور 360">
             <label class="form-check-label" for="flexCheckChecked">
              <strong>Line disabled or enabled?</strong><br>
@@ -293,7 +280,7 @@
         </p>
       </div>
     </div>
-  </form> -->
+  </form>  -->
  <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
