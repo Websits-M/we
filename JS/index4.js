@@ -1,6 +1,16 @@
 let check = document.querySelector("#check1");
 let hide = document.querySelector("#hid");
 
+$(function (){
+    'use strict'
+    $('.texx').click(function(){
+        var current_r = $(this).attr("data-click");
+        $(".content .radio_content").hide();
+              $("."+current_r).show();
+
+
+    })
+})
 
 $(document).ready(function(){
     /* by default hide all radio_content div elements except first element */
@@ -14,6 +24,7 @@ $(document).ready(function(){
       $("."+current_raido).show();
     })
   });
+
 
 
 function showandhid(){
