@@ -19,6 +19,8 @@ nav {
   width: 100%;
   z-index: 999;
   opacity: 0.8;
+    position: sticky;
+
   /* border: 2px solid red; */
 }
 
