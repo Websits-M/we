@@ -6,13 +6,12 @@ let links = document.querySelector("#links")
 
 let logoutBtn = document.querySelector("#logout")
 
-// function ss(){
-  
-//   if(localStorage.getItem("mostafa")){
-//     localStorage.clear()
-//   }
-// }
-// ss()
+function log(){
+  if(localStorage.getItem("username") == ("mostafa")){
+   localStorage.clear()
+  }
+}
+log()
 
 
 function run(){
