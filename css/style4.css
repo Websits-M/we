@@ -190,3 +190,52 @@ nav {
   }
 
 }
+.wrapper .radio_tabs label{
+	margin-right: 15px;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	padding-left: 28px;
+}
+
+.wrapper .radio_tabs .radio_mark:before{
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	background: url("radio_icon.png") no-repeat 0 0;
+	width: 22px;
+	height: 22px;
+}
+
+/* .wrapper .radio_tabs label .input{
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+} */
+
+.wrapper .radio_tabs label .input:checked ~ .radio_mark{
+	color: #ff5d66;
+}
+
+.wrapper .radio_tabs label .input:checked ~ .radio_mark:before{
+	background-position: 0 -23px;
+	width: 22px;
+	height: 22px;
+}
+
+.wrapper .content{
+	width: 100%;
+	height: calc(100% - 70px);
+	background: #fff;
+	border-radius: 5px;
+	padding: 18px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+.wrapper .content p{
+	font-size: 15px;
+	line-height: 22px;
+	margin-bottom: 15px;
+}
