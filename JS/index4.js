@@ -20,29 +20,24 @@ function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
 }
 
-let r1 = document.getElementById('r1')
-let kalam = document.getElementById('kalam')
+
 let r2 = document.getElementById('r2')
 let kalam2 = document.getElementById('kalam2')
 let r3 = document.getElementById('r3')
 let kalam3 = document.getElementById('kalam3')
 let r4 = document.getElementById('r4')
 let kalam4 = document.getElementById('kalam4')
-let r5 = document.getElementById('r5')
-let kalam5 = document.getElementById('kalam5')
-r1.addEventListener("click" , ch1)
+
 r2.addEventListener("click" , ch1)
 r3.addEventListener("click" , ch1)
 r4.addEventListener("click" , ch1)
-r5.addEventListener("click" , ch1)
+
 
     function ch1(){
-        // if()
-        kalam.style.display = r1.checked ? "block" : "none"
         kalam2.style.display = r2.checked ? "block" : "none"
         kalam3.style.display = r3.checked ? "block" : "none"
         kalam4.style.display = r4.checked ? "block" : "none"
-        kalam5.style.display = r5.checked ? "block" : "none"
+
     }
  
 
