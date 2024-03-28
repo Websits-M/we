@@ -5,7 +5,7 @@ let hide = document.querySelector("#hid");
 $(document).ready(function(){
     /* by default hide all radio_content div elements except first element */
     $(".content .radio_content").hide();
-    $(".content .radio_content:first-child").show();
+    $(".content .radio_content:first-child");
 
     /* when any radio element is clicked, Get the attribute value of that clicked radio element and show the radio_content div element which matches the attribute value and hide the remaining tab content div elements */
     $(".radio_wrap").click(function(){
@@ -14,6 +14,7 @@ $(document).ready(function(){
       $("."+current_raido).show();
     })
   });
+
 
 function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
