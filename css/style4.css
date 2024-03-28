@@ -84,7 +84,7 @@ nav {
     .checkbtn {
       display: block;
     }
-    ul {
+    nav ul {
       position: fixed;
       width: 100%;
       height: 100vh;
@@ -196,18 +196,31 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
+  .content ul{
+    font-size: 15px;
+  }
+  .content label{
+    font-size: 14px;
+  }
   .container {
     display: block;
   }
 
 }
-.kalam , #kalam2 ,#kalam3 ,#kalam4 ,#kalam5{
+.content{
+  direction: rtl;
+}
+
+#kalam2 , #kalam3 , #kalam4{
   display: none;
   border: 2px solid black;
   width: fit-content;
+  flex-wrap: nowrap;
   padding: 5px;
-  
+
+
+
 }
 
 
