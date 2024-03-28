@@ -53,7 +53,7 @@
   </div>
   <div class="offcanvas-body">
     <p>
-      دي مشكلة موجودة عندنا بتأثر علي العملاء
+      دي مشكلة موجدة عندنا بتأثر علي العملاء
       <br>
       :بيكون ساعتين لكل المشاكل ماعدا  SLA اول
       <br>
@@ -96,9 +96,9 @@
      (postpaid) عميل نوت مايجريتد يعني علي نظام الفاتورة بيدفع بعد ال3 شهور
      <br>
      <mark>عيوبها</mark>
-     ان الفلوس بتاعت الشهور ممكن تتراكم علي العميل وهو اصلا معندوش ارضي فكان ليها عيوب كتير وعشان نتفادي العيوب دي بقينا نحول عملائنا لنظام المايجريتد
+     ان الفلوس بتاعت الشهور ممكن تتراكم علي العميل وهو اصلا مهندوش ارضي فكان ليها عيوب كتير وعشان نتفادي العيوب دي بقينا نحول عملائنا لنظام المايجريتد
      <br>
-    ADF Tool في حال العميل النوت مايجريتد بنصعد له من 
+    ADF Tool في حالة العميل النوت مايجريتد بنصعدله من 
     <br>
    BSS ودا بسبب انه ملوش حساب علي ال
 
@@ -110,25 +110,69 @@
       <form>
       <div class="block a1">
         <div class="line">
-          <input type="checkbox" id="check1" onchange="showandhid()"> <div class="texx">Data down</div>
+          <input type="checkbox" id="check1" onchange="showandhid()"> <div class="texx">Concession</div>
         </div>
       <div id="hid">
-        <p class="script1">دا كدا الخدمه كلها فاصلة اول حاجه هاخد رقم الارضي ونحطه في ال الكاستمر360 عشان اتأكد ان العميل معندوش اوتيج
+        <p class="script1">دا كدا الخدمه كلها فاصلة اول حاجه هاخد رقم الارضي واحطه في ال الكاستمور360 عشان اتأكد ان العميل معندوش اوتيج
           <br>
           enable  او  disable  بعدين هشوف الخط 
           <br>
           بعد كدا هنفتح ال<bdi>TTS</bdi> عشان نشوف العميل عنده شكوي ولا لا
         </p>
-        <input type="radio" name="fruit" value="Open لازم تكون الحاله بتاعتها " > لو في شكوي؟<br>
-        <input type="radio" name="fruit" value="Case detections هنمشي تيكت ميكر " > لو مفيش شكوي؟<br>
-        <p id="result"></p>
+        <input type="checkbox" id="r1"> Normal Cycle
+        <br>
+        <input type="checkbox" id="r5" > ON spot<br>
+        <div id="kalam5">
+          <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
+          <p><strong>شروط التعويض خلال المكالمة</strong></p>
+          <ul>
+            <li>الواحده او الاوتيج الواحد Ticket للـ  lE12 or 20GB يمكن تعويض العميل بحد اقصي </li>
+            <li>اولا علي العميل وفي حالة رفضة يتم عرض التعويض برصيد Quota يحب عرض التعويض بالـ</li>
+          </ul>
+        </div>
+        <div class="kalam" id="kalam">
+          <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
+          بنطلب من العميل رقم الشكوي او الفترة الكان فيها المشكلة
+          <br>
+          <ul>
+            <li><bdi>Order Installed</bdi>لازم نتأكد ان الـ</li>
+            <li><bdi>Order Cancellation</bdi>بنتأكد انت مفيش</li>
+            <li><bdi>(FV & FBB)</bdi>بنقدم طلب تعويض عن الفتره المدفوعة فقط لكل من الـ</li>
+            <hr>
+            <li>اللي هنقدم بيها الطلب متقدمش بيها قبل كداTTS لازم نتأكد ان الـ</li>
+            <li>والمشكلة اتحلت Closed اللي هنقدم بيها تكون Ticket TTS لازم الـ</li>
+          </ul>
+          <input type="checkbox" id="r2" name="fruit"><label style="color: red;">الحالات التي لا يتم فيها طلب التعويض</label>
+            <div id="kalam2">
+              <ul>
+                <li> اخري في نفس اليوم لنفس الحالهTicket في حالة فتح</li>
+                <li> حتي لو تم حل المشكلة Open كانت TT في حالة ان الـ</li>
+              </ul>
+            </div>
+            <br>
+            <input type="checkbox" id="r3" name="fruit" ><label> 360 علي  Outage في حالة كان هناك</label>
+            <div id="kalam3">
+              <ul>
+                <li>ولا لا Outage Id فيها  Tool بنسأل العميل عن الفترة اللي كان فيها المشكلة ونراجع الـ</li>
+                <li> TT نكتبها في الـ outage id الخاصة بالعميل وهناخد الـ outage بعد كدا بيطلع كل الـ</li>
+                <li> متزيدش عن 3 شهور من تاريخ الانتهاء Ticketلازم الـ </li>
+              </ul>
+            </div>
+            <br>
+            <input type="checkbox" id="r4" name="fruit" ><label> 360 علي  Outage في حالة مفيش </label>
+            <div id="kalam4">
+              <ul>
+                <li> Concession TT نكتبها في الـ SR من الـ outage id من الفترة المطلوبة وهناخد الـ Outage الخاصة بالـ SRs عشان نشوف الـ BSS هنراجع الـ</li>
+              </ul>
+            </div>
+        </div>
         <input type="checkbox" id="abc" onclick="checkme()"> Ticket Maker
         <div id="msg">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" title="فحص الاوتج من الكاستمور360" >
             <label class="form-check-label" for="flexCheckDefault">
               <strong>Check pop outage</strong><br>
-              هنشوف الاوتيج من الكاستمر 360
+              هنشوف الاوتيج من الكاستمور 360
             </label>
           </div>
           <hr>
@@ -136,7 +180,7 @@
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" title="بتشوف العميل عنده شكوي سابقة ولا لا">
             <label class="form-check-label" for="flexCheckChecked">
               <strong>Check TTS History before starting troubleshooting</strong> <br>
-              هنشوف اي شكاوي للعميل قبل مانكمل معاه الترابل
+              هنشوف اي شكاوي للعميل قبل منكمل معاه الترابل
             </label>
           </div>
           <hr>
@@ -156,7 +200,7 @@
           <br>
           لو الباقة اكتيف يبقي نوت بلوك 
           <br>
-          <bdi>Get online service</bdi> وبعرفها من الماتركس من
+          <bdi>Get online s..</bdi> وبعرفها من الماتركس من
           <br>
          يبقي الخط نوت بلوك UPلو النتيجه  
         
@@ -197,7 +241,7 @@
             <input class="form-check-input inp3" type="checkbox" value="" id="flexCheckChecked" onclick="checkme2()">
             <label class="form-check-label" for="flexCheckChecked">
              <strong>Query NST For the past 12 hours</strong><br>
-             Matrix هنا بشوف اللوجز  من ال<br>
+             Matrix هنا بشوف الوجز  من ال<br>
              NST بجيب الاكونت نمبر ابحث بيه بعدين بروح للماتركس علي
              <br>
              subscriber Database logs بعدين
@@ -229,6 +273,8 @@
  <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
 
      </div>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
