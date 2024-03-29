@@ -198,7 +198,7 @@ label:active{
 @media (max-width: 952px) {
   label.logo {
     font-size: 18px;
-    padding-left: 25px;
+    padding: 0 0 0 25px;
   }
   nav ul li a {
     font-size: 16px;
