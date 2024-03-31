@@ -221,7 +221,7 @@ label:active{
   direction: rtl;
 }
 
-#kalam2 , #kalam3 , #kalam4{
+#kalam2 , #kalam3 , #kalam4 ,#kalam5 ,#kalam6 , #kalam7{
   display: none;
   border: 2px solid black;
   width: fit-content;
@@ -287,3 +287,12 @@ label input:checked ~ .color2{
 	line-height: 22px;
 	margin-bottom: 15px;
 }
+
+/*  */
+#hid2{
+    /* border: 1px solid red; */
+    display: none;
+     width: fit-content;
+     padding: 10px;
+}
+
