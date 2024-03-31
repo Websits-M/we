@@ -29,8 +29,7 @@
         <label class="logo">
           WE
           <i class="fa fa-braille" aria-hidden="true"></i>
-          Info</label
-        >
+          Info</label>
   
      
         <ul id="user_info">
@@ -116,8 +115,6 @@
       <div class="block a1">
         <div class="line">
           <label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label>
-          <br>
-          <label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> TTS Case</label>
         </div>
       <div id="hid">
         <p class="script1"><strong>التعويضات</strong></p> 
@@ -198,7 +195,52 @@
             </div>
           </div>
         </div>
-        <br>      
+        <hr>
+        <!-- --------------------------------------TTS ----------------------------------------------------------->
+        <label class="texx"><input type="checkbox" id="check2" onchange="showandhid()" data-click="clickk"> TTS Case</label>
+        <div id="hid2">
+          <label class="box"><input type="checkbox" id="r5"><span class="color2" dir="rtl"> في حالة النت مش شغال والعميل عنده شكوي Physcal مفتوحه في IU</span></label>
+          <div id="kalam5">
+            <ul dir="rtl">
+              <li>اول حاجه هنشوف الشكوي علي TTS وهنشوفها متصعده من امتي حاليا After SLA ولا Within SLA ونعمل Update عليها كمثال:</li>
+              <p  style="color: red; text-align: left;">CST Name .... Follow Up within / After SLA, Informed CST Normal SLA 24 H</p>
+              <mark>في حالة كانت شكوي العميل عدت 24 H في الحالة دي لازم نعمل ديلاي من الـ IR ولو كان في ديلاي موجود لازم اعلم علي Called Within SLA</mark>
+               <br>
+               <strong>SR</strong>
+                  <p>Physical case >> Case type >Follow up -> Follow Up within / After SLA</p>
+            </ul>
+           
+          </div>
+          <!-- ------------------------------------------------------------------------------------------- -->
+          <br>
+          <label class="box"><input type="checkbox" id="r6"><span class="color2" dir="rtl"> في حالة عنده شكوي Physcal مفتوحة في IU وجاي بشكوي ثانية Physical برده</span></label>
+          <div id="kalam6">
+            <ul dir="rtl">
+              <li> هنفتح الشكوي وكل الهنعمله نشوف الشكوي متصعده من امتي وهي حاليا within sla ولا After sla ونعمل ابديت عليها وبس كدا</li>
+              <p  style="color: red; text-align: left;">CST Name .... Follow Up within / After SLA, CST has <bdi>(اسم الشكوي الجديده)</bdi> now Informed CST 24 H</p>
+                  <strong>SR</strong>
+                  <p id="p-sr2">Physcal cases -> Case type <bdi>(نوع الشكوي القديمة)</bdi> -> Follow up -> Follow within / After sla</p>
+            </ul>
+           
+          </div>
+          <!-- ---------------------------------------------------------------------------------------------- -->
+          <br>
+          <label class="box"><input type="checkbox" id="r7"><span class="color2" dir="rtl"> في حالة عنده شكوي physcal مفتوحة في IU وجاي بشكوي ثانية Logicl</span></label>
+          <div id="kalam7">
+            <ul dir="rtl">
+              <li> هنمشي ترابل شوت عادي جداً من الاول مع العميل ونشوف لو المشكلة اتحلت خلاص نعمل SR انها اتحلت وفي حالة انها متحلتش وهتتصعد هنعمل TTS case من الـ IR</li>
+              <p  style="color: red; text-align: left;"> IR -> TTS case -> First ViewIR -> TTS case -> First View</p>
+              <li> نكتب رقم الشكوي المفتوحة علي TTS + الرقم الارضي وكود المحافظة + الترابل شوت العملتة + اسم الشكوي الهتصعدها</li>
+              <li><mark>بما ان الشكوي في الـ IU يبقي تختار القسم الجديد انها تتصعد لقسم الـ FO</mark></li>
+              <p  style="color: red; text-align: left;"> <bdi>(نوع مشكلة العميل اللوجيكال)</bdi>Logical case(FO)</p>
+              <li><mark> بعدين ناخد رقم الـ IR ونحطه في الـ Update  علي TTS</mark></li>
+
+                  <strong>SR</strong>
+                  <p id="p-sr2">Physcal cases -> Case type <bdi>(الشكوي المفتوحه حاليا)</bdi> -> Solved -> Close reson (Close code)</p>
+            </ul>
+           
+          </div>
+        </div>
         
 
 
@@ -313,7 +355,6 @@
 
 
 
-
      </div>
 
 
@@ -357,4 +398,3 @@
    <script src="JS/index4.js"></script>
   </body>
 </html>
-
