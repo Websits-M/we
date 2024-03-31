@@ -13,11 +13,9 @@ $(function (){
 })
 
 $(document).ready(function(){
-    /* by default hide all radio_content div elements except first element */
     $(".content .radio_content").hide();
     $(".content .radio_content:first-child");
 
-    /* when any radio element is clicked, Get the attribute value of that clicked radio element and show the radio_content div element which matches the attribute value and hide the remaining tab content div elements */
     $(".radio_wrap").click(function(){
       var current_raido = $(this).attr("data-radio");
       $(".content .radio_content").hide();
@@ -26,9 +24,11 @@ $(document).ready(function(){
   });
 
 
-
+  let check2 = document.querySelector("#check2");
+  let hid2 = document.querySelector("#hid2");
 function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
+    hid2.style.display = check2.checked ? "block" : "none"
 }
 
 
@@ -38,16 +38,28 @@ let r3 = document.getElementById('r3')
 let kalam3 = document.getElementById('kalam3')
 let r4 = document.getElementById('r4')
 let kalam4 = document.getElementById('kalam4')
+let r5 = document.getElementById('r5')
+let kalam5 = document.getElementById('kalam5')
+let r6 = document.getElementById('r6')
+let kalam6 = document.getElementById('kalam6')
+let r7 = document.getElementById('r7')
+let kalam7 = document.getElementById('kalam7')
 
 r2.addEventListener("click" , ch1)
 r3.addEventListener("click" , ch1)
 r4.addEventListener("click" , ch1)
+r5.addEventListener("click" , ch1)
+r6.addEventListener("click" , ch1)
+r7.addEventListener("click" , ch1)
 
 
     function ch1(){
         kalam2.style.display = r2.checked ? "block" : "none"
         kalam3.style.display = r3.checked ? "block" : "none"
         kalam4.style.display = r4.checked ? "block" : "none"
+        kalam5.style.display = r5.checked ? "block" : "none"
+        kalam6.style.display = r6.checked ? "block" : "none"
+        kalam7.style.display = r7.checked ? "block" : "none"
 
     }
  
