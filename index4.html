@@ -7,17 +7,9 @@
     <title>Info</title>
     <link rel="stylesheet" href="css/style4.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/all.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <script>
-  
-    </script>
   </head>
   <body id="bd">
       <nav>
@@ -41,347 +33,269 @@
         
       </nav>
 <!-- ////////////////////////////////////////////////////////////////// -->
-     <div class="container" dir="auto">
-<div class="c1">
-  <div class="btnf b1">  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Outage</button>
-  </div>
-  <div class="btnf b2"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"> Major fault</button>
-  </div>
-  <div class="btnf b3"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Migrated VS Not Migrated</button>
-  </div>
+<div class="container" dir="auto">
+  <div>
 
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Outage</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>
-      دي مشكلة موجدة عندنا بتأثر علي العملاء
-      <br>
-      :بيكون ساعتين لكل المشاكل ماعدا  SLA اول
-      <br>
-      <strong> Wrong card and port</strong>
-      <br>
-      <strong>Reokacemnt ehlal cabin MSAN</strong>
-     <br>
-      في حال وجودهم ببلغ العميل ان المشكلة هتتحل في اقرب وقت ممكن
-      <br>
-      <a href="#">Read more</a>
-    </p>
-  </div>
-</div>
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Major fault</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>
-      في حالة وجودها ببلغ انها هتتحل في 3 ايام
-      <br>
-      لو العميل تبع حياه كريمة هبلغه انها هتتحل في 5 ايام
-      <br>
-      <a href="#">Read more...</a>
-    </p>
-  </div>
-</div>
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Migrated VS Not Migrated</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p dir="rtl">
-    عميل مايجريتد يعني علي نظام الباقة بيدفع قبل ال3 شهور(prepaid)  
-      <br>
-     BSS بنعرف انه مايجراتيد لو كان له حساب علي ال
-     <hr>
-     (postpaid) عميل نوت مايجريتد يعني علي نظام الفاتورة بيدفع بعد ال3 شهور
-     <br>
-     <mark>عيوبها</mark>
-     ان الفلوس بتاعت الشهور ممكن تتراكم علي العميل وهو اصلا مهندوش ارضي فكان ليها عيوب كتير وعشان نتفادي العيوب دي بقينا نحول عملائنا لنظام المايجريتد
-     <br>
-    ADF Tool في حالة العميل النوت مايجريتد بنصعدله من 
-    <br>
-   BSS ودا بسبب انه ملوش حساب علي ال
-
-    </p>
-  </div>
-</div>
-  <!-- ------------------------------------------------------------------------------------ -->
-</div><!-- /c1 -->
-       <form>
-      <div class="block a1">
-        <div class="line">
-          <label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label>
+      <div class="down">
+        <div class="select">
+          <select id="optionL" onchange="select()">
+            <option hidden > شرح - WE INFO</option>
+            <option value="1"> Outage</option>
+            <option value="2"> Major fault</option>
+            <option value="3"> Migrated VS Not Migrated</option>
+          </select>
         </div>
-      <div id="hid">
-        <p class="script1"><strong>التعويضات</strong></p> 
-
-        <div class="wrapper">
-          <div class="radio_tabs">
-            <label class="radio_wrap" data-radio="radio_1">
-              <input type="radio" name="sports" class="input">
-              <span class="radio_mark">
-                Normal Cycle
-              </span>
-            </label>
-            <label class="radio_wrap" data-radio="radio_2">
-              <input type="radio" name="sports" class="input">
-              <span class="radio_mark">
-                ON spot
-              </span>
-            </label>
-          </div>
-          <div class="content">
-            <div class="radio_content radio_1">
-              <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
-              <p>  بنطلب من العميل رقم الشكوي او الفترة الكان فيها المشكلة  </p>
-              <ul dir="rtl">
-                <li>لازم نتأكد ان الـ Order Installed</li>
-                <li>بنتأكد ان مفيش Order Cancellation</li>
-                <li>
-                  بنقدم طلب تعويض عن الفتره المدفوعة فقط لكل من الـ</li>
-                  <bdi>(FV & FBB)</bdi>
-                <hr>
-                <li> لازم نتأكد ان TTS الهنقدم بيها الطلب متقدمش بيها قبل كدا</li>
-                <li> لازم الـ Ticket TTS الهنقدم بيها تكون Closed والمشكلة اتحلت<li>
-              </ul> 
-              
-              <label class="box" style="color: red;"><input type="checkbox" id="r2"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
-           <div id="kalam2">
-             <ul dir="rtl">
-               <li> في حالة فتح Ticket اخري في نفس اليوم لنفس الحالة</li>
-               <li> في حالة ان الـ TT كانت Open  حتي لو تم حل المشكلة</li>
-             </ul>
-            </div>
-           <br>
-           <label><input type="checkbox" id="r3" name="fruit" > <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
-           <div id="kalam3">
-            <ul dir="rtl">
-              <li> بنسأل العميل عن الفترة ال كان فيها المشكلة ونراجع الـ Tool فيها Outage ID ولا لا</li>
-              <li> بعد كدا بيطلع كل الـ Outage الخاصة بالعميل وهناخد الـ Outage ID نكتبها في الـ TT</li>
-              <li> لازم الـ Ticket  متزيدش عن 3 شهور من تاريخ الانتهاء</li>
-            </ul>
-          </div>
-           <br>
-           <label><input type="checkbox" id="r4" name="fruit" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
-           <div id="kalam4">
-            <ul>
-              <li> هنراجع الـ BSS عشان نشوف الـ SRs الخاصة بالـ Outage  من الفترة المطلوبة وهناخد الـ Outage ID من ال SR نكتبها في الـ Concession TT</li>
-            </ul>
-          </div>
-            </div>     
-                  <!-- ---------------------------------------------------------------------- -->
-            <div class="radio_content radio_2"  id="r1">
-              <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
-              <label><strong>شروط التعويض خلال المكالمة</strong></label>
-            
-                <ul>
-                  <li>يمكن تعويض العميل بحد اقصي 20GB او 12 جنيه للـ Ticket الواحده او للـ Outage الواحد في خلال المكالمة</li>
-                  <li>يجب عرض التعويض بـ الـ Quota اولاً علي العميل وفي حالة رفضه يتم عرض العويض برصيد</li>
-                </ul>
-                <hr>
-                <label><strong>في حالة التعويض بأكثر من ذلك بحد اقصي 50GB او 40 جنيه :</strong></label>
-                <ul>
-                  <li>سيتم عمل IR للـ Team Leader وسيتم تنفيذالطلب في خلال 30 دقيقة</li>
-                  <li>يجب اضافة رقم موبايل للمتابعه مع العميل في الـ IR</li>
-                  <li>في حالة التعويض بأكثر من 50 GB او 40 جنيه يتم اتباع اجرائات الـ Normal Cycle</li>
-                  <li>في حالة النعويض عن مده اقل من 24 ساعة للـ Outage او Ticket يتم تعويض العميل بـ Quota فقط</li>
-                  <li>التعويض بيكون عن الـ Outages او الـ TTS او الـ ADF</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="box-select" id="box-1">
+          دي مشكلة موجدة عندنا بتأثر علي العملاء
+          <br>
+          :بيكون ساعتين لكل المشاكل ماعدا  SLA اول
+          <br>
+          <strong> Wrong card and port</strong>
+          <br>
+          <strong>Reokacemnt ehlal cabin MSAN</strong>
+         <br>
+          في حال وجودهم ببلغ العميل ان المشكلة هتتحل في اقرب وقت ممكن
         </div>
-        <hr>
-        <!-- --------------------------------------TTS ----------------------------------------------------------->
-        <label class="texx"><input type="checkbox" id="check2" onchange="showandhid()" data-click="clickk"> TTS Case</label>
-        <div id="hid2" dir="rtl">
-          <label class="box"><input type="checkbox" id="r5"><span class="color2" dir="rtl"> في حالة النت مش شغال والعميل عنده شكوي Physcal مفتوحه في IU</span></label>
+        <div class="box-select" id="box-2">
+          في حالة وجودها ببلغ انها هتتحل في 3 ايام
           <br>
-          <div id="kalam5">
-            <ul dir="rtl">
-              <li>اول حاجه هنشوف الشكوي علي TTS وهنشوفها متصعده من امتي حاليا After SLA ولا Within SLA ونعمل Update عليها كمثال:</li>
-              <p  style="color: red; text-align: left;">CST Name .... Follow Up within / After SLA, Informed CST Normal SLA 24 H</p>
-              <mark>في حالة كانت شكوي العميل عدت 24 H في الحالة دي لازم نعمل ديلاي من الـ IR ولو كان في ديلاي موجود لازم اعلم علي Called Within SLA</mark>
-               <br>
-               <strong>SR</strong>
-                  <p>Physical case >> Case type >Follow up -> Follow Up within / After SLA</p>
-            </ul>
-           
-          </div>
-          <!-- ------------------------------------------------------------------------------------------- -->
+          لو العميل تبع حياه كريمة هبلغه انها هتتحل في 5 ايام
           <br>
-          <label class="box"><input type="checkbox" id="r6"><span class="color2" dir="rtl"> في حالة عنده شكوي Physcal مفتوحة في IU وجاي بشكوي ثانية Physical برده</span></label>
-          <br>
-          <div id="kalam6">
-            <ul dir="rtl">
-              <li> هنفتح الشكوي وكل الهنعمله نشوف الشكوي متصعده من امتي وهي حاليا within sla ولا After sla ونعمل ابديت عليها وبس كدا</li>
-              <p  style="color: red; text-align: left;">CST Name .... Follow Up within / After SLA, CST has <bdi>(اسم الشكوي الجديده)</bdi> now Informed CST 24 H</p>
-                  <strong>SR</strong>
-                  <p id="p-sr2">Physcal cases -> Case type <bdi>(نوع الشكوي القديمة)</bdi> -> Follow up -> Follow within / After sla</p>
-            </ul>
-           
-          </div>
-          <!-- ---------------------------------------------------------------------------------------------- -->
-          <br>
-          <label class="box"><input type="checkbox" id="r7"><span class="color2" dir="rtl"> في حالة عنده شكوي physcal مفتوحة في IU وجاي بشكوي ثانية Logicl</span></label>
-          <br>
-          <div id="kalam7">
-            <ul dir="rtl">
-              <li> هنمشي ترابل شوت عادي جداً من الاول مع العميل ونشوف لو المشكلة اتحلت خلاص نعمل SR انها اتحلت وفي حالة انها متحلتش وهتتصعد هنعمل TTS case من الـ IR</li>
-              <p  style="color: red; text-align: left;"> IR -> TTS case -> First ViewIR -> TTS case -> First View</p>
-              <li> نكتب رقم الشكوي المفتوحة علي TTS + الرقم الارضي وكود المحافظة + الترابل شوت العملتة + اسم الشكوي الهتصعدها</li>
-              <li><mark>بما ان الشكوي في الـ IU يبقي تختار القسم الجديد انها تتصعد لقسم الـ FO</mark></li>
-              <p  style="color: red; text-align: left;"> <bdi>(نوع مشكلة العميل اللوجيكال)</bdi>Logical case(FO)</p>
-              <li><mark> بعدين ناخد رقم الـ IR ونحطه في الـ Update  علي TTS</mark></li>
-
-                  <strong>SR</strong>
-                  <p id="p-sr2">Physcal cases -> Case type <bdi>(الشكوي المفتوحه حاليا)</bdi> -> Solved -> Close reson (Close code)</p>
-            </ul>
-           
-          </div>
         </div>
-        
-
-
-      
-        </div>
-
-
-          <!-- BSS -->
-          <!-- <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" title="بتعرفها من الكاستمور 360">
-            <label class="form-check-label" for="flexCheckChecked">
-             <strong>Line disabled or enabled?</strong><br>
-             هشوف حالة الخط من الكاستمر او الماتريكس
-            </label>
-          </div>
-          <hr>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" title="دي بتعرفها من البي اس اس لو الباقة اكتيف وبتعرفها من الماتريكس">
-            <label class="form-check-label" for="flexCheckChecked">
-             <strong>Is the line blocked or not blocked?</strong><br>
-          BSSبعرف الخط بلوك ولا لا من 
+        <div class="box-select" id="box-3">
+          عميل مايجريتد يعني علي نظام الباقة بيدفع قبل ال3 شهور(prepaid)  
           <br>
-          لو الباقة اكتيف يبقي نوت بلوك 
-          <br>
-          <bdi>Get online s..</bdi> وبعرفها من الماتركس من
-          <br>
-         يبقي الخط نوت بلوك UPلو النتيجه  
-        
-            </label>
-          </div>
-          <hr>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-             <strong>Customer input</strong><br>
-             هنا بنشوف حالة النت عند العميل
-            </label>
-          </div>
-          <hr>
-          <div class="form-check">
-            <input class="form-check-input inp3" type="checkbox" value="" id="flexCheckChecked" onclick="checkme2()">
-            <label class="form-check-label" for="flexCheckChecked">
-             <strong>Query IP by Username</strong><br>
-             ولا لا Ip هنا بشوف الراوتر ساحب 
-             <br>
-              دا بيكون عن طريق الماتركس من
-            <br>
-            <bdi>Get Customer Ip</bdi>
-            <br>
-             يبقي كدا تمام وساحب IP لو ظهر
-            </label>
-          </div>
-          <hr>
-          <div class="form-check">
-            <input class="form-check-input inp3" type="checkbox" value="" id="flexCheckChecked" onclick="checkme2()">
-            <label class="form-check-label" for="flexCheckChecked">
-             <strong>Router ADSL LED (VS) Matrix status</strong><br>
-          عندي وعند العميل  ADSL هنا بقارن اللمبة<br>
-            </label>
-          </div>
-          <hr>
-          <div class="form-check">
-            <input class="form-check-input inp3" type="checkbox" value="" id="flexCheckChecked" onclick="checkme2()">
-            <label class="form-check-label" for="flexCheckChecked">
-             <strong>Query NST For the past 12 hours</strong><br>
-             Matrix هنا بشوف الوجز  من ال<br>
-             NST بجيب الاكونت نمبر ابحث بيه بعدين بروح للماتركس علي
-             <br>
-             subscriber Database logs بعدين
-            </label>
-          </div>
+         BSS بنعرف انه مايجراتيد لو كان له حساب علي ال
+         <hr>
+         (postpaid) عميل نوت مايجريتد يعني علي نظام الفاتورة بيدفع بعد ال3 شهور
+         <br>
+         <mark>عيوبها</mark>
+         ان الفلوس بتاعت الشهور ممكن تتراكم علي العميل وهو اصلا مهندوش ارضي فكان ليها عيوب كتير وعشان نتفادي العيوب دي بقينا نحول عملائنا لنظام المايجريتد
+         <br>
+        ADF Tool في حالة العميل النوت مايجريتد بنصعدله من 
+        <br>
+       BSS ودا بسبب انه ملوش حساب علي ال
         </div>
       </div>
-      <br>
-    </div>
-    <div class="block a2">
-      <div class="line">
-        <div><input type="checkbox" id="b1" onclick="BSS()"></div><div class="texx"> BSS Tool Info</div>
-      </div>
-      <div id="msg_bss">
-        <p> Susbend and bar (fixed)<br>
-          دي لما اجي اوقف الخط
-        </p> 
-        <p>
-          Resume and Uebar(fixed)<br>
-          دي لما ناجي نشغل الخط
-        </p>
-        <p>
-          Trouble Ticet <br>
-          دي الترابل تيكت ال تمت علي خط العميل
-        </p>
-      </div>
-    </div>
-  </form>  -->
- <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     </div>
-
-
-     
    
+  <!-- ----------------------------------part2-------------------------------------------------- -->
 
-<!-- 
-     Complaint
+        <div class="content-data">
+                  <label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label>
+                      <div id="hid">
+                          <p class="script1"><strong>التعويضات</strong></p> 
+                          <div class="wrapper">
+                            <div class="radio_tabs">
+                              <label class="radio_wrap" data-radio="radio_1">
+                                <input type="radio" name="sports" class="input">
+                                <span class="radio_mark">
+                                  Normal Cycle
+                                </span>
+                              </label>
+                              <label class="radio_wrap" data-radio="radio_2">
+                                <input type="radio" name="sports" class="input">
+                                <span class="radio_mark">
+                                  ON spot
+                                </span>
+                              </label>
+                            </div> <!-- /radio_tabs -->
 
-     (Customer Asked to Cancel)
+                            <div class="content">
+                              <div class="radio_content radio_1">
+                                <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
+                                <p>  بنطلب من العميل رقم الشكوي او الفترة الكان فيها المشكلة  </p>
+                                <ol dir="rtl">
+                                  <strong>الشروط:</strong>
+                                  <li>لازم نتأكد ان الـ Order Installed</li>
+                                  <li>بنتأكد ان مفيش Order Cancellation</li>
+                                  <li> بنقدم طلب تعويض عن الفتره المدفوعة فقط لكل من الـ (FV & FBB)</li>
+                                  <li> لازم نتأكد ان TTS الهنقدم بيها الطلب متقدمش بيها قبل كدا</li>
+                                  <li> لازم الـ Ticket TTS الهنقدم بيها تكون Closed والمشكلة اتحلت</li>
+                                  <li> يجب ان لاتزيد الـ Ticket  عن 3 شهور من تاريخ اغلاقها</li>
+                                  <li> لازم يكون حساب العميل Active account</li>
+                                </ol> 
+                                
+                                <label class="box" style="color: red;"><input type="checkbox" id="r2"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
+                            <div id="kalam2">
+                              <ul dir="rtl">
+                                <li> في حالة فتح Ticket اخري في نفس اليوم لنفس الحالة</li>
+                                <li> في حالة ان الـ TT كانت Open  حتي لو تم حل المشكلة</li>
+                                <li> في حالة كانت المشكلة voice down only او Wireless issue او info request</li>
 
-     quality investigation
+                              </ul>
+                              </div>
+                            <br>
+                            <label><input type="checkbox" id="r3" name="fruit" > <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
+                            <div id="kalam3">
+                              <ul dir="rtl">
+                                <li> بنسأل العميل عن الفترة ال كان فيها المشكلة ونراجع الـ Tool فيها Outage ID ولا لا</li>
+                                <li> بعد كدا بيطلع كل الـ Outage الخاصة بالعميل وهناخد الـ Outage ID نكتبها في الـ TT</li>
+                                <li> لازم الـ Ticket  متزيدش عن 3 شهور من تاريخ الانتهاء</li>
+                              </ul>
+                            </div>
+                            <br>
+                            <label><input type="checkbox" id="r4" name="fruit" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
+                            <div id="kalam4">
+                              <ul>
+                                <li> هنراجع الـ BSS عشان نشوف الـ SRs الخاصة بالـ Outage  من الفترة المطلوبة وهناخد الـ Outage ID من ال SR نكتبها في الـ Concession TT</li>
+                              </ul>
+                            </div>
+                              </div>     
+                                    <!-- ------------------------------ON SPOT---------------------------------------- -->
+                              <div class="radio_content radio_2"  id="r1">
+                                <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
+                                <label><strong>شروط التعويض خلال المكالمة</strong></label>
+                              
+                                  <ul>
+                                    <li>يمكن تعويض العميل بحد اقصي 20GB او 12 جنيه للـ Ticket الواحده او للـ Outage الواحد في خلال المكالمة</li>
+                                    <li>يجب عرض التعويض بـ الـ Quota اولاً علي العميل وفي حالة رفضه يتم عرض العويض برصيد</li>
+                                  </ul>
+                                  <hr>
+                                  <label><strong>في حالة التعويض بأكثر من ذلك بحد اقصي 50GB او 40 جنيه :</strong></label>
+                                  <ul>
+                                    <li>سيتم عمل IR للـ Team Leader وسيتم تنفيذالطلب في خلال 30 دقيقة</li>
+                                    <li>يجب اضافة رقم موبايل للمتابعه مع العميل في الـ IR</li>
+                                    <li>في حالة التعويض بأكثر من 50 GB او 40 جنيه يتم اتباع اجرائات الـ Normal Cycle</li>
+                                    <li>في حالة النعويض عن مده اقل من 24 ساعة للـ Outage او Ticket يتم تعويض العميل بـ Quota فقط</li>
+                                    <li>التعويض بيكون عن الـ Outages او الـ TTS او الـ ADF</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div> <!-- /wrapper -->
+                      </div> <!-- /hid -->
+                <hr>
+                <!-- --------------------------------------TTS ----------------------------------------------------------->
+                        <label class="texx"><input type="checkbox" id="check2" onchange="showandhid()" data-click="clickk"> TTS Case</label>
+                          <div id="hid2" dir="rtl">
+                            <label class="box"><input type="checkbox" id="q-1"><span class="color2" dir="rtl"> في حالة النت مش شغال والعميل عنده شكوي Physcal مفتوحه في IU</span></label>
+                            <br>
+                            <div id="script-1" class="scripts">
+                              <ul dir="rtl">
+                                <li>اول حاجه هنشوف الشكوي علي TTS وهنشوفها متصعده من امتي حاليا After SLA ولا Within SLA ونعمل Update عليها كمثال:</li>
+                                <p  style="color: red; text-align: left;">CST Name .... Follow Up within / After SLA, Informed CST Normal SLA 24 H</p>
+                                <mark>في حالة كانت شكوي العميل عدت 24 H في الحالة دي لازم نعمل ديلاي من الـ IR ولو كان في ديلاي موجود لازم اعلم علي Called Within SLA</mark>
+                                <br>
+                                <strong>SR</strong>
+                                    <p>Physical case >> Case type >Follow up -> Follow Up within / After SLA</p>
+                              </ul>
+                            
+                            </div>
+                            <!-- ------------------------------------------------------------------------------------------- -->
+                            <br>
+                            <label class="box"><input type="checkbox" id="q-2"><span class="color2" dir="rtl"> في حالة عنده شكوي Physcal مفتوحة في IU وجاي بشكوي ثانية Physical برده</span></label>
+                            <br>
+                            <div id="script-2" class="scripts">
+                              <ul dir="rtl">
+                                <li> هنفتح الشكوي وكل الهنعمله نشوف الشكوي متصعده من امتي وهي حاليا within sla ولا After sla ونعمل ابديت عليها وبس كدا</li>
+                                <p  style="color: red; text-align: left;">CST Name .... Follow Up within / After SLA, CST has <bdi>(اسم الشكوي الجديده)</bdi> now Informed CST 24 H</p>
+                                    <strong>SR</strong>
+                                    <p id="p-sr2">Physcal cases -> Case type <bdi>(نوع الشكوي القديمة)</bdi> -> Follow up -> Follow within / After sla</p>
+                              </ul>
+                            
+                            </div>
+                            <!-- ---------------------------------------------------------------------------------------------- -->
+                            <br>
+                            <label class="box"><input type="checkbox" id="q-3"><span class="color2" dir="rtl"> في حالة عنده شكوي physcal مفتوحة في IU وجاي بشكوي ثانية Logicl</span></label>
+                            <br>
+                            <div id="script-3" class="scripts">
+                              <ul dir="rtl">
+                                <li> هنمشي ترابل شوت عادي جداً من الاول مع العميل ونشوف لو المشكلة اتحلت خلاص نعمل SR انها اتحلت وفي حالة انها متحلتش وهتتصعد هنعمل TTS case من الـ IR</li>
+                                <p  style="color: red; text-align: left;"> IR -> TTS case -> First ViewIR -> TTS case -> First View</p>
+                                <li> نكتب رقم الشكوي المفتوحة علي TTS + الرقم الارضي وكود المحافظة + الترابل شوت العملتة + اسم الشكوي الهتصعدها</li>
+                                <li><mark>بما ان الشكوي في الـ IU يبقي تختار القسم الجديد انها تتصعد لقسم الـ FO</mark></li>
+                                <p  style="color: red; text-align: left;"> <bdi>(نوع مشكلة العميل اللوجيكال)</bdi>Logical case(FO)</p>
+                                <li><mark> بعدين ناخد رقم الـ IR ونحطه في الـ Update  علي TTS</mark></li>
 
+                                    <strong>SR</strong>
+                                    <p id="p-sr2">Physcal cases -> Case type <bdi>(الشكوي المفتوحه حاليا)</bdi> -> Solved -> Close reson (Close code)</p>
+                              </ul>
+                            
+                            </div>
+                          <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                          <br>
+                          <label class="box"><input type="checkbox" id="q-4"><span class="color2" dir="rtl"> في حالة عنده شكوي Physcal مفتوحه في قسم الـ CC Follow up وبيقول النت مش شغال</span></label>
+                          <br>
+                          <div id="script-4" class="scripts">
+                            <p class="script1"><strong> لازم نشوف الـ TTS</strong></p> 
+                            <ul dir="rtl">
+                              <li> هنمشي ترابل شوت تاني من الاول مع العميلل سواء كانت نفس المشكلة او مشكلة ثانية Physcal وهتتصعد نعمل TTS Case من IR</li>
+                              <p  style="color: red; text-align: left;"> IR -> TTS case -> First View</p>
+                              <li> نكتب رقم الشكوي المفتوحة علي TTS + الرقم الارضي وكود المحافظة + الترابل شوت العملتة + اسم الشكوي الهتصعدها</li>
+                              <li><mark>الـ IR في الـ Update علي الـ TTS</mark></li>
+                              <li style="color: blueviolet;">لو كانت نفس المشكلة هنعمل SR</li>
+                              <p  style="color: red; text-align: left;">Physcal cases -> Case type -> Follow Up -> Re-Esclation</p>
 
-     ي التيكت وابلاغ العميل ان طلب التعويض هيتم بعد ع مع اضافة -->
-
-
-
-
-
-  
-
-
-
+                              <li style="color: blueviolet;">لو كانت مشكلة تانية هنعمل SR</li>
+                                  <p id="p-sr2">Physcal cases -> Case type <bdi>(نوع المشكلة القديمة)</bdi> -> Solved -> Close reson (Close code)</p>
+                            </ul>
+                          
+                          </div>
+                          <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                          <br>
+                          <label class="box"><input type="checkbox" id="q-5"><span class="color2" dir="rtl"> في حالة كان عنده شكوي Physcal مفتوحه في CC Follow up وجاي بشكوي Logical</span></label>
+                          <br>
+                          <div id="script-5" class="scripts">
+                            <ul dir="rtl">
+                              <li> هنمشي ترابل شوت عادي جداً من الاول مع العميل ونشوف لو المشكلةاتحلت خلاص نعمل SR انها اتحلت وفي حاله لو متحلتشوهتتصعد هنعمل TTS Case من IR</li>
+                              <p  style="color: red; text-align: left;"> IR -> TTS case -> First View</p>
+                              <li> نكتب رقم الشكوي المفتوحة علي TTS + الرقم الارضي وكود المحافظة + الترابل شوت العملتة + اسم الشكوي الهتصعدها</li>
+                              <li><mark>لكن بما ان الشكوي القديمة في الـ CC Follow up يبقي تختار القسم الجديد انها تتصعد لقسم الـ SLS</mark></li>
+                              <li style="color: blueviolet;">لو كانت نفس المشكلة هنعمل SR</li>
+                              <p  style="color: red; text-align: left;">Logical cases (SLS)</p>
+                              <li><mark>هناخد رقم الـ IR ونحطه في الـ Update علي TTS</mark></li>
+                              <li style="color: blueviolet;">هنعمل SR</li>
+                                  <p id="p-sr2">Physcal cases -> Case type <bdi>(نوع المشكلة المفتوحه حاليا)</bdi> -> Solved -> Close reson (Close code)</p>
+                            </ul>
+                          
+                          </div>
+                          <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+                          <br>
+                          <label class="box"><input type="checkbox" id="q-6"><span class="color2" dir="rtl"> في حالة رفعنا شكوي لقسم الـ IU ونزلت تاني MCU</span></label>
+                          <br>
+                          <div id="script-6" class="scripts">
+                            <p class="script1"><strong> نزل عليها Update Major Fault / Close Code 20</strong></p> 
+                            <ul dir="rtl">
+                              <li><mark> هنعطي للعميل 3 ايام عمل ونعمل SR</mark></li>
+                              <p  style="color: red; text-align: left;"> FBB Tech Problem -> Data Down -> Major Fault</p>
+                              <li><mark> هنعطي 5 ايام عمل لو حياه كريمة ونعمل SR</mark></li>
+                              <p  style="color: red; text-align: left;"> FBB Tech Problem -> Case Type -> Major Fault Haya Karima</p>
+                              <li><mark> لو نزل عليها Update Outside TE-Data  ونعمل SR</mark></li>
+                              <p  style="color: red; text-align: left;">Broadband -> Technical ADSL/VDSL -> CC Service Activation -> Configuration</p>
+                              <li><mark>هناخد رقم الـ IR ونحطه في الـ Update علي TTS</mark></li>
+                              <li style="color: blueviolet;">هنعمل SR</li>
+                                  <p id="p-sr2">Physcal cases -> Case type <bdi>(نوع المشكلة المفتوحه حاليا)</bdi> -> Solved -> Close reson (Close code)</p>
+                            </ul>
+                          
+                          </div>
+                          <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                          <br>
+                          <label class="box"><input type="checkbox" id="q-7"><span class="color2" dir="rtl"> في حالة لو كان عنده شكوي في MCU Call Center ولسه لم يمر عليها 5 ايام من تاريخ اخر ابديت</span></label>
+                          <br>
+                          <div id="script-7" class="scripts">
+                            <ul dir="rtl">
+                              <li>هنمشي ترابل شوت تاني مع العميل من الاول ونحط الترابل شوت في الابديت في الـ TTS ونعيد رفع الشكوي لقسم الـ IU ونعمل SR</li>
+                              <p style="color: red;">Physcal cases -> Case type <bdi>(نوع المشكلة)</bdi> -> Follow Up -> RE-Escalation</p>
+                            </ul>
+                          
+                          </div>
+                          <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                          <br>
+                          <label class="box"><input type="checkbox" id="q-8"><span class="color2" dir="rtl"> في حالة العميل عنده شكوي في MCU Call Center <ins>وعدي</ins> عليها 5 ايام من تاريخ اخر ابديت</span></label>
+                          <br>
+                          <div id="script-8" class="scripts">
+                            <ul dir="rtl">
+                              <li>هنمشي ترابل شوت من الاول ونقفل الشكوي القديمة ونصعد تكت جديده لقسم الـ IU</li>
+                              <li style="color: blueviolet;">هنعمل SR</li>
+                              <p style="color: red;">Physcal cases -> Case type <bdi>(نوع المشكلة القفلناها )</bdi> -> Solved -> Close reson (Close code)</p>
+                            </ul>
+                          
+                          </div>
+                          <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                          </div> <!-- /hid2 -->
+                
+        </div><!-- /content-data -->
+  </div>
+</div><!-- /container -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
