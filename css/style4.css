@@ -1,298 +1,305 @@
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* nav */
 
 nav {
-    background: linear-gradient(
-      to right,
-      rgb(21, 3, 113),
-      rgb(76, 0, 255),
-      rgb(96, 18, 141)
-    );
-  
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    opacity: 0.8;
-  }
-  
-  label.logo {
-    color: white;
-    font-size: 30px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    float: right;
-    margin-right: 20px;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  
-  nav ul li a {
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-decoration: none;
-  }
-  li a.active,
-  li a:hover {
-    color: #ffffff;
-    font-weight: 100;
-    background: linear-gradient
-      (90deg, rgba(2, 0, 2, 0.21) 40%, rgba(0, 242, 255, 0.238) 100%);
-  
-    transition: 0.5s;
-    box-shadow: 1px 1px 1px 1px rgba(2, 2, 92, 0.354);
-  }
-  .checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check {
-    display: none;
-  }
-  @media (max-width: 952px) {
-    label.logo {
-      font-size: 18px;
-      padding-left: 25px;
-    }
-    nav ul li a {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 1070px) {
-    .checkbtn {
-      display: block;
-    }
-    nav ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #000000ea;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all 0.5s;
-    }
-    nav ul li {
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a {
-      font-size: 20px;
-    }
-    li a:hover,
-    li a.active {
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul {
-      left: 0;
-    }
-   
-    
-  }
-  .us{
-    font-size: 25px;
-    color: #fff;
-  }
-  /* ------------------------------------------------------------------- */
+  background: linear-gradient(
+    to right,
+    rgb(21, 3, 113),
+    rgb(76, 0, 255),
+    rgb(96, 18, 141)
+  );
 
-  .container{
-    padding-top: 120px;
-    width: 95%;
-    margin: auto;
-    display: flex;
-
-  }
-  .c1{
-    margin-right: 20px;
-    border-right: 2px solid #ddd;
-    padding: 5px;
-
-
-  }
-  .btn{
-    margin-bottom: 5px;
-  }
-  p{
-    text-align: right;
-  }
-.line{
-  text-align: center;
-  display: flex;
-
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  opacity: 0.8;
 }
 
-#hid{
-  display: none;
-  width: fit-content;
+label.logo {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
-#msg , #msg3{
-  display: none;
-  border: 1px solid black;
-  width: fit-content;
-  /* margin: auto; */
-  padding: 5px;
+
+nav ul {
+  float: right;
+  margin-right: 20px;
 }
-#msg_bss{
-  display: none;
-  border: 1px solid black;
-  width: fit-content;
-  padding: 5px;
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
-.texx{
-  padding-left: 5px;
-  font-weight: bolder;
-  color: #0082e6;
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
 }
-label{
+li a.active,
+li a:hover {
+  color: #ffffff;
+  font-weight: 100;
+  background: linear-gradient
+    (90deg, rgba(2, 0, 2, 0.21) 40%, rgba(0, 242, 255, 0.238) 100%);
+
+  transition: 0.5s;
+  box-shadow: 1px 1px 1px 1px rgba(2, 2, 92, 0.354);
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
   cursor: pointer;
-
-}
-label:active{
-  color: blueviolet;
-
-
-}
-#result , #result3{
-  margin-top: 25px;
-  text-align: right;
   display: none;
-  border: 1px solid red;
-  font-size: 18px;
-  padding: 5px;
-  width: fit-content;
-  /* margin: auto; */
 }
-.script1{
-  text-align: right;
-  width: fit-content;
-  padding: 5px;
-  border: 1px solid red;
-  /* margin: auto; */
+#check {
+  display: none;
 }
-
-
 @media (max-width: 952px) {
   label.logo {
     font-size: 18px;
-    padding: 0 0 0 25px;
+    padding-left: 25px;
   }
   nav ul li a {
     font-size: 16px;
   }
 }
 
-@media (max-width: 550px) {
-  .content ul{
-    font-size: 15px;
-  }
-  .content label{
-    font-size: 14px;
-  }
-  .container {
+@media (max-width: 1070px) {
+  .checkbtn {
     display: block;
   }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000ea;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover,
+  li a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+ 
+  
+}
+.us{
+  font-size: 25px;
+  color: #fff;
+}
+/* ------------------------------------------------------------------- */
+
+.container{
+  padding-top: 120px;
+  width: 95%;
+  margin: auto;
+  display: flex;
 
 }
-.content{
-  direction: rtl;
-}
-
-#kalam2 , #kalam3 , #kalam4 ,#kalam5 ,#kalam6 , #kalam7{
-  display: none;
-  border: 2px solid black;
-  width: fit-content;
-  flex-wrap: nowrap;
+.c1{
+  margin-right: 20px;
+  border-right: 2px solid #ddd;
   padding: 5px;
 
 
-
+}
+.btn{
+  margin-bottom: 5px;
+}
+p{
+  text-align: right;
 }
 
 
+#hid{
+display: none;
+width: fit-content;
+}
+#msg , #msg3{
+display: none;
+border: 1px solid black;
+width: fit-content;
+/* margin: auto; */
+padding: 5px;
+}
+#msg_bss{
+display: none;
+border: 1px solid black;
+width: fit-content;
+padding: 5px;
+}
+.texx{
+padding-left: 5px;
+font-weight: bolder;
+color: #0082e6;
+}
+label{
+cursor: pointer;
 
+}
+label:active{
+color: blueviolet;
+
+
+}
+#result , #result3{
+margin-top: 25px;
+text-align: right;
+display: none;
+border: 1px solid red;
+font-size: 18px;
+padding: 5px;
+width: fit-content;
+/* margin: auto; */
+}
+.script1{
+text-align: right;
+width: fit-content;
+padding: 5px;
+border: 1px solid red;
+/* margin: auto; */
+}
+
+
+@media (max-width: 952px) {
+label.logo {
+  font-size: 18px;
+  padding: 0 0 0 25px;
+}
+nav ul li a {
+  font-size: 16px;
+}
+}
+
+@media (max-width: 550px) {
+.content ul{
+  font-size: 15px;
+}
+.content label{
+  font-size: 14px;
+}
+.container {
+  display: block;
+}
+
+}
+
+.content-data{
+  padding: 0 0 60px 0;
+}
+.content{
+direction: rtl;
+
+}
+
+.scripts{
+display: none;
+border: 2px solid black;
+width: fit-content;
+padding: 5px;
+}
 
 .wrapper .radio_tabs label{
-	margin-right: 15px;
-	display: block;
-	position: relative;
-	cursor: pointer;
-	padding-left: 28px;
+margin-right: 15px;
+display: block;
+position: relative;
+cursor: pointer;
+padding-left: 28px;
 }
 
 .wrapper .radio_tabs .radio_mark:before{
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 0;
-	width: 22px;
-	height: 22px;
+content: "";
+position: absolute;
+top: 2px;
+left: 0;
+width: 22px;
+height: 22px;
 }
 
 /* .wrapper .radio_tabs label .input{
-	position: absolute;
-	top: 0;
-	right: 0;
-	opacity: 0;
+position: absolute;
+top: 0;
+right: 0;
+opacity: 0;
 } */
 
 label input:checked ~ .color2{
-  color: blueviolet;
+color: blueviolet;
 
 }
 .wrapper .radio_tabs label .input:checked ~ .radio_mark{
-	color: #ff5d66;
+color: #ff5d66;
 }
 
 .wrapper .radio_tabs label .input:checked ~ .radio_mark:before{
-	background-position: 0 -23px;
-	width: 22px;
-	height: 22px;
+background-position: 0 -23px;
+width: 22px;
+height: 22px;
 }
 
 .wrapper .content{
-	width: 100%;
-	height: calc(100% - 70px);
-	background: #fff;
-	border-radius: 5px;
-	padding: 18px;
-	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+width: 100%;
+height: calc(100% - 70px);
+background: #fff;
+border-radius: 5px;
+padding: 18px;
+box-shadow: 0 0 2px rgba(0,0,0,0.1);
 }
 
 .wrapper .content p{
-	font-size: 15px;
-	line-height: 22px;
-	margin-bottom: 15px;
+font-size: 15px;
+line-height: 22px;
+margin-bottom: 15px;
 }
 
 /*  */
 #hid2{
-    /* border: 1px solid red; */
-    display: none;
-     width: fit-content;
-     padding: 10px;
+  /* border: 1px solid red; */
+  display: none;
+   width: fit-content;
 }
 
+.down{
+  /* background-color: red; */
+  padding: 10px 5px 60px 5px;
+}
+.box-select{
+  display: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#optionL{
+  text-align: center;
+  border-radius: 5px;
+}
