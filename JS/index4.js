@@ -32,41 +32,70 @@ function showandhid(){
 }
 
 
-let r2 = document.getElementById('r2')
-let kalam2 = document.getElementById('kalam2')
-let r3 = document.getElementById('r3')
-let kalam3 = document.getElementById('kalam3')
-let r4 = document.getElementById('r4')
-let kalam4 = document.getElementById('kalam4')
-let r5 = document.getElementById('r5')
-let kalam5 = document.getElementById('kalam5')
-let r6 = document.getElementById('r6')
-let kalam6 = document.getElementById('kalam6')
-let r7 = document.getElementById('r7')
-let kalam7 = document.getElementById('kalam7')
+let q_1 = document.getElementById('q-1')
+let script_1 = document.getElementById('script-1')
+let q_2 = document.getElementById('q-2')
+let script_2 = document.getElementById('script-2')
+let q_3 = document.getElementById('q-3')
+let script_3 = document.getElementById('script-3')
+let q_4 = document.getElementById('q-4')
+let script_4 = document.getElementById('script-4')
+let q_5 = document.getElementById('q-5')
+let script_5 = document.getElementById('script-5')
+let q_6 = document.getElementById('q-6')
+let script_6 = document.getElementById('script-6')
+let q_7 = document.getElementById('q-7')
+let script_7 = document.getElementById('script-7')
+let q_8 = document.getElementById('q-8')
+let script_8 = document.getElementById('script-8')
 
-r2.addEventListener("click" , ch1)
-r3.addEventListener("click" , ch1)
-r4.addEventListener("click" , ch1)
-r5.addEventListener("click" , ch1)
-r6.addEventListener("click" , ch1)
-r7.addEventListener("click" , ch1)
+
+q_1.addEventListener("click" , ch1)
+q_2.addEventListener("click" , ch1)
+q_3.addEventListener("click" , ch1)
+q_4.addEventListener("click" , ch1)
+q_5.addEventListener("click" , ch1)
+q_6.addEventListener("click" , ch1)
+q_7.addEventListener("click" , ch1)
+q_8.addEventListener("click" , ch1)
+
 
 
     function ch1(){
-        kalam2.style.display = r2.checked ? "block" : "none"
-        kalam3.style.display = r3.checked ? "block" : "none"
-        kalam4.style.display = r4.checked ? "block" : "none"
-        kalam5.style.display = r5.checked ? "block" : "none"
-        kalam6.style.display = r6.checked ? "block" : "none"
-        kalam7.style.display = r7.checked ? "block" : "none"
+        script_1.style.display = q_1.checked ? "block" : "none"
+        script_2.style.display = q_2.checked ? "block" : "none"
+        script_3.style.display = q_3.checked ? "block" : "none"
+        script_4.style.display = q_4.checked ? "block" : "none"
+        script_5.style.display = q_5.checked ? "block" : "none"
+        script_6.style.display = q_6.checked ? "block" : "none"
+        script_7.style.display = q_7.checked ? "block" : "none"
+        script_8.style.display = q_8.checked ? "block" : "none"
 
     }
  
 
 
+    function select() {
+        var optionL = document.getElementById("optionL");
+        var box1 = document.getElementById("box-1");
+        var box2 = document.getElementById("box-2");
+        var box3 = document.getElementById("box-3");
+        if (optionL.value == 1) {
+          box1.style.display = "block";
+          box2.style.display = "none";
+          box3.style.display = "none";
 
-
+        } else if(optionL.value == 2) {
+          box2.style.display = "block";
+          box1.style.display = "none";
+          box3.style.display = "none";
+        
+        }else if(optionL.value == 3) {
+            box3.style.display = "block";
+            box1.style.display = "none";
+            box2.style.display = "none";
+      }
+    }
 // var radioBtn3 = document.querySelectorAll("input[name='fruit3']");
 // var result3 = document.getElementById("result3")
 
@@ -114,5 +143,4 @@ function checkme2(){
         text.style.display = "none"
     }
 }
-
 
