@@ -39,7 +39,7 @@
       <div class="down">
         <div class="select">
           <select id="optionL" onchange="select()">
-            <option hidden > شرح - WE INFO</option>
+            <option hidden > شرح - TE-DATA INFO</option>
             <option value="1"> Outage</option>
             <option value="2"> Major fault</option>
             <option value="3"> Migrated VS Not Migrated</option>
@@ -72,10 +72,9 @@
          <mark>في حالة العميل النوت مايجريتد بنصعدله شكوي من الـ ADF Tool</mark>
           ودا بسبب انه ملوش حساب علي الـ BSS
         </div>
-     <div class="box-select" id="box-4">
+        <div class="box-select" id="box-4">
           <strong>Escalation</strong>
             <img src="./images/escalation.jpg" alt="ES">
-        </div>
         </div>
       </div>
    
@@ -292,7 +291,74 @@
                           
                           </div>
                           <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                          <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                        
                           </div> <!-- /hid2 -->
+                          <hr>
+                          <label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label>
+                          <div id="hid3" dir="rtl">
+                            <strong>Unpaid TE Bills</strong>
+                          <br>
+                          <label class="box"><input type="checkbox" id="q-9"><span class="color2" dir="rtl"> في حالة اننا بنتابع مع العميل اي مشكلة Physical ووصلنا للتصعيد والعميل كان عنده Unpaid TE-Bills</span></label>
+                          <br>
+                          <div id="script-9" class="scripts">
+                            <ul dir="rtl">
+                              <li> هنشوف مع العميل اذا كان هيقدر يسدد عن طريق WE App او E-Care خلال المكالمة عشان نكمل معاه الخطوات</li>
+
+                              <div class="wrapper">
+                                <div class="radio_tabs">
+                                  <label class="radio_wrap" data-radio="radio_1">
+                                    <input type="radio" name="sports" class="input">
+                                    <span class="radio_mark">
+                                      في حالة الاجابة بنعم
+                                    </span>
+                                  </label>
+                                  <label class="radio_wrap" data-radio="radio_2">
+                                    <input type="radio" name="sports" class="input">
+                                    <span class="radio_mark">
+                                      في حالة الاجابة بـ لا
+                                    </span>
+                                  </label>
+                                </div> <!-- /radio_tabs -->
+    
+                                <div class="content">
+                                  <div class="radio_content radio_1">
+                                    <p style="border: 1px solid red; padding: 5px;"> هنساعد العميل في خطوات السداد من خلال WE-App او من خلال E-care ونكمل متابعه للخطوات الفنيه.</p>
+                                   
+                                
+                                  </div>     
+                                        <!-- ------------------------------NOO---------------------------------------- -->
+                                  <div class="radio_content radio_2"  id="r1">
+                                    <p style="border: 1px solid red; padding: 5px;"> هنعرض علي العميل ميعاد تاني يكون مناسب ليه ويكون سداد الـ Land line bills لمتابعة الخطوات الفنية لحل مشكلتة وننصحة بامكانية الدفع عن طريق WE-App او E-Care والتأكدمن حرارة التليفون بستخدام عدة تيلفون</p>
+                                   
+                                    </div>
+                                  </div>
+                                </div> <!-- /wrapper -->
+                            </ul>
+                          </div>
+                          <!-- -------------------------------------------------------------------------- -->
+                          <hr>
+                          <strong>Customer Has To pay</strong>
+                          <br>
+                          <label class="box"><input type="checkbox" id="q-10"><span class="color2" dir="rtl"> في حالة ان الخدمة فاصلة عند العميل سواء Voice Or Data بسبب عدم تجديد باقة الارضي اوالانترنت</span></label>
+                          <br>
+                          <div id="script-10" class="scripts">
+                            <ul dir="rtl">
+                              <p style="border: 1px solid red; padding: 5px;" > هنعرض علي العميل ميعاد تاني يكون مناسب ليه ويكون سدد فيه للتأكد من اذا كانت الخدمة شغالة بشكل جيد بعد السداد.</p>  
+                            </ul>
+                          </div>
+                             <!-- -------------------------------------------------------------------------- -->
+                             <hr>
+                             <strong>Payment is not reflected on BSS system (Online)</strong>
+                             <br>
+                             <label class="box"><input type="checkbox" id="q-11"><span class="color2" dir="rtl"> في حالة ان العميل شحن عن طريق WE-App او E-Care وكان الدفع لسه مظهرش علي BSS وبلغنا العميل انه ينتظر ساعه من ميعادالدفع سواء للـ FV account او FBB account</span></label>
+                             <br>
+                             <div id="script-11" class="scripts">
+                               <ul dir="rtl">
+                                 <p style="border: 1px solid red; padding: 5px;" > هنعرض علي العميل المتابعة عشان نتأكد ان المشكلة اتحلت معاه.</p>  
+                               </ul>
+                             </div>
+                          </div>
                 
         </div><!-- /content-data -->
   </div>
