@@ -25,10 +25,13 @@ $(document).ready(function(){
 
 
   let check2 = document.querySelector("#check2");
+  let check3 = document.querySelector("#check3");
   let hid2 = document.querySelector("#hid2");
+  let hid3 = document.querySelector("#hid3");
 function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
     hid2.style.display = check2.checked ? "block" : "none"
+    hid3.style.display = check3.checked ? "block" : "none"
 }
 
 
@@ -48,6 +51,12 @@ let q_7 = document.getElementById('q-7')
 let script_7 = document.getElementById('script-7')
 let q_8 = document.getElementById('q-8')
 let script_8 = document.getElementById('script-8')
+let q_9 = document.getElementById('q-9')
+let script_9 = document.getElementById('script-9')
+let q_10 = document.getElementById('q-10')
+let script_10 = document.getElementById('script-10')
+let q_11 = document.getElementById('q-11')
+let script_11 = document.getElementById('script-11')
 
 
 q_1.addEventListener("click" , ch1)
@@ -58,6 +67,9 @@ q_5.addEventListener("click" , ch1)
 q_6.addEventListener("click" , ch1)
 q_7.addEventListener("click" , ch1)
 q_8.addEventListener("click" , ch1)
+q_9.addEventListener("click" , ch1)
+q_10.addEventListener("click" , ch1)
+q_11.addEventListener("click" , ch1)
 
 
 
@@ -70,6 +82,9 @@ q_8.addEventListener("click" , ch1)
         script_6.style.display = q_6.checked ? "block" : "none"
         script_7.style.display = q_7.checked ? "block" : "none"
         script_8.style.display = q_8.checked ? "block" : "none"
+        script_9.style.display = q_9.checked ? "block" : "none"
+        script_10.style.display = q_10.checked ? "block" : "none"
+        script_11.style.display = q_11.checked ? "block" : "none"
 
     }
  
@@ -80,22 +95,34 @@ q_8.addEventListener("click" , ch1)
         var box1 = document.getElementById("box-1");
         var box2 = document.getElementById("box-2");
         var box3 = document.getElementById("box-3");
+        var box4 = document.getElementById("box-4");
         if (optionL.value == 1) {
           box1.style.display = "block";
           box2.style.display = "none";
           box3.style.display = "none";
+          box4.style.display = "none";
+
 
         } else if(optionL.value == 2) {
           box2.style.display = "block";
           box1.style.display = "none";
           box3.style.display = "none";
+          box4.style.display = "none";
+
         
         }else if(optionL.value == 3) {
             box3.style.display = "block";
             box1.style.display = "none";
             box2.style.display = "none";
-      }
+            box4.style.display = "none";
+
+      }else if(optionL.value == 4) {
+        box4.style.display = "block";
+        box1.style.display = "none";
+        box2.style.display = "none";
+        box3.style.display = "none";
     }
+}
 // var radioBtn3 = document.querySelectorAll("input[name='fruit3']");
 // var result3 = document.getElementById("result3")
 
