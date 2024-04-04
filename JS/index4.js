@@ -34,7 +34,12 @@ function showandhid(){
     hid3.style.display = check3.checked ? "block" : "none"
 }
 
-
+let q_a = document.getElementById('q_a')
+let script_a = document.getElementById('script_a')
+let q_b = document.getElementById('q_b')
+let script_b = document.getElementById('script_b')
+let q_c = document.getElementById('q_c')
+let script_c = document.getElementById('script_c')
 let q_1 = document.getElementById('q-1')
 let script_1 = document.getElementById('script-1')
 let q_2 = document.getElementById('q-2')
@@ -58,7 +63,9 @@ let script_10 = document.getElementById('script-10')
 let q_11 = document.getElementById('q-11')
 let script_11 = document.getElementById('script-11')
 
-
+q_a.addEventListener("click" , ch1)
+q_b.addEventListener("click" , ch1)
+q_c.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
 q_2.addEventListener("click" , ch1)
 q_3.addEventListener("click" , ch1)
@@ -74,6 +81,10 @@ q_11.addEventListener("click" , ch1)
 
 
     function ch1(){
+        script_a.style.display = q_a.checked ? "block" : "none"
+        script_b.style.display = q_b.checked ? "block" : "none"
+        script_c.style.display = q_c.checked ? "block" : "none"
+
         script_1.style.display = q_1.checked ? "block" : "none"
         script_2.style.display = q_2.checked ? "block" : "none"
         script_3.style.display = q_3.checked ? "block" : "none"
