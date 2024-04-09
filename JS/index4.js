@@ -26,20 +26,18 @@ $(document).ready(function(){
 
   let check2 = document.querySelector("#check2");
   let check3 = document.querySelector("#check3");
+  let check4 = document.querySelector("#check4");
   let hid2 = document.querySelector("#hid2");
   let hid3 = document.querySelector("#hid3");
+  let hid4 = document.querySelector("#hid4");
 function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
     hid2.style.display = check2.checked ? "block" : "none"
     hid3.style.display = check3.checked ? "block" : "none"
+    hid4.style.display = check4.checked ? "block" : "none"
 }
 
-let q_a = document.getElementById('q_a')
-let script_a = document.getElementById('script_a')
-let q_p = document.getElementById('q_p')
-let script_p = document.getElementById('script_p')
-let q_c = document.getElementById('q_c')
-let script_c = document.getElementById('script_c')
+
 let q_1 = document.getElementById('q-1')
 let script_1 = document.getElementById('script-1')
 let q_2 = document.getElementById('q-2')
@@ -62,10 +60,12 @@ let q_10 = document.getElementById('q-10')
 let script_10 = document.getElementById('script-10')
 let q_11 = document.getElementById('q-11')
 let script_11 = document.getElementById('script-11')
+let q_12 = document.getElementById('q-12')
+let script_12 = document.getElementById('script-12')
+let q_13 = document.getElementById('q-13')
+let script_13 = document.getElementById('script-13')
 
-q_a.addEventListener("click" , ch1)
-q_p.addEventListener("click" , ch1)
-q_c.addEventListener("click" , ch1)
+
 q_1.addEventListener("click" , ch1)
 q_2.addEventListener("click" , ch1)
 q_3.addEventListener("click" , ch1)
@@ -77,14 +77,12 @@ q_8.addEventListener("click" , ch1)
 q_9.addEventListener("click" , ch1)
 q_10.addEventListener("click" , ch1)
 q_11.addEventListener("click" , ch1)
+q_12.addEventListener("click" , ch1)
+q_13.addEventListener("click" , ch1)
 
 
 
     function ch1(){
-        script_a.style.display = q_a.checked ? "block" : "none"
-        script_p.style.display = q_p.checked ? "block" : "none"
-        script_c.style.display = q_c.checked ? "block" : "none"
-
         script_1.style.display = q_1.checked ? "block" : "none"
         script_2.style.display = q_2.checked ? "block" : "none"
         script_3.style.display = q_3.checked ? "block" : "none"
@@ -96,6 +94,8 @@ q_11.addEventListener("click" , ch1)
         script_9.style.display = q_9.checked ? "block" : "none"
         script_10.style.display = q_10.checked ? "block" : "none"
         script_11.style.display = q_11.checked ? "block" : "none"
+        script_12.style.display = q_12.checked ? "block" : "none"
+        script_13.style.display = q_13.checked ? "block" : "none"
 
     }
  
