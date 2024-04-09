@@ -82,7 +82,7 @@
 
         <div class="content-data">
                   <label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label>
-                      <div id="hid">
+                      <div class="hidden" id="hid">
                           <p class="script1"><strong>التعويضات</strong></p> 
                           <div class="wrapper">
                             <div class="radio_tabs">
@@ -115,8 +115,8 @@
                                   <li> لازم يكون حساب العميل Active account</li>
                                 </ol> 
                                 
-                                <label class="box" style="color: red;"><input type="checkbox" id="q_a"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
-                            <div id="script_a" class="scripts">
+                                <label class="box" style="color: red;"><input type="checkbox" id="r2"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
+                            <div id="kalam2">
                               <ul dir="rtl">
                                 <li> في حالة فتح Ticket اخري في نفس اليوم لنفس الحالة</li>
                                 <li> في حالة ان الـ TT كانت Open  حتي لو تم حل المشكلة</li>
@@ -125,8 +125,8 @@
                               </ul>
                               </div>
                             <br>
-                            <label class="box"><input type="checkbox" id="q_p"> <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
-                            <div id="script_p" class="scripts" >
+                            <label><input type="checkbox" id="r3" name="fruit" > <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
+                            <div id="kalam3">
                               <ul dir="rtl">
                                 <li> بنسأل العميل عن الفترة ال كان فيها المشكلة ونراجع الـ Tool فيها Outage ID ولا لا</li>
                                 <li> بعد كدا بيطلع كل الـ Outage الخاصة بالعميل وهناخد الـ Outage ID نكتبها في الـ TT</li>
@@ -134,8 +134,8 @@
                               </ul>
                             </div>
                             <br>
-                            <label><input type="checkbox" id="q_c" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
-                            <div id="script_c" class="scripts">
+                            <label><input type="checkbox" id="r4" name="fruit" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
+                            <div id="kalam4">
                               <ul>
                                 <li> هنراجع الـ BSS عشان نشوف الـ SRs الخاصة بالـ Outage  من الفترة المطلوبة وهناخد الـ Outage ID من ال SR نكتبها في الـ Concession TT</li>
                               </ul>
@@ -166,7 +166,7 @@
                 <hr>
                 <!-- --------------------------------------TTS ----------------------------------------------------------->
                         <label class="texx"><input type="checkbox" id="check2" onchange="showandhid()" data-click="clickk"> TTS Case</label>
-                          <div id="hid2" dir="rtl">
+                          <div class="hidden" id="hid2" dir="rtl">
                             <label class="box"><input type="checkbox" id="q-1"><span class="color2" dir="rtl"> في حالة النت مش شغال والعميل عنده شكوي Physcal مفتوحه في IU</span></label>
                             <br>
                             <div id="script-1" class="scripts">
@@ -295,8 +295,9 @@
                         
                           </div> <!-- /hid2 -->
                           <hr>
+                          <!-- -------------------------------follow----------------------------------------------------------------------- -->
                           <label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label>
-                          <div id="hid3" dir="rtl">
+                          <div class="hidden" id="hid3" dir="rtl">
                             <strong>Unpaid TE Bills</strong>
                           <br>
                           <label class="box"><input type="checkbox" id="q-9"><span class="color2" dir="rtl"> في حالة اننا بنتابع مع العميل اي مشكلة Physical ووصلنا للتصعيد والعميل كان عنده Unpaid TE-Bills</span></label>
@@ -359,10 +360,123 @@
                                </ul>
                              </div>
                           </div>
-                
+                          <hr>
+                          <!-- ---------------------------------------------IR----------------------------------------------------------------- -->
+                          <label class="texx"><input type="checkbox" id="check4" onchange="showandhid()" data-click="clickk"> IR Cases</label>
+                          <div class="hidden" id="hid4" dir="rtl">
+                          <label class="box"><input type="checkbox" id="q-12"><span class="color2" dir="rtl"> Delay Ticket</span></label>
+                          <br>
+                          <div id="script-12" class="scripts">
+                            <ul dir="rtl">
+                              <li> Delay Ticket دي بعملها لما الشكوش تكون عدت الـ SLA بتعها</li>
+                              <p style="border: 1px solid red; padding: 5px;"><mark>ملحوظة هامة :</mark> لازم ابحث الاول واشوف العميل دا معمول له Delay ولا لا لانه لو معموله مش هينفع تعمله واحده جديده</p>
+                              <div class="wrapper">
+                                <div class="radio_tabs">
+                                  <label class="radio_wrap" data-radio="radio_1">
+                                    <input type="radio" name="sports" class="input">
+                                    <span class="radio_mark">
+                                      في حالة كانت نتيجة البحث No record found
+                                    </span>
+                                  </label>
+                                  <label class="radio_wrap" data-radio="radio_2">
+                                    <input type="radio" name="sports" class="input">
+                                    <span class="radio_mark">
+                                      في حالة كان العميل عنده Delay بالفعل
+                                    </span>
+                                  </label>
+                                </div> <!-- /radio_tabs -->
+    
+                                <div class="content">
+                                  <div class="radio_content radio_1">
+                                    <p style="border: 1px solid red; padding: 5px; width: fit-content;">  يبقي كدا مش معمول له ديلاي
+                                      <li>بعد كدا بنعمل Add new ونروح ع الماتريكس ناخد البيانات بـ ctr + a بعدين ctrl + c بعدين نروح علي الـ IR نعمل ctrl + v بعدين نعمل Extract</li>
+                                      <li> بعد كدا بختار النوع record type بخليه Delayed</li>
+                                      <li> بعد كدا بختار الـ Delay Pool  يعني الشكوي موجوده في انهي قسم</li>
+                                      <li> بعد كدا بختار الـ Problem Type </li>
+                                      <li> بعد كدا بختار نوع الشكوي من الـ problem catogry</li>
+                                      <li> بعدين بكتب رقم الشكوي</li>
+                                      <li> بعد كدا بروح علي pindinng fCC ودي بيكون فيها خيارين اما NO او YES وبحدد دا عن طريق اننا بنروح علي الشكوي نفسها وبنشوف كلمة FCC ID لو مش مكتوب فيها حاجه بختار NO ولو مكتوب بختار yes</li>
+                                      <li> بعد كدا بنروح علي Urgant case ودي بيكون فيها خيارين اما YES OR NO  لكن هنا مبنختارش YES الا في الحالات المهمة مثل: مستشفي او جمعيه او مدرسة الخ..</li>
+                                      <li> في الاخر بعمل Save  وباخد رقم الديلاي احطه Update في الشكوي</li>
+                                    </p>
+                                   
+                                
+                                  </div>     
+                                        <!-- ------------------------------NOO---------------------------------------- -->
+                                  <div class="radio_content radio_2"  id="r1">
+                                    <p style="border: 1px solid red; padding: 5px;"> 
+                                      في حالة كان الـ Delay موجود لازم اشوف حالة الـ Delay من الـ statas  هل هي open ولا handel (خلصان) .
+                                    </p>
+                                    <li> في حالة كانت open لازم ادخل عليها من خلال ايقونة القلم <i class="fa-solid fa-pencil"></i></li>
+                                    <li> بعد كدا لازم اعلم علي علامة  <input type="checkbox"> :Calld within sla واعمل save</li>
+                                    <p> <i class="fa-solid fa-circle-exclamation" style="color: #deb624;"></i> <mark>مننساش نعمل الـ SR</mark></p>
+                                    </div>
+                                  </div>
+                                </div> <!-- /wrapper -->
+                            </ul>
+                          </div>
+                          <!-- -------------------------------------------------------------------------- -->
+                          <hr>
+                          <label class="box"><input type="checkbox" id="q-13"><span class="color2" dir="rtl"> Port Time out/Acces denaied</span></label>
+                          <br>
+                          <div id="script-13" class="scripts">
+                            <ul dir="rtl">
+                              <p style="border: 1px solid red; padding: 5px;" > دي بعملها لما تكون الماتريكس جايبه Port Time out/Acces denaied والعميل معندوش outage </p> 
+                              <p  style="border: 1px solid red; padding: 5px;">وببلغ العميل الاسكريبت دا <mark>فيه عطل فني في خدمة الانترنت وان شاء الله الخدمه هتشتغل معانا في خلال ساعتين</mark></p>
+
+                              <p> <mark>ملحوظة هامة 1<i class="fa-solid fa-circle-exclamation" style="color: #deb624;"></i></mark> الـ port time out  بتقلب الخط disabeld يعني ملهاش علاقة بالفواتير في الحاله دي</p>
+                              <p> <mark>ملحوظة هامة 2<i class="fa-solid fa-circle-exclamation" style="color: #deb624;"></i></mark> في حالة في outage بعتمد الـ outage وكأن مفيش port time out موجود</p>
+                              <p> <mark>ملحوظة هامة 3<i class="fa-solid fa-circle-exclamation" style="color: #deb624;"></i></mark> مينفعش اروح اعمل الـ ir علطول لازم اسأل العميل هل لمبة DSL منور ولا فاصلة؟ لو فاصلة هعمل ال IR اما لو ثابته هنا بعمل كونفيجريشن للراوتر</p>
+
+
+                              <li> اول حاجه هعملها هنا هسرش بـ اسم السنترال <strong>(بقدر اجيب اسم السنترال من الماتريكس من كلمة pop)</strong></li> 
+                              <div class="wrapper">
+                                <div class="radio_tabs">
+                                  <label class="radio_wrap" data-radio="radio_1">
+                                    <input type="radio" name="sports" class="input">
+                                    <span class="radio_mark">
+                                      في حالة كانت نتيجة البحث No record found
+                                    </span>
+                                  </label>
+                                  <label class="radio_wrap" data-radio="radio_2">
+                                    <input type="radio" name="sports" class="input">
+                                    <span class="radio_mark">
+                                      في حالة كان فيه نتيجة في البحث 
+                                    </span>
+                                  </label>
+
+                                </div> <!-- /radio_tabs -->
+    
+                                <div class="content">
+                                  <div class="radio_content radio_1">
+
+                                      <li>يبقي كدا هعمل Add new ونروح ع الماتريكس ناخد البيانات بـ ctr + a بعدين ctrl + c بعدين نروح علي الـ IR نعمل ctrl + v بعدين نعمل Extract</li>
+                                      <li> بعد كدا بختار النوع record type بخليه Port Time out/Acces denaied</li>
+
+                                  </div>     
+                                        <!-- ------------------------------NOO---------------------------------------- -->
+                                  <div class="radio_content radio_2"  id="r1">
+                                    <p style="border: 1px solid red; padding: 5px;"> 
+                                     كدا ببلغ العميل بس برقم الـ IR
+                                    </p>
+                                    <p> <i class="fa-solid fa-circle-exclamation" style="color: #deb624;"></i> <mark>مننساش نعمل الـ SR</mark></p>
+                                    </div>
+                                  </div>
+                                </div> <!-- /wrapper -->
+                            </ul>
+                          </div>
+                             <!-- -------------------------------------------------------------------------- -->
+                         
+                             </div>
+
+                          </div>
         </div><!-- /content-data -->
   </div>
 </div><!-- /container -->
+<footer>
+  <p>&copy; Created By : Mostafa mahmoud</p>
+  <div><img src="images/logo-no-background.png" alt="logo" /></div>
+</footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
