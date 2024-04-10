@@ -83,7 +83,14 @@
         <div class="content-data">
                   <label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label>
                       <div class="hidden" id="hid">
-                          <p class="script1"><strong>التعويضات</strong></p> 
+                          <div class="script1"><strong>التعويضات</strong>
+                          <br>
+                          All TTS Tickets :-
+ 
+                            <li>يتم التعويض عن مدة تبدأ من 12 ساعة يتم احتسابها من بداية تصعيد ال Case حتي ال 3rd Level Update علي ال Ticket. </li>
+                            <li>ليس من الضروري مراجعة الاستهلاك في حالة ان العميل كان  within Technical ticket normal SLA.</li>
+                            <li>يتم تعويض العميل عن اي technical Case بناء علي ال 3rd Level Update ماعدا الـ Major Fault يتم اتباع ال Normal Cycle.</li>
+                          </div> 
                           <div class="wrapper">
                             <div class="radio_tabs">
                               <label class="radio_wrap" data-radio="radio_1">
@@ -115,8 +122,8 @@
                                   <li> لازم يكون حساب العميل Active account</li>
                                 </ol> 
                                 
-                                <label class="box" style="color: red;"><input type="checkbox" id="r2"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
-                            <div id="kalam2">
+                                <label class="box" style="color: red;"><input type="checkbox" id="q-14"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
+                            <div id="script-14" class="scripts">
                               <ul dir="rtl">
                                 <li> في حالة فتح Ticket اخري في نفس اليوم لنفس الحالة</li>
                                 <li> في حالة ان الـ TT كانت Open  حتي لو تم حل المشكلة</li>
@@ -125,8 +132,8 @@
                               </ul>
                               </div>
                             <br>
-                            <label><input type="checkbox" id="r3" name="fruit" > <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
-                            <div id="kalam3">
+                            <label><input type="checkbox" id="q-15" name="fruit" > <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
+                            <div id="script-15" class="scripts">
                               <ul dir="rtl">
                                 <li> بنسأل العميل عن الفترة ال كان فيها المشكلة ونراجع الـ Tool فيها Outage ID ولا لا</li>
                                 <li> بعد كدا بيطلع كل الـ Outage الخاصة بالعميل وهناخد الـ Outage ID نكتبها في الـ TT</li>
@@ -134,8 +141,8 @@
                               </ul>
                             </div>
                             <br>
-                            <label><input type="checkbox" id="r4" name="fruit" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
-                            <div id="kalam4">
+                            <label><input type="checkbox" id="q-16" name="fruit" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
+                            <div id="script-16" class="scripts">
                               <ul>
                                 <li> هنراجع الـ BSS عشان نشوف الـ SRs الخاصة بالـ Outage  من الفترة المطلوبة وهناخد الـ Outage ID من ال SR نكتبها في الـ Concession TT</li>
                               </ul>
@@ -144,13 +151,40 @@
                                     <!-- ------------------------------ON SPOT---------------------------------------- -->
                               <div class="radio_content radio_2"  id="r1">
                                 <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
+                                <div>
+                                  <label class="box"><input type="checkbox" id="q-0"><strong class="color2" dir="rtl"> عرض كيفية التعويض</strong></label>
+                                  <br>
+                                  <div id="script-0" class="scripts">
+                                    <ol dir="rtl" style="padding: 0px 15px;">
+                                      <strong>BSS</strong>
+                                      <li>Sitemap</li>
+                                      <li>Account receivable</li>
+                                      <li>Adjustment Request</li>
+                                      <li>Subscriber</li>
+                                      <li>ثم نبحث بالرقم الارضي (بدون الـ0) ونعلم علي is FBB Subscriber <input type="checkbox"> </li>
+                                      <li> بنختار من الـ Reason Categroy Name ==> Fix (Adjustment)</li>
+                                      <li> Reason ==> ADSL Concession</li>
+                                      <li> نكتب سبب التعويض في الـ Description</li>
+                                      <li>Create instance هنا بختار التاريخ
+                                        <br>
+                                        <mark> بختار الـ Type -> 160</mark>
+                                        <br>
+                                        <mark>بعدين هنكب الجيجات الهنعوضه بيها بالـ بايت</mark>
+
+                                      </li>
+                                      <li>بعد كدا همل Save وادوس علي submit</li>
+                                      <li>بعدين هنعمل IR</li>
+                                      <li>بعدين SR = FBB None Tech inqury -> Billing Adjustment -> Tech Concession On Spot</li>
+                                    </ol>
+                                  </div>
+                                </div>
+                                <br>
                                 <label><strong>شروط التعويض خلال المكالمة</strong></label>
                               
                                   <ul>
                                     <li>يمكن تعويض العميل بحد اقصي 20GB او 12 جنيه للـ Ticket الواحده او للـ Outage الواحد في خلال المكالمة</li>
                                     <li>يجب عرض التعويض بـ الـ Quota اولاً علي العميل وفي حالة رفضه يتم عرض العويض برصيد</li>
                                   </ul>
-                                  <hr>
                                   <label><strong>في حالة التعويض بأكثر من ذلك بحد اقصي 50GB او 40 جنيه :</strong></label>
                                   <ul>
                                     <li>سيتم عمل IR للـ Team Leader وسيتم تنفيذالطلب في خلال 30 دقيقة</li>
@@ -158,7 +192,12 @@
                                     <li>في حالة التعويض بأكثر من 50 GB او 40 جنيه يتم اتباع اجرائات الـ Normal Cycle</li>
                                     <li>في حالة النعويض عن مده اقل من 24 ساعة للـ Outage او Ticket يتم تعويض العميل بـ Quota فقط</li>
                                     <li>التعويض بيكون عن الـ Outages او الـ TTS او الـ ADF</li>
+                                    <li>يتم تعويض العميل في حالة انه لا يوجد Delay أو Re-scalation علي ال TTS / ADF وفي اي حالة غير ذلك يتم اتباع ال Normal Cycle.</li>
                                   </ul>
+                                  <p style="border: 1px solid red; padding: 5px;">نخلى بالنا اننا هنحتاج في اي مكالمة كان فيها حالة من الحالات اللي المفروض بنعوض عنها خلال المكالمة و كان العميل يستحق التعويض وقدمنا التعويض فعلا او كان لا يستحق التعويض وبلغناه انه مش هينفع نعوضه لازم نعمل Ticket علي الـ IReport  بالاضافة طبعا للـ SR العادية علي حسب الحالة اللي انتهت بيها المكالمة.  </p>
+                                  <p>هنختار Approved في حالة لو هنعوض العميل خلال المكالمة ولكن التعويض يكون بحد اقصى 5 جيجا.</p>
+                                  <p>هنختار Disapproved لو شروط التعويض متحققتش.
+                                    هنختار Assigned To TL   في حالة بأكثر من 5 GB الي 20 GB </p>
                                 </div>
                               </div>
                             </div> <!-- /wrapper -->
@@ -286,7 +325,7 @@
                             <ul dir="rtl">
                               <li>هنمشي ترابل شوت من الاول ونقفل الشكوي القديمة ونصعد تكت جديده لقسم الـ IU</li>
                               <li style="color: blueviolet;">هنعمل SR</li>
-                              <p style="color: red;">Physcal cases -> Case type <bdi>(نوع المشكلة القفلناها )</bdi> -> Solved -> Close reson (Close code)</p>
+                              <p style="color: red; width: fit-content;">Physcal cases -> Case type <bdi>(نوع المشكلة القفلناها )</bdi> -> Solved -> Close reson (Close code)</p>
                             </ul>
                           
                           </div>
@@ -324,13 +363,13 @@
     
                                 <div class="content">
                                   <div class="radio_content radio_1">
-                                    <p style="border: 1px solid red; padding: 5px;"> هنساعد العميل في خطوات السداد من خلال WE-App او من خلال E-care ونكمل متابعه للخطوات الفنيه.</p>
+                                    <p style="align-items: center; padding: 5px;"> هنساعد العميل في خطوات السداد من خلال WE-App او من خلال E-care ونكمل متابعه للخطوات الفنيه.</p>
                                    
                                 
                                   </div>     
                                         <!-- ------------------------------NOO---------------------------------------- -->
                                   <div class="radio_content radio_2"  id="r1">
-                                    <p style="border: 1px solid red; padding: 5px;"> هنعرض علي العميل ميعاد تاني يكون مناسب ليه ويكون سداد الـ Land line bills لمتابعة الخطوات الفنية لحل مشكلتة وننصحة بامكانية الدفع عن طريق WE-App او E-Care والتأكدمن حرارة التليفون بستخدام عدة تيلفون</p>
+                                    <p style="align-items: center; padding: 5px;"> هنعرض علي العميل ميعاد تاني يكون مناسب ليه ويكون سداد الـ Land line bills لمتابعة الخطوات الفنية لحل مشكلتة وننصحة بامكانية الدفع عن طريق WE-App او E-Care والتأكدمن حرارة التليفون بستخدام عدة تيلفون</p>
                                    
                                     </div>
                                   </div>
@@ -345,7 +384,7 @@
                           <br>
                           <div id="script-10" class="scripts">
                             <ul dir="rtl">
-                              <p style="border: 1px solid red; padding: 5px;" > هنعرض علي العميل ميعاد تاني يكون مناسب ليه ويكون سدد فيه للتأكد من اذا كانت الخدمة شغالة بشكل جيد بعد السداد.</p>  
+                              <p style="align-items: center; padding: 5px; width: fit-content;" > هنعرض علي العميل ميعاد تاني يكون مناسب ليه ويكون سدد فيه للتأكد من اذا كانت الخدمة شغالة بشكل جيد بعد السداد.</p>  
                             </ul>
                           </div>
                              <!-- -------------------------------------------------------------------------- -->
@@ -356,7 +395,7 @@
                              <br>
                              <div id="script-11" class="scripts">
                                <ul dir="rtl">
-                                 <p style="border: 1px solid red; padding: 5px;" > هنعرض علي العميل المتابعة عشان نتأكد ان المشكلة اتحلت معاه.</p>  
+                                 <p style="align-items: center; padding: 5px; width: fit-content;" > هنعرض علي العميل المتابعة عشان نتأكد ان المشكلة اتحلت معاه.</p>  
                                </ul>
                              </div>
                           </div>
@@ -369,7 +408,7 @@
                           <div id="script-12" class="scripts">
                             <ul dir="rtl">
                               <li> Delay Ticket دي بعملها لما الشكوش تكون عدت الـ SLA بتعها</li>
-                              <p style="border: 1px solid red; padding: 5px;"><mark>ملحوظة هامة :</mark> لازم ابحث الاول واشوف العميل دا معمول له Delay ولا لا لانه لو معموله مش هينفع تعمله واحده جديده</p>
+                              <p style="border: 1px solid red; padding: 5px; width: fit-content;"><mark>ملحوظة هامة :</mark> لازم ابحث الاول واشوف العميل دا معمول له Delay ولا لا لانه لو معموله مش هينفع تعمله واحده جديده</p>
                               <div class="wrapper">
                                 <div class="radio_tabs">
                                   <label class="radio_wrap" data-radio="radio_1">
@@ -404,7 +443,7 @@
                                   </div>     
                                         <!-- ------------------------------NOO---------------------------------------- -->
                                   <div class="radio_content radio_2"  id="r1">
-                                    <p style="border: 1px solid red; padding: 5px;"> 
+                                    <p style="border: 1px solid red; padding: 5px; width: fit-content;"> 
                                       في حالة كان الـ Delay موجود لازم اشوف حالة الـ Delay من الـ statas  هل هي open ولا handel (خلصان) .
                                     </p>
                                     <li> في حالة كانت open لازم ادخل عليها من خلال ايقونة القلم <i class="fa-solid fa-pencil"></i></li>
@@ -421,8 +460,8 @@
                           <br>
                           <div id="script-13" class="scripts">
                             <ul dir="rtl">
-                              <p style="border: 1px solid red; padding: 5px;" > دي بعملها لما تكون الماتريكس جايبه Port Time out/Acces denaied والعميل معندوش outage </p> 
-                              <p  style="border: 1px solid red; padding: 5px;">وببلغ العميل الاسكريبت دا <mark>فيه عطل فني في خدمة الانترنت وان شاء الله الخدمه هتشتغل معانا في خلال ساعتين</mark></p>
+                              <p style="border: 1px solid red; padding: 5px; width: fit-content;" > دي بعملها لما تكون الماتريكس جايبه Port Time out/Acces denaied والعميل معندوش outage </p> 
+                              <p  style="border: 1px solid red; padding: 5px; width: fit-content;">وببلغ العميل الاسكريبت دا <mark>فيه عطل فني في خدمة الانترنت وان شاء الله الخدمه هتشتغل معانا في خلال ساعتين</mark></p>
 
                               <p> <mark>ملحوظة هامة 1<i class="fa-solid fa-circle-exclamation" style="color: #deb624;"></i></mark> الـ port time out  بتقلب الخط disabeld يعني ملهاش علاقة بالفواتير في الحاله دي</p>
                               <p> <mark>ملحوظة هامة 2<i class="fa-solid fa-circle-exclamation" style="color: #deb624;"></i></mark> في حالة في outage بعتمد الـ outage وكأن مفيش port time out موجود</p>
@@ -456,7 +495,7 @@
                                   </div>     
                                         <!-- ------------------------------NOO---------------------------------------- -->
                                   <div class="radio_content radio_2"  id="r1">
-                                    <p style="border: 1px solid red; padding: 5px;"> 
+                                    <p style="border: 1px solid red; padding: 5px; width: fit-content;"> 
                                      كدا ببلغ العميل بس برقم الـ IR
                                     </p>
                                     <p> <i class="fa-solid fa-circle-exclamation" style="color: #deb624;"></i> <mark>مننساش نعمل الـ SR</mark></p>
