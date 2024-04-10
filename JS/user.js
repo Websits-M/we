@@ -6,16 +6,12 @@ let links = document.querySelector("#links")
 
 let logoutBtn = document.querySelector("#logout")
 
-function log(){
-  if(localStorage.getItem("username") == ("mostafa") || localStorage.getItem("username") == ("Ahmed94") || localStorage.getItem("username") == ("MohamedSamy") || localStorage.getItem("username") == ("MohamedSamy")|| localStorage.getItem("username") == ("Shaher")){
-    window.alert("انتهت صلاحية حسابك!..يرجي تجديد وصولك لمتابعة استخدامك للموقع")
-      window.location = "index.html"
-      localStorage.clear()
-
-  }
-}
-log()
-
+// function log(){
+//   if(localStorage.getItem("username") == ("mostafa")){
+//    localStorage.clear()
+//   }
+// }
+// log()
 
 function run(){
   if(localStorage.getItem("username")){
@@ -24,8 +20,22 @@ function run(){
     window.location = "index.html"
   }
 }
-
 run()
+
+/////////////////////////////////////////////////////////////////////////////////
+function log(){
+  if(localStorage.getItem("username") == ("Ahmed94") || localStorage.getItem("username") == ("MohamedSamy") || localStorage.getItem("username") == ("MohamedSamy")|| localStorage.getItem("username") == ("Shaher")){
+    window.alert("انتهت صلاحية حسابك!..يرجي تجديد وصولك لمتابعة استخدامك للموقع")
+      window.location = "index.html"
+      localStorage.clear()
+
+  }
+}
+ 
+  
+
+log()
+
 
 if(localStorage.getItem("username")){
     userData.style.color ="yollow"
@@ -66,6 +76,16 @@ gets.addEventListener('click' , get)
 function get(){
     window.location = "index3.html"
 }
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
 
 
 
