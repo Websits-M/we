@@ -1,3 +1,12 @@
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
 let yourName = document.querySelector("#nameId")
 
 let loginSubmit = document.querySelector("#sign-in");
@@ -60,12 +69,4 @@ function togglePasswordVisibility() {
     password.type = "password";
   }
 }
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
 
-  loader.classList.add("loader--hidden");
-
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  });
-});
