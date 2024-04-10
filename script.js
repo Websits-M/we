@@ -1,4 +1,12 @@
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
 
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
 
 function search() {
   let searchBar = document.querySelector(".search-input").value.toUpperCase().trim();
