@@ -38,6 +38,8 @@ function showandhid(){
 }
 
 
+let q_0 = document.getElementById('q-0')
+let script_0 = document.getElementById('script-0')
 let q_1 = document.getElementById('q-1')
 let script_1 = document.getElementById('script-1')
 let q_2 = document.getElementById('q-2')
@@ -64,8 +66,14 @@ let q_12 = document.getElementById('q-12')
 let script_12 = document.getElementById('script-12')
 let q_13 = document.getElementById('q-13')
 let script_13 = document.getElementById('script-13')
+let q_14 = document.getElementById('q-14')
+let script_14 = document.getElementById('script-14')
+let q_15 = document.getElementById('q-15')
+let script_15 = document.getElementById('script-15')
+let q_16 = document.getElementById('q-16')
+let script_16 = document.getElementById('script-16')
 
-
+q_0.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
 q_2.addEventListener("click" , ch1)
 q_3.addEventListener("click" , ch1)
@@ -79,10 +87,14 @@ q_10.addEventListener("click" , ch1)
 q_11.addEventListener("click" , ch1)
 q_12.addEventListener("click" , ch1)
 q_13.addEventListener("click" , ch1)
+q_14.addEventListener("click" , ch1)
+q_15.addEventListener("click" , ch1)
+q_16.addEventListener("click" , ch1)
 
 
 
     function ch1(){
+        script_0.style.display = q_0.checked ? "block" : "none"
         script_1.style.display = q_1.checked ? "block" : "none"
         script_2.style.display = q_2.checked ? "block" : "none"
         script_3.style.display = q_3.checked ? "block" : "none"
@@ -96,6 +108,9 @@ q_13.addEventListener("click" , ch1)
         script_11.style.display = q_11.checked ? "block" : "none"
         script_12.style.display = q_12.checked ? "block" : "none"
         script_13.style.display = q_13.checked ? "block" : "none"
+        script_14.style.display = q_14.checked ? "block" : "none"
+        script_15.style.display = q_15.checked ? "block" : "none"
+        script_16.style.display = q_16.checked ? "block" : "none"
 
     }
  
