@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   background: #333333;
-  transition: opacity 0.75s, visibility 0.75s;
+  transition: opacity 2s, visibility 2s;
 }
 
 .loader--hidden {
@@ -32,7 +32,7 @@
   border: 15px solid #dddddd;
   border-top-color: #009578;
   border-radius: 50%;
-  animation: loading 0.75s ease infinite;
+  animation: loading 2s ease infinite;
 }
 
 @keyframes loading {
