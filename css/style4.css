@@ -261,7 +261,7 @@ direction: rtl;
 
 }
 
-.scripts{
+.scripts ,#box-we-mobile{
 display: none;
 border: 2px solid black;
 width: fit-content;
@@ -293,7 +293,7 @@ opacity: 0;
 } */
 
 label input:checked ~ .color2{
-color: blueviolet;
+color: #8a2be2;
 
 }
 .wrapper .radio_tabs label .input:checked ~ .radio_mark{
@@ -367,4 +367,16 @@ footer div{
 footer div img{
   width: 100px;
   height: 50px;
+}
+#btn-cx{
+  display: block;
+  margin-right: auto;
+  border: 0;
+  width: 20px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.hiddenBtn{
+  display: none;
 }
