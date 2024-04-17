@@ -59,6 +59,7 @@
         </div>
         <div class="box-select" id="box-2">
           <div><button id="btn-cx" onclick="xc()">X</button></div>
+          <p> Major Fault : عبارة عن اصلاحات بتم علي الخطوط الارضية</p>
           <p>في حالة وجود الـ Major Fault ببلغ العميل ان المشكلة هتتحل خلال 3 ايام</p>
           <mark>لو العميل تبع حياه كريمة هبلغه انها هتتحل في 5 ايام</mark>
           <br>
@@ -95,8 +96,11 @@
                           All TTS Tickets :-
  
                             <li>يتم التعويض عن مدة تبدأ من 12 ساعة يتم احتسابها من بداية تصعيد ال Case حتي ال 3rd Level Update علي ال Ticket. </li>
-                            <li>ليس من الضروري مراجعة الاستهلاك في حالة ان العميل كان  within Technical ticket normal SLA.</li>
-                            <li>يتم تعويض العميل عن اي technical Case بناء علي ال 3rd Level Update ماعدا الـ Major Fault يتم اتباع ال Normal Cycle.</li>
+                            <li>يجب عرض التعويض بـ الـ Quota اولاً علي العميل وفي حالة رفضه يتم عرض التعويض برصيد</li>
+                            <li> بنقدم طلب تعويض عن الفتره المدفوعة فقط لكل من الـ (FV & FBB)</li>
+                            <li> لازم يكون حساب العميل Active account</li>
+
+
                           </div> 
                           <div class="wrapper">
                             <div class="radio_tabs">
@@ -117,17 +121,26 @@
                             <div class="content">
                               <div class="radio_content radio_1">
                                 <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
-                                <p>  بنطلب من العميل رقم الشكوي او الفترة الكان فيها المشكلة  </p>
-                                <ol dir="rtl">
-                                  <strong>الشروط:</strong>
-                                  <li>لازم نتأكد ان الـ Order Installed</li>
-                                  <li>بنتأكد ان مفيش Order Cancellation</li>
-                                  <li> بنقدم طلب تعويض عن الفتره المدفوعة فقط لكل من الـ (FV & FBB)</li>
-                                  <li> لازم نتأكد ان TTS الهنقدم بيها الطلب متقدمش بيها قبل كدا</li>
-                                  <li> لازم الـ Ticket TTS الهنقدم بيها تكون Closed والمشكلة اتحلت</li>
-                                  <li> يجب ان لاتزيد الـ Ticket  عن 3 شهور من تاريخ اغلاقها</li>
-                                  <li> لازم يكون حساب العميل Active account</li>
-                                </ol> 
+                                <ol>
+                                  <strong>قم بقراءة الشروط مع وضع العلامه اذا كان الشرط مُحقق</strong>
+                                  <li> هنفتح الـ TTS واشوف هل هي Open ولا Closed (لازم تكون Closed)<span style="padding: 5px;"><input type="checkbox"></span></li>
+                                  <li>لازم التيكت ميكونش عدي عليها 3 شهور من تاريخ القفل <span style="padding: 5px;"><input type="checkbox"></span></li>
+                                  <li>هتأكد هل كان فيه تفتيش هندسي ولا لا والشكوي كانت في الـ 3rd Level ولالا <span style="padding: 5px;"><input type="checkbox"></span><button onclick="hideUnhide('eng_3rd_a')"  style=" padding: 5px;  border-radius: 10px;"> شرح</button>  </li>
+                                  <div class="hiddenBtn" id="eng_3rd_a">
+                                    <mark style="display: block;">دي بعرفها من الـ Item Logs بعمل Ctrl + f  واكتب eng (لازم ميكونش فيه تفتيش هندسي)</mark>
+                                    <mark>وكمان بعرف ان الشكوي في الـ 3rd Level لو مكتوب transfered IU (معني كدا تمام لانها لازم تكون في الـ IU)</mark>
+                                  </div>
+                                  <li> هشوف الـ Close code الابديت معانا ولا علينا <span style="padding: 5px;"><input type="checkbox"></span><button onclick="hideUnhide('Close_code_a')"  style=" padding: 5px;  border-radius: 10px;"> شرح</button></li>
+                                  <div class="hiddenBtn" id="Close_code_a">
+                                    <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>معانا</mark>يعني ينفع اقدم للعميل دا طلب </p>
+                                    <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>علينا</mark> يعني مينفعش اقدم للعميل دا طلب ودا زي cpe problem او close code 74 او اتصالما بالعميل ومردش علينا وكل دا مينغعش اقدم بيه تعويض</p>
+                                    <p>بعرف الـ close code من الـ Item Logs </p>
+                                  </div>
+                                  <li> هفتح الـ limit query transaction واعمل search بتاريخ الشكوي اشوفة اتعوض قبل كدا ولا لا <span style="padding: 5px;"><input type="checkbox"></span></li>
+                                  <li> بفتح الـ Query الخاصة بالـ SR اتأكد منها انه متعوضش قبل كدا (للاحتياط)<span style="padding: 5px;"><input type="checkbox"></span></li>
+
+                                  
+                                </ol>
                                 
                                 <label class="box" style="color: red;"><input type="checkbox" id="q-14"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
                             <div id="script-14" class="scripts">
@@ -188,10 +201,26 @@
                                 <br>
                                 <label><strong>شروط التعويض خلال المكالمة</strong></label>
                               
-                                  <ul>
-                                    <li>يمكن تعويض العميل بحد اقصي 20GB او 12 جنيه للـ Ticket الواحده او للـ Outage الواحد في خلال المكالمة</li>
-                                    <li>يجب عرض التعويض بـ الـ Quota اولاً علي العميل وفي حالة رفضه يتم عرض العويض برصيد</li>
-                                  </ul>
+                                  <ol>
+                                    <strong>قم بقراءة الشروط مع وضع العلامه اذا كان الشرط مُحقق</strong>
+                                    <li> هنفتح الـ TTS واشوف هل هي Open ولا Closed (لازم تكون Closed)<span style="padding: 5px;"><input type="checkbox"></span></li>
+                                    <li>لازم التيكت ميكونش عدي عليها 3 شهور من تاريخ القفل <span style="padding: 5px;"><input type="checkbox"></span></li>
+                                    <li>هتأكد هل كان فيه تفتيش هندسي ولا لا والشكوي كانت في الـ 3rd Level ولالا <span style="padding: 5px;"><input type="checkbox"></span><button onclick="hideUnhide('eng_3rd')"  style=" padding: 5px;  border-radius: 10px;"> شرح</button>  </li>
+                                    <div class="hiddenBtn" id="eng_3rd">
+                                      <mark style="display: block;">دي بعرفها من الـ Item Logs بعمل Ctrl + f  واكتب eng (لازم ميكونش فيه تفتيش هندسي)</mark>
+                                      <mark>وكمان بعرف ان الشكوي في الـ 3rd Level لو مكتوب transfered IU (معني كدا تمام لانها لازم تكون في الـ IU)</mark>
+                                    </div>
+                                    <li> هشوف الـ Close code الابديت معانا ولا علينا <span style="padding: 5px;"><input type="checkbox"></span><button onclick="hideUnhide('Close_code')"  style=" padding: 5px;  border-radius: 10px;"> شرح</button></li>
+                                    <div class="hiddenBtn" id="Close_code">
+                                      <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>معانا</mark>يعني ينفع اقدم للعميل دا طلب </p>
+                                      <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>علينا</mark> يعني مينفعش اقدم للعميل دا طلب ودا زي cpe problem او close code 74 او اتصالما بالعميل ومردش علينا وكل دا مينغعش اقدم بيه تعويض</p>
+                                      <p>بعرف الـ close code من الـ Item Logs </p>
+                                    </div>
+                                    <li> هفتح الـ limit query transaction واعمل search بتاريخ الشكوي اشوفة اتعوض قبل كدا ولا لا <span style="padding: 5px;"><input type="checkbox"></span></li>
+                                    <li> بفتح الـ Query الخاصة بالـ SR اتأكد منها انه متعوضش قبل كدا (للاحتياط)<span style="padding: 5px;"><input type="checkbox"></span></li>
+
+                                    
+                                  </ol>
                                   <label><strong>في حالة التعويض بأكثر من ذلك بحد اقصي 50GB او 40 جنيه :</strong></label>
                                   <ul>
                                     <li>سيتم عمل IR للـ Team Leader وسيتم تنفيذالطلب في خلال 30 دقيقة</li>
@@ -215,12 +244,12 @@
                   <div class="hidden" id="hid5" dir="rtl">
                     <strong>هدية تعويض علي رقم 015</strong>
                     <p style="border: 1px solid red; padding: 5px; width: fit-content;"> دي بقدر اعوض العميل بيها في حالة وجود شكوي في 3rd Level زي الـ IU مثلا ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </p>
-                    <button onclick="hideUnhide('box-we-mobile')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"></i> في حالة سؤال العميل علي سعر خط 015 <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="btn btn-primary" onclick="hideUnhide('box-we-mobile')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"></i> في حالة سؤال العميل علي سعر خط 015 <i class="fa-solid fa-cart-shopping"></i></button>
                     <div id="box-we-mobile">
                       <p>سعر خط وي 82 جنيه من اقرب فرع</p>
                     </div>
                     <hr>
-                    <button onclick="hideUnhide('tableQouta')"  style=" padding: 5px;  border-radius: 10px;">جدول توضيحي</button>    
+                    <button class="btn btn-primary" onclick="hideUnhide('tableQouta')"  style=" padding: 5px;  border-radius: 10px;">جدول توضيحي</button>    
                     <div class="hiddenBtn" id="tableQouta">
                      <table class="table table-dark" dir="ltr" style="font-size: 11px;">
                        <thead>
