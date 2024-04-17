@@ -27,14 +27,17 @@ $(document).ready(function(){
   let check2 = document.querySelector("#check2");
   let check3 = document.querySelector("#check3");
   let check4 = document.querySelector("#check4");
+  let check5 = document.querySelector("#check5");
   let hid2 = document.querySelector("#hid2");
   let hid3 = document.querySelector("#hid3");
   let hid4 = document.querySelector("#hid4");
+  let hid5 = document.querySelector("#hid5");
 function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
     hid2.style.display = check2.checked ? "block" : "none"
     hid3.style.display = check3.checked ? "block" : "none"
     hid4.style.display = check4.checked ? "block" : "none"
+    hid5.style.display = check5.checked ? "block" : "none"
 }
 
 
@@ -72,6 +75,12 @@ let q_15 = document.getElementById('q-15')
 let script_15 = document.getElementById('script-15')
 let q_16 = document.getElementById('q-16')
 let script_16 = document.getElementById('script-16')
+let q_17 = document.getElementById('q-17')
+let script_17 = document.getElementById('script-17')
+let q_18 = document.getElementById('q-18')
+let script_18 = document.getElementById('script-18')
+let q_19 = document.getElementById('q-19')
+let script_19 = document.getElementById('script-19')
 
 q_0.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
@@ -90,6 +99,9 @@ q_13.addEventListener("click" , ch1)
 q_14.addEventListener("click" , ch1)
 q_15.addEventListener("click" , ch1)
 q_16.addEventListener("click" , ch1)
+q_17.addEventListener("click" , ch1)
+q_18.addEventListener("click" , ch1)
+q_19.addEventListener("click" , ch1)
 
 
 
@@ -111,6 +123,9 @@ q_16.addEventListener("click" , ch1)
         script_14.style.display = q_14.checked ? "block" : "none"
         script_15.style.display = q_15.checked ? "block" : "none"
         script_16.style.display = q_16.checked ? "block" : "none"
+        script_17.style.display = q_17.checked ? "block" : "none"
+        script_18.style.display = q_18.checked ? "block" : "none"
+        script_19.style.display = q_19.checked ? "block" : "none"
 
     }
  
@@ -207,3 +222,26 @@ window.addEventListener("load", () => {
     });
   });
   
+  let box_select = document.querySelectorAll(".op")
+//   let box_select = document.getElementById("vv")
+  let btn_x = document.getElementById('btn-cx')
+  function xc(){
+
+        box_select.style.display = "none"
+
+    
+
+  }
+  
+  let we_mobile = document.getElementById('we-mobile')
+  function hideUnhide(id){
+    const p1 = document.getElementById(id);
+    if(p1.style.display == "none"){
+        p1.style.display = "block";
+        // we_mobile.style.backgroundColor = "#8a2be2" ;
+    }else{
+        p1.style.display = "none"
+        // we_mobile.style.backgroundColor = "#ddd" ;
+
+    }
+  }
