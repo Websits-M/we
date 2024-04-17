@@ -12,8 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body id="bd">
-        <div class="loader"></div>
-
+    <div class="loader"></div>
       <nav>
         <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
@@ -48,7 +47,9 @@
             <option value="4"> Case Escalation</option>
           </select>
         </div>
+        <div class="op">
         <div class="box-select" id="box-1">
+          <div><button id="btn-cx" onclick="xc()">X</button></div>
           <p>دي مشكلة عندنا بتأثر علي العملاء واول SLA بيكون ساعتين لكل المشاكل ماعدا:</p>
           <strong> Wrong card and port</strong>
           <br>
@@ -57,11 +58,13 @@
           <p>في حال وجودهم ببلغ العميل ان المشكلة هتتحل في اقرب وقت ممكن</p>
         </div>
         <div class="box-select" id="box-2">
+          <div><button id="btn-cx" onclick="xc()">X</button></div>
           <p>في حالة وجود الـ Major Fault ببلغ العميل ان المشكلة هتتحل خلال 3 ايام</p>
           <mark>لو العميل تبع حياه كريمة هبلغه انها هتتحل في 5 ايام</mark>
           <br>
         </div>
         <div class="box-select" id="box-3">
+          <div><button id="btn-cx" onclick="xc()">X</button></div>
           <strong>Prepaid</strong>
           <p>عميل المايجريتد : ودا يعني علي نظام الباقة بيدفع قبل الـ 3 شهور </p>
           <p>بنعرف انه مايجريتد لو كان له حساب علي الـ BSS</p>
@@ -75,9 +78,11 @@
           ودا بسبب انه ملوش حساب علي الـ BSS
         </div>
         <div class="box-select" id="box-4">
+          <div><button id="btn-cx" onclick="xc()">X</button></div>
           <strong>Escalation</strong>
             <img src="./images/escalation.jpg" alt="ES">
         </div>
+      </div>
       </div>
    
   <!-- ----------------------------------part2-------------------------------------------------- -->
@@ -111,7 +116,7 @@
 
                             <div class="content">
                               <div class="radio_content radio_1">
-                                <p style="border: 1px solid red; padding: 5px;  width: fit-content;"">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
+                                <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
                                 <p>  بنطلب من العميل رقم الشكوي او الفترة الكان فيها المشكلة  </p>
                                 <ol dir="rtl">
                                   <strong>الشروط:</strong>
@@ -152,7 +157,7 @@
                               </div>     
                                     <!-- ------------------------------ON SPOT---------------------------------------- -->
                               <div class="radio_content radio_2"  id="r1">
-                                <p style="border: 1px solid red; padding: 5px;  width: fit-content;"">التعويض خلال المكالمة</p>
+                                <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
                                 <div>
                                   <label class="box"><input type="checkbox" id="q-0"><strong class="color2" dir="rtl"> عرض كيفية التعويض</strong></label>
                                   <br>
@@ -204,7 +209,157 @@
                               </div>
                             </div> <!-- /wrapper -->
                       </div> <!-- /hid -->
-                <hr>
+                  <!-- -------------------------------------------------- We Mobile Concession---------------------------------------------------------------- -->
+                  <hr>
+                  <label class="texx"><input type="checkbox" id="check5" onchange="showandhid()" data-click="clickk"> We Mobile Concession</label>
+                  <div class="hidden" id="hid5" dir="rtl">
+                    <strong>هدية تعويض علي رقم 015</strong>
+                    <p style="border: 1px solid red; padding: 5px; width: fit-content;"> دي بقدر اعوض العميل بيها في حالة وجود شكوي في 3rd Level زي الـ IU مثلا ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </p>
+                    <button onclick="hideUnhide('box-we-mobile')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"></i> في حالة سؤال العميل علي سعر خط 015 <i class="fa-solid fa-cart-shopping"></i></button>
+                    <div id="box-we-mobile">
+                      <p>سعر خط وي 82 جنيه من اقرب فرع</p>
+                    </div>
+                    <hr>
+                    <button onclick="hideUnhide('tableQouta')"  style=" padding: 5px;  border-radius: 10px;">جدول توضيحي</button>    
+                    <div class="hiddenBtn" id="tableQouta">
+                     <table class="table table-dark" dir="ltr" style="font-size: 11px;">
+                       <thead>
+                         <tr>
+                           <th scope="col">الباقة لدي العميل</th>
+                           <th scope="col">حجم الهديه</th>
+                           <th scope="col">مدة الهديه</th>
+                           <th scope="col">Handled by</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <th scope="row">140 GB</th>
+                           <td>5 GB</td>
+                           <td>3 days</td>
+                           <td>Agent</td>
+                         </tr>
+                         <tr>
+                           <th scope="row">From 200GB TO 400GB</th>
+                           <td>10 GB</td>
+                           <td>7 days</td>
+                           <td>Team Leader</td>
+                         </tr>
+                         <tr>
+                           <th scope="row">Other</th>
+                           <td>20 GB</td>
+                           <td>15 days</td>
+                           <td>Team Leader</td>
+                         </tr>
+                       </tbody>
+                     </table>
+                    </div>
+                    <hr> 
+                  <label class="box"><input type="checkbox" id="q-17"><span class="color2" dir="rtl"> شروط التعويض</span></label>
+                  <br>
+                  <div id="script-17" class="scripts">
+                    <ol dir="rtl" style="padding: 0 15px;">
+                      <li> في حالة وجود شكوي في 3rd Level من وقت التصعيد والمشكلة لم يتم حلها</li>
+                      <mark> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس</mark> 
+                      <li>نفدر برضو نعوض في حالة وجود Outage/Major Fault عدي الـ 24 ساعة والخدمة مرجعتش</li>
+                      <li> في حالة وجود شكوي في 3rd Level وحصلها اعادة تصعيد مرة او اكتر من مره في خلال الـ SLA </li>
+                      <li>التعويض بيكون مره واحده بس علي الشكوي وينفع يتعوض تاني بشرط تكون شكوي مختلفة عن القديمة</li>
+                      <li>يمكن تعويض العميل مرتين فقط في الشهر شرط ان لاتكون نفس الشكوي</li>
+                       <p><mark>دي يعتبر هديه وليس تعويض يعني ملهاش علاقه بالتعويض الاساسي البينزل للعميل</mark> </p> 
+                       <div style="border: 1px solid red; padding: 5px; width: fit-content;">
+                          <div style="margin: auto; padding: 0 30px 0 0;">
+                            اقدر اعرف العميل اتعوض قبل كدا ولا لا منين؟
+                        <ol>
+                          <li>BSS</li>
+                          <li>Sitemap</li>
+                          <li>Account Receivable</li>
+                          <li>Limit Quary Transaction</li>
+                          <p style="border: 1px solid black;">
+                            بعد كدا ببحث برقم العميل 015 بدون الـ 0 وبشوف التاريخ من وقت فتح الشكوي وبعمل بحث
+                          </p>
+                        </ol>
+                          </div>
+                       </div>           
+                   
+                    </ol>
+                  </div>
+                  <!-- -------------------------------------------------------------------------- -->
+                  <hr>
+                  <label class="box"><input type="checkbox" id="q-18"><span class="color2" dir="rtl"> كيفية التعويض من خلالنا؟</span></label>
+                  <br>
+                  <div id="script-18" class="scripts">
+                   <div style="padding: 0 25px 0 0;">
+                    <ol dir="rtl">
+                      <li>BSS</li>
+                      <li>Sitemap</li>
+                      <li>Account Receivable</li>
+                      <li>Adjustment Request</li>
+                      <li>Subscriber</li>
+                      <p> بعد كدا هنحط الرقم بدون الـ 0 واعمل بحث</p>
+                      <div dir="ltr">
+                        <p><span>Reason Categroy Name: </span><span style="color: red;">Fix (Adjustment)</span></p>
+                        <p><span>Reason: </span> <span style="color: red;">ADSL Concession</span></p>
+                        <p><span>Description: </span> <span style="color: red;">Cst Name : .., has a technical issue a adsl number : 0505656</span></p>
+                        <p><span>Create instance: </span> <span>Type: </span> <span style="color: red;">1256..WE Gold Free</span></p>
+                        <p><span>Effective Date: </span> <mark>هنا بختار الجيجات هتبتدي معاه من امتي </mark></p>
+                        <p><span>Expiration Date: </span> <mark>هنا بختار الجيجات هتنتهي معاه امتي </mark></p>
+                        <p><span>initial Free Units: </span> <span>هنا بحط الجيجات بالـ بايت </span> <br><span style="color: red;">5GB = 5368709120</span></p>
+                        <p dir="rtl">بعدين بعمل Save  بعدين submit</p>
+                        <button onclick="hideUnhide('SRs')" style="padding: 5px;">Show SR</button>
+                        <div id="SRs" class="hiddenBtn">
+                          <p style="border: 1px solid blueviolet; width: fit-content; padding: 5px;">
+                            <span style="display: block; color: green;">في حالة ان العميل قبل التعويض</span>
+                            <span style="background-color: blueviolet; color: white;">SR :</span> 
+                            None-Technical(most used) ->
+                            <br>
+                            WE line Adjustment ->
+                            <br>
+                            <span style="color: blueviolet; display: block;">Customer accept the compensation</span>
+                            <mark dir="rtl">مننساش نضيف رقم العميل 015 في ال SR</mark>
+                          </p>
+                          <p style="border: 1px solid blueviolet; width: fit-content; padding: 5px;">
+                            <span style="display: block; color:red;">في حالة ان العميل لم يقبل التعويض</span>
+                            <span style="background-color: blueviolet; color: white;">SR :</span> 
+                            None-Technical(most used) ->
+                            <br>
+                            WE line Adjustment ->
+                            <br>
+                            <span style="color: blueviolet; display: block;">Customer Refuse the compensation</span>
+                          </p>
+                          <p style="border: 1px solid blueviolet; width: fit-content; padding: 5px;">
+                            <span style="display: block;">في حالة ان العميل معهوش رقم 015</span>
+                            <span style="background-color: blueviolet; color: white;">SR :</span> 
+                            None-Technical(most used) ->
+                            <br>
+                            WE line Adjustment ->
+                            <br>
+                            <span style="color: blueviolet; display: block;">Customer do not have WE line</span>
+                          </p>
+                          <p style="border: 1px solid blueviolet; width: fit-content; padding: 5px;">
+                            <span style="display: block;">في حالة ان العميل اتعوض قبل كدا بالفعل</span>
+                            <span style="background-color: blueviolet; color: white;">SR :</span> 
+                            None-Technical(most used) ->
+                            <br>
+                            WE line Adjustment ->
+                            <br>
+                            <span style="color: blueviolet; display: block;"> compensation added before</span>
+                          </p>
+                        </div>
+                      
+                      </div>
+                  
+                    </ol>
+                   </div>
+                  </div>
+                     <!-- -------------------------------------------------------------------------- -->
+                      <hr>
+                  <label class="box"><input type="checkbox" id="q-19"><span class="color2" dir="rtl"> كيفية تقديم طلب تعويض من خلال Team Leader</span></label>
+                  <br>
+                  <div id="script-19" class="scripts">
+                    <span style="color: red;">                            سيتم الاضافة قريباً..                            </span>
+                  </div>
+                 
+                  </div> <!-- /we mobile -->
+                  <hr>
                 <!-- --------------------------------------TTS ----------------------------------------------------------->
                         <label class="texx"><input type="checkbox" id="check2" onchange="showandhid()" data-click="clickk"> TTS Case</label>
                           <div class="hidden" id="hid2" dir="rtl">
@@ -409,7 +564,7 @@
                           <br>
                           <div id="script-12" class="scripts">
                             <ul dir="rtl">
-                              <li> Delay Ticket دي بعملها لما الشكوش تكون عدت الـ SLA بتعها</li>
+                              <li> Delay Ticket دي بعملها لما الشكوي تكون عدت الـ SLA بتعها</li>
                               <p style="border: 1px solid red; padding: 5px; width: fit-content;"><mark>ملحوظة هامة :</mark> لازم ابحث الاول واشوف العميل دا معمول له Delay ولا لا لانه لو معموله مش هينفع تعمله واحده جديده</p>
                               <div class="wrapper">
                                 <div class="radio_tabs">
@@ -507,8 +662,10 @@
                             </ul>
                           </div>
                              <!-- -------------------------------------------------------------------------- -->
+                      
                          
-                             </div>
+                          </div> <!-- /ir case -->
+                        
 
                           </div>
         </div><!-- /content-data -->
