@@ -368,11 +368,11 @@ footer div img{
   width: 100px;
   height: 50px;
 }
-#btn-cx{
+#remove{
   display: block;
   margin-right: auto;
   border: 0;
-  width: 20px;
+  width: fit-content;
   padding: 3px;
   border-radius: 5px;
 }
@@ -382,4 +382,13 @@ footer div img{
   border: 1px solid black;
   padding: 5px;
   width: fit-content;
+  margin: 5px 0;
+}
+.sper p{
+  text-align: left;
+}
+.ol_21 li{
+  background-color: #e3c504;
+  margin-bottom: 3px ;
+  padding: 0 3px;
 }
