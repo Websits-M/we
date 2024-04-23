@@ -49,7 +49,7 @@
         </div>
         <div class="op">
         <div class="box-select" id="box-1">
-          <div><button id="btn-cx" onclick="xc()">X</button></div>
+          <button id="remove" onclick="reset()">del</button>
           <p>دي مشكلة عندنا بتأثر علي العملاء واول SLA بيكون ساعتين لكل المشاكل ماعدا:</p>
           <strong> Wrong card and port</strong>
           <br>
@@ -58,14 +58,14 @@
           <p>في حال وجودهم ببلغ العميل ان المشكلة هتتحل في اقرب وقت ممكن</p>
         </div>
         <div class="box-select" id="box-2">
-          <div><button id="btn-cx" onclick="xc()">X</button></div>
+          <button id="remove" onclick="reset()">del</button>
           <p> Major Fault : عبارة عن اصلاحات بتم علي الخطوط الارضية</p>
           <p>في حالة وجود الـ Major Fault ببلغ العميل ان المشكلة هتتحل خلال 3 ايام</p>
           <mark>لو العميل تبع حياه كريمة هبلغه انها هتتحل في 5 ايام</mark>
           <br>
         </div>
         <div class="box-select" id="box-3">
-          <div><button id="btn-cx" onclick="xc()">X</button></div>
+          <button id="remove" onclick="reset()">del</button>
           <strong>Prepaid</strong>
           <p>عميل المايجريتد : ودا يعني علي نظام الباقة بيدفع قبل الـ 3 شهور </p>
           <p>بنعرف انه مايجريتد لو كان له حساب علي الـ BSS</p>
@@ -79,13 +79,12 @@
           ودا بسبب انه ملوش حساب علي الـ BSS
         </div>
         <div class="box-select" id="box-4">
-          <div><button id="btn-cx" onclick="xc()">X</button></div>
+          <button id="remove" onclick="reset()">del</button>
           <strong>Escalation</strong>
             <img src="./images/escalation.jpg" alt="ES">
         </div>
       </div>
       </div>
-   
   <!-- ----------------------------------part2-------------------------------------------------- -->
 
         <div class="content-data">
@@ -243,7 +242,19 @@
                   <label class="texx"><input type="checkbox" id="check5" onchange="showandhid()" data-click="clickk"> We Mobile Concession</label>
                   <div class="hidden" id="hid5" dir="rtl">
                     <strong>هدية تعويض علي رقم 015</strong>
-                    <p style="border: 1px solid red; padding: 5px; width: fit-content;"> دي بقدر اعوض العميل بيها في حالة وجود شكوي في 3rd Level زي الـ IU مثلا ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </p>
+                    <p style="border: 1px solid red; padding: 5px; width: fit-content;"> دي بقدر اعوض العميل بيها في حالة وجود شكوي في <button onclick="hideUnhide('3rd-level')">3rd Level</button> ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </p>
+                    <div id="3rd-level" class="hiddenBtn">
+                      <div style="padding: 0 15px;">
+                        <ul>
+                          <li>IU</li>
+                          <li>NOC</li>
+                          <li>Pailot SLS</li>
+                          <li>installtion opration</li>
+                          <li>DCU</li>
+                          <li>mantincs vist</li>
+                        </ul>
+                      </div>
+                    </div>
                     <button class="btn btn-primary" onclick="hideUnhide('box-we-mobile')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"></i> في حالة سؤال العميل علي سعر خط 015 <i class="fa-solid fa-cart-shopping"></i></button>
                     <div id="box-we-mobile">
                       <p>سعر خط وي 82 جنيه من اقرب فرع</p>
@@ -288,8 +299,8 @@
                   <div id="script-17" class="scripts">
                     <ol dir="rtl" style="padding: 0 15px;">
                       <li> في حالة وجود شكوي في 3rd Level من وقت التصعيد والمشكلة لم يتم حلها</li>
-                      <mark> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس</mark> 
-                      <li>نفدر برضو نعوض في حالة وجود Outage/Major Fault عدي الـ 24 ساعة والخدمة مرجعتش</li>
+                      <mark style="background-color: red; color: white;"> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس</mark> 
+                      <li>نقدر برضو نعوض في حالة وجود Outage/Major Fault عدي الـ 24 ساعة والخدمة مرجعتش</li>
                       <li> في حالة وجود شكوي في 3rd Level وحصلها اعادة تصعيد مرة او اكتر من مره في خلال الـ SLA </li>
                       <li>التعويض بيكون مره واحده بس علي الشكوي وينفع يتعوض تاني بشرط تكون شكوي مختلفة عن القديمة</li>
                       <li>يمكن تعويض العميل مرتين فقط في الشهر شرط ان لاتكون نفس الشكوي</li>
@@ -324,13 +335,13 @@
                       <li>Adjustment Request</li>
                       <li>Subscriber</li>
                       <p> بعد كدا هنحط الرقم بدون الـ 0 واعمل بحث</p>
-                      <div dir="ltr">
+                      <div class="sper" dir="ltr" style=" text-align: left;">
                         <p><span>Reason Categroy Name: </span><span style="color: red;">Fix (Adjustment)</span></p>
                         <p><span>Reason: </span> <span style="color: red;">ADSL Concession</span></p>
                         <p><span>Description: </span> <span style="color: red;">Cst Name : .., has a technical issue a adsl number : 0505656</span></p>
                         <p><span>Create instance: </span> <span>Type: </span> <span style="color: red;">1256..WE Gold Free</span></p>
-                        <p><span>Effective Date: </span> <mark>هنا بختار الجيجات هتبتدي معاه من امتي </mark></p>
-                        <p><span>Expiration Date: </span> <mark>هنا بختار الجيجات هتنتهي معاه امتي </mark></p>
+                        <p><span>Effective Date: </span><br><mark>هنا بختار الجيجات هتبتدي معاه من امتي </mark> </p>
+                        <p><span>Expiration Date:</span><br><mark>هنا بختار الجيجات هتنتهي معاه امتي </mark></p>
                         <p><span>initial Free Units: </span> <span>هنا بحط الجيجات بالـ بايت </span> <br><span style="color: red;">5GB = 5368709120</span></p>
                         <p dir="rtl">بعدين بعمل Save  بعدين submit</p>
                         <button onclick="hideUnhide('SRs')" style="padding: 5px;">Show SR</button>
@@ -694,7 +705,93 @@
                       
                          
                           </div> <!-- /ir case -->
-                        
+                          <hr>
+                  <!-- ----------------------------------------------Balance--------------------------------------- -->
+                  <label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)</label>
+                  <div class="hidden" id="hid6" dir="rtl">
+                    <p style="border: 1px solid red; padding: 5px; width: fit-content;">
+                       دي في حالة ان فيه عميل عمل باقة اضافية بالغلط
+                       <br>
+                       او عمل تجديد مبكر بالغلط او عمل تجديد مبكر مرتين ورا بعض بالغلط
+                       <br>
+                       او شحن رصيد لحساب الانترنت بدل الارضي والعكس
+                    </p>
+                    <label class="box"><input type="checkbox" id="q-20"><span class="color2" dir="rtl"> الشروط</span></label>
+                    <div id="script-20" class="scripts">
+                      <div style="padding-right: 15px; width: fit-content;">
+                        <ol>
+                          <li>لو اتضاف باقة اضافية او علي الباقة بالغلط لازم ميكونش مر اسبوع علي اضافة الباقة</li>
+                          <li> لو عمل Early Renewal / Change Offering اكتر من مره لازم ميكونش مر اسبوع بين العمليتين</li>
+                          <li> لو عمل تجديد مبكر او اتجددت بشكل تلقائي لازم ميكونش مر 24 ساعه علي العمليه</li>
+                          <li>في حالة نقل الرصيد من FV للـ FBB او العكس لازم ميكنش عدي 7 ايام من وقت الشحن ولازم الرصيد ميكنش استخدم</li>
+                        </ol>
+                        <li><mark>ملحوظات</mark></li>
+                        <ul>
+                          <li>في حالة حذف باقة اساسية يجب اضافة باقة اساسية اخري مكانها (لايمكن استبدالها بـ باقة اضافية)</li>
+                          <li> شرط اساسي في كل الحالات السابقة خصم فرق الاستهلاك الخاص بالباقة التي تم حذفها من اي باقة حالية بعد اتخاذ الـ Action</li>
+                          <li> في حالة رغبة العميل في خذف باقة بيتم احتساب الاستهلاك فيها بنظام الجيجا بالنص مثل (we sonic) واستبدالها بباقة اخري من الباقات العادية سيتم خصم الاستهلاك مضاعف من الباقة الجديده.</li>
+                        </ul>
+
+                      </div>
+                    </div>
+                    <br>
+                    <label class="box"><input type="checkbox" id="q-21"><span class="color2" dir="rtl"> Agent Action</span></label>
+                    <div id="script-21" class="scripts">
+                      <div style="padding-right: 15px; text-align: left;">
+                        <ol class="ol_21">
+                          <li> هنفتح الـ IR</li>
+                          <li> هندخل علي Adjustment Cases</li>
+                          <li> هنعمل Add new</li>
+                          <li>
+                            <hr>
+                            <div>
+                              <strong>: Area code</strong>
+                              <br>
+                              هنا بحط كود المحافظة
+                              <hr>
+                              <strong>: Land line</strong>
+                              <br>
+                              هنا الرقم الارضي
+                              <hr>
+                              <strong>: Type</strong>
+                              <br>
+                              هنا بنختار العملية الـ تمت بالغلط
+                              <hr>
+                              <strong>:Comment</strong> 
+                              <div style="border: 1px solid blue; width: fit-content; margin: auto; padding: 3px;">
+                                <strong> .... CST Name</strong><br>
+                                Verification Done <br>
+                                <strong>: CST Type</strong><br>
+                               DSL ....... <mark>Prepaid OR postpaid OR Other</mark>
+  
+                                <br>
+                                CST request : <br>
+                                <p style="border: 1px solid red; text-align: left; padding: 3px;">CST charge .... GB by mistake</p>
+                                OR
+                                <p style="border: 1px solid red; text-align: left; padding: 3px;" >CST need transfer balance from FV to FBB</p>
+                              </div>
+                              <hr>
+                              <strong>: Group Name</strong>
+                              <br>
+                              دا بيكون علي حسب انت سابورت ايه او الفلور بتاعك
+                              <hr>
+                              <strong>: Attach </strong> 
+                              <br>
+                              دا اقدر اجيبه من الـ bss من biling من Free Resource
+                            </div>
+                          </li>
+                          <li> بعد كدا بحط رقم الـ IR في الـ SR</li>
+                        </ol>
+                        <P style="text-align: left; border: 1px solid blueviolet; padding: 4px; width: fit-content;">
+                          <span style="background-color: blueviolet; color: white;">SR </span><br>
+                           FBB Non Tech Inquiry  <br>
+                           Biling Adjustment  <br>
+                          Recharge By Mastake
+                        </P>
+                        <p style="text-align: right;"><mark>هبلغ العميل انها هتاخد نصف ساعه</mark> </p>
+                      </div>
+                    </div>
+                  </div>
 
                           </div>
         </div><!-- /content-data -->
