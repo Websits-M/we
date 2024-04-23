@@ -28,16 +28,19 @@ $(document).ready(function(){
   let check3 = document.querySelector("#check3");
   let check4 = document.querySelector("#check4");
   let check5 = document.querySelector("#check5");
+  let check6 = document.querySelector("#check6");
   let hid2 = document.querySelector("#hid2");
   let hid3 = document.querySelector("#hid3");
   let hid4 = document.querySelector("#hid4");
   let hid5 = document.querySelector("#hid5");
+  let hid6 = document.querySelector("#hid6");
 function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
     hid2.style.display = check2.checked ? "block" : "none"
     hid3.style.display = check3.checked ? "block" : "none"
     hid4.style.display = check4.checked ? "block" : "none"
     hid5.style.display = check5.checked ? "block" : "none"
+    hid6.style.display = check6.checked ? "block" : "none"
 }
 
 
@@ -81,6 +84,10 @@ let q_18 = document.getElementById('q-18')
 let script_18 = document.getElementById('script-18')
 let q_19 = document.getElementById('q-19')
 let script_19 = document.getElementById('script-19')
+let q_20 = document.getElementById('q-20')
+let script_20 = document.getElementById('script-20')
+let q_21 = document.getElementById('q-21')
+let script_21 = document.getElementById('script-21')
 
 q_0.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
@@ -102,6 +109,8 @@ q_16.addEventListener("click" , ch1)
 q_17.addEventListener("click" , ch1)
 q_18.addEventListener("click" , ch1)
 q_19.addEventListener("click" , ch1)
+q_20.addEventListener("click" , ch1)
+q_21.addEventListener("click" , ch1)
 
 
 
@@ -126,6 +135,8 @@ q_19.addEventListener("click" , ch1)
         script_17.style.display = q_17.checked ? "block" : "none"
         script_18.style.display = q_18.checked ? "block" : "none"
         script_19.style.display = q_19.checked ? "block" : "none"
+        script_20.style.display = q_20.checked ? "block" : "none"
+        script_21.style.display = q_21.checked ? "block" : "none"
 
     }
  
@@ -163,6 +174,24 @@ q_19.addEventListener("click" , ch1)
         box2.style.display = "none";
         box3.style.display = "none";
     }
+}
+ function reset(){
+    var optionL = document.getElementById("optionL");
+
+    let box_select = document.querySelector("#box-1")
+    let box_select2 = document.querySelector("#box-2")
+    let box_select3 = document.querySelector("#box-3")
+    let box_select4 = document.querySelector("#box-4")
+    let box_select5 = document.querySelector("#box-5")
+    
+        box_select.style.display = "none"
+        box_select2.style.display = "none"
+        box_select3.style.display = "none"
+        box_select4.style.display = "none"
+        box_select5.style.display = "none"
+      
+       
+
 }
 // var radioBtn3 = document.querySelectorAll("input[name='fruit3']");
 // var result3 = document.getElementById("result3")
