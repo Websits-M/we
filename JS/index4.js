@@ -314,6 +314,7 @@ window.addEventListener("load", () => {
   let checkgreen17 =document.getElementById("checkgreen17")
   let green17 = document.getElementById("green17")
 
+  let showStep = document.getElementById("showStep")
 
   function action1(){
    
@@ -334,7 +335,17 @@ window.addEventListener("load", () => {
         green15.style.backgroundColor = checkgreen15.checked ? "#0bcf5d" : "#f87676"
         green16.style.backgroundColor = checkgreen16.checked ? "#0bcf5d" : "#f87676"
         green17.style.backgroundColor = checkgreen17.checked ? "#0bcf5d" : "#f87676"
+        if(checkgreen.checked && checkgreen2.checked && checkgreen3.checked && checkgreen4.checked && checkgreen5.checked && checkgreen6.checked ){
+            showStep.style.display = "block"
+        }else{
+            showStep.style.display = "none"
 
-
+        }
 
   }
+//   function resultCheeck(){
+//     // green.style.backgroundColor = checkgreen.checked ? "#0bcf5d" : "#f87676"
+
+//         showStep.style.display = checkgreen.checked ? "block" : "none"
+
+//   }
