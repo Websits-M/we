@@ -392,3 +392,12 @@ footer div img{
   margin-bottom: 3px ;
   padding: 0 3px;
 }
+
+.cond1 label , .cond2 label , .cond3 label{
+  display: block;
+}
+.cond1 li ,.cond2 li , .cond3 li{
+  background-color: #f87676;
+  margin: 3px 0;
+  padding: 0 3px;
+}
