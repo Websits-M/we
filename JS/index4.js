@@ -88,6 +88,8 @@ let q_20 = document.getElementById('q-20')
 let script_20 = document.getElementById('script-20')
 let q_21 = document.getElementById('q-21')
 let script_21 = document.getElementById('script-21')
+let q_22 = document.getElementById('q-22')
+let script_22 = document.getElementById('script-22')
 
 q_0.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
@@ -111,6 +113,7 @@ q_18.addEventListener("click" , ch1)
 q_19.addEventListener("click" , ch1)
 q_20.addEventListener("click" , ch1)
 q_21.addEventListener("click" , ch1)
+q_22.addEventListener("click" , ch1)
 
 
 
@@ -137,6 +140,7 @@ q_21.addEventListener("click" , ch1)
         script_19.style.display = q_19.checked ? "block" : "none"
         script_20.style.display = q_20.checked ? "block" : "none"
         script_21.style.display = q_21.checked ? "block" : "none"
+        script_22.style.display = q_22.checked ? "block" : "none"
 
     }
  
@@ -273,4 +277,64 @@ window.addEventListener("load", () => {
         // we_mobile.style.backgroundColor = "#ddd" ;
 
     }
+  }
+
+  let checkgreen =document.getElementById("checkgreen")
+  let green = document.getElementById("green")
+  let checkgreen2 =document.getElementById("checkgreen2")
+  let green2 = document.getElementById("green2")
+  let checkgreen3 =document.getElementById("checkgreen3")
+  let green3 = document.getElementById("green3")
+  let checkgreen4 =document.getElementById("checkgreen4")
+  let green4 = document.getElementById("green4")
+  let checkgreen5 =document.getElementById("checkgreen5")
+  let green5 = document.getElementById("green5")
+  let checkgreen6 =document.getElementById("checkgreen6")
+  let green6 = document.getElementById("green6")
+  let checkgreen7 =document.getElementById("checkgreen7")
+  let green7 = document.getElementById("green7")
+  let checkgreen8 =document.getElementById("checkgreen8")
+  let green8 = document.getElementById("green8")
+  let checkgreen9 =document.getElementById("checkgreen9")
+  let green9 = document.getElementById("green9")
+  let checkgreen10 =document.getElementById("checkgreen10")
+  let green10 = document.getElementById("green10")
+  let checkgreen11 =document.getElementById("checkgreen11")
+  let green11 = document.getElementById("green11")
+  let checkgreen12 =document.getElementById("checkgreen12")
+  let green12 = document.getElementById("green12")
+  let checkgreen13 =document.getElementById("checkgreen13")
+  let green13 = document.getElementById("green13")
+  let checkgreen14 =document.getElementById("checkgreen14")
+  let green14 = document.getElementById("green14")
+  let checkgreen15 =document.getElementById("checkgreen15")
+  let green15 = document.getElementById("green15")
+  let checkgreen16 =document.getElementById("checkgreen16")
+  let green16 = document.getElementById("green16")
+  let checkgreen17 =document.getElementById("checkgreen17")
+  let green17 = document.getElementById("green17")
+
+
+  function action1(){
+   
+        green.style.backgroundColor = checkgreen.checked ? "#0bcf5d" : "#f87676"
+        green2.style.backgroundColor = checkgreen2.checked ? "#0bcf5d" : "#f87676"
+        green3.style.backgroundColor = checkgreen3.checked ? "#0bcf5d" : "#f87676"
+        green4.style.backgroundColor = checkgreen4.checked ? "#0bcf5d" : "#f87676"
+        green5.style.backgroundColor = checkgreen5.checked ? "#0bcf5d" : "#f87676"
+        green6.style.backgroundColor = checkgreen6.checked ? "#0bcf5d" : "#f87676"
+        green7.style.backgroundColor = checkgreen7.checked ? "#0bcf5d" : "#f87676"
+        green8.style.backgroundColor = checkgreen8.checked ? "#0bcf5d" : "#f87676"
+        green9.style.backgroundColor = checkgreen9.checked ? "#0bcf5d" : "#f87676"
+        green10.style.backgroundColor = checkgreen10.checked ? "#0bcf5d" : "#f87676"
+        green11.style.backgroundColor = checkgreen11.checked ? "#0bcf5d" : "#f87676"
+        green12.style.backgroundColor = checkgreen12.checked ? "#0bcf5d" : "#f87676"
+        green13.style.backgroundColor = checkgreen13.checked ? "#0bcf5d" : "#f87676"
+        green14.style.backgroundColor = checkgreen14.checked ? "#0bcf5d" : "#f87676"
+        green15.style.backgroundColor = checkgreen15.checked ? "#0bcf5d" : "#f87676"
+        green16.style.backgroundColor = checkgreen16.checked ? "#0bcf5d" : "#f87676"
+        green17.style.backgroundColor = checkgreen17.checked ? "#0bcf5d" : "#f87676"
+
+
+
   }
