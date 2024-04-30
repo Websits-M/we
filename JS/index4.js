@@ -90,6 +90,8 @@ let q_21 = document.getElementById('q-21')
 let script_21 = document.getElementById('script-21')
 let q_22 = document.getElementById('q-22')
 let script_22 = document.getElementById('script-22')
+let q_23 = document.getElementById('q-23')
+let script_23 = document.getElementById('script-23')
 
 q_0.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
@@ -114,6 +116,7 @@ q_19.addEventListener("click" , ch1)
 q_20.addEventListener("click" , ch1)
 q_21.addEventListener("click" , ch1)
 q_22.addEventListener("click" , ch1)
+q_23.addEventListener("click" , ch1)
 
 
 
@@ -141,6 +144,7 @@ q_22.addEventListener("click" , ch1)
         script_20.style.display = q_20.checked ? "block" : "none"
         script_21.style.display = q_21.checked ? "block" : "none"
         script_22.style.display = q_22.checked ? "block" : "none"
+        script_23.style.display = q_23.checked ? "block" : "none"
 
     }
  
@@ -197,19 +201,7 @@ q_22.addEventListener("click" , ch1)
        
 
 }
-// var radioBtn3 = document.querySelectorAll("input[name='fruit3']");
-// var result3 = document.getElementById("result3")
 
-// var findSelected3 = () => {
-//     var selected = document.querySelector("input[name='fruit3']:checked").value;
-//     result3.style.display = "block"
-//     result3.textContent = `${selected}`;
-// }
-// radioBtn3.forEach(radioBtn3 =>{
-//     radioBtn3.addEventListener("change" ,
-//     findSelected3);
-// })
-// findSelected3();
 
 
 function checkme(){
@@ -256,7 +248,6 @@ window.addEventListener("load", () => {
   });
   
   let box_select = document.querySelectorAll(".op")
-//   let box_select = document.getElementById("vv")
   let btn_x = document.getElementById('btn-cx')
   function xc(){
 
@@ -265,19 +256,27 @@ window.addEventListener("load", () => {
     
 
   }
-  
-  let we_mobile = document.getElementById('we-mobile')
-  function hideUnhide(id){
-    const p1 = document.getElementById(id);
-    if(p1.style.display == "none"){
-        p1.style.display = "block";
-        // we_mobile.style.backgroundColor = "#8a2be2" ;
-    }else{
-        p1.style.display = "none"
-        // we_mobile.style.backgroundColor = "#ddd" ;
+/////////////////////////BTNS//////////////////////////////////
 
-    }
-  }
+  function hideUnhide(item){
+
+        const p1 = document.getElementById(item);
+
+        if(p1.style.display == "none"){
+                p1.style.display = "block"
+
+
+        }else{
+            p1.style.display = "none"
+        }
+        
+
+        }
+
+    
+  
+
+
 
   let checkgreen =document.getElementById("checkgreen")
   let green = document.getElementById("green")
@@ -343,9 +342,3 @@ window.addEventListener("load", () => {
         }
 
   }
-//   function resultCheeck(){
-//     // green.style.backgroundColor = checkgreen.checked ? "#0bcf5d" : "#f87676"
-
-//         showStep.style.display = checkgreen.checked ? "block" : "none"
-
-//   }
