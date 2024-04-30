@@ -39,7 +39,7 @@
   to {
     transform: rotate(1turn);
   }
-}
+} 
 
 
 /* nav */
@@ -153,7 +153,7 @@ li a:hover {
 .us{
   font-size: 25px;
   color: #fff;
-}
+} 
 /* ------------------------------------------------------------------- */
 
 .container{
@@ -219,14 +219,14 @@ border: 1px solid red;
 font-size: 18px;
 padding: 5px;
 width: fit-content;
-/* margin: auto; */
+
 }
 .script1{
 text-align: right;
 width: fit-content;
 padding: 5px;
 border: 1px solid red;
-/* margin: auto; */
+
 }
 
 
@@ -285,12 +285,7 @@ width: 22px;
 height: 22px;
 }
 
-/* .wrapper .radio_tabs label .input{
-position: absolute;
-top: 0;
-right: 0;
-opacity: 0;
-} */
+
 
 label input:checked ~ .color2{
 color: #8a2be2;
@@ -319,11 +314,10 @@ box-shadow: 0 0 2px rgba(0,0,0,0.1);
 font-size: 15px;
 line-height: 22px;
 margin-bottom: 15px;
-}
+} 
 
 
-.down{
-  /* background-color: red; */
+ .down{
   padding: 10px 5px 60px 5px;
 }
 .box-select{
@@ -360,8 +354,8 @@ footer p{
   color: #fff;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/*5555555*/
 footer div{
-  /* background-color: red; */
   text-align: center;
 }
 footer div img{
@@ -379,6 +373,7 @@ footer div img{
 
 .hiddenBtn{
   display: none;
+
   border: 1px solid black;
   padding: 5px;
   width: fit-content;
