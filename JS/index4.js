@@ -312,8 +312,14 @@ window.addEventListener("load", () => {
   let green16 = document.getElementById("green16")
   let checkgreen17 =document.getElementById("checkgreen17")
   let green17 = document.getElementById("green17")
+  let checkgreen18 =document.getElementById("checkgreen18")
+  let green18 = document.getElementById("green18")
+  let checkgreen19 =document.getElementById("checkgreen19")
+  let green19 = document.getElementById("green19")
 
   let showStep = document.getElementById("showStep")
+  let showStep2 = document.getElementById("showStep2")
+  let showStep3 = document.getElementById("showStep3")
 
   function action1(){
    
@@ -334,11 +340,24 @@ window.addEventListener("load", () => {
         green15.style.backgroundColor = checkgreen15.checked ? "#0bcf5d" : "#f87676"
         green16.style.backgroundColor = checkgreen16.checked ? "#0bcf5d" : "#f87676"
         green17.style.backgroundColor = checkgreen17.checked ? "#0bcf5d" : "#f87676"
-        if(checkgreen.checked && checkgreen2.checked && checkgreen3.checked && checkgreen4.checked && checkgreen5.checked && checkgreen6.checked ){
+        green18.style.backgroundColor = checkgreen18.checked ? "#0bcf5d" : "#f87676"
+        green19.style.backgroundColor = checkgreen19.checked ? "#0bcf5d" : "#f87676"
+        
+        if(checkgreen.checked && checkgreen2.checked && checkgreen3.checked && checkgreen4.checked && checkgreen5.checked && checkgreen6.checked  && checkgreen18.checked){
             showStep.style.display = "block"
         }else{
             showStep.style.display = "none"
 
-        }
-
+        }if( checkgreen7.checked && checkgreen8.checked && checkgreen9.checked && checkgreen10.checked && checkgreen11.checked)
+    {
+        showStep2.style.display = "block"
+    }else{
+        showStep2.style.display = "none"
+    }
+    if(checkgreen12.checked && checkgreen13.checked && checkgreen14.checked && checkgreen15.checked && checkgreen16.checked && checkgreen17.checked && checkgreen19.checked){
+        showStep3.style.display = "block"
+    }else{
+        showStep3.style.display = "none"
+    }
+    
   }
