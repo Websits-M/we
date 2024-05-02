@@ -119,6 +119,15 @@
                             <div class="content">
                               <div class="radio_content radio_1">
                                 <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
+                                <div>
+                                  <button onclick="hideUnhide('add')"  style=" padding: 5px;  border-radius: 10px;">امتي اضيف التعويض ؟</button>    
+                                   <div class="hiddenBtn" id="add">
+                                    <p>نقدر نضيف التعويض للعميل في حالة</p>
+                                    <li>Outage</li>
+                                    <li>Global Problem</li>
+                                    <li>Pop Replacement</li>
+                                    </div>
+                                </div>
                                 <ol class="cond1">
                                   <strong>قم بقراءة الشروط مع وضع العلامه اذا كان الشرط مُحقق</strong>
                                   <label><li id="green"> هنفتح الـ TTS واشوف هل هي Open ولا Closed (لازم تكون Closed)<span style="padding: 5px;"><input type="checkbox" id="checkgreen" onclick="action1()"></span></li></label>
@@ -136,6 +145,7 @@
                                   </div>
                                   <label><li id="green5"> هفتح الـ limit query transaction واعمل search بتاريخ الشكوي اشوفة اتعوض قبل كدا ولا لا <span style="padding: 5px;"><input type="checkbox" id="checkgreen5" onclick="action1()"></span></li></label>
                                  <label><li id="green6"> بفتح الـ Query الخاصة بالـ SR اتأكد منها انه متعوضش قبل كدا (للاحتياط)<span style="padding: 5px;"><input type="checkbox" id="checkgreen6" onclick="action1()"></span></li></label>
+                                 <label><li id="green18"> بنقدم الطلب علي الفترة المدفوعة فقط لمل من الـFBB والـ FV لان لازم اعوص العميل عن فترة هو كان دافع فيها ونقدر نشوف دا من BSS-Recharge Logs<span style="padding: 5px;"><input type="checkbox" id="checkgreen18" onclick="action1()"></span></li></label>
 
                                 </ol>
                                 
@@ -196,9 +206,53 @@
                                         </div>
                                         <label><li id="green16"> هفتح الـ limit query transaction واعمل search بتاريخ الشكوي اشوفة اتعوض قبل كدا ولا لا <span style="padding: 5px;"><input type="checkbox" id="checkgreen16" onclick="action1()"></span></li></label>
                                         <label><li id="green17"> بفتح الـ Query الخاصة بالـ SR اتأكد منها انه متعوضش قبل كدا (للاحتياط)<span style="padding: 5px;"><input type="checkbox" id="checkgreen17" onclick="action1()"></span></li></label>
+                                        <label><li id="green19"> يمكن تقديم طلب التعويض بداية من 12 ساعة لكل الـ Cases<span style="padding: 5px;"><input type="checkbox" id="checkgreen19" onclick="action1()"></span></li></label>
+                                        <div class="scripts" id="showStep3" dir="ltr" style="text-align: left;">
+                                          <strong style="display: block; border: 2px dotted black; text-align: center;">System Action</strong>
+                                            <p>Follow Next Step </p>
+                                      </div>
+
                                       </ol>
-  
-                                      <label><strong>في حالة التعويض بأكثر من ذلك بحد اقصي 50GB او 40 جنيه :</strong></label>
+                                        <button onclick="hideUnhide('outage')"  style=" padding: 5px;  border-radius: 10px;">تعويض الـ Outage</button>    
+                                    <div class="hiddenBtn" id="outage">
+                                        <div style="padding-right: 20px;">
+                                          <ol>
+                                            <li>يتم تعويض العميل مباشرة لكل انواع الـ Outage ماعدا (Major fault Maintenance)</li>
+                                            <p style="border: 1px solid red;">يتم اخبار العميل بالانتظار لمدة 48 ساعة للتعويض التلقائي في حالة Majot fault Maintenance وفي حالة اتصال العميل بعد مرور 48 ساعة يتم التعويض On spot</p>
+                                            <li>في حالة اتصال العميل بعد 48  يتم اتباع الاتي لتعويضة On spot :</li>
+                                          </ol>
+                                          <li>مدة Outage تكون 12 ساعة او اكثر</li>
+                                          <li>في حالات الـ Down Outage ليس من الضروري مراجعة استهلاك العميل في اول 10 ايام</li>
+                                          <li>في حالات الـ Instability Outage يجب مراجعة استهلاك العميل اذا كان مر عليه اكثر من 24 ساعة (علي ان يكون الاستهلاك اقل من او يساوي 5 جيجا في اليوم)</li>
+                                          <strong>مدة الـ Outage لو من 6 الي 12 ساعة سيتم تعويض العميل بالشكل التالي :</strong>
+                                          <table class="table table-dark" dir="ltr" style="font-size: 11px;">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">الباقة لدي العميل</th>
+                                                <th scope="col">التعويض</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">Super/Mega/Ultra 140 GBs</th>
+                                                <td>3 GB</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">Super 200 & Super/Mega/Ultra 250 GBs</th>
+                                                <td>5 GB</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">Higher then Super/Mega/Ultra 250 GBs Packages</th>
+                                                <td>10 GB</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                     
+
+
+                                      <div><strong>في حالة التعويض بأكثر من ذلك بحد اقصي 50GB او 40 جنيه :</strong></div>
                                       <ul>
                                         <li>سيتم عمل IR للـ Team Leader وسيتم تنفيذالطلب في خلال 30 دقيقة</li>
                                         <li>يجب اضافة رقم موبايل للمتابعه مع العميل في الـ IR</li>
@@ -265,12 +319,27 @@
                         <ul>
                           <li>IU</li>
                           <li>NOC</li>
-                          <li>Pailot SLS</li>
+                          <li>Pilot SLS</li>
                           <li>installtion opration</li>
                           <li>DCU</li>
-                          <li>mantincs vist</li>
+                          <li>Maintenance vist</li>
                         </ul>
                       </div>
+                     
+                      </div>
+
+                      <button class="btn btn-primary" onclick="hideUnhide('addd')"  style=" padding: 5px;  border-radius: 10px;">اعرف منين امتي اضيف WE Mobile?</button>    
+                      <div class="hiddenBtn" id="addd">
+                        <div>
+                          يتم اضافة we mobile  في حالة تصعيد شكوي High Attenuation/BLQ/Instability واثناء الـ Troubleshooting نتيجة الـ ASSIA كانت : 
+                          <li>Technical Dispatch</li>
+                          <li>Out of Service </li>
+                          <li>No physical layer however - Fault exist</li>
+                          <li>In BLQ cases</li>
+                          <li>Run real time profile optomozation</li>
+                          <li>No enough data for evaluating stability</li>
+                          <li>Technical Dispatch is recommended</li>
+                        </div>
                     </div>
                     <button class="btn btn-primary" onclick="hideUnhide('box-we-mobile')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"></i> في حالة سؤال العميل علي سعر خط 015 <i class="fa-solid fa-cart-shopping"></i></button>
                     <div id="box-we-mobile">
@@ -325,22 +394,30 @@
 
                        <p><mark>دي يعتبر هديه وليس تعويض يعني ملهاش علاقه بالتعويض الاساسي البينزل للعميل</mark> </p> 
                               
-                   
+                       <div class="scripts" id="showStep2" dir="ltr" style="text-align: left;">
+                        <strong style="display: block; border: 2px dotted black; text-align: center;">System Action</strong>
+                          <p>Follow Next Step </p>
+                    </div>
                     </ol>
-                    <div style="border: 1px solid red; padding: 5px; width: fit-content;">
-                      <div style="margin: auto; padding: 0 30px 0 0;">
-                        اقدر اعرف العميل اتعوض قبل كدا ولا لا منين؟
-                    <ol>
-                      <li>BSS</li>
-                      <li>Sitemap</li>
-                      <li>Account Receivable</li>
-                      <li>Limit Quary Transaction</li>
-                      <p style="border: 1px solid black;">
-                        بعد كدا ببحث برقم العميل 015 بدون الـ 0 وبشوف التاريخ من وقت فتح الشكوي وبعمل بحث
-                      </p>
-                    </ol>
-                      </div>
-                   </div> 
+                    
+                    <button class="btn btn-primary" onclick="hideUnhide('Quary_Search')"  style=" padding: 5px;  border-radius: 10px;"> اقدر اعرف العميل اتعوض قبل كدا ولا لا منين؟</button>    
+                    <div class="hiddenBtn" id="Quary_Search">
+                      <div style="border: 1px solid red; padding: 5px; width: fit-content;">
+                        <div style="margin: auto; padding: 0 30px 0 0;">
+                         
+                      <ol>
+                        <li>BSS</li>
+                        <li>Sitemap</li>
+                        <li>Account Receivable</li>
+                        <li>Limit Quary Transaction</li>
+                        <p style="border: 1px solid black;">
+                          بعد كدا ببحث برقم العميل 015 بدون الـ 0 وبشوف التاريخ من وقت فتح الشكوي وبعمل بحث
+                        </p>
+                      </ol>
+                        </div>
+                     </div> 
+                    </div>
+                
                   </div>
                   <!-- -------------------------------------------------------------------------- -->
                   <hr>
@@ -549,8 +626,10 @@
                           <!-- --------------------------------------------------------------------------------------------------------------------------- -->
                           <br>
                           <label class="box"><input type="checkbox" id="q-23"><span class="color2" dir="rtl"> في حالة الشكوي في قسم الـ CC Follow Up</span></label>
+                        
                           <br>
-                          <div id="script-23" class="scripts">
+                          <div id="script-23" class="scripts" >
+                         
                            <div style="padding: 10px;">
                             <div style="border: 1px solid red; padding-right: 20px; margin-bottom: 5px;">
                              <p> في حالة وجود شكوي في قسم CC Follow Up معني كدا انه هينزل عليها ابديت في الـ Item logs</p>
