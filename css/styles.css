@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   background: #333333;
-  transition: opacity 5s, visibility 5s;
+  transition: opacity 0.75s, visibility 0.75s;
 }
 
 .loader--hidden {
@@ -32,7 +32,7 @@
   border: 15px solid #dddddd;
   border-top-color: #009578;
   border-radius: 50%;
-  animation: loading 5s ease infinite;
+  animation: loading 0.75s ease infinite;
 }
 
 @keyframes loading {
@@ -143,9 +143,9 @@ li a:hover {
   }
   li a:hover,
   li a.active {
-    background: rgba(0, 0, 0, 0.742);
+    background: #ffffffea;
     color: #0082e6;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   #check:checked ~ ul {
     left: 0;
@@ -159,9 +159,12 @@ li a:hover {
 
 }
 header{
-  text-align: center;
+  text-align: left;
   font-size: 20px;
-  padding-top: 90px;
+  /* padding-top: 90px; */
+  margin-top: 80px;
+  padding: 10px;
+  background-color: #ffffff85;
 
 }
 header li i , header li a{
@@ -238,19 +241,7 @@ header li i , header li a{
   background-color: rgba(0, 0, 255, 0.546);
   color: #fff;
 }
-.btnSR{
-  animation: sr infinite ease-in;
-  animation-duration: 1s;
-}
-@keyframes sr {
-  0%{
-  opacity: 1;
-  }
-  100%{
-    opacity: .9;
-    background-color: red;
-  }
-}
+
 .btn:hover {
   opacity: 0.8;
   cursor: pointer;
