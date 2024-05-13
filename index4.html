@@ -21,7 +21,7 @@
         <label class="logo">
           WE
           <i class="fa fa-braille" aria-hidden="true"></i>
-          Info</label>
+          Mobile Maker</label>
   
      
         <ul id="user_info">
@@ -32,8 +32,17 @@
         </ul>
         
       </nav>
-<!-- ////////////////////////////////////////////////////////////////// -->
 <div class="container" dir="auto">
+ 
+
+
+
+
+
+
+
+  <!-- /////////////////////////////////////////////////////////////////////////        Select          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
   <div>
 
       <div class="down">
@@ -84,7 +93,9 @@
         </div>
       </div>
       </div>
-  <!-- ----------------------------------part2-------------------------------------------------- -->
+      </div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
         <div class="content-data">
                   <label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label>
@@ -120,7 +131,7 @@
                               <div class="radio_content radio_1">
                                 <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
                                 <div>
-                                  <button onclick="hideUnhide('add')"  style=" padding: 5px;  border-radius: 10px;">امتي اضيف التعويض ؟</button>    
+                                  <button id="colorbtn" onclick="hideUnhide('add')"  style=" padding: 5px;  border-radius: 10px;">امتي اضيف التعويض ؟</button>    
                                    <div class="hiddenBtn" id="add">
                                     <p>نقدر نضيف التعويض للعميل في حالة</p>
                                     <li>Outage</li>
@@ -137,7 +148,7 @@
                                     <mark style="display: block;">دي بعرفها من الـ Item Logs بعمل Ctrl + f  واكتب eng (لازم ميكونش فيه تفتيش هندسي)</mark>
                                     <mark>وكمان بعرف ان الشكوي في الـ 3rd Level لو مكتوب transfered IU (معني كدا تمام لانها لازم تكون في الـ IU)</mark>
                                   </div>
-                                 <label> <li id="green4"> هشوف الـ Close code الابديت معانا ولا علينا <span style="padding: 5px;"><input type="checkbox" id="checkgreen4" onclick="action1()"></span><button onclick="hideUnhide('Close_code_a')"  style=" padding: 5px;  border-radius: 10px;"> شرح</button></li></label>
+                                 <label> <li id="green4"> هشوف الـ Close code الابديت معانا ولا علينا <span style="padding: 5px;"><input type="checkbox" id="checkgreen4" onclick="action1()"></span><button id="colorbtn" onclick="hideUnhide('Close_code_a')"  style=" padding: 5px;  border-radius: 10px;"> شرح</button></li></label>
                                   <div class="hiddenBtn" id="Close_code_a">
                                     <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>معانا</mark>يعني ينفع اقدم للعميل دا طلب </p>
                                     <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>علينا</mark> يعني مينفعش اقدم للعميل دا طلب ودا زي cpe problem او close code 74 او اتصالما بالعميل ومردش علينا وكل دا مينغعش اقدم بيه تعويض</p>
@@ -181,13 +192,13 @@
                               </ul>
                             </div>
                               </div>     
-                                    <!-- ------------------------------ON SPOT---------------------------------------- -->
+  <!-- ------------------------------------------------------------------------------------ON SPOT----------------------------------------------------------------------------------------------------------- -->
                               <div class="radio_content radio_2"  id="r1">
                                 <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
                                 <div>
                                   <label class="box" style="display: block;"><input type="checkbox" id="q-22"><span class="color2" dir="rtl"> <strong>شروط التعويض خلال المكالمة</strong> </span></label>
                                   <div id="script-22" class="scripts">
-                                    <div style="padding-right: 10px;">
+                                    <div style="padding-right: 20px;">
                                       <ol class="cond3">
                                         <strong>قم بقراءة الشروط مع وضع العلامه اذا كان الشرط مُحقق</strong>
 
@@ -213,7 +224,7 @@
                                       </div>
 
                                       </ol>
-                                        <button onclick="hideUnhide('outage')"  style=" padding: 5px;  border-radius: 10px;">تعويض الـ Outage</button>    
+                                        <button id="colorbtn2" onclick="hideUnhide('outage')"  style=" padding: 5px;  border-radius: 10px;">تعويض الـ Outage</button>    
                                     <div class="hiddenBtn" id="outage">
                                         <div style="padding-right: 20px;">
                                           <ol>
@@ -308,29 +319,120 @@
                               </div>
                             </div> <!-- /wrapper -->
                       </div> <!-- /hid -->
-                  <!-- -------------------------------------------------- We Mobile Concession---------------------------------------------------------------- -->
-                  <hr>
+
+                      <div class="lines"></div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////        We Mobile Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
                   <label class="texx"><input type="checkbox" id="check5" onchange="showandhid()" data-click="clickk"> We Mobile Concession</label>
                   <div class="hidden" id="hid5" dir="rtl">
-                    <strong>هدية تعويض علي رقم 015</strong>
-                    <p style="border: 1px solid red; padding: 5px; width: fit-content;"> دي بقدر اعوض العميل بيها في حالة وجود شكوي في <button onclick="hideUnhide('3rd-level')">3rd Level</button> ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </p>
-                    <div id="3rd-level" class="hiddenBtn">
-                      <div style="padding: 0 15px;">
-                        <ul>
-                          <li>IU</li>
-                          <li>NOC</li>
-                          <li>Pilot SLS</li>
-                          <li>installtion opration</li>
-                          <li>DCU</li>
-                          <li>Maintenance vist</li>
-                        </ul>
-                      </div>
-                     
-                      </div>
+                   <div> <strong>هدية تعويض علي رقم 015</strong></div>
+                
+                      <button class="btn btn-primary"  onclick="hideUnhide('wirinng')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"> ملاحظات! </button>
+                      <div class="hiddenBtn cloAll" id="wirinng">
+                        <li>We Mobile Adjustment بيتعمل مره واحده بس لكل Ticket او Outage</li>
+                        <li> بيتعمل مرتين في الشهر بحد اقصي شرط تكون مشكلة غير القديمة</li>
+                        <p style="border: 1px solid red; padding: 3px;"> نقدر نعرف اتضافلة قبل كدا ولا لا من خلال Limt Query Transaction</p>
+                        <button class="btn btn-primary" onclick="hideUnhide('Quary_Search')"  style=" padding: 5px;  border-radius: 10px;"> اقدر اعرف العميل اتعوض قبل كدا ولا لا منين؟</button>    
+                        <div class="hiddenBtn" id="Quary_Search">
+                          <div style="border: 1px solid red; padding: 5px; width: fit-content;">
+                            <div style="margin: auto; padding: 0 30px 0 0;">
+                             
+                          <ol>
+                            <li>BSS</li>
+                            <li>Sitemap</li>
+                            <li>Account Receivable</li>
+                            <li>Limit Quary Transaction</li>
+                            <p style="border: 1px solid black;">
+                              بعد كدا ببحث برقم العميل 015 بدون الـ 0 وبشوف التاريخ من وقت فتح الشكوي وبعمل بحث
+                            </p>
+                          </ol>
+                            </div>
+                         </div> 
+                        </div>
+                        </div>
+                        <br> 
+                        <br>
+                        <!-- --------------------------------------------- -->
 
-                      <button class="btn btn-primary" onclick="hideUnhide('addd')"  style=" padding: 5px;  border-radius: 10px;">اعرف منين امتي اضيف WE Mobile?</button>    
-                      <div class="hiddenBtn" id="addd">
+                      <button class="btn btn-primary"  onclick="hideUnhide('notAdd')" id="we-mobile" style=" padding: 5px; border-radius: 10px;">حالات مقدرش اقدم فيها الهديه</button>
+                      <div class="hiddenBtn cloAll" id="notAdd">
+                        <mark style="background-color: red; color: white; display: block; text-align: center; margin-bottom: 10px;"> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس</mark> 
+                      </div>
+                      <br>
+                      <br>
+                      <!-- ------------------------------------------------ -->
+                      <button class="btn btn-primary" onclick="hideUnhide('addd')" id="we-mobile" style=" padding: 5px; border-radius: 10px;">الحالات النقدر نقدم فيها الهديه</button>
+                      <div class="hiddenBtn cloAll" id="addd">
                         <div>
+
+                          <button  onclick="hideUnhide('lass')" id="we-mobile" style=" padding: 5px; border-radius: 10px; "> في حالة كانت المشكلة اقل من 24س</button>
+                          <div class="hiddenBtn" style="background-color: #904dcf; color: white;" id="lass">
+                            <p style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة وجود شكوي في <button id="colorbtn3" onclick="hideUnhide('3rd-level')">3rd Level</button> ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </p>
+                            <div id="3rd-level" class="hiddenBtn">
+                              <div style="padding: 0 15px;">
+                                <ul>
+                                  <li>IU</li>
+                                  <li>NOC</li>
+                                  <li>Pilot SLS</li>
+                                  <li>installtion opration</li>
+                                  <li>DCU</li>
+                                  <li>Maintenance vist</li>
+                                </ul>
+                              </div>
+                             
+                              </div>
+                          <p style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة كان فيه شكوي متصعده High Attenuation/BLQ/Instability ومعدتش 24ساعه ومتضفش we mobile اثناء التصعيد هنقوم باضافتها للعميل</p>
+                          <div style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة وجود Major Fault او Outage ولسه معداش 24ساعه والخدمه مرجعتش هنقدم للعميل الهديه
+                          <li>بنضيف الهديه لكل انواع الـ Outage  ماعدا electricity Cases </li>
+                          </div>
+                          <p style="border: 1px solid red; padding: 5px; width: fit-content;"> يتم اضافة الهديه في حالة الـ Port Time Out حتي لو مكنش فيه Outage علي CST360</p>
+                          </div>
+                          <hr>
+                          <button  onclick="hideUnhide('more')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"> في حالة كانت المشكلة عدت الـ 24س</button>
+                          
+                          <div class="hiddenBtn" style="background-color: #904dcf; color: white;"  id="more">
+                            <strong>هنعوض العميل في الحالات التاليه : </strong>
+                            <p style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة وجود شكوي ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </p>
+                            <p style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة وجود Major Fault او Outage ولسه معداش 24ساعه والخدمه مرجعتش هنقدم للعميل الهديه</p>
+                            <p style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة وجود شكوي وحصلها اعاده تصعيد مره او اكتر من مره في خلال ال SLA </p>
+                            
+                            <button class="btn btn-primary" onclick="hideUnhide('tableQouta')"  style="  border-radius: 10px;">جدول توضيحي</button>    
+                            <div class="hiddenBtn" id="tableQouta">
+                             <table class="table table-dark" dir="ltr" style="font-size: 11px;">
+                               <thead>
+                                 <tr>
+                                   <th scope="col">الباقة لدي العميل</th>
+                                   <th scope="col">حجم الهديه</th>
+                                   <th scope="col">مدة الهديه</th>
+                                   <th scope="col">Handled by</th>
+                                 </tr>
+                               </thead>
+                               <tbody>
+                                 <tr>
+                                   <th scope="row">140 GB</th>
+                                   <td>5 GB</td>
+                                   <td>3 days</td>
+                                   <td>Agent</td>
+                                 </tr>
+                                 <tr>
+                                   <th scope="row">From 200GB TO 400GB</th>
+                                   <td>10 GB</td>
+                                   <td>7 days</td>
+                                   <td>Team Leader</td>
+                                 </tr>
+                                 <tr>
+                                   <th scope="row">Other</th>
+                                   <td>20 GB</td>
+                                   <td>15 days</td>
+                                   <td>Team Leader</td>
+                                 </tr>
+                               </tbody>
+                             </table>
+                            </div>
+                          </div>
+
+                          <hr>
                           يتم اضافة we mobile  في حالة تصعيد شكوي High Attenuation/BLQ/Instability واثناء الـ Troubleshooting نتيجة الـ ASSIA كانت : 
                           <li>Technical Dispatch</li>
                           <li>Out of Service </li>
@@ -339,59 +441,40 @@
                           <li>Run real time profile optomozation</li>
                           <li>No enough data for evaluating stability</li>
                           <li>Technical Dispatch is recommended</li>
+                        
+
                         </div>
                     </div>
+                    <br>
+                    <br>
                     <button class="btn btn-primary" onclick="hideUnhide('box-we-mobile')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"></i> في حالة سؤال العميل علي سعر خط 015 <i class="fa-solid fa-cart-shopping"></i></button>
                     <div id="box-we-mobile">
                       <p>سعر خط وي 82 جنيه من اقرب فرع</p>
                     </div>
                     <hr>
-                    <button class="btn btn-primary" onclick="hideUnhide('tableQouta')"  style=" padding: 5px;  border-radius: 10px;">جدول توضيحي</button>    
-                    <div class="hiddenBtn" id="tableQouta">
-                     <table class="table table-dark" dir="ltr" style="font-size: 11px;">
-                       <thead>
-                         <tr>
-                           <th scope="col">الباقة لدي العميل</th>
-                           <th scope="col">حجم الهديه</th>
-                           <th scope="col">مدة الهديه</th>
-                           <th scope="col">Handled by</th>
-                         </tr>
-                       </thead>
-                       <tbody>
-                         <tr>
-                           <th scope="row">140 GB</th>
-                           <td>5 GB</td>
-                           <td>3 days</td>
-                           <td>Agent</td>
-                         </tr>
-                         <tr>
-                           <th scope="row">From 200GB TO 400GB</th>
-                           <td>10 GB</td>
-                           <td>7 days</td>
-                           <td>Team Leader</td>
-                         </tr>
-                         <tr>
-                           <th scope="row">Other</th>
-                           <td>20 GB</td>
-                           <td>15 days</td>
-                           <td>Team Leader</td>
-                         </tr>
-                       </tbody>
-                     </table>
-                    </div>
-                    <hr> 
-                  <label class="box"><input type="checkbox" id="q-17"><span class="color2" dir="rtl"> شروط التعويض</span></label>
+                  
+                  <label class="box"><input type="checkbox" id="q-17"><span class="color2" dir="rtl"> جميع الحالات التي يجب اعطاء العميل هديه حال وجودها</span></label>
                   <br>
                   <div id="script-17" class="scripts">
-                    <mark style="background-color: red; color: white; display: block; text-align: center; margin-bottom: 10px;"> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس</mark> 
 
-                    <ol class="cond2" dir="rtl" style="padding: 0 15px;">
+                    <ol class="cond2" dir="rtl" style="padding-right: 30px;">
                       <label><li id="green7"> في حالة وجود شكوي في 3rd Level من وقت التصعيد والمشكلة لم يتم حلها <input type="checkbox" id="checkgreen7" onclick="action1()"></li></label>
                       <label><li id="green8">نقدر برضو نعوض في حالة وجود Outage/Major Fault عدي الـ 24 ساعة والخدمة مرجعتش<input type="checkbox" id="checkgreen8" onclick="action1()"></li></label>
                       <label><li id="green9"> في حالة وجود شكوي في 3rd Level وحصلها اعادة تصعيد مرة او اكتر من مره في خلال الـ SLA <input type="checkbox" id="checkgreen9" onclick="action1()"></li></label>
                       <label>  <li id="green10">التعويض بيكون مره واحده بس علي الشكوي وينفع يتعوض تاني بشرط تكون شكوي مختلفة عن القديمة <input type="checkbox" id="checkgreen10" onclick="action1()"></li></label>
                       <label><li id="green11">يمكن تعويض العميل مرتين فقط في الشهر شرط ان لاتكون نفس الشكوي <input type="checkbox"  id="checkgreen11" onclick="action1()"></li></label>
 
+                      <label><li id="green20"> يتم اضافة الهديه في حالة الـ Port Time Out حتي لو مكنش فيه Outage علي CST360<input type="checkbox"  id="checkgreen20" onclick="action1()"></li></label>
+                      <label><li id="green21"> يتم اضافة we mobile  في حالة تصعيد شكوي High Attenuation/BLQ/Instability <input type="checkbox"  id="checkgreen21" onclick="action1()"></li></label>
+                      <label><li id="green22">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Technical Dispatch<input type="checkbox"  id="checkgreen22" onclick="action1()"></li></label>
+                      <label><li id="green23">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Out of Service<input type="checkbox"  id="checkgreen23" onclick="action1()"></li></label>
+                      <label><li id="green24">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  No physical layer however - Fault exist<input type="checkbox"  id="checkgreen24" onclick="action1()"></li></label>
+                      <label><li id="green25">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  In BLQ cases<input type="checkbox"  id="checkgreen25" onclick="action1()"></li></label>
+                      <label><li id="green26">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Run real time profile optomozation<input type="checkbox"  id="checkgreen26" onclick="action1()"></li></label>
+                      <label><li id="green27">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  No enough data for evaluating stability<input type="checkbox"  id="checkgreen27" onclick="action1()"></li></label>
+                      <label><li id="green28">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Technical Dispatch is recommended<input type="checkbox"  id="checkgreen28" onclick="action1()"></li></label>
+
+                      <br>
                        <p><mark>دي يعتبر هديه وليس تعويض يعني ملهاش علاقه بالتعويض الاساسي البينزل للعميل</mark> </p> 
                               
                        <div class="scripts" id="showStep2" dir="ltr" style="text-align: left;">
@@ -400,23 +483,7 @@
                     </div>
                     </ol>
                     
-                    <button class="btn btn-primary" onclick="hideUnhide('Quary_Search')"  style=" padding: 5px;  border-radius: 10px;"> اقدر اعرف العميل اتعوض قبل كدا ولا لا منين؟</button>    
-                    <div class="hiddenBtn" id="Quary_Search">
-                      <div style="border: 1px solid red; padding: 5px; width: fit-content;">
-                        <div style="margin: auto; padding: 0 30px 0 0;">
-                         
-                      <ol>
-                        <li>BSS</li>
-                        <li>Sitemap</li>
-                        <li>Account Receivable</li>
-                        <li>Limit Quary Transaction</li>
-                        <p style="border: 1px solid black;">
-                          بعد كدا ببحث برقم العميل 015 بدون الـ 0 وبشوف التاريخ من وقت فتح الشكوي وبعمل بحث
-                        </p>
-                      </ol>
-                        </div>
-                     </div> 
-                    </div>
+                
                 
                   </div>
                   <!-- -------------------------------------------------------------------------- -->
@@ -436,12 +503,16 @@
                         <p><span>Reason Categroy Name: </span><span style="color: red;">Fix (Adjustment)</span></p>
                         <p><span>Reason: </span> <span style="color: red;">ADSL Concession</span></p>
                         <p><span>Description: </span> <span style="color: red;">Cst Name : .., has a technical issue a adsl number : 0505656</span></p>
-                        <p><span>Create instance: </span> <span>Type: </span> <span style="color: red;">1256..WE Gold Free</span></p>
+                        <p><span>Create instance: </span> <span>Type: </span> <span style="color: red;">12565..WE Gold Free</span></p>
                         <p><span>Effective Date: </span><br><mark>هنا بختار الجيجات هتبتدي معاه من امتي </mark> </p>
                         <p><span>Expiration Date:</span><br><mark>هنا بختار الجيجات هتنتهي معاه امتي </mark></p>
-                        <p><span>initial Free Units: </span> <span>هنا بحط الجيجات بالـ بايت </span> <br><span style="color: red;">5GB = 5368709120</span></p>
+                        <p><span>initial Free Units: </span> <span>هنا بحط الجيجات بالـ بايت </span></p>
+                        <ul>
+                          <li onclick="gig3()">3GB <i class="fa-solid fa-chevron-down"></i> <div id="contGiga"></div></li>
+                        </ul>
+                        
                         <p dir="rtl">بعدين بعمل Save  بعدين submit</p>
-                        <button onclick="hideUnhide('SRs')" style="padding: 5px;">Show SR</button>
+                        <button id="colorbtn4" onclick="hideUnhide('SRs')" style="padding: 5px;">Show SR</button>
                         <div id="SRs" class="hiddenBtn">
                           <p style="border: 1px solid blueviolet; width: fit-content; padding: 5px;">
                             <span style="display: block; color: green;">في حالة ان العميل قبل التعويض</span>
@@ -496,8 +567,8 @@
                   </div>
                  
                   </div> <!-- /we mobile -->
-                  <hr>
-                <!-- --------------------------------------TTS ----------------------------------------------------------->
+                  <div class="lines"></div>
+                  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        TTS          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                         <label class="texx"><input type="checkbox" id="check2" onchange="showandhid()" data-click="clickk"> TTS Case</label>
                           <div class="hidden" id="hid2" dir="rtl">
                             <label class="box"><input type="checkbox" id="q-1"><span class="color2" dir="rtl"> في حالة النت مش شغال والعميل عنده شكوي Physcal مفتوحه في IU</span></label>
@@ -640,19 +711,19 @@
                               </ol>
 
                             </div>
-                          <button id="bdn" onclick="hideUnhide('sp_1')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 1 </button>
+                          <button  id="colorbtn5" onclick="hideUnhide('sp_1')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 1 </button>
                             <div class="hiddenBtn" id="sp_1">
                               <p style=" padding: 3px;"> اول حاجة هعملها هبص علي Item logs واشوف حاجه م الـ 3 ابديت دول موجودين ولا لا</p>
                             </div>
-                          <button onclick="hideUnhide('sp_2')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 2 </button>
+                          <button  id="colorbtn6" onclick="hideUnhide('sp_2')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 2 </button>
                             <div class="hiddenBtn" id="sp_2">
                               <p style=" padding: 3px;"> هعمل Ctrl + f  واكتب In progress وبعد كدا هلاقي حاجه م 3 الابديت موجوده</p>
                             </div>
-                          <button onclick="hideUnhide('sp_3')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 3 </button>
+                          <button  id="colorbtn7" onclick="hideUnhide('sp_3')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 3 </button>
                             <div class="hiddenBtn" id="sp_3">
                               <p style=" padding: 3px;"> بعد كدا همشي ترابل شوت عادي مع العميل بحسب المشكلة ال عنده لو كانت الابديت الموجوده Problem solved او Line stable / no problem found <br> اما لو كانت <span style="background-color: red;">Major falut</span> انا كدا هبلغة بالميجرفولت</p>
                             </div>
-                          <button onclick="hideUnhide('sp_4')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 4 </button>
+                          <button  id="colorbtn8" onclick="hideUnhide('sp_4')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 4 </button>
                             <div class="hiddenBtn" id="sp_4">
                               <p> بعد مامشيت الترابل شوت ووصلت للتصعيد مش هينفع نصعد لان فيه شكوي بالفعل موجود في قسم ال CC Follow Up</p>
                               <p style="border: 1px solid red; width: fit-content;">في الحالة دي هنعمل IR</p>
@@ -676,49 +747,42 @@
                           <!-- --------------------------------------------------------------------------------------------------------------------------- -->
                         
                           </div> <!-- /hid2 -->
-                          <hr>
-                          <!-- -------------------------------follow----------------------------------------------------------------------- -->
-                          <label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label>
-                          <div class="hidden" id="hid3" dir="rtl">
-                            <strong>Unpaid TE Bills</strong>
-                          <br>
-                          <label class="box"><input type="checkbox" id="q-9"><span class="color2" dir="rtl"> في حالة اننا بنتابع مع العميل اي مشكلة Physical ووصلنا للتصعيد والعميل كان عنده Unpaid TE-Bills</span></label>
-                          <br>
-                          <div id="script-9" class="scripts">
-                            <ul dir="rtl">
-                              <li> هنشوف مع العميل اذا كان هيقدر يسدد عن طريق WE App او E-Care خلال المكالمة عشان نكمل معاه الخطوات</li>
+                          <div class="lines"></div>
 
-                              <div class="wrapper">
-                                <div class="radio_tabs">
-                                  <label class="radio_wrap" data-radio="radio_1">
-                                    <input type="radio" name="sports" class="input">
-                                    <span class="radio_mark">
-                                      في حالة الاجابة بنعم
-                                    </span>
-                                  </label>
-                                  <label class="radio_wrap" data-radio="radio_2">
-                                    <input type="radio" name="sports" class="input">
-                                    <span class="radio_mark">
-                                      في حالة الاجابة بـ لا
-                                    </span>
-                                  </label>
-                                </div> <!-- /radio_tabs -->
-    
-                                <div class="content">
-                                  <div class="radio_content radio_1">
-                                    <p style="align-items: center; padding: 5px;"> هنساعد العميل في خطوات السداد من خلال WE-App او من خلال E-care ونكمل متابعه للخطوات الفنيه.</p>
-                                   
-                                
-                                  </div>     
-                                        <!-- ------------------------------NOO---------------------------------------- -->
-                                  <div class="radio_content radio_2"  id="r1">
-                                    <p style="align-items: center; padding: 5px;"> هنعرض علي العميل ميعاد تاني يكون مناسب ليه ويكون سداد الـ Land line bills لمتابعة الخطوات الفنية لحل مشكلتة وننصحة بامكانية الدفع عن طريق WE-App او E-Care والتأكدمن حرارة التليفون بستخدام عدة تيلفون</p>
-                                   
-                                    </div>
-                                  </div>
-                                </div> <!-- /wrapper -->
-                            </ul>
-                          </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Follow UP          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                          <label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label>
+                          <div class="hidden" id="hid3" >
+                            <button class="btn btn-primary"  onclick="hideUnhide('Follow')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> الحالات التي يتم فيها عرض المتابعه مع العميل </button>
+                            <div class="hiddenBtn" dir="ltr" id="Follow" dir="rtl">
+                              <li> <label class="box"> <input type="checkbox" id="q-9"><span class="color2" dir="rtl"> Customer not beside CPE &nbsp;</span></label> </li>
+                              <div id="script-9" class="scripts">
+                                <button  onclick="hideUnhide('Follow_1')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> في حالة وجود شخص متاح جنب الراوتر</button>
+                                <div class="hiddenBtn" dir="rtl" id="Follow_1">
+                                  <li> هنكلم الشخص المتاح جنب الراوتر</li>
+                                  <li>هنعمل IR Follow UP</li>
+                                </div>
+                                <button  onclick="hideUnhide('Follow_2')"  style=" padding: 5px;  border-radius: 5px;  "> في حالة مفيش شخص متاح جنب الراوتر</button>
+                                <div  class="hiddenBtn" dir="rtl" id="Follow_2" >
+                                 <p style="border: 1px solid red; width: fit-content;">هنسأل العميل هيكون جنب الراوتر امتي عشان نتابع معاه</p>
+                                 <p style="border: 1px solid red; width: fit-content;">في حالة الميعاد الحدده العميل بعد معاد الشيفت هنعتذر للعميل ونوضحلة ان المعاد دا هيكون الشيفت انتهي وهنطلب منه يكلمنا اول مايبقي متواجد جنب الراوتر</p>
+                                 
+                                </div>
+                              </div>
+
+                              <li>Can't Continue Troubleshoot</li>
+                              <li>Follow up Delayed / Rework Cases</li>
+                              <li>Customer Request</li>
+                              <li>FV and FBB Payment</li>
+                              <li>Direct the customer to CSO</li>
+                              <li>Can't test the service</li>
+                              <li>Not Verified Customer</li>
+                              <li>In progress Automation</li>
+                              <li>Billing Adjustment</li>
+                            </div>
+                          <br>
+                       
+                              
                           <!-- -------------------------------------------------------------------------- -->
                           <hr>
                           <strong>Customer Has To pay</strong>
@@ -742,9 +806,11 @@
                                </ul>
                              </div>
                           </div>
-                          <hr>
-                          <!-- ---------------------------------------------IR----------------------------------------------------------------- -->
-                          <label class="texx"><input type="checkbox" id="check4" onchange="showandhid()" data-click="clickk"> IR Cases</label>
+                          <div class="lines"></div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////        IR          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<label class="texx"><input type="checkbox" id="check4" onchange="showandhid()" data-click="clickk"> IR Cases</label>
                           <div class="hidden" id="hid4" dir="rtl">
                           <label class="box"><input type="checkbox" id="q-12"><span class="color2" dir="rtl"> Delay Ticket</span></label>
                           <br>
@@ -851,8 +917,10 @@
                       
                          
                           </div> <!-- /ir case -->
-                          <hr>
-                  <!-- ----------------------------------------------Balance--------------------------------------- -->
+                          <div class="lines"></div>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Balance          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
                   <label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)</label>
                   <div class="hidden" id="hid6" dir="rtl">
                     <p style="border: 1px solid red; padding: 5px; width: fit-content;">
@@ -939,13 +1007,17 @@
                     </div>
                   </div>
 
-                          </div>
+                 
         </div><!-- /content-data -->
-  </div>
-</div><!-- /container -->
+      </div> <!-- /container -->
 <footer>
-  <p>&copy; Created By : Mostafa mahmoud</p>
-  <div><img src="images/logo-no-background.png" alt="logo" /></div>
+      <div class="bodyFoot">
+        <div style="padding-top: 5px;">
+          <div><img src="images/logo-no-background.png" alt="logo" /></div>
+        <div>  <p>&copy; Created By : Mostafa mahmoud</p> </div>
+        </div>
+      </div>
+
 </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
