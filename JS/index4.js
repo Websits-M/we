@@ -119,6 +119,7 @@ q_22.addEventListener("click" , ch1)
 q_23.addEventListener("click" , ch1)
 
 
+    
 
     function ch1(){
         script_0.style.display = q_0.checked ? "block" : "none"
@@ -257,24 +258,72 @@ window.addEventListener("load", () => {
 
   }
 /////////////////////////BTNS//////////////////////////////////
+const colorbtn = document.getElementById("colorbtn");
+const colorbtn2 = document.getElementById("colorbtn2");
+const colorbtn3 = document.getElementById("colorbtn3");
+const colorbtn4 = document.getElementById("colorbtn4");
+const colorbtn5 = document.getElementById("colorbtn5");
+const colorbtn6 = document.getElementById("colorbtn6");
+const colorbtn7 = document.getElementById("colorbtn7");
+const colorbtn8 = document.getElementById("colorbtn8");
 
-  function hideUnhide(item){
+colorbtn.addEventListener("click" , function(){
+    const p1 = document.getElementById(id);
 
-        const p1 = document.getElementById(item);
+    if(colorbtn.click){
+
+        colorbtn.style.backgroundColor = "blueviolet"
+
+   
+        
+
+
+}else{
+    // p1.style.display = "none"
+    colorbtn.style.backgroundColor = "#blueviolet"
+       
+
+}
+
+})
+
+  function hideUnhide(id){
+
+    const p1 = document.getElementById(id);
+    
+    // colorbtn.style.backgroundColor = "blueviolet"
+    // colorbtn2.style.backgroundColor = "blueviolet"
+    // colorbtn3.style.backgroundColor = "blueviolet"
+    // colorbtn4.style.backgroundColor = "blueviolet"
+    // colorbtn5.style.backgroundColor = "blueviolet"
+    // colorbtn6.style.backgroundColor = "blueviolet"
+    // colorbtn7.style.backgroundColor = "blueviolet"
+    // colorbtn8.style.backgroundColor = "blueviolet"
 
         if(p1.style.display == "none"){
                 p1.style.display = "block"
-
+        
+           
+                
+    
 
         }else{
             p1.style.display = "none"
+            // colorbtn.style.backgroundColor = "#ddd"
+            // colorbtn2.style.backgroundColor = "#ddd"
+            // colorbtn3.style.backgroundColor = "#ddd"
+            // colorbtn4.style.backgroundColor = "#ddd"
+            // colorbtn5.style.backgroundColor = "#ddd"
+            // colorbtn6.style.backgroundColor = "#ddd"
+            // colorbtn7.style.backgroundColor = "#ddd"
+            // colorbtn8.style.backgroundColor = "#ddd"
         }
         
 
         }
 
     
-  
+
 
 
 
@@ -316,11 +365,30 @@ window.addEventListener("load", () => {
   let green18 = document.getElementById("green18")
   let checkgreen19 =document.getElementById("checkgreen19")
   let green19 = document.getElementById("green19")
+  let checkgreen20 =document.getElementById("checkgreen20")
+  let green20 = document.getElementById("green20")
+  let checkgreen21 =document.getElementById("checkgreen21")
+  let green21 = document.getElementById("green21")
+  let checkgreen22 =document.getElementById("checkgreen22")
+  let green22 = document.getElementById("green22")
+  let checkgreen23 =document.getElementById("checkgreen23")
+  let green23 = document.getElementById("green23")
+  let checkgreen24 =document.getElementById("checkgreen24")
+  let green24 = document.getElementById("green24")
+  let checkgreen25 =document.getElementById("checkgreen25")
+  let green25 = document.getElementById("green25")
+  let checkgreen26 =document.getElementById("checkgreen26")
+  let green26 = document.getElementById("green26")
+  let checkgreen27 =document.getElementById("checkgreen27")
+  let green27 = document.getElementById("green27")
+  let checkgreen28 =document.getElementById("checkgreen28")
+  let green28 = document.getElementById("green28")
+
 
   let showStep = document.getElementById("showStep")
   let showStep2 = document.getElementById("showStep2")
   let showStep3 = document.getElementById("showStep3")
-
+ 
   function action1(){
    
         green.style.backgroundColor = checkgreen.checked ? "#0bcf5d" : "#f87676"
@@ -342,7 +410,17 @@ window.addEventListener("load", () => {
         green17.style.backgroundColor = checkgreen17.checked ? "#0bcf5d" : "#f87676"
         green18.style.backgroundColor = checkgreen18.checked ? "#0bcf5d" : "#f87676"
         green19.style.backgroundColor = checkgreen19.checked ? "#0bcf5d" : "#f87676"
-        
+        green20.style.backgroundColor = checkgreen20.checked ? "#0bcf5d" : "#f87676"
+        green21.style.backgroundColor = checkgreen21.checked ? "#0bcf5d" : "#f87676"
+        green22.style.backgroundColor = checkgreen22.checked ? "#0bcf5d" : "#f87676"
+        green23.style.backgroundColor = checkgreen23.checked ? "#0bcf5d" : "#f87676"
+        green24.style.backgroundColor = checkgreen24.checked ? "#0bcf5d" : "#f87676"
+        green25.style.backgroundColor = checkgreen25.checked ? "#0bcf5d" : "#f87676"
+        green26.style.backgroundColor = checkgreen26.checked ? "#0bcf5d" : "#f87676"
+        green27.style.backgroundColor = checkgreen27.checked ? "#0bcf5d" : "#f87676"
+        green28.style.backgroundColor = checkgreen28.checked ? "#0bcf5d" : "#f87676"
+        // green19.style.backgroundColor = checkgreen19.checked ? "#0bcf5d" : "#f87676"
+
         if(checkgreen.checked && checkgreen2.checked && checkgreen3.checked && checkgreen4.checked && checkgreen5.checked && checkgreen6.checked  && checkgreen18.checked){
             showStep.style.display = "block"
         }else{
@@ -361,3 +439,22 @@ window.addEventListener("load", () => {
     }
     
   }
+
+
+let g3gb = document.getElementById('3gb')
+let contGiga = document.getElementById('contGiga')
+
+
+       
+function gig3(){
+   
+    contGiga.innerHTML = " 3221225472";
+    contGiga.style.color = "red"
+}
+
+
+
+   
+       
+    
+
