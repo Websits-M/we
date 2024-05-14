@@ -29,11 +29,13 @@ $(document).ready(function(){
   let check4 = document.querySelector("#check4");
   let check5 = document.querySelector("#check5");
   let check6 = document.querySelector("#check6");
+  let check7 = document.querySelector("#check7");
   let hid2 = document.querySelector("#hid2");
   let hid3 = document.querySelector("#hid3");
   let hid4 = document.querySelector("#hid4");
   let hid5 = document.querySelector("#hid5");
   let hid6 = document.querySelector("#hid6");
+  let hid7 = document.querySelector("#hid7");
 function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
     hid2.style.display = check2.checked ? "block" : "none"
@@ -41,6 +43,7 @@ function showandhid(){
     hid4.style.display = check4.checked ? "block" : "none"
     hid5.style.display = check5.checked ? "block" : "none"
     hid6.style.display = check6.checked ? "block" : "none"
+    hid7.style.display = check7.checked ? "block" : "none"
 }
 
 
@@ -92,6 +95,10 @@ let q_22 = document.getElementById('q-22')
 let script_22 = document.getElementById('script-22')
 let q_23 = document.getElementById('q-23')
 let script_23 = document.getElementById('script-23')
+let q_24 = document.getElementById('q-24')
+let script_24 = document.getElementById('script-24')
+let q_25 = document.getElementById('q-25')
+let script_25 = document.getElementById('script-25')
 
 q_0.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
@@ -117,6 +124,8 @@ q_20.addEventListener("click" , ch1)
 q_21.addEventListener("click" , ch1)
 q_22.addEventListener("click" , ch1)
 q_23.addEventListener("click" , ch1)
+q_24.addEventListener("click" , ch1)
+q_25.addEventListener("click" , ch1)
 
 
     
@@ -146,6 +155,8 @@ q_23.addEventListener("click" , ch1)
         script_21.style.display = q_21.checked ? "block" : "none"
         script_22.style.display = q_22.checked ? "block" : "none"
         script_23.style.display = q_23.checked ? "block" : "none"
+        script_24.style.display = q_24.checked ? "block" : "none"
+        script_25.style.display = q_25.checked ? "block" : "none"
 
     }
  
