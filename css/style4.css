@@ -166,10 +166,16 @@ header{
   padding: 80px;
   background-color: #0082e69c;
 }
+.hederV2{
+  display: flex;
+  justify-content: space-between;
+  outline: 2px solid #ddd;
+  padding: 20px;
+}
 /* ------------------------------------------------------------------- */
 
 .container{
-  padding: 120px 0;
+  padding: 90px 0 130px 0;
   width: 95%;
   margin: auto;
   font-size: large;
@@ -251,6 +257,9 @@ border: 1px solid red;
 
 }
 
+.content-data{
+  padding-top: 40px;
+}
 
 @media (max-width: 952px) {
 
@@ -264,6 +273,13 @@ nav ul li a {
 }
 
 @media (max-width: 550px) {
+  .hederV2{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+  }
   .container{
     font-size: 15px;
   }
@@ -276,6 +292,7 @@ nav ul li a {
 .container {
   display: block;
 }
+
 
 }
 
@@ -347,9 +364,6 @@ margin-bottom: 15px;
 } 
 
 
- .down{
-  padding: 10px 5px 60px 5px;
-}
 .box-select{
   display: none;
   padding: 10px;
