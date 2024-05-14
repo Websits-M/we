@@ -32,6 +32,7 @@
         </ul>
         
       </nav>
+   
 <div class="container" dir="auto">
  
 
@@ -114,7 +115,7 @@
 
 
                           </div> 
-                          <div class="wrapper">
+                          <div class="wrapper" style="padding: 10px 0;">
                             <div class="radio_tabs">
                               <label class="radio_wrap" data-radio="radio_1">
                                 <input type="radio" name="sports" class="input">
@@ -132,16 +133,59 @@
 
                             <div class="content">
                               <div class="radio_content radio_1">
-                                <p style="border: 1px solid red; padding: 5px;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي</p>
+                                <p style="border: 1px solid red; padding: 5px; text-wrap: balance;">دي في حالة طلب العميل تعويض عن فترة كان فيها مشكلة او عطل وكان السبب شركة وي وفي حالة الـ Normal Cycle دي بنقدم فيها طلب لقسم الـ Concession Team</p>
                                 <div>
-                                  <button id="colorbtn" onclick="hideUnhide('add')"  style=" padding: 5px;  border-radius: 10px;">امتي اضيف التعويض ؟</button>    
+                                  <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('add')"  style=" padding: 5px;  border-radius: 10px;">امتي اضيف التعويض ؟</button>    
                                    <div class="hiddenBtn" id="add">
                                     <p>نقدر نضيف التعويض للعميل في حالة</p>
                                     <li>Outage</li>
                                     <li>Global Problem</li>
                                     <li>Pop Replacement</li>
+                                    <li>Instability</li>
+                                    <li>Down Cases</li>
+                                    <li>Major Fault</li>
+                                    <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('stolen')"  style=" padding: 5px;  border-radius: 10px;">في حالة سرقة كابلات</button>    
+                                    <div class="hiddenBtn" id="stolen">
+                                      <p>في حالة العميل بيكلمنا وعايز يتعوض عن مشكلة فيها سرقة كابلات</p>
+                                      <li>هنبلغة ان متابعة المشكلة نفسها هيرجع فيها للسنترال</li>
+                                      <button id="colorbtn" onclick="hideUnhide('solved')"  style=" padding: 5px;  border-radius: 10px;">في حالة المشكلة اتحلت</button>    
+                                      <div class="hiddenBtn" id="solved">
+                                        <p><strong>في حالة المشكلة اتحلت والعميل طلب تعويض</strong></p>
+                                        <li>هنشوف الـ TTS لو كان فيه تيكت اسمها Voice and Data down في نفس الفترة هنمشي اجراءات الـ Technical Concession</li>
+                                        <li>لو مش موجده هنعمل TT حسب فئة العميل</li>
+                                        <li>هنطلب من العميل رقم موبايل ونكتبة في خانة Secondary mobile number ونبلغة انه فيه ادارة هتابع معاه طلبه</li>
+                                            <div>
+                                              <strong>TT : </strong>
+                                              <table class="table table-primary" dir="ltr" style="font-size: 14px; width: fit-content;">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">Level 1</th>
+                                                    <th scope="col">Level 2</th>
+                                                    <th scope="col">Level 3</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">FBB Non Technical Request</th>
+                                                    <td>Biling Adjustment</td>
+                                                    <td>Stolen Cable</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Telephonet</th>
+                                                    <td>Biling Adjustment</td>
+                                                    <td>Stolen Cable</td>
+                                                  </tr>
+                                              
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          <li> مننساش تكتب في Server Content تواريخ بدأ وانتهاء المشكلة عند العميل</li>
+                                          <li>هنبلغة انه هيستقبل مكالمة او SMS بنتيجة التعويض في خلال <mark>21 يوم عمل</mark></li>
+                                      </div>
                                     </div>
-                                </div>
+
+                                </div> <!-- /add -->
+                              </div>
                                 <ol class="cond1">
                                   <strong>قم بقراءة الشروط مع وضع العلامه اذا كان الشرط مُحقق</strong>
                                   <label><li id="green"> هنفتح الـ TTS واشوف هل هي Open ولا Closed (لازم تكون Closed)<span style="padding: 5px;"><input type="checkbox" id="checkgreen" onclick="action1()"></span></li></label>
@@ -197,8 +241,14 @@
                               </div>     
   <!-- ------------------------------------------------------------------------------------ON SPOT----------------------------------------------------------------------------------------------------------- -->
                               <div class="radio_content radio_2"  id="r1">
-                                <p style="border: 1px solid red; padding: 5px;">التعويض خلال المكالمة</p>
-                                <div>
+                                <div style="border: 1px solid red; padding: 5px;">
+                                  
+                                  <li>التعويض خلال المكالمة عن طريقنا كـ Agent</li>
+                                  <li>نقدر نعوض العميل بحد اقصي 20 GB خلال المكالمة او 12 جنيه للتيكت الواحده</li>
+                                  <li> لو التعويض بأكثر من 20 GB هنعمل IR for Team Leader والطلب بياخد 30 دقيقة</li>
+                                
+                                </div>
+                                <div style="padding: 10px 0;">
                                   <label class="box" style="display: block;"><input type="checkbox" id="q-22"><span class="color2" dir="rtl"> <strong>شروط التعويض خلال المكالمة</strong> </span></label>
                                   <div id="script-22" class="scripts">
                                     <div style="padding-right: 20px;">
@@ -215,7 +265,7 @@
                                         <label><li id="green15"> هشوف الـ Close code الابديت معانا ولا علينا <span style="padding: 5px;"><input type="checkbox" id="checkgreen15" onclick="action1()"></span><button onclick="hideUnhide('Close_code')"  style=" padding: 5px;  border-radius: 10px;"> شرح</button></li></label>
                                         <div class="hiddenBtn" id="Close_code">
                                           <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>معانا</mark>يعني ينفع اقدم للعميل دا طلب </p>
-                                          <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>علينا</mark> يعني مينفعش اقدم للعميل دا طلب ودا زي cpe problem او close code 74 او اتصالما بالعميل ومردش علينا وكل دا مينغعش اقدم بيه تعويض</p>
+                                          <p style="border: 1px solid red; width: fit-content; padding: 5px;"> <mark>علينا</mark> يعني مينفعش اقدم للعميل دا طلب ودا زي cpe problem او close code 74 او اتصلنا بالعميل ومردش علينا وكل دا مينغعش اقدم بيه تعويض</p>
                                           <p>بعرف الـ close code من الـ Item Logs </p>
                                         </div>
                                         <label><li id="green16"> هفتح الـ limit query transaction واعمل search بتاريخ الشكوي اشوفة اتعوض قبل كدا ولا لا <span style="padding: 5px;"><input type="checkbox" id="checkgreen16" onclick="action1()"></span></li></label>
@@ -312,6 +362,12 @@
                                       <li>بعدين هنعمل IR </li>
                                       <li><span style="color: blueviolet;"> SR </span>= FBB None Tech inqury -> Billing Adjustment -> Tech Concession On Spot</li>
                                     </ol>
+                                  </div>
+                                  <hr>
+                                  <label class="box"><input type="checkbox" id="q-19"><span class="color2" dir="rtl"> كيفية تقديم طلب تعويض من خلال Team Leader</span></label>
+                                  <br>
+                                  <div id="script-19" class="scripts">
+                                    <span style="color: red;">                            سيتم الاضافة قريباً..                            </span>
                                   </div>
                                 </div>
                                 <br>
@@ -562,12 +618,7 @@
                    </div>
                   </div>
                      <!-- -------------------------------------------------------------------------- -->
-                      <hr>
-                  <label class="box"><input type="checkbox" id="q-19"><span class="color2" dir="rtl"> كيفية تقديم طلب تعويض من خلال Team Leader</span></label>
-                  <br>
-                  <div id="script-19" class="scripts">
-                    <span style="color: red;">                            سيتم الاضافة قريباً..                            </span>
-                  </div>
+                 
                  
                   </div> <!-- /we mobile -->
                   <div class="lines"></div>
@@ -756,34 +807,43 @@
 
                           <label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label>
                           <div class="hidden" id="hid3" >
-                            <button class="btn btn-primary"  onclick="hideUnhide('Follow')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> الحالات التي يتم فيها عرض المتابعه مع العميل </button>
-                            <div class="hiddenBtn" dir="ltr" id="Follow" dir="rtl">
-                              <li> <label class="box"> <input type="checkbox" id="q-9"><span class="color2" dir="rtl"> Customer not beside CPE &nbsp;</span></label> </li>
-                              <div id="script-9" class="scripts">
-                                <button  onclick="hideUnhide('Follow_1')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> في حالة وجود شخص متاح جنب الراوتر</button>
-                                <div class="hiddenBtn" dir="rtl" id="Follow_1">
-                                  <li> هنكلم الشخص المتاح جنب الراوتر</li>
-                                  <li>هنعمل IR Follow UP</li>
+                                <div style="padding: 10px;">
+                                  <button class="btn btn-primary"  onclick="hideUnhide('Follow')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> حالات يتم فيها عرض المتابعه مع العميل </button>
+                                  <div class="hiddenBtn" dir="ltr" id="Follow" dir="rtl">
+                                    <li> <label class="box"> <input type="checkbox" id="q-9"><span class="color2" dir="rtl"> Customer not beside CPE &nbsp;</span></label> </li>
+                                    <div id="script-9" class="scripts">
+                                      <div style="border: 2px solid black; padding: 5px;" dir="rtl">
+                                        <p><strong>ملاحظات</strong></p>
+                                        <li>محاولة الاتصال بالعميل بتبقي مرتين فقط</li>
+                                        <li>لو كلمنا العميل وقت الميعاد المحدد وقال انه لسه مش جنب الراوتر ساعتها هطلب منه اكلم حد جنب الراوتر ولو قال مفيش هنطلب منه يكلمنا لما يبقي متاح جنب الراوتر  ونقفل ال IR follow up</li>
+                                      </div>
+                                      <div style="margin-top: 10px;" dir="rtl">
+                                        <button  onclick="hideUnhide('Follow_1')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> في حالة وجود شخص متاح جنب الراوتر</button>
+                                        <div class="hiddenBtn" dir="rtl" id="Follow_1">
+                                          <li> هنكلم الشخص المتاح جنب الراوتر</li>
+                                          <li>هنعمل IR Follow UP</li>
+                                        </div>
+                                        <button  onclick="hideUnhide('Follow_2')"  style=" padding: 5px;  border-radius: 5px;  "> في حالة مفيش شخص متاح جنب الراوتر</button>
+                                        <div  class="hiddenBtn" dir="rtl" id="Follow_2" >
+                                         <p style="border: 1px solid red; width: fit-content;">هنسأل العميل هيكون جنب الراوتر امتي عشان نتابع معاه</p>
+                                         <p style="border: 1px solid red; width: fit-content;">في حالة الميعاد الحدده العميل بعد معاد الشيفت هنعتذر للعميل ونوضحلة ان المعاد دا هيكون الشيفت انتهي وهنطلب منه يكلمنا اول مايبقي متواجد جنب الراوتر</p>
+                                         <p style="border: 1px solid red; width: fit-content;">في حالة الميعاد الحدده العميل خلال شفتي هنعمل IR Follow up وهبلغ العميل اني هتابع معاه في خلال نص ساعه من الميعاد عشان لو معايا كول في الوقت دا</p>
+                                         
+                                        </div>
+                                      </div>
+                                    </div>
+      
+                                    <li>Can't Continue Troubleshoot</li>
+                                    <li>Follow up Delayed / Rework Cases</li>
+                                    <li>Customer Request</li>
+                                    <li>FV and FBB Payment</li>
+                                    <li>Direct the customer to CSO</li>
+                                    <li>Can't test the service</li>
+                                    <li>Not Verified Customer</li>
+                                    <li>In progress Automation</li>
+                                    <li>Billing Adjustment</li>
+                                  </div>
                                 </div>
-                                <button  onclick="hideUnhide('Follow_2')"  style=" padding: 5px;  border-radius: 5px;  "> في حالة مفيش شخص متاح جنب الراوتر</button>
-                                <div  class="hiddenBtn" dir="rtl" id="Follow_2" >
-                                 <p style="border: 1px solid red; width: fit-content;">هنسأل العميل هيكون جنب الراوتر امتي عشان نتابع معاه</p>
-                                 <p style="border: 1px solid red; width: fit-content;">في حالة الميعاد الحدده العميل بعد معاد الشيفت هنعتذر للعميل ونوضحلة ان المعاد دا هيكون الشيفت انتهي وهنطلب منه يكلمنا اول مايبقي متواجد جنب الراوتر</p>
-                                 
-                                </div>
-                              </div>
-
-                              <li>Can't Continue Troubleshoot</li>
-                              <li>Follow up Delayed / Rework Cases</li>
-                              <li>Customer Request</li>
-                              <li>FV and FBB Payment</li>
-                              <li>Direct the customer to CSO</li>
-                              <li>Can't test the service</li>
-                              <li>Not Verified Customer</li>
-                              <li>In progress Automation</li>
-                              <li>Billing Adjustment</li>
-                            </div>
-                          <br>
                        
                               
                           <!-- -------------------------------------------------------------------------- -->
@@ -1001,7 +1061,19 @@
                         </ol>
                         <P style="text-align: left; border: 1px solid blueviolet; padding: 4px; width: fit-content;">
                           <span style="background-color: blueviolet; color: white;">SR </span><br>
-                           FBB Non Tech Inquiry  <br>
+                           FBB Non Tech Complaint  <br>
+                           Biling   <br>
+                          Wrong Recharge on internet Bill
+                        </P>
+                        <P style="text-align: left; border: 1px solid blueviolet; padding: 4px; width: fit-content;">
+                          <span style="background-color: blueviolet; color: white;">SR </span><br>
+                           FBB Non Tech Complaint  <br>
+                           Biling   <br>
+                          Wrong Recharge on Landlaine Bill
+                        </P>
+                        <P style="text-align: left; border: 1px solid blueviolet; padding: 4px; width: fit-content;">
+                          <span style="background-color: blueviolet; color: white;">SR </span><br>
+                           FBB Non Tech  Inquiry  <br>
                            Biling Adjustment  <br>
                           Recharge By Mastake
                         </P>
@@ -1009,7 +1081,58 @@
                       </div>
                     </div>
                   </div>
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        CHARGE          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="lines"></div>
 
+  <label class="texx"><input type="checkbox" id="check7" onchange="showandhid()" data-click="clickk"> في حالة الرصيد مسمعش</label>
+  <div class="hidden" id="hid7" dir="rtl">
+    <p style="border: 1px solid red; padding: 5px; width: fit-content;">
+      هبلغ العميل انه يستني 24 ساعة من وقت الشحن ومنسجلش اي شكوي قبل المده دي
+    </p>
+    <label class="box"><input type="checkbox" id="q-24"><span class="color2" dir="rtl"> عمل شكوي</span></label>
+    <div id="script-24" class="scripts">
+      <div style=" width: fit-content; ">
+      <P><mark>هنعمل TT بعد مرور 24 ساعة من وقت الدفع</mark></P>
+      <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px;">
+        <thead>
+          <tr>
+            <th scope="col">Level 1</th>
+            <th scope="col">Level 2</th>
+            <th scope="col">Level 3</th>
+            <th scope="col">Description</th>
+            <th scope="col">SLA</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Fixed Voice Complaint</th>
+            <th scope="row">Payment and Recharge</th>
+            <th scope="row">Aggregators Payment Not Clear</th>
+            <th scope="row">In Case of a Complaint about Payment through automatic machines (Fawry ......)</th>
+            <th scope="row">2 WD</th>
+
+
+
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <br>
+    <label class="box"><input type="checkbox" id="q-25"><span class="color2" dir="rtl"> البيانات المطلوبة في الـ TT</span></label>
+    <div id="script-25" class="scripts">
+      <div style=" text-align: right;">
+        <li>اسم الشركة</li>
+        <li>رقم الخدمة المثبت في الايصال</li>
+        <li>تاريح الدفع</li>
+        <li>المبلغ الاجمالي المدفوع (شامل رسوم الخدمه)</li>
+        <li>الرقم المرجعي او رقم العملية</li>
+        <li>في حالة الدفع من فوري (كود الخدمه او رقم الجهاز)</li>
+ 
+      </div>
+    </div>
+  </div>
                  
         </div><!-- /content-data -->
       </div> <!-- /container -->
