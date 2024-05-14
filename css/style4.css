@@ -427,4 +427,35 @@ footer div img{
   padding: 0 3px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.updated{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  width: max-content;
+  padding: 3px;
+  background-color: rgb(160, 231, 53);
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+.new{
+  font-size: medium;
+  width: max-content;
+  padding: 3px;
+  background-color: greenyellow;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  animation: new 1s infinite ease-in-out;
+}
 
+@keyframes new {
+  0%{
+    background-color: red;
+  }
+  50%{
+    background-color: green;
+  }
+  100%{
+    background-color: greenyellow;
+  }
+}
