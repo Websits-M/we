@@ -99,6 +99,26 @@ let q_24 = document.getElementById('q-24')
 let script_24 = document.getElementById('script-24')
 let q_25 = document.getElementById('q-25')
 let script_25 = document.getElementById('script-25')
+let q_26 = document.getElementById('q-26')
+let script_26 = document.getElementById('script-26')
+let q_27 = document.getElementById('q-27')
+let script_27 = document.getElementById('script-27')
+let q_28 = document.getElementById('q-28')
+let script_28 = document.getElementById('script-28')
+let q_29 = document.getElementById('q-29')
+let script_29 = document.getElementById('script-29')
+let q_30 = document.getElementById('q-30')
+let script_30 = document.getElementById('script-30')
+let q_31= document.getElementById('q-31')
+let script_31 = document.getElementById('script-31')
+let q_32 = document.getElementById('q-32')
+let script_32 = document.getElementById('script-32')
+let q_33 = document.getElementById('q-33')
+let script_33 = document.getElementById('script-33')
+let q_34 = document.getElementById('q-34')
+let script_34 = document.getElementById('script-34')
+
+
 
 q_0.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
@@ -126,6 +146,16 @@ q_22.addEventListener("click" , ch1)
 q_23.addEventListener("click" , ch1)
 q_24.addEventListener("click" , ch1)
 q_25.addEventListener("click" , ch1)
+q_26.addEventListener("click" , ch1)
+q_27.addEventListener("click" , ch1)
+q_28.addEventListener("click" , ch1)
+q_29.addEventListener("click" , ch1)
+q_30.addEventListener("click" , ch1)
+q_31.addEventListener("click" , ch1)
+q_32.addEventListener("click" , ch1)
+q_33.addEventListener("click" , ch1)
+q_34.addEventListener("click" , ch1)
+
 
 
     
@@ -157,6 +187,15 @@ q_25.addEventListener("click" , ch1)
         script_23.style.display = q_23.checked ? "block" : "none"
         script_24.style.display = q_24.checked ? "block" : "none"
         script_25.style.display = q_25.checked ? "block" : "none"
+        script_26.style.display = q_26.checked ? "block" : "none"
+        script_27.style.display = q_27.checked ? "block" : "none"
+        script_28.style.display = q_28.checked ? "block" : "none"
+        script_29.style.display = q_29.checked ? "block" : "none"
+        script_30.style.display = q_30.checked ? "block" : "none"
+        script_31.style.display = q_31.checked ? "block" : "none"
+        script_32.style.display = q_32.checked ? "block" : "none"
+        script_33.style.display = q_33.checked ? "block" : "none"
+        script_34.style.display = q_34.checked ? "block" : "none"
 
     }
  
@@ -506,7 +545,7 @@ function updeted2()  {
 }
 function updeted3()  {
     Swal.fire({
-        title: "اضافة تفاصيل اكثر في حالة المتابعة مع العميل حالة عدم وجوده بجانب الراوتر",
+        title: "اضافة كل حالات الفلو اب (لم يتم اضافة كل التفاصيل بعد)",
         showClass: {
           popup: `
             animate__animated
