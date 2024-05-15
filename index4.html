@@ -106,7 +106,7 @@
 
         <div class="content-data">
           
-          <div><label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label> &nbsp; &nbsp; <span class="updated">Updated</span></div>
+          <div><label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label> &nbsp; &nbsp; <span onclick="updeted1()" class="updated">Updated</span></div>
                   
                       <div class="hidden" id="hid">
                           <div class="script1"><strong>التعويضات</strong>
@@ -388,7 +388,7 @@
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        We Mobile Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-                  <div><label class="texx"><input type="checkbox" id="check5" onchange="showandhid()" data-click="clickk"> We Mobile Concession</label> &nbsp; &nbsp; <span class="updated">Updated </span></div>
+                  <div><label class="texx"><input type="checkbox" id="check5" onchange="showandhid()" data-click="clickk"> We Mobile Concession</label> &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated </span></div>
                   
                   <div class="hidden" id="hid5" dir="rtl">
                    <div> <strong>هدية تعويض علي رقم 015</strong></div>
@@ -811,7 +811,7 @@
 
         <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Follow UP          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-                          <div><label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label>&nbsp; &nbsp; <span class="updated">Updated</span></div>
+                          <div><label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label>&nbsp; &nbsp; <span onclick="updeted3()" class="updated">Updated</span></div>
                           <div class="hidden" id="hid3" >
                                 <div style="padding: 10px;">
                                   <button class="btn btn-primary"  onclick="hideUnhide('Follow')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> حالات يتم فيها عرض المتابعه مع العميل </button>
@@ -1166,6 +1166,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="JS/user.js"></script>
    <script src="JS/index4.js"></script>
    <script src="JS/btn.js"></script>
