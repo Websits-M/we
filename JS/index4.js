@@ -464,7 +464,65 @@ function gig3(){
 }
 
 
+function updeted1(){
+    Swal.fire({
+        title: "اضافات جديده وتنظيم اكثر",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
 
+}
+
+function updeted2()  {
+    Swal.fire({
+        title: "تم تسهيل الخطوات واضافة تحديثات من الويكي",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
+}
+function updeted3()  {
+    Swal.fire({
+        title: "اضافة تفاصيل اكثر في حالة المتابعة مع العميل حالة عدم وجوده بجانب الراوتر",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
+}
    
        
     
