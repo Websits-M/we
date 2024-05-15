@@ -450,6 +450,7 @@ footer div img{
   text-align: center;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 .new{
   font-size: medium;
