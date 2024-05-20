@@ -98,15 +98,151 @@
         <a style="text-decoration: none;" href="https://wexdone.weebly.com/modams.html#/">CPEs Configuration  <i class="fa-solid fa-desktop fa-fade"></i></a>
       </div>
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">
-        Last Update : 15/5/2024
+        <label onclick="updeted1()"> Last Update : 20/5/2024 <button style="padding: 3px; border-radius: 3px; border: 0;"><i class="fa-solid fa-circle-info fa-fade"></i></button></label>
       </div>
       </div>
      
+      
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
         <div class="content-data">
           
-          <div><label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label> &nbsp; &nbsp; <span onclick="updeted1()" class="updated">Updated</span></div>
+          <div dir="auto">
+            <div class="saidPosition">
+              <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" >
+                <i class="fa-regular fa-hand-pointer fa-fade"></i>
+              </a>
+            
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('MigratedPre')"  style=" padding: 5px;  border-radius: 10px;">Monthly postpaid Migration</button>    
+                    <div class="hiddenBtn" id="MigratedPre">
+                      <p> نظام تم تحويل العملاء عليه وهو دفع كل شهر بدل دفع كل 3 شهور</p>
+                      <div dir="rtl">
+                        <strong>Script</strong>
+                        <p>تم تحويل حضرتك لنظام الفاتورة الشهري لانك من ضمن العملاء المميزين ونظام الفاتورة الشهرية يافندم له مميزات كتير
+                          <li> في تحكم اكتر</li>
+                          <li>الفاتورة هتصدر يوم 1 في الشهر</li>
+                          <li> ليك فترة سماح 20 يوم من يوم اصدار الفاتورة تقدر تسدد الفاتورة خلالهم</li>
+                          <li> في حالة عدم السداد هيتم تحويل خطك علي الاستقبال فقط بدون فصل خدمة الانترنت لمدة 6 ايام</li>
+                        </p>
+                        <button id="colorbtn" onclick="hideUnhide('MigratedPreSR')"  style=" padding: 5px;  border-radius: 10px;">SR</button>    
+                    <div class="hiddenBtn" id="MigratedPreSR">
+                      <div style="outline: 1px solid red;" dir="ltr">
+                          Fixed Voice SR Inquiry => Migration => Transfer from post to pre
+                      </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" onclick="hideUnhide('Verification')"  style=" padding: 5px;  border-radius: 5px;  ">Verification</button>
+                    <div  class="hiddenBtn" dir="rtl" id="Verification" >
+                        <div dir="ltr">
+                          <dl>
+                            <dt style="background-color: greenyellow;">
+                                •Low
+                                <dd>♦ Full Name + last 7 number ID OR passport Num</dd>
+                            </dt>
+                            <dt style="outline: 1px solid red; background-color: red;">
+                              •High
+                              <dd>
+                                  ♦ Full Name + Full ID OR passport Num + Last rate plan OR last Charging amount                             
+                              </dd>
+                            </dt>
+                          </dl>
+                        </div>
+                        <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px;">
+                          <thead>
+                            <tr>
+                              <th scope="col">الحاله</th>
+                              <th scope="col">بيكلمنا من نفس الرقم الارضي او بيكلمنا من رقم مسجل في العقد</th>
+                              <th scope="col">بيكلمنا من رقم تاني</th>
+                          
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Early Renewal</th>
+                              <th scope="row" style="color: greenyellow;">Low</th>
+                              <th scope="row">Last recharge date</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Add or delete extra quota</th>
+                              <th scope="row"  style="color: greenyellow;">Low</th>
+                              <th scope="row" style="color: red;">High</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Change Package</th>
+                              <th scope="row" style="color: red;">High</th>
+                              <th scope="row" style="color: red;">High</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Resume and unbar</th>
+                              <th scope="row" style="color: red;">High</th>
+                              <th scope="row" style="color: red;">High</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Check Availablity cancellation</th>
+                              <th scope="row" style="color: red;">High</th>
+                              <th scope="row" style="color: red;">High</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Resume and unbar</th>
+                              <th scope="row" style="color: red;">High</th>
+                              <th scope="row" style="color: red;">High</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Enable 24</th>
+                              <th scope="row">No Verification</th>
+                              <th scope="row">No Verification</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Balance Fraction</th>
+                              <th scope="row">No Verification</th>
+                              <th scope="row"  style="color: greenyellow;">Low</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Salefny</th>
+                              <th scope="row">No Verification</th>
+                              <th scope="row"  style="color: greenyellow;">Low</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Recharge By mistake</th>
+                              <th scope="row"  style="color: red;">High</th>
+                              <th scope="row" style="color: red;">High</th>
+                            </tr>
+                            <tr>
+                                
+                              <th scope="row">Recharge Card</th>
+                              <th scope="row" style="color: red;">High</th>
+                              <th scope="row" style="color: red;">High</th>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="outline: 1px solid gren;">
+          <div><label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label><!-- &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span> --></div>
                   
                       <div class="hidden" id="hid">
                           <div class="script1"><strong>التعويضات</strong>
@@ -388,7 +524,7 @@
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        We Mobile Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-                  <div><label class="texx"><input type="checkbox" id="check5" onchange="showandhid()" data-click="clickk"> We Mobile Concession</label> &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated </span></div>
+                  <div><label class="texx"><input type="checkbox" id="check5" onchange="showandhid()" data-click="clickk"> We Mobile Concession</label><!-- &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated </span> --></div>
                   
                   <div class="hidden" id="hid5" dir="rtl">
                    <div> <strong>هدية تعويض علي رقم 015</strong></div>
@@ -811,7 +947,7 @@
 
         <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Follow UP          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-                          <div><label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label>&nbsp; &nbsp; <span onclick="updeted3()" class="updated">Updated</span></div>
+                          <div><label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label> <!-- &nbsp; &nbsp; <span onclick="updeted3()" class="updated">Updated</span> --></div>
                           <div class="hidden" id="hid3" >
                                 <div style="padding: 10px;">
                                   <button class="btn btn-primary"  onclick="hideUnhide('Follow')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> حالات يتم فيها عرض المتابعه مع العميل </button>
@@ -1050,7 +1186,7 @@
 
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Balance          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-                  <label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)</label>
+                  <label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)  &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated v2</span> </label>
                   <div class="hidden" id="hid6" dir="rtl">
                     <p style="border: 1px solid red; padding: 5px; width: fit-content;">
                        دي في حالة ان فيه عميل عمل باقة اضافية بالغلط
@@ -1078,7 +1214,7 @@
                       </div>
                     </div>
                     <br>
-                    <label class="box"><input type="checkbox" id="q-21"><span class="color2" dir="rtl"> Agent Action</span></label>
+                    <label class="box"><input type="checkbox" id="q-21"><span class="color2" dir="rtl"> Agent Action(OJT)</span></label>
                     <div id="script-21" class="scripts">
                       <div style="padding-right: 15px; text-align: left;">
                         <ol class="ol_21">
@@ -1146,43 +1282,95 @@
                         <p style="text-align: right;"><mark>هبلغ العميل انها هتاخد نصف ساعه</mark> </p>
                       </div>
                     </div>
+                    <hr>
+                    <button  onclick="hideUnhide('ChargeWrongSR')"  style=" padding: 5px;  border-radius: 5px;  ">SR</button>
+                    <div  class="hiddenBtn" dir="rtl" id="ChargeWrongSR" >
+                      <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px;">
+                        <thead>
+                          <tr>
+                            <th scope="col">Level 1</th>
+                            <th scope="col">Level 2</th>
+                            <th scope="col">Level 3</th>
+                        
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Fixed Voice SR Complaint</th>
+                            <th scope="row">Biling Adjustment</th>
+                            <th scope="row">Recharge By mistake</th>
+                          </tr>
+                          <tr>
+                              
+                            <th scope="row">Fixed Voice SR requst</th>
+                            <th scope="row">Biling Adjustment</th>
+                            <th scope="row">Recharge By mistake</th>
+                          </tr>
+                          <tr>
+                              
+                            <th scope="row">Fixed Voice SR Follow Up</th>
+                            <th scope="row">Biling Adjustment</th>
+                            <th scope="row">Wrong Recharge on Bill-within SLA</th>
+                          </tr>
+                          <tr>
+                              
+                            <th scope="row">Fixed Voice SR Follow Up</th>
+                            <th scope="row">Biling Adjustment</th>
+                            <th scope="row">Wrong Recharge on Bill-After SLA</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                      <hr>
+                      <button  onclick="hideUnhide('ChargeWrongTT')"  style=" padding: 5px;  border-radius: 5px;  ">TT</button>
+                      <div  class="hiddenBtn" dir="rtl" id="ChargeWrongTT" >
+                        <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px;">
+                          <thead>
+                            <tr>
+                              <th scope="col">Level 1</th>
+                              <th scope="col">Level 2</th>
+                              <th scope="col">Level 3</th>
+                          
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">FBB Non Technical Request </th>
+                              <th scope="row">Adjustment Request</th>
+                              <th scope="row">Technical (NC ..) Wrong Recharge FV to FBB</th>
+                            </tr>
+                            <tr>
+                              <th scope="row">FBB Non Technical Request </th>
+                              <th scope="row">Adjustment Request</th>
+                              <th scope="row">Technical (NC ..) Wrong Recharge FBB to FV</th>
+                            </tr>
+                    
+                          </tbody>
+                        </table>
+                        <strong>SLA 30 Mine</strong>
+                        </div>
                   </div>
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        CHARGE          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   <div class="lines"></div>
 
- <div>  <label class="texx"><input type="checkbox" id="check7" onchange="showandhid()" data-click="clickk"> في حالة الرصيد مسمعش</label>  &nbsp; &nbsp;<span class="new">New</span></div> 
+ <div>  <label class="texx"><input type="checkbox" id="check7" onchange="showandhid()" data-click="clickk"> في حالة الرصيد مسمعش</label>  <!-- &nbsp; &nbsp;<span class="new">New</span> --></div> 
   <div class="hidden" id="hid7" dir="rtl">
     <p style="border: 1px solid red; padding: 5px; width: fit-content;">
       هبلغ العميل انه يستني 24 ساعة من وقت الشحن ومنسجلش اي شكوي قبل المده دي
     </p>
+    <div style="border: 1px solid red; padding: 5px; width: fit-content;">
+      هبلغ العميل انه يستني 1 ساعة من وقت الشحن في حالة الدفع عن طريق الموقع او التطبيق
+      <br>
+      <button  onclick="hideUnhide('ChargeSR')"  style=" padding: 5px;  border-radius: 5px;  ">SR</button>
+      <div  class="hiddenBtn" dir="rtl" id="ChargeSR" >
+        <p> FBB Non Tech follow up => Payment not clear => Pending Payment</p>
+        </div>
+    </div>
     <label class="box"><input type="checkbox" id="q-24"><span class="color2" dir="rtl"> عمل شكوي</span></label>
     <div id="script-24" class="scripts">
       <div style=" width: fit-content; ">
       <P><mark>هنعمل TT بعد مرور 24 ساعة من وقت الدفع</mark></P>
-      <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px;">
-        <thead>
-          <tr>
-            <th scope="col">Level 1</th>
-            <th scope="col">Level 2</th>
-            <th scope="col">Level 3</th>
-            <th scope="col">Description</th>
-            <th scope="col">SLA</th>
-        
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Fixed Voice Complaint</th>
-            <th scope="row">Payment and Recharge</th>
-            <th scope="row">Aggregators Payment Not Clear</th>
-            <th scope="row">In Case of a Complaint about Payment through automatic machines (Fawry ......)</th>
-            <th scope="row">2 WD</th>
 
-
-
-          </tr>
-        </tbody>
-      </table>
       </div>
     </div>
     <br>
@@ -1199,9 +1387,95 @@
       </div>
     </div>
   </div>
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Fraction          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="lines"></div>
+
+    <div>  <label class="texx"><input type="checkbox" id="check8" onchange="showandhid()" data-click="clickk"> Balance Fraction</label> &nbsp; &nbsp;<span class="new">New</span> </div> 
+     <div class="hidden" id="hid8" dir="rtl">
+      <p style="outline: 1px solid red; padding: 3px;">بنستخدمها في حالة عدم اكتمال طلب العميل بسبب فرق الرصيد</p>
+      <li> بنضيف 1 جنيه بحد اقصي للـ WE ardy 25 </li>
+      <li> بنضيف 3 جنيه بحد اقصي لكل الباقات الاخري </li>
+      <li>نقدر نستخدمها للحسابات الـ Active فقط</li>
+      <li><mark>نقدر نستخدم Resume 24 في حالة الخط موقوف وبعد كدا نضيف الـ Fraction عادي</mark></li>
+      <li>مننساش نعمل Verification قبل عمل الـ Fraction</li>
+      <li>لازم نضيف في الـ SR احنا ضيفنا كام وليه هل لتجيد باقة او تغير باقة او الخ</li>
+      <button  onclick="hideUnhide('FractionSR')"  style=" padding: 5px;  border-radius: 5px;  ">SR</button>
+      <div  class="hiddenBtn" dir="rtl" id="FractionSR" >
+        <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px;">
+          <thead>
+            <tr>
+              <th scope="col">Level 1</th>
+              <th scope="col">Level 2</th>
+              <th scope="col">Level 3</th>
+          
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Fixed Voice SR requst</th>
+              <th scope="row">Main Plan Renewal</th>
+              <th scope="row">Add Fraction Done</th>
+            </tr>
+            <tr>
+                
+              <th scope="row">Fixed Voice SR requst</th>
+              <th scope="row">Change Offer</th>
+              <th scope="row">Add Fraction Done</th>
+            </tr>
+            <tr>
+                
+              <th scope="row">Fixed Voice SR requst</th>
+              <th scope="row">Main Plan Renewal</th>
+              <th scope="row">Add Fraction Not Done</th>
+            </tr>
+            <tr>
+                
+              <th scope="row">Fixed Voice SR requst</th>
+              <th scope="row">Change Offer</th>
+              <th scope="row">Add Fraction Not Done</th>
+            </tr>
+          </tbody>
+        </table>
+        <li>في حالة اضافة Resume 24 وحنا بنضيف Fraction لازم نعمل 2 sr واحد للفراكشن وواحد للرزيوم</li>
+      </div>
+      <hr>
+      <label class="box"><input type="checkbox" id="q-0" disabled checked><strong class="color2" dir="rtl"> System Action</strong> &nbsp; &nbsp;<span style="color: red; font-size: 15px;">Not Available Now</span> </label>
+      <br>
+      <div id="script-0" class="scripts">
+        <ol dir="ltr" style="padding-left:20px;">
+          <strong>BSS</strong>
+          <li>Sitemap</li>
+          <li>Account receivable</li>
+          <li>Payment</li>
+          <li>ثم نبحث بالرقم الارضي (بدون الـ0) ونعلم علي </li>
+          <li>Reason Categroy Name ==> <span style="color: red;"> Fix (Adjustment)</span></li>
+          <li> Reason ==> <span style="color: red;">ADSL Concession</span></li>
+          <li> 
+           
+            نكتب سبب التعويض في الـ 
+            <br>
+            Description
+          </li>
+          <li>Create instance هنا بختار التاريخ
+            <br>
+            <mark>Type -> <span style="color: red;">160</span></mark>
+            <br>
+            <mark>بعدين هنكب الجيجات الهنعوضه بيها بالـ بايت</mark>
+
+          </li>
+          <li>Save </li>
+          <li>submit</li>
+          <li>بعدين هنعمل IR </li>
+          <li><span style="color: blueviolet;"> SR </span>= FBB None Tech inqury -> Billing Adjustment -> Tech Concession On Spot</li>
+        </ol>
+      </div>
+    
+     </div>
                  
         </div><!-- /content-data -->
       </div> <!-- /container -->
+    </div>
 <footer>
       <div class="bodyFoot">
         <div style="padding-top: 5px;">
