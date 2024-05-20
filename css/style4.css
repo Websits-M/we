@@ -184,7 +184,7 @@ header{
 
 }
 .lines{
-  width: 300px;
+  width: 250px;
   height: 3px;
   background-color: #0082e6;
   margin: 20px 0;
@@ -259,6 +259,8 @@ border: 1px solid red;
 
 .content-data{
   padding-top: 40px;
+
+
 }
 
 @media (max-width: 952px) {
@@ -283,6 +285,7 @@ nav ul li a {
   .container{
     font-size: 15px;
   }
+
 .content ul{
   font-size: 15px;
 }
@@ -473,4 +476,14 @@ footer div img{
   100%{
     background-color: greenyellow;
   }
+}
+
+.saidPosition{
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+
+}
+.saidPosition a{
+  width: 40px;
 }
