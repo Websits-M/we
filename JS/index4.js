@@ -30,12 +30,14 @@ $(document).ready(function(){
   let check5 = document.querySelector("#check5");
   let check6 = document.querySelector("#check6");
   let check7 = document.querySelector("#check7");
+  let check8 = document.querySelector("#check8");
   let hid2 = document.querySelector("#hid2");
   let hid3 = document.querySelector("#hid3");
   let hid4 = document.querySelector("#hid4");
   let hid5 = document.querySelector("#hid5");
   let hid6 = document.querySelector("#hid6");
   let hid7 = document.querySelector("#hid7");
+  let hid8 = document.querySelector("#hid8");
 function showandhid(){
     hide.style.display = check.checked ? "block" : "none"
     hid2.style.display = check2.checked ? "block" : "none"
@@ -44,6 +46,7 @@ function showandhid(){
     hid5.style.display = check5.checked ? "block" : "none"
     hid6.style.display = check6.checked ? "block" : "none"
     hid7.style.display = check7.checked ? "block" : "none"
+    hid8.style.display = check8.checked ? "block" : "none"
 }
 
 
@@ -505,7 +508,7 @@ function gig3(){
 
 function updeted1(){
     Swal.fire({
-        title: "اضافات جديده وتنظيم اكثر",
+        title: "<div>20/5  <li> Add New Update V2</li><li> Add Balance Fraction</li> <li> Add New system</li> <li> Add Verification</li> </div>",
         showClass: {
           popup: `
             animate__animated
@@ -526,7 +529,7 @@ function updeted1(){
 
 function updeted2()  {
     Swal.fire({
-        title: "تم تسهيل الخطوات واضافة تحديثات من الويكي",
+        title: "<li>Add SR</li> <li>Add TT</li>",
         showClass: {
           popup: `
             animate__animated
