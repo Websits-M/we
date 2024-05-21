@@ -214,11 +214,13 @@ q_35.addEventListener("click" , ch1)
         var box2 = document.getElementById("box-2");
         var box3 = document.getElementById("box-3");
         var box4 = document.getElementById("box-4");
+        var box5 = document.getElementById("box-5");
         if (optionL.value == 1) {
           box1.style.display = "block";
           box2.style.display = "none";
           box3.style.display = "none";
           box4.style.display = "none";
+          box5.style.display = "none";
 
 
         } else if(optionL.value == 2) {
@@ -226,6 +228,7 @@ q_35.addEventListener("click" , ch1)
           box1.style.display = "none";
           box3.style.display = "none";
           box4.style.display = "none";
+          box5.style.display = "none";
 
         
         }else if(optionL.value == 3) {
@@ -233,12 +236,21 @@ q_35.addEventListener("click" , ch1)
             box1.style.display = "none";
             box2.style.display = "none";
             box4.style.display = "none";
+            box5.style.display = "none";
 
       }else if(optionL.value == 4) {
         box4.style.display = "block";
         box1.style.display = "none";
         box2.style.display = "none";
         box3.style.display = "none";
+        box5.style.display = "none";
+
+    }else if(optionL.value == 5) {
+        box5.style.display = "block";
+        box1.style.display = "none";
+        box2.style.display = "none";
+        box3.style.display = "none";
+        box4.style.display = "none";
     }
 }
  function reset(){
@@ -512,7 +524,7 @@ function gig3(){
 
 function updeted1(){
     Swal.fire({
-        title: "<div>20/5  <li> Add New Update V2</li><li> Add Balance Fraction</li> <li> Add New system</li> <li> Add Verification</li> </div>",
+        title: "<div>20/5  <li> Add New Update V2</li><li> Add Balance Fraction</li> <li> Add New system</li> <li> Add Verification</li> <li> Add AVAIA Codes</li> </div>",
         showClass: {
           popup: `
             animate__animated
