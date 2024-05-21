@@ -120,6 +120,8 @@ let q_33 = document.getElementById('q-33')
 let script_33 = document.getElementById('script-33')
 let q_34 = document.getElementById('q-34')
 let script_34 = document.getElementById('script-34')
+let q_35 = document.getElementById('q-35')
+let script_35 = document.getElementById('script-35')
 
 
 
@@ -158,6 +160,7 @@ q_31.addEventListener("click" , ch1)
 q_32.addEventListener("click" , ch1)
 q_33.addEventListener("click" , ch1)
 q_34.addEventListener("click" , ch1)
+q_35.addEventListener("click" , ch1)
 
 
 
@@ -199,6 +202,7 @@ q_34.addEventListener("click" , ch1)
         script_32.style.display = q_32.checked ? "block" : "none"
         script_33.style.display = q_33.checked ? "block" : "none"
         script_34.style.display = q_34.checked ? "block" : "none"
+        script_35.style.display = q_35.checked ? "block" : "none"
 
     }
  
@@ -529,7 +533,7 @@ function updeted1(){
 
 function updeted2()  {
     Swal.fire({
-        title: "<li>Add SR</li> <li>Add TT</li>",
+        title: "<li>Add SR</li> <li>Add TT</li> <li>Update content</li>",
         showClass: {
           popup: `
             animate__animated
