@@ -49,7 +49,7 @@
       <div class="down">
         <div class="select">
           <select id="optionL" onchange="select()">
-            <option hidden > شرح - TE-DATA INFO</option>
+            <option hidden value="0"> شرح - TE-DATA INFO</option>
             <option value="1"> Outage</option>
             <option value="2"> Major fault</option>
             <option value="3"> Migrated VS Not Migrated</option>
@@ -63,12 +63,12 @@
         <a style="text-decoration: none;" href="https://wexdone.weebly.com/modams.html#/">CPEs Configuration  <i class="fa-solid fa-desktop fa-fade"></i></a>
       </div>
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">
-        <label onclick="updeted1()"> Last Update : 20/5/2024 <button style="padding: 3px; border-radius: 3px; border: 0;"><i class="fa-solid fa-circle-info fa-fade"></i></button></label>
+        <label class="lab" onclick="updeted1()"> Last Update : 20/5/2024 <a style="padding: 3px; border-radius: 3px; border: 0;"><i class="fa-solid fa-circle-info "></i></a><div class="circl"></div></label>
       </div>
       </div>
       <div class="op">
-        <div class="box-select" id="box-1">
-          <button id="remove" onclick="reset()">del</button>
+        <div class="box-select" value = "0" id="box-1">
+          <a id="remove" onclick="reset()"><i class="fa-regular fa-circle-xmark fa-xl"></i></a>
           <p>دي مشكلة عندنا بتأثر علي العملاء واول SLA بيكون ساعتين لكل المشاكل ماعدا:</p>
           <strong> Wrong card and port</strong>
           <br>
@@ -77,14 +77,14 @@
           <p>في حال وجودهم ببلغ العميل ان المشكلة هتتحل في اقرب وقت ممكن</p>
         </div>
         <div class="box-select" id="box-2">
-          <button id="remove" onclick="reset()">del</button>
+          <a id="remove" onclick="reset()"><i class="fa-regular fa-circle-xmark fa-xl"></i></a>
           <p> Major Fault : عبارة عن اصلاحات بتم علي الخطوط الارضية</p>
           <p>في حالة وجود الـ Major Fault ببلغ العميل ان المشكلة هتتحل خلال 3 ايام</p>
           <mark>لو العميل تبع حياه كريمة هبلغه انها هتتحل في 5 ايام</mark>
           <br>
         </div>
         <div class="box-select" id="box-3">
-          <button id="remove" onclick="reset()">del</button>
+          <a id="remove" onclick="reset()"><i class="fa-regular fa-circle-xmark fa-xl"></i></a>
           <strong>Prepaid</strong>
           <p>عميل المايجريتد : ودا يعني علي نظام الباقة بيدفع قبل الـ 3 شهور </p>
           <p>بنعرف انه مايجريتد لو كان له حساب علي الـ BSS</p>
@@ -98,15 +98,14 @@
           ودا بسبب انه ملوش حساب علي الـ BSS
         </div>
         <div class="box-select" id="box-4">
-          <button id="remove" onclick="reset()">del</button>
+          <a id="remove" onclick="reset()"><i class="fa-regular fa-circle-xmark fa-xl"></i></a>
           <strong>Escalation</strong>
             <img src="./images/escalation.jpg" alt="ES">
         </div>
     
-      </div>
      
       <div class="box-select" id="box-5">
-        <button id="remove" onclick="reset()">del</button>
+        <a id="remove" onclick="reset()"><i class="fa-regular fa-circle-xmark fa-xl"></i></a>
         <strong>Avaia</strong>
         <table class="table table-bordered table-primary" dir="ltr" style="font-size: 14px; width: fit-content; text-align: center;">
           <thead  class="table-dark">
@@ -162,6 +161,8 @@
         
           </tbody>
         </table>
+      </div>
+
       </div>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -1246,7 +1247,7 @@
 
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Balance          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-                  <label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)  &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated v2</span> </label>
+                          <div><label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)   </label> &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated v2</span> </div>
                   <div class="hidden" id="hid6" dir="rtl">
                     <p style="border: 1px solid red; padding: 5px; width: fit-content;">
                        دي في حالة ان فيه عميل عمل باقة اضافية بالغلط
@@ -1605,6 +1606,7 @@
         </ol>
       </div>
     
+
      </div>
                  
         </div><!-- /content-data -->
