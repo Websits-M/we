@@ -1,5 +1,4 @@
-let check = document.querySelector("#check1");
-let hide = document.querySelector("#hid");
+
 
 $(function (){
     'use strict'
@@ -23,7 +22,8 @@ $(document).ready(function(){
     })
   });
 
-
+  let check = document.querySelector("#check1");
+  let hide = document.querySelector("#hid");
   let check2 = document.querySelector("#check2");
   let check3 = document.querySelector("#check3");
   let check4 = document.querySelector("#check4");
@@ -124,7 +124,6 @@ let q_35 = document.getElementById('q-35')
 let script_35 = document.getElementById('script-35')
 
 
-
 q_0.addEventListener("click" , ch1)
 q_1.addEventListener("click" , ch1)
 q_2.addEventListener("click" , ch1)
@@ -205,10 +204,13 @@ q_35.addEventListener("click" , ch1)
         script_35.style.display = q_35.checked ? "block" : "none"
 
     }
- 
+
+
+
 
 
     function select() {
+      var opts = document.querySelector(".op")
         var optionL = document.getElementById("optionL");
         var box1 = document.getElementById("box-1");
         var box2 = document.getElementById("box-2");
@@ -216,6 +218,7 @@ q_35.addEventListener("click" , ch1)
         var box4 = document.getElementById("box-4");
         var box5 = document.getElementById("box-5");
         if (optionL.value == 1) {
+          opts.style.display = "block";
           box1.style.display = "block";
           box2.style.display = "none";
           box3.style.display = "none";
@@ -224,6 +227,7 @@ q_35.addEventListener("click" , ch1)
 
 
         } else if(optionL.value == 2) {
+          opts.style.display = "block";
           box2.style.display = "block";
           box1.style.display = "none";
           box3.style.display = "none";
@@ -232,6 +236,7 @@ q_35.addEventListener("click" , ch1)
 
         
         }else if(optionL.value == 3) {
+          opts.style.display = "block";
             box3.style.display = "block";
             box1.style.display = "none";
             box2.style.display = "none";
@@ -239,6 +244,7 @@ q_35.addEventListener("click" , ch1)
             box5.style.display = "none";
 
       }else if(optionL.value == 4) {
+        opts.style.display = "block";
         box4.style.display = "block";
         box1.style.display = "none";
         box2.style.display = "none";
@@ -246,6 +252,7 @@ q_35.addEventListener("click" , ch1)
         box5.style.display = "none";
 
     }else if(optionL.value == 5) {
+      opts.style.display = "block";
         box5.style.display = "block";
         box1.style.display = "none";
         box2.style.display = "none";
@@ -255,57 +262,12 @@ q_35.addEventListener("click" , ch1)
 }
  function reset(){
     var optionL = document.getElementById("optionL");
-
-    let box_select = document.querySelector("#box-1")
-    let box_select2 = document.querySelector("#box-2")
-    let box_select3 = document.querySelector("#box-3")
-    let box_select4 = document.querySelector("#box-4")
-    let box_select5 = document.querySelector("#box-5")
-    
-        box_select.style.display = "none"
-        box_select2.style.display = "none"
-        box_select3.style.display = "none"
-        box_select4.style.display = "none"
-        box_select5.style.display = "none"
-      
-       
+    var opts = document.querySelector(".op")
+       optionL.value = "0"
+       opts.style.display = "none"
 
 }
 
-
-
-function checkme(){
-    var cb = document.getElementById("abc")
-    var text = document.getElementById("msg")
-    if(cb.checked == true){
-        text.style.display = "block";
-
-    }else{
-        text.style.display = "none"
-    }
-}
-
-function BSS(){
-    var cb = document.getElementById("b1")
-    var text = document.getElementById("msg_bss")
-    if(cb.checked == true){
-        text.style.display = "block";
-
-    }else{
-        text.style.display = "none"
-    }
-}
-
-function checkme2(){
-    var cb = document.querySelector(".inp3")
-    var text = document.getElementById("msg3")
-    if(cb.checked == true){
-        text.style.display = "block";
-
-    }else{
-        text.style.display = "none"
-    }
-}
 
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
@@ -359,15 +321,6 @@ colorbtn.addEventListener("click" , function(){
   function hideUnhide(id){
 
     const p1 = document.getElementById(id);
-    
-    // colorbtn.style.backgroundColor = "blueviolet"
-    // colorbtn2.style.backgroundColor = "blueviolet"
-    // colorbtn3.style.backgroundColor = "blueviolet"
-    // colorbtn4.style.backgroundColor = "blueviolet"
-    // colorbtn5.style.backgroundColor = "blueviolet"
-    // colorbtn6.style.backgroundColor = "blueviolet"
-    // colorbtn7.style.backgroundColor = "blueviolet"
-    // colorbtn8.style.backgroundColor = "blueviolet"
 
         if(p1.style.display == "none"){
                 p1.style.display = "block"
@@ -514,15 +467,21 @@ let g3gb = document.getElementById('3gb')
 let contGiga = document.getElementById('contGiga')
 
 
-       
+
+
 function gig3(){
    
     contGiga.innerHTML = " 3221225472";
     contGiga.style.color = "red"
 }
+// let circl = document.querySelector(".circl") = localStorage.setItem(circl)
 
 
 function updeted1(){
+  let circl = document.querySelector(".circl") 
+   circl.remove()
+
+
     Swal.fire({
         title: "<div>20/5  <li> Add New Update V2</li><li> Add Balance Fraction</li> <li> Add New system</li> <li> Add Verification</li> <li> Add AVAIA Codes</li> </div>",
         showClass: {
@@ -540,7 +499,6 @@ function updeted1(){
           `
         }
       });
-
 }
 
 function updeted2()  {
