@@ -1353,37 +1353,111 @@
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        CHARGE          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   <div class="lines"></div>
 
- <div>  <label class="texx"><input type="checkbox" id="check7" onchange="showandhid()" data-click="clickk"> في حالة الرصيد مسمعش</label>  <!-- &nbsp; &nbsp;<span class="new">New</span> --></div> 
+ <div>  <label class="texx"><input type="checkbox" id="check7" onchange="showandhid()" data-click="clickk"> في حالة الرصيد مسمعش</label>   &nbsp; &nbsp;<span id="upd" onclick="updeted2()" class="updated">Updated v2</span> </div> 
   <div class="hidden" id="hid7" dir="rtl">
-    <p style="border: 1px solid red; padding: 5px; width: fit-content;">
-      هبلغ العميل انه يستني 24 ساعة من وقت الشحن ومنسجلش اي شكوي قبل المده دي
-    </p>
-    <div style="border: 1px solid red; padding: 5px; width: fit-content;">
-      هبلغ العميل انه يستني 1 ساعة من وقت الشحن في حالة الدفع عن طريق الموقع او التطبيق
-      <br>
-      <button  onclick="hideUnhide('ChargeSR')"  style=" padding: 5px;  border-radius: 5px;  ">SR</button>
-      <div  class="hiddenBtn" dir="rtl" id="ChargeSR" >
-        <p> FBB Non Tech follow up => Payment not clear => Pending Payment</p>
-        </div>
-    </div>
-    <label class="box"><input type="checkbox" id="q-24"><span class="color2" dir="rtl"> عمل شكوي</span></label>
+
+  
+
+    <label class="box"><input type="checkbox" id="q-24"><span class="color2" dir="rtl"> ماكينات الدفع</span></label>
     <div id="script-24" class="scripts">
+      <p style="border: 1px solid red; padding: 5px; width: fit-content;">
+        هبلغ العميل انه يستني 24 ساعة من وقت الشحن ومنسجلش اي شكوي قبل المده دي
+      </p>
       <div style=" width: fit-content; ">
       <P><mark>هنعمل TT بعد مرور 24 ساعة من وقت الدفع</mark></P>
-
+      <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px;">
+        <thead>
+          <tr>
+            <th scope="col">Level 1</th>
+            <th scope="col">Level 2</th>
+            <th scope="col">Level 3</th>
+            <th scope="col">SLA</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Broadband</th>
+            <th scope="row">Non Technical Request</th>
+            <th scope="row">Aggregators Payment</th>
+            <th scope="row">48 WH
+          </tr>
+  
+  
+        </tbody>
+      </table>
+      <br>
+      <div style="outline: 1px solid red; padding: 3px;"> في حالة كان فيه بيانات ناقصه ومش هنقدر نعمل الـ TT 
+      <br>
+      هنعمل Sr
+      <p style="color: blue;">FBB Non Tech follow up => Payment Not Clear => Incomplete Data</p>
       </div>
+      </div>
+      <br>
+      <label class="box"><input type="checkbox" id="q-25"><span class="color2" dir="rtl"> البيانات المطلوبة في الـ TT</span></label>
+      <div id="script-25" class="scripts">
+        <div style=" text-align: right;">
+          <li>اسم الشركة</li>
+          <li>رقم الخدمة المثبت في الايصال</li>
+          <li>تاريح الدفع</li>
+          <li>المبلغ الاجمالي المدفوع (شامل رسوم الخدمه)</li>
+          <li>الرقم المرجعي او رقم العملية</li>
+          <li>في حالة الدفع من فوري (كود الخدمه او رقم الجهاز)</li>
+   
+        </div>
     </div>
-    <br>
-    <label class="box"><input type="checkbox" id="q-25"><span class="color2" dir="rtl"> البيانات المطلوبة في الـ TT</span></label>
-    <div id="script-25" class="scripts">
-      <div style=" text-align: right;">
-        <li>اسم الشركة</li>
-        <li>رقم الخدمة المثبت في الايصال</li>
-        <li>تاريح الدفع</li>
-        <li>المبلغ الاجمالي المدفوع (شامل رسوم الخدمه)</li>
-        <li>الرقم المرجعي او رقم العملية</li>
-        <li>في حالة الدفع من فوري (كود الخدمه او رقم الجهاز)</li>
- 
+  
+    </div>
+    <hr>
+    <label class="box"><input type="checkbox" id="q-35"><span class="color2" dir="rtl"> WE App - E Care</span></label>
+    <div id="script-35" class="scripts">
+      <div style="border: 1px solid red; padding: 5px; width: fit-content;">
+        هبلغ العميل انه يستني 1 ساعة من وقت الشحن في حالة الدفع عن طريق الموقع او التطبيق
+        <hr>
+        <button  onclick="hideUnhide('ChargeSR')"  style=" padding: 5px;  border-radius: 5px;  ">SR</button>
+        <div  class="hiddenBtn" dir="rtl" id="ChargeSR" >
+          <p> FBB Non Tech follow up => Payment not clear => Pending Payment</p>
+          </div>
+        <hr>
+        <button  onclick="hideUnhide('TTapp')"  style=" padding: 5px;  border-radius: 5px;  ">TT App/E care</button>
+        <div  class="hiddenBtn" dir="rtl" id="TTapp" >
+          <p>في حالة مروره ساعة ولسه الدفع مظهرش هنعمل TT</p>
+          <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px;">
+            <thead>
+              <tr>
+                <th scope="col">Level 1</th>
+                <th scope="col">Level 2</th>
+                <th scope="col">Level 3</th>
+                <th scope="col">SLA</th>
+            
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Broadband</th>
+                <th scope="row">Dispute customer</th>
+                <th scope="row">Payment</th>
+                <th scope="row">2 H</th>
+              </tr>
+      
+            </tbody>
+          </table>
+          <div>
+            هنكتب في الـ TT 
+            <li>الرقم الارضي</li>
+            <li>تاريخ الدفع</li>
+            <li>المبلغ المدفوع</li>
+            <li>طريقة الدفع (E-Care or App)</li>
+            <li>Transaction Number (If possible)</li>
+            <br>
+            <div style="outline: 1px solid red; padding: 3px;"> في حالة كان فيه بيانات ناقصه ومش هنقدر نعمل الـ TT 
+            <br>
+            هنعمل Sr
+            <p style="color: blue;">FBB Non Tech follow up => Payment Not Clear => Incomplete Data</p>
+            </div>
+          </div>
+        </div>
+    
       </div>
     </div>
   </div>
