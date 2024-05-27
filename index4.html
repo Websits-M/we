@@ -38,9 +38,36 @@
 
 
 
+<div class="UpDown">
+  <a class="btnUp"><i class="fa-solid fa-arrow-up"></i></a>
+<a class="btnButoom" onclick="scrollY()"><i class="fa-solid fa-arrow-down"></i></a>
+</div>
+  <!-- /////////////////////////////////////////////////////////////////////////        notfaction          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
+<div id="notfaction" dir="auto">
 
+    <div class="baiscNotfaction">
+        <div class="contentNotfaction">
+            <div style="display: flex; justify-content: space-between; padding-bottom: 10px ;">
+              <mark><i class="fa-solid fa-rotate fa-spin" style="color: #43329a;"></i> تحديث 2.1 v </mark>
+              <span>27-5-2024</span>
+            </div>
 
+              <h6> ما الجديد في 2.1؟</h6>
+              <li>تم اضافة اكواد التحويل للاقسام IVR</li>
+              <li>تم تحديث المحتوي لبعض العناصر من الويكي</li>
+              <li>تم اضافة بعض التحسينات</li>
+
+              <a class="" onclick="hideUnhide('oldUpdate')"  style=" padding: 5px;  border-radius: 5px;  ">اطلع علي التحديث السابق 2 v </a>
+              <div  class="hiddenBtn" dir="rtl" id="oldUpdate"  style="border: 0;">
+                <li> Add New Update (V2) 20/5</li><li> Add New system</li> <li> Add Verification</li> <li> Add AVAIA Codes</li>
+              </div>
+        </div>
+        <div class="BTNnotfaction" >
+          <button class="btn btn-primary" id="BtnNotfaction">OK</button>
+        </div>
+    </div>
+</div>
 
   <!-- /////////////////////////////////////////////////////////////////////////        Select          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -63,7 +90,7 @@
         <a style="text-decoration: none;" href="https://wexdone.weebly.com/modams.html#/">CPEs Configuration  <i class="fa-solid fa-desktop fa-fade"></i></a>
       </div>
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">
-        <label class="lab" onclick="updeted1()"> Last Update : 20/5/2024 <a style="padding: 3px; border-radius: 3px; border: 0;"><i class="fa-solid fa-circle-info "></i></a><div class="circl"></div></label>
+        <label class="lab" onclick="updeted1()"> Last Update : 27/5/2024 <a style="padding: 3px; border-radius: 3px; border: 0;"><i class="fa-solid fa-circle-info "></i></a> <div class="circl"> </div></label>
       </div>
       </div>
       <div class="op">
@@ -164,7 +191,7 @@
       </div>
 
       </div>
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////        saidPosition          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
         <div class="content-data">
           
@@ -187,16 +214,46 @@
                       <p> نظام تم تحويل العملاء عليه وهو دفع كل شهر بدل دفع كل 3 شهور</p>
                       <div dir="rtl">
                         <strong>Script</strong>
-                        <p>تم تحويل حضرتك لنظام الفاتورة الشهري لانك من ضمن العملاء المميزين ونظام الفاتورة الشهرية يافندم له مميزات كتير
-                          <li> في تحكم اكتر</li>
+                        <p>
+                          <mark>تم تحويل حضرتك لنظام الفاتورة الشهري لانك من ضمن العملاء المميزين ونظام الفاتورة الشهرية يافندم له مميزات كتير   </mark>
+                          <li> فيه تحكم اكتر</li>
                           <li>الفاتورة هتصدر يوم 1 في الشهر</li>
                           <li> ليك فترة سماح 20 يوم من يوم اصدار الفاتورة تقدر تسدد الفاتورة خلالهم</li>
                           <li> في حالة عدم السداد هيتم تحويل خطك علي الاستقبال فقط بدون فصل خدمة الانترنت لمدة 6 ايام</li>
+                          <li>النظام الجديد تقدر تتصل من خلاله محلي ومحافظات عكس القديم محلي بس (we ardy 25)</li>
                         </p>
                         <button id="colorbtn" onclick="hideUnhide('MigratedPreSR')"  style=" padding: 5px;  border-radius: 10px;">SR</button>    
                     <div class="hiddenBtn" id="MigratedPreSR">
                       <div style="outline: 1px solid red;" dir="ltr">
                           Fixed Voice SR Inquiry => Migration => Transfer from post to pre
+                      </div>
+                    </div>
+                        <button id="colorbtn" onclick="hideUnhide('MigratedPreTT')"  style=" padding: 5px;  border-radius: 10px;">TT</button>    
+                    <div class="hiddenBtn" id="MigratedPreTT">
+                      <div style="outline: 1px solid red;" dir="ltr">
+                          <table class="table table-bordered table-dark" dir="ltr" style="font-size: 9px; text-align: center;">
+                            <thead>
+                              <tr>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">Level 3</th>
+                                <th scope="col">WG</th>
+                                <th scope="col">SLA</th>
+                            
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Fixed Voice SR Complaint</th>
+                                <th scope="row">Policy & procedure</th>
+                                <th scope="row">Migration from post to pre</th>
+                                <th scope="row">Biling</th>
+                                <th scope="row">24 H</th>
+                              </tr>
+                            </tbody>
+                          </table>
+                            <li>هنوضح للعميل لازم يكلمنا قبل نهاية الـ Cycle بـ 48 ساعة</li>   
+                                
                       </div>
                     </div>
                       </div>
@@ -298,12 +355,81 @@
                         </table>
                     </div>
                   </div>
+                  <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('IVR')"  style=" padding: 5px;  border-radius: 10px;">IVR</button>    
+                  <div class="hiddenBtn" id="IVR">
+                    <div class="wrapper" style="padding: 10px 0;">
+                      <div class="radio_tabs">
+                        <div style="text-align: center; outline: 2px solid black; padding: 5px; margin-bottom: 10px;">التحويل للاقسام</div>
+                        <label class="radio_wrap" data-radio="radio_3">
+                          <input type="radio" name="sports" class="input">
+                          <span class="radio_mark">
+                           Technical
+                          </span>
+                        </label>
+                        <label class="radio_wrap" data-radio="radio_4">
+                          <input type="radio" name="sports" class="input">
+                          <span class="radio_mark">
+                           FTTH
+                          </span>
+                        </label>
+                        <label class="radio_wrap" data-radio="radio_5">
+                          <input type="radio" name="sports" class="input">
+                          <span class="radio_mark">
+                           Indigo
+                          </span>
+                        </label>
+                        <label class="radio_wrap" data-radio="radio_6">
+                          <input type="radio" name="sports" class="input">
+                          <span class="radio_mark">
+                           GSM Prepaid
+                          </span>
+                        </label>
+                        <label class="radio_wrap" data-radio="radio_7">
+                          <input type="radio" name="sports" class="input">
+                          <span class="radio_mark">
+                           GSM Postpaid
+                          </span>
+                        </label>
+                      </div> <!-- /radio_tabs -->
+
+                      <div class="content" style="color: white;">
+                        <div class="radio_content radio_3">
+                          <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">7712</p>
+               
+                        </div>     
+<!-- -----------------------------------------------------------------------------------------Fibar----------------------------------------------------------------------------------------------------------- -->
+                        <div class="radio_content radio_4"  id="r1">
+                            <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">86251</p>
+                        </div>
+ <!-- ---------------------------------------------------------------------------------------Indigo----------------------------------------------------------------------------------------------------------- -->
+                       
+                              <div class="radio_content radio_5">
+                                <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">642004</p>
+                              </div> 
+ <!-- ------------------------------------------------------------------------------------GSM Prepaid----------------------------------------------------------------------------------------------------------- -->
+                       
+                            <div class="radio_content radio_6">
+                              <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">641612</p>
+                            </div> 
+ <!-- ------------------------------------------------------------------------------------GSM Postpaid----------------------------------------------------------------------------------------------------------- -->
+                       
+                            <div class="radio_content radio_7">
+                              <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">641888</p>
+                            </div> 
+
+
+                        </div>  <!-- /content -->
+                      </div> <!-- /wrapper -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div style="outline: 1px solid gren;">
-          <div><label class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession</label><!-- &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span> --></div>
+      
+          <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+          <div style="outline: 1px solid gren;" >
+          <div><label  class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession </label><!-- &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span> --></div>
                   
                       <div class="hidden" id="hid">
                           <div class="script1"><strong>التعويضات</strong>
@@ -448,6 +574,7 @@
                                   <li>التعويض خلال المكالمة عن طريقنا كـ Agent</li>
                                   <li>نقدر نعوض العميل بحد اقصي 20 GB خلال المكالمة او 12 جنيه للتيكت الواحده</li>
                                   <li> لو التعويض بأكثر من 20 GB هنعمل IR for Team Leader والطلب بياخد 30 دقيقة</li>
+                                  <li>التعويض بنزلة من علي الـ BSS</li>
                                 
                                 </div>
                                 <div style="padding: 10px 0;">
@@ -487,7 +614,7 @@
                                             <p style="border: 1px solid red;">يتم اخبار العميل بالانتظار لمدة 48 ساعة للتعويض التلقائي في حالة Majot fault Maintenance وفي حالة اتصال العميل بعد مرور 48 ساعة يتم التعويض On spot</p>
                                             <li>في حالة اتصال العميل بعد 48  يتم اتباع الاتي لتعويضة On spot :</li>
                                           </ol>
-                                          <li>مدة Outage تكون 12 ساعة او اكثر</li>
+                                          <li>مدة Outage تكون من 6 الي 12 ساعة او اكثر</li>
                                           <li>في حالات الـ Down Outage ليس من الضروري مراجعة استهلاك العميل في اول 10 ايام</li>
                                           <li>في حالات الـ Instability Outage يجب مراجعة استهلاك العميل اذا كان مر عليه اكثر من 24 ساعة (علي ان يكون الاستهلاك اقل من او يساوي 5 جيجا في اليوم)</li>
                                           <strong>مدة الـ Outage لو من 6 الي 12 ساعة سيتم تعويض العميل بالشكل التالي :</strong>
@@ -614,14 +741,12 @@
                         </div>
                         </div>
                         <br> 
-                        <br>
                         <!-- --------------------------------------------- -->
 
                       <button class="btn btn-primary"  onclick="hideUnhide('notAdd')" id="we-mobile" style=" padding: 5px; border-radius: 10px;">حالات مقدرش اقدم فيها الهديه</button>
                       <div class="hiddenBtn cloAll" id="notAdd">
                         <mark style="background-color: red; color: white; display: block; text-align: center; margin-bottom: 10px;"> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس</mark> 
                       </div>
-                      <br>
                       <br>
                       <!-- ------------------------------------------------ -->
                       <button class="btn btn-primary" onclick="hideUnhide('addd')" id="we-mobile" style=" padding: 5px; border-radius: 10px;">الحالات النقدر نقدم فيها الهديه</button>
@@ -707,7 +832,6 @@
 
                         </div>
                     </div>
-                    <br>
                     <br>
                     <button class="btn btn-primary" onclick="hideUnhide('box-we-mobile')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"></i> في حالة سؤال العميل علي سعر خط 015 <i class="fa-solid fa-cart-shopping"></i></button>
                     <div id="box-we-mobile">
@@ -1002,7 +1126,19 @@
 
                           </div>
                           <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-                        
+                          <br>
+                          <br>
+                  
+                          <div style="outline: 2px solid black; padding: 4px; width: fit-content; border: 2px solid black; outline-offset: 2px;">
+                            <div> في حالة لو هنصعد شكوي تانية والعميل كان عنده شكوي قبل كدا بيكون عندي خيارين في الـ IR 
+
+                              <ul style="padding-right: 30px;">
+                                <li>FO</li>
+                                <li>SLS</li>
+                              </ul>
+                              في حالة الشكوي القديمة في الـ IU بتبقي FO ولو الشكوي القديمة كانت في قسم ثاني بتبقي SLS
+                            </div>
+                          </div>
                           </div> <!-- /hid2 -->
                           <div class="lines"></div>
 
@@ -1247,7 +1383,7 @@
 
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Balance          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-                          <div><label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)   </label> &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated v2</span> </div>
+                          <div><label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)   </label> <!-- &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated v2</span> --></div>
                   <div class="hidden" id="hid6" dir="rtl">
                     <p style="border: 1px solid red; padding: 5px; width: fit-content;">
                        دي في حالة ان فيه عميل عمل باقة اضافية بالغلط
@@ -1414,7 +1550,7 @@
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        CHARGE          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   <div class="lines"></div>
 
- <div>  <label class="texx"><input type="checkbox" id="check7" onchange="showandhid()" data-click="clickk"> في حالة الرصيد مسمعش</label>   &nbsp; &nbsp;<span id="upd" onclick="updeted2()" class="updated">Updated v2</span> </div> 
+ <div>  <label class="texx"><input type="checkbox" id="check7" onchange="showandhid()" data-click="clickk"> في حالة الرصيد مسمعش</label>   <!--&nbsp; &nbsp;<span id="upd" onclick="updeted2()" class="updated">Updated v2</span> --> </div> 
   <div class="hidden" id="hid7" dir="rtl">
 
   
@@ -1498,7 +1634,7 @@
                 <th scope="row">Broadband</th>
                 <th scope="row">Dispute customer</th>
                 <th scope="row">Payment</th>
-                <th scope="row">24 H</th>
+                <th scope="row">2 H</th>
               </tr>
       
             </tbody>
@@ -1526,7 +1662,7 @@
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Fraction          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div class="lines"></div>
 
-    <div>  <label class="texx"><input type="checkbox" id="check8" onchange="showandhid()" data-click="clickk"> Balance Fraction</label> &nbsp; &nbsp;<span class="new">New</span> </div> 
+    <div>  <label class="texx"><input type="checkbox" id="check8" onchange="showandhid()" data-click="clickk"> Balance Fraction</label> <!--&nbsp; &nbsp;<span class="new">New</span> --> </div> 
      <div class="hidden" id="hid8" dir="rtl">
       <p style="outline: 1px solid red; padding: 3px;">بنستخدمها في حالة عدم اكتمال طلب العميل بسبب فرق الرصيد</p>
       <li> بنضيف 1 جنيه بحد اقصي للـ WE ardy 25 </li>
