@@ -22,6 +22,9 @@ $(document).ready(function(){
     })
   });
 
+
+
+
   let check = document.querySelector("#check1");
   let hide = document.querySelector("#hid");
   let check2 = document.querySelector("#check2");
@@ -31,15 +34,15 @@ $(document).ready(function(){
   let check6 = document.querySelector("#check6");
   let check7 = document.querySelector("#check7");
   let check8 = document.querySelector("#check8");
-  let hid2 = document.querySelector("#hid2");
-  let hid3 = document.querySelector("#hid3");
+  let hid2 =   document.querySelector("#hid2");
+  let hid3 =   document.querySelector("#hid3");
   let hid4 = document.querySelector("#hid4");
   let hid5 = document.querySelector("#hid5");
   let hid6 = document.querySelector("#hid6");
   let hid7 = document.querySelector("#hid7");
   let hid8 = document.querySelector("#hid8");
 function showandhid(){
-    hide.style.display = check.checked ? "block" : "none"
+    hide.style.display = check.checked  ? "block" : "none"
     hid2.style.display = check2.checked ? "block" : "none"
     hid3.style.display = check3.checked ? "block" : "none"
     hid4.style.display = check4.checked ? "block" : "none"
@@ -166,16 +169,16 @@ q_35.addEventListener("click" , ch1)
     
 
     function ch1(){
-        script_0.style.display = q_0.checked ? "block" : "none"
-        script_1.style.display = q_1.checked ? "block" : "none"
-        script_2.style.display = q_2.checked ? "block" : "none"
-        script_3.style.display = q_3.checked ? "block" : "none"
-        script_4.style.display = q_4.checked ? "block" : "none"
-        script_5.style.display = q_5.checked ? "block" : "none"
-        script_6.style.display = q_6.checked ? "block" : "none"
-        script_7.style.display = q_7.checked ? "block" : "none"
-        script_8.style.display = q_8.checked ? "block" : "none"
-        script_9.style.display = q_9.checked ? "block" : "none"
+        script_0.style.display  = q_0.checked  ? "block" : "none"
+        script_1.style.display  = q_1.checked  ? "block" : "none"
+        script_2.style.display  = q_2.checked  ? "block" : "none"
+        script_3.style.display  = q_3.checked  ? "block" : "none"
+        script_4.style.display  = q_4.checked  ? "block" : "none"
+        script_5.style.display  = q_5.checked  ? "block" : "none"
+        script_6.style.display  = q_6.checked  ? "block" : "none"
+        script_7.style.display  = q_7.checked  ? "block" : "none"
+        script_8.style.display  = q_8.checked  ? "block" : "none"
+        script_9.style.display  = q_9.checked  ? "block" : "none"
         script_10.style.display = q_10.checked ? "block" : "none"
         script_11.style.display = q_11.checked ? "block" : "none"
         script_12.style.display = q_12.checked ? "block" : "none"
@@ -474,32 +477,23 @@ function gig3(){
     contGiga.innerHTML = " 3221225472";
     contGiga.style.color = "red"
 }
-// let circl = document.querySelector(".circl") = localStorage.setItem(circl)
+
+let lab = document.querySelector('.lab')
+let notfaction = document.getElementById('notfaction')
+let BtnNotfaction = document.getElementById('BtnNotfaction')
 
 
 function updeted1(){
   let circl = document.querySelector(".circl") 
    circl.remove()
 
-
-    Swal.fire({
-        title: "<div>20/5  <li> Add New Update V2</li><li> Add Balance Fraction</li> <li> Add New system</li> <li> Add Verification</li> <li> Add AVAIA Codes</li> </div>",
-        showClass: {
-          popup: `
-            animate__animated
-            animate__fadeInUp
-            animate__faster
-          `
-        },
-        hideClass: {
-          popup: `
-            animate__animated
-            animate__fadeOutDown
-            animate__faster
-          `
-        }
-      });
+    notfaction.style.display = "block"
+    notfaction.style.transform.scale = "1.1"
 }
+BtnNotfaction.addEventListener("click" , function(){
+  notfaction.style.display = "none"
+
+})
 
 function updeted2()  {
     Swal.fire({
@@ -540,6 +534,17 @@ function updeted3()  {
       });
 }
    
-       
-    
+let botoom = document.querySelector('.btnUp') 
+botoom.onclick = () => {
+  window.scrollTo({
+    top:0,
+    right:0,
+    behavior: "smooth"
+  })
+}
+function scrollY(){
+  var Height = document.body.scrollHeight;
 
+    window.scroll( 0, Height);
+  
+}
