@@ -4,7 +4,76 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-thumb{
+ border-radius: 20px;
+ background: linear-gradient(
+  to right,
+  rgb(21, 3, 113),
+  rgb(76, 0, 255),
+  rgb(96, 18, 141)
+);
+}
 
+.UpDown{
+  position: fixed;
+  width: fit-content;
+  left: 15px;
+  height: 55px;
+  top: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btnUp ,.btnButoom{
+  width: 30px;
+  height: 30px;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: auto;
+  opacity: .5;
+
+}
+
+#notfaction{
+  display: none;
+  position: absolute;
+  border: 2px solid #ddd;
+  width: 305px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: white;
+  z-index: 900;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+.baiscNotfaction{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.contentNotfaction{
+  width: 100%;
+  /* border: 2px solid blue; */
+  height: 85%;
+  padding: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+
+}
+.BTNnotfaction{
+  padding: 5px;
+  text-align: center;
+}
 .loader {
   position: fixed;
   top: 0;
@@ -411,7 +480,7 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 90px;
   background: linear-gradient(
     to right,
     rgb(21, 3, 113),
