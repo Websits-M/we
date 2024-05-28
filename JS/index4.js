@@ -220,6 +220,7 @@ q_35.addEventListener("click" , ch1)
         var box3 = document.getElementById("box-3");
         var box4 = document.getElementById("box-4");
         var box5 = document.getElementById("box-5");
+        var box6 = document.getElementById("box-6");
         if (optionL.value == 1) {
           opts.style.display = "block";
           box1.style.display = "block";
@@ -227,6 +228,8 @@ q_35.addEventListener("click" , ch1)
           box3.style.display = "none";
           box4.style.display = "none";
           box5.style.display = "none";
+          box6.style.display = "none";
+
 
 
         } else if(optionL.value == 2) {
@@ -236,6 +239,8 @@ q_35.addEventListener("click" , ch1)
           box3.style.display = "none";
           box4.style.display = "none";
           box5.style.display = "none";
+          box6.style.display = "none";
+
 
         
         }else if(optionL.value == 3) {
@@ -245,6 +250,8 @@ q_35.addEventListener("click" , ch1)
             box2.style.display = "none";
             box4.style.display = "none";
             box5.style.display = "none";
+            box6.style.display = "none";
+
 
       }else if(optionL.value == 4) {
         opts.style.display = "block";
@@ -253,10 +260,23 @@ q_35.addEventListener("click" , ch1)
         box2.style.display = "none";
         box3.style.display = "none";
         box5.style.display = "none";
+        box6.style.display = "none";
+
 
     }else if(optionL.value == 5) {
       opts.style.display = "block";
         box5.style.display = "block";
+        box1.style.display = "none";
+        box2.style.display = "none";
+        box3.style.display = "none";
+        box4.style.display = "none";
+        box6.style.display = "none";
+
+
+    }else if(optionL.value == 6) {
+      opts.style.display = "block";
+        box6.style.display = "block";
+        box5.style.display = "none";
         box1.style.display = "none";
         box2.style.display = "none";
         box3.style.display = "none";
@@ -291,59 +311,26 @@ window.addEventListener("load", () => {
     
 
   }
-/////////////////////////BTNS//////////////////////////////////
-const colorbtn = document.getElementById("colorbtn");
-const colorbtn2 = document.getElementById("colorbtn2");
-const colorbtn3 = document.getElementById("colorbtn3");
-const colorbtn4 = document.getElementById("colorbtn4");
-const colorbtn5 = document.getElementById("colorbtn5");
-const colorbtn6 = document.getElementById("colorbtn6");
-const colorbtn7 = document.getElementById("colorbtn7");
-const colorbtn8 = document.getElementById("colorbtn8");
-
-colorbtn.addEventListener("click" , function(){
-    const p1 = document.getElementById(id);
-
-    if(colorbtn.click){
-
-        colorbtn.style.backgroundColor = "blueviolet"
-
-   
-        
 
 
-}else{
-    // p1.style.display = "none"
-    colorbtn.style.backgroundColor = "#blueviolet"
-       
-
-}
-
-})
 
   function hideUnhide(id){
-
     const p1 = document.getElementById(id);
+    if(p1.style.display === "none"){
+      p1.style.display = "block"
 
-        if(p1.style.display == "none"){
-                p1.style.display = "block"
+      }else{
+        p1.style.display = "none"
+
+      }
+          
         
-           
-                
-    
-
-        }else{
-            p1.style.display = "none"
-            // colorbtn.style.backgroundColor = "#ddd"
-       
-        }
         
 
         }
 
     
-
-
+     
 
 
   let checkgreen =document.getElementById("checkgreen")
@@ -478,11 +465,14 @@ let BtnNotfaction = document.getElementById('BtnNotfaction')
 
 
 function updeted1(){
-  let circl = document.querySelector(".circl") 
-   circl.remove()
+  let circl = document.querySelector(".circl")
+
+  localStorage.getItem("notfaction")
+  circl.remove()
+  
+
 
     notfaction.style.display = "block"
-    notfaction.style.transform.scale = "1.1"
 }
 BtnNotfaction.addEventListener("click" , function(){
   notfaction.style.display = "none"
