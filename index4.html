@@ -55,6 +55,7 @@
 
               <h6> ما الجديد في 2.1؟</h6>
               <li>تم اضافة اكواد التحويل للاقسام IVR</li>
+              <li>تم اضافة قسم الشكاوي</li>
               <li>تم تحديث المحتوي لبعض العناصر من الويكي</li>
               <li>تم اضافة بعض التحسينات</li>
 
@@ -71,17 +72,18 @@
 
   <!-- /////////////////////////////////////////////////////////////////////////        Select          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-  <div class="hederV2">
+  <div class="hederV2" dir="auto">
 
-      <div class="down">
-        <div class="select">
-          <select id="optionL" onchange="select()">
-            <option hidden value="0"> شرح - TE-DATA INFO</option>
+      <div class="down"  >
+        <div class="select" >
+          <select id="optionL" onchange="select()" >
+            <option hidden value="0"> Wiki - info </option>
             <option value="1"> Outage</option>
             <option value="2"> Major fault</option>
             <option value="3"> Migrated VS Not Migrated</option>
             <option value="4"> Case Escalation</option>
             <option value="5"> Avaia Codes</option>
+            <option value="6"> الشكاوي </option>
           </select>
         </div>
   
@@ -90,7 +92,7 @@
         <a style="text-decoration: none;" href="https://wexdone.weebly.com/modams.html#/">CPEs Configuration  <i class="fa-solid fa-desktop fa-fade"></i></a>
       </div>
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">
-        <label class="lab" onclick="updeted1()"> Last Update : 27/5/2024 <a style="padding: 3px; border-radius: 3px; border: 0;"><i class="fa-solid fa-circle-info "></i></a> <div class="circl"> </div></label>
+        <label class="lab" onclick="updeted1()"><div class="circl"></div><i class="fa-solid fa-circle-info "></i> Last Update : 27/5/2024 </label>
       </div>
       </div>
       <div class="op">
@@ -129,7 +131,6 @@
           <strong>Escalation</strong>
             <img src="./images/escalation.jpg" alt="ES">
         </div>
-    
      
       <div class="box-select" id="box-5">
         <a id="remove" onclick="reset()"><i class="fa-regular fa-circle-xmark fa-xl"></i></a>
@@ -190,6 +191,179 @@
         </table>
       </div>
 
+      <div class="box-select" id="box-6" >
+        <a id="remove" onclick="reset()"><i class="fa-regular fa-circle-xmark fa-xl"></i></a>
+        <div>
+          <strong>Escalation</strong>
+        </div>
+        <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('EcallCenter')"  style=" padding: 5px;  border-radius: 10px;">الشكوي في الدعم الفني</button>    
+        <div class="hiddenBtn" id="EcallCenter" >
+          <p>
+            في حالة العميل مش مقتنع وعايز يكلم مدير هنعمل TT وهنوضح فيها : 
+            <li>الاسم</li> 
+            <li>الموبايل</li> 
+            <li>سبب الشكوي</li> 
+         </p>
+          <table class="table table-bordered table-dark" dir="auto" style="font-size: 9px; text-align: center;">
+            <thead>
+              <tr>
+                <th scope="col">Level 1</th>
+                <th scope="col">Level 2</th>
+                <th scope="col">Level 3</th>
+                <th scope="col">Level 4</th>
+                <th scope="col">Level 5</th>
+                <th scope="col">SLA</th>
+            
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Broadband</th>
+                <th scope="row">Call Center</th>
+                <th scope="row">Complaint None Technical</th>
+                <th scope="row">Escalation</th>
+                <th scope="row">Asked to Call manager</th>
+                <th scope="row">1 h</th>
+              </tr>
+            </tbody>
+          </table>
+          <p>لو عدي ساعه ومحدش كلم العميل هنعمل ال TT دي : </p>
+ 
+            <table class="table table-bordered table-" dir="auto" style="font-size: 9px; text-align: center;">
+              <thead>
+                <tr>
+                  <th scope="col">Level 1</th>
+                  <th scope="col">Level 2</th>
+                  <th scope="col">Level 3</th>
+                  <th scope="col">Level 4</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">Broadband</th>
+                  <th scope="row">Call Center</th>
+                  <th scope="row">Complaint None Technical</th>
+                  <th scope="row">Asked to Call manager on the spot</th>
+                </tr>
+              </tbody>
+            </table>
+
+        </div>
+        <br>
+        <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('EcallConcession')"  style=" padding: 5px;  border-radius: 10px;">الشكوي عن عدم الرضا عن التعويض</button>    
+        <div class="hiddenBtn" id="EcallConcession" >
+          <p>
+            لو العميل عايز يقدم شكوي بخصوص عدم رضائه عن التعويض هنعمل TT وهنكتب الـ Serial number للـ TT اللي العميل بيشتكي بخصوصها في الـ Service content
+          </p>
+          <table class="table table-bordered table-primary" dir="auto" style="font-size: 9px; text-align: center;">
+            <thead>
+              <tr>
+                <th scope="col">Level 1</th>
+                <th scope="col">Level 2</th>
+                <th scope="col">Level 3</th>
+                <th scope="col">SLA</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">FBB Complaint</th>
+                <th scope="row">Billing Adjustment</th>
+                <th scope="row">Technical Concession Revalidation</th>
+                <th scope="row">23 H</th>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <br>
+        <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('EAll')"  style=" padding: 5px;  border-radius: 10px;">في حالة شكوي العميل من موظفين</button>    
+            <div class="hiddenBtn" id="EAll" >
+              <p style="padding: 4px; border: 1px solid red;">دي فحالة شكوي العميل من تجربة سيئة من (كول سنتر , فروع , فنين , مدير سنترال)</p>
+              <p>هنعمل TT حسب نوع الشكوي ونبلغ العميل ان ادارة الشكاوي هتتواصل معاه في خلال يوم</p>
+
+              <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('AgentCenter')"  style=" padding: 5px;  border-radius: 10px;">Call center</button>    
+              <div class="hiddenBtn" id="AgentCenter" >
+                <table class="table table-bordered table-primary" dir="auto" style="font-size: 9px; text-align: center;">
+                  <thead>
+                    <tr>
+                      <th scope="col">Level 1</th>
+                      <th scope="col">Level 2</th>
+                      <th scope="col">Level 3</th>
+                      <th scope="col">SLA</th>
+                    </tr>
+                  </thead>
+      
+                  <tbody>
+                    <tr>
+                      <th scope="row">FBB None Technical Complaint</th>
+                      <th scope="row">Internet Service</th>
+                      <th scope="row">Call Center QA Complaint</th>
+                      <th scope="row">1 Day</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <span>لازم نكتب في الـ Service Content</span>
+                <li>اسم العميل ورقم التواصل</li>
+                <li>وقت المكالمة واسم موظف خدمة العملاء ولو العميل مش متذكر اسم الموظف لازم نوضح دا في ال TT</li>
+              </div>
+              <br>
+              <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('Branch')"  style=" padding: 5px;  border-radius: 10px;">Branch</button>    
+              <div class="hiddenBtn" id="Branch" >
+                <table class="table table-bordered table-primary" dir="auto" style="font-size: 9px; text-align: center;">
+                  <thead>
+                    <tr>
+                      <th scope="col">Level 1</th>
+                      <th scope="col">Level 2</th>
+                      <th scope="col">Level 3</th>
+                      <th scope="col">SLA</th>
+                    </tr>
+                  </thead>
+      
+                  <tbody>
+                    <tr>
+                      <th scope="row">FBB None Technical Complaint</th>
+                      <th scope="row">Internet Service</th>
+                      <th scope="row">Branch QA Complaint</th>
+                      <th scope="row">1 Day</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <span>لازم نكتب في الـ Service Content</span>
+                <li>اسم العميل ورقم التواصل</li>
+                <li>وقت المكالمة واسم موظف  الفرع ولو العميل مش متذكر اسم الموظف لازم نوضح دا في ال TT</li>
+              </div>
+              <br>
+              <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('Mang')"  style=" padding: 5px;  border-radius: 10px;">الفني / مدير السنترال</button>    
+              <div class="hiddenBtn" id="Mang" >
+                <table class="table table-bordered table-primary" dir="auto" style="font-size: 9px; text-align: center;">
+                  <thead>
+                    <tr>
+                      <th scope="col">Level 1</th>
+                      <th scope="col">Level 2</th>
+                      <th scope="col">Level 3</th>
+                      <th scope="col">SLA</th>
+                    </tr>
+                  </thead>
+      
+                  <tbody>
+                    <tr>
+                      <th scope="row">Technical Complaint</th>
+                      <th scope="row">ADSL VDSL</th>
+                      <th scope="row">Technical QA Complaint</th>
+                      <th scope="row">1 Day</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <span>لازم نكتب في الـ Service Content</span>
+                <li>اسم العميل ورقم التواصل</li>
+                <li>اسم الفني ووقت الزيارة /اسم مدير السنترال ولو مش متذكر الاسم لازم نوضح دا في ال TT</li>
+              </div>
+
+            </div>
+      </div>
+
       </div>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        saidPosition          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -211,6 +385,7 @@
                   <div>
                     <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('MigratedPre')"  style=" padding: 5px;  border-radius: 10px;">Monthly postpaid Migration</button>    
                     <div class="hiddenBtn" id="MigratedPre">
+
                       <p> نظام تم تحويل العملاء عليه وهو دفع كل شهر بدل دفع كل 3 شهور</p>
                       <div dir="rtl">
                         <strong>Script</strong>
@@ -716,7 +891,8 @@
                   
                   <div class="hidden" id="hid5" dir="rtl">
                    <div> <strong>هدية تعويض علي رقم 015</strong></div>
-                
+                   <mark style="background-color: red; color: white; display: block; text-align: center; margin-bottom: 10px;"><strong>!</strong> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس </mark> 
+
                       <button class="btn btn-primary"  onclick="hideUnhide('wirinng')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"> ملاحظات! </button>
                       <div class="hiddenBtn cloAll" id="wirinng">
                         <li>We Mobile Adjustment بيتعمل مره واحده بس لكل Ticket او Outage</li>
@@ -741,13 +917,7 @@
                         </div>
                         </div>
                         <br> 
-                        <!-- --------------------------------------------- -->
 
-                      <button class="btn btn-primary"  onclick="hideUnhide('notAdd')" id="we-mobile" style=" padding: 5px; border-radius: 10px;">حالات مقدرش اقدم فيها الهديه</button>
-                      <div class="hiddenBtn cloAll" id="notAdd">
-                        <mark style="background-color: red; color: white; display: block; text-align: center; margin-bottom: 10px;"> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس</mark> 
-                      </div>
-                      <br>
                       <!-- ------------------------------------------------ -->
                       <button class="btn btn-primary" onclick="hideUnhide('addd')" id="we-mobile" style=" padding: 5px; border-radius: 10px;">الحالات النقدر نقدم فيها الهديه</button>
                       <div class="hiddenBtn cloAll" id="addd">
@@ -779,10 +949,11 @@
                           <button  onclick="hideUnhide('more')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"> في حالة كانت المشكلة عدت الـ 24س</button>
                           
                           <div class="hiddenBtn" style="background-color: #904dcf; color: white;"  id="more">
+                            <p style="border: 1px solid red; padding: 5px; width: fit-content;">في الحالة دي التعويض بيكون علي حسب باقة العميل ودا متوضح في الجدول</p>
                             <strong>هنعوض العميل في الحالات التاليه : </strong>
-                            <p style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة وجود شكوي ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </p>
-                            <p style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة وجود Major Fault او Outage ولسه معداش 24ساعه والخدمه مرجعتش هنقدم للعميل الهديه</p>
-                            <p style="border: 1px solid red; padding: 5px; width: fit-content;"> في حالة وجود شكوي وحصلها اعاده تصعيد مره او اكتر من مره في خلال ال SLA </p>
+                            <li style=" padding: 5px; width: fit-content;"> في حالة وجود شكوي ويكون عدي علي الشكوي 24 ساعه والمشكلة متحلتش </li>
+                            <li style=" padding: 5px; width: fit-content;"> في حالة وجود Major Fault او Outage والخدمه مرجعتش هنقدم للعميل الهديه</li>
+                            <li style=" padding: 5px; width: fit-content;"> في حالة وجود شكوي وحصلها اعاده تصعيد مره او اكتر من مره في خلال ال SLA </li>
                             
                             <button class="btn btn-primary" onclick="hideUnhide('tableQouta')"  style="  border-radius: 10px;">جدول توضيحي</button>    
                             <div class="hiddenBtn" id="tableQouta">
