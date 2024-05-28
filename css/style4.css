@@ -9,12 +9,13 @@
 }
 ::-webkit-scrollbar-thumb{
  border-radius: 20px;
- background: linear-gradient(
-  to right,
-  rgb(21, 3, 113),
-  rgb(76, 0, 255),
-  rgb(96, 18, 141)
-);
+ background: var(--minColor)
+}
+
+:root{
+  --minColor : linear-gradient(  to right,  rgb(21, 3, 113),  rgb(76, 0, 255),  rgb(96, 18, 141));
+  --secondColor : rgb(76, 0, 255);
+  --textColorBlue : #0082e6 ;
 }
 
 .UpDown{
@@ -219,7 +220,7 @@ li a:hover {
   li a:hover,
   li a.active {
     background: none;
-    color: #0082e6;
+    color: var(--textColorBlue);
   }
   #check:checked ~ ul {
     left: 0;
@@ -242,6 +243,7 @@ header{
 }
 .hederV2{
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   outline: 2px solid #ddd;
   padding: 20px;
@@ -260,7 +262,7 @@ header{
 .lines{
   width: 250px;
   height: 3px;
-  background-color: #0082e6;
+  background-color: var(--textColorBlue);
   margin: 20px 0;
 }
 .c1{
@@ -465,11 +467,13 @@ margin-bottom: 15px;
   display: none;
   padding: 10px;
   border: 1px solid #ddd;
+
 }
 
 #optionL{
   text-align: center;
   border-radius: 5px;
+
 }
  img{
   width: 80vw; 
@@ -481,12 +485,7 @@ footer{
   bottom: 0;
   width: 100%;
   height: 90px;
-  background: linear-gradient(
-    to right,
-    rgb(21, 3, 113),
-    rgb(76, 0, 255),
-    rgb(96, 18, 141)
-  );
+  background: var(--minColor)
 }
 footer p{
   text-align: center;
