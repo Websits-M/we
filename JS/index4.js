@@ -335,13 +335,7 @@ colorbtn.addEventListener("click" , function(){
         }else{
             p1.style.display = "none"
             // colorbtn.style.backgroundColor = "#ddd"
-            // colorbtn2.style.backgroundColor = "#ddd"
-            // colorbtn3.style.backgroundColor = "#ddd"
-            // colorbtn4.style.backgroundColor = "#ddd"
-            // colorbtn5.style.backgroundColor = "#ddd"
-            // colorbtn6.style.backgroundColor = "#ddd"
-            // colorbtn7.style.backgroundColor = "#ddd"
-            // colorbtn8.style.backgroundColor = "#ddd"
+       
         }
         
 
