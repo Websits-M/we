@@ -25,7 +25,6 @@ run()
 /////////////////////////////////////////////////////////////////////////////////
 function log(){
   if(localStorage.getItem("username") == ("Ahmed94") || 
-  localStorage.getItem("username") == ("Mostafa Mahmoud") ||
   localStorage.getItem("username") == ("MohamedSamy") ||
    localStorage.getItem("username") == ("mahmoudAli22")||
    localStorage.getItem("username") == ("Saleh.26") ||
