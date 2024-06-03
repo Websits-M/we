@@ -24,8 +24,26 @@ run()
 
 /////////////////////////////////////////////////////////////////////////////////
 function log(){
-  if(localStorage.getItem("username") == ("Ahmed94") || localStorage.getItem("username") == ("MohamedSamy") || localStorage.getItem("username") == ("MohamedSamy")|| localStorage.getItem("username") == ("Shaher")){
-    window.alert("انتهت صلاحية حسابك!..يرجي تجديد وصولك لمتابعة استخدامك للموقع")
+  if(localStorage.getItem("username") == ("Ahmed94") || 
+  localStorage.getItem("username") == ("Mostafa Mahmoud") ||
+  localStorage.getItem("username") == ("MohamedSamy") ||
+   localStorage.getItem("username") == ("mahmoudAli22")||
+   localStorage.getItem("username") == ("Saleh.26") ||
+   localStorage.getItem("username") == ("osamaAhmed") ||
+   localStorage.getItem("username") == ("abdeLrhman") ||
+   localStorage.getItem("username") == ("totySalem") ||
+   localStorage.getItem("username") == ("nermeenN") ||
+   localStorage.getItem("username") == ("ZaheR") ||
+   localStorage.getItem("username") == ("IbrahemMohamed") ||
+   localStorage.getItem("username") == ("Omar") ||
+   localStorage.getItem("username") == ("Mostafa.Eid") ||
+   localStorage.getItem("username") == ("Shaher") ||
+   localStorage.getItem("username") == ("Mohamed.Emam") ||
+   localStorage.getItem("username") == ("Hassan") ||
+   localStorage.getItem("username") == ("Haidy.mahmoud")
+  
+  ){
+    window.alert("انتهت صلاحية الوصول الي هذا الموقع")
       window.location = "index.html"
       localStorage.clear()
 
@@ -87,7 +105,11 @@ window.addEventListener("load", () => {
   });
 });
 
-
-
+function timeout(){
+  setTimeout(function(){
+    localStorage.clear()
+  } , 5000)
+}
+timeout()
 
 
