@@ -49,17 +49,27 @@
     <div class="baiscNotfaction">
         <div class="contentNotfaction">
             <div style="display: flex; justify-content: space-between; padding-bottom: 10px ;">
-              <mark><i class="fa-solid fa-rotate fa-spin" style="color: #43329a;"></i> تحديث 2.1 v </mark>
-              <span>27-5-2024</span>
+              <mark><i class="fa-solid fa-rotate fa-spin" style="color: #43329a;"></i> تحديث 2.2 v </mark>
+              <span>4-6-2024</span>
             </div>
+            <li> تعديلات في نظام التعويضات </li>
+            <li>اضافة اكواد وامر لمشاكل الـ Slowness</li>
+            <li>تحسين تجربةالاستخدام للموقع</li>
+            
 
-              <h6> ما الجديد في 2.1؟</h6>
-              <li>تم اضافة اكواد التحويل للاقسام IVR</li>
-              <li>تم اضافة قسم الشكاوي</li>
-              <li>تم تحديث المحتوي لبعض العناصر من الويكي</li>
-              <li>تم اضافة بعض التحسينات</li>
 
-              <a class="" onclick="hideUnhide('oldUpdate')"  style=" padding: 5px;  border-radius: 5px;  ">اطلع علي التحديث السابق 2 v </a>
+
+              <a class="" onclick="hideUnhide('oldUpdatev2.1')"  style=" padding: 5px;  border-radius: 5px;  display: block;">اطلع علي التحديث السابق 2.1 v </a>
+              <div  class="hiddenBtn" dir="rtl" id="oldUpdatev2.1"  style="border: 0;">
+                <h6> ما الجديد في 2.1؟</h6>
+                <span>27-5-2024</span>
+                <li>تم اضافة اكواد التحويل للاقسام IVR</li>
+                <li>تم اضافة قسم الشكاوي</li>
+                <li>تم تحديث المحتوي لبعض العناصر من الويكي</li>
+                <li>تم اضافة بعض التحسينات</li>
+              </div>
+              <!-- / -->
+              <a class="" onclick="hideUnhide('oldUpdate')"  style=" padding: 5px;  border-radius: 5px; display: block; ">اطلع علي التحديث السابق 2 v </a>
               <div  class="hiddenBtn" dir="rtl" id="oldUpdate"  style="border: 0;">
                 <li> Add New Update (V2) 20/5</li><li> Add New system</li> <li> Add Verification</li> <li> Add AVAIA Codes</li>
               </div>
@@ -92,7 +102,7 @@
         <a style="text-decoration: none;" href="https://wexdone.weebly.com/modams.html#/">CPEs Configuration  <i class="fa-solid fa-desktop fa-fade"></i></a>
       </div>
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">
-        <label class="lab" onclick="updeted1()"><div class="circl"></div><i class="fa-solid fa-circle-info "></i> Last Update : 27/5/2024 </label>
+        <label class="lab" onclick="updeted1()"><div class="circl"></div><i class="fa-solid fa-circle-info "></i> Last Update : 4/6/2024 </label>
       </div>
       </div>
       <div class="op">
@@ -533,7 +543,7 @@
                   <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('IVR')"  style=" padding: 5px;  border-radius: 10px;">IVR</button>    
                   <div class="hiddenBtn" id="IVR">
                     <div class="wrapper" style="padding: 10px 0;">
-                      <div class="radio_tabs">
+                      <div class="radio_tabss">
                         <div style="text-align: center; outline: 2px solid black; padding: 5px; margin-bottom: 10px;">التحويل للاقسام</div>
                         <label class="radio_wrap" data-radio="radio_3">
                           <input type="radio" name="sports" class="input">
@@ -567,35 +577,146 @@
                         </label>
                       </div> <!-- /radio_tabs -->
 
-                      <div class="content" style="color: white;">
+                      <div class="content" style="color: black;">
                         <div class="radio_content radio_3">
-                          <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">7712</p>
+                          <p style=" padding: 5px; text-wrap: balance; text-align: center; ">7712</p>
                
                         </div>     
 <!-- -----------------------------------------------------------------------------------------Fibar----------------------------------------------------------------------------------------------------------- -->
                         <div class="radio_content radio_4"  id="r1">
-                            <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">86251</p>
+                            <p style=" padding: 5px; text-wrap: balance; text-align: center;">86251</p>
                         </div>
  <!-- ---------------------------------------------------------------------------------------Indigo----------------------------------------------------------------------------------------------------------- -->
                        
                               <div class="radio_content radio_5">
-                                <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">642004</p>
+                                <p style=" padding: 5px; text-wrap: balance; text-align: center; ">642004</p>
                               </div> 
  <!-- ------------------------------------------------------------------------------------GSM Prepaid----------------------------------------------------------------------------------------------------------- -->
                        
                             <div class="radio_content radio_6">
-                              <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">641712</p>
+                              <p style=" padding: 5px; text-wrap: balance; text-align: center; ">641712</p>
                             </div> 
  <!-- ------------------------------------------------------------------------------------GSM Postpaid----------------------------------------------------------------------------------------------------------- -->
                        
                             <div class="radio_content radio_7">
-                              <p style="border: 1px solid red; padding: 5px; text-wrap: balance; text-align: center; background-color: black;">641888</p>
+                              <p style=" padding: 5px; text-wrap: balance; text-align: center;">641888</p>
                             </div> 
 
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
                         </div>  <!-- /content -->
                       </div> <!-- /wrapper -->
                   </div>
+                  
+                  <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('slow')"  style=" padding: 5px;  border-radius: 10px;">Slowness</button>    
+                  <div class="hiddenBtn" id="slow" dir="auto">
+                    <p> 
+                    بطئ التصفح وارتفاع البينج في الالعاب وبعض المواقع لاتعمل
+                    <mark>حل ذلك يكمن في الـ DNS والـ MTU والـ Chanal</mark>  
+                    </p>
+
+                    <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('DNS')"  style=" padding: 5px;  border-radius: 10px;">DNS</button>    
+                    <div class="hiddenBtn" id="DNS" dir="auto">
+                      <table class="table table-bordered table-dark" dir="ltr" style="font-size: 11px; text-align: center;">
+                        <thead>
+                          <tr>
+                            <th scope="col">مقدم الخدمة</th>
+                            <th scope="col">الاساسي</th>
+                            <th scope="col">الثانوي</th>
+                            <th scope="col">المزايا</th>
+            
+                        
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Google</th>
+                            <th scope="row">8.8.8.8</th>
+                            <th scope="row">8..8.4.4</th>
+                            <th scope="row">يعمل علي استكشاف الاخطاء واصلاحها</th>
+           
+                          </tr>
+                          <tr>
+                            <th scope="row">OpenDNS</th>
+                            <th scope="row">208.67.222.222</th>
+                            <th scope="row">208.67.220.220</th>
+                            <th scope="row">الاسرع DNS ويمنع المواقع السيئه عن الاطفال</th>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">Level 3</th>
+                            <th scope="row">209.244.0.3</th>
+                            <th scope="row">209.244.0.4</th>
+                            <th scope="row"> --- </th>
+                          </tr>
+                          <tr>
+                            <th scope="row">DNS Advantage</th>
+                            <th scope="row">156.154.70.1</th>
+                            <th scope="row">156.154.71.1</th>
+                            <th scope="row"> --- </th>
+                          </tr>
+                          <tr>
+                            <th scope="row">Verizon</th>
+                            <th scope="row">4.2.2.1</th>
+                            <th scope="row">4.2.2.2</th>
+                            <th scope="row"> --- </th>
+                          </tr>
+                          <tr>
+                            <th scope="row">Control D</th>
+                            <th scope="row">76.76.2.0</th>
+                            <th scope="row">76.76.10.0</th>
+                            <th scope="row">افضل خادم للالعاب ويفتح المواقع المحظورة</th>
+                          </tr>
+                          <tr>
+                            <th scope="row">SmartViper</th>
+                            <th scope="row">208.76.50.50</th>
+                            <th scope="row">208.76.51.51</th>
+                            <th scope="row"> --- </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('MTU')"  style=" padding: 5px;  border-radius: 10px;">MTU</button>    
+                    <div class="hiddenBtn" id="MTU" dir="auto">
+                      <p> تختلف القيمة من راوتر لراوتر اخر يمكن تغير الـ MTU في حالة وجود تقطع ويمكن الاستمرار في تغير القيم حتي تتحسن </p>
+                      <p>يجب ان تكون القيم بين 1410 الي 1492 ويمكن التجريب خلال تلك الفئات</p>
+                      <li>1410</li>
+                      <li>1415</li>
+                      <li>1420</li>
+                      <li>1470</li>
+                      <li>1480</li>
+                      <li>1492</li>
+                      <div style="outline: 2px solid red;">
+                        <li>MTU خاص</li>
+                        <li>1380</li>
+                        <li>1360</li>
+                        <p style=" background-color: black; color: white;">لاينصح بالاستخدام قبل تجريب غيره اولاً</p>
+                      </div>
+                      <div style="outline: 2px dotted red;">يمكن معرفة الـ MTU المناسب لكل راوتر من خلال الامر التالي:
+                        <li>ping www.google.com -f -l <mark>1492</mark></li>
+                        <p>
+                          سنظل نغير في رقم الMTU الي ان يكون الرد بـ 0 Loss
+                        </p>
+                      </div>
+
+                    </div>
+                    <button class="btn btn-primary" id="colorbtn" onclick="hideUnhide('cmd')"  style=" padding: 5px;  border-radius: 10px;">اوامر CMD</button>    
+                    <div class="hiddenBtn" id="cmd" dir="auto">
+                      <div style="outline: 2px dotted red;">
+                        لمعرفة الانترنت بيقطع عند العميل ولا لا بنستخد الامر التالي:
+                        <li>ping www.google.com -t</li>
+                        <p>بعد كدا بنشوف الرد بـ Reply او Request بعد دقيقة بنضغط Ctrl + c ونشوف نسبة الـ Lost% اقل من 20 يبقي الانترنت مستقر ووقتها نعمل Rest&config</p>
+                        <p>بعد كدا هنبص علي MS ودي سرعة الانترنت ونشوف الداتا بتوصل في قد ايه لو اقل من 45يبقي النت سليم ولو اكتر من 46 يبقي النت بطئ ولازم نغير DNS</p>
+                      </div>
+                      <hr>
+                      <div>
+                        لمعرفة الراوتر في مشكلة ولا لا هنعمل الامر التالي:
+                        <li>ping 192.168.1.1 -t</li>
+                        <p>لازم ميكونش فيه Request ويكون الرد بـ Reply غير كدا يبقي الراوتر فيه مشكلة</p>
+                      </div>
+                    </div>
+                  </div> <!-- slow -->
                 </div>
               </div>
             </div>
@@ -604,33 +725,47 @@
           <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
           <div style="outline: 1px solid gren;" >
-          <div><label  class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession </label><!-- &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span> --></div>
+          <div><label  class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession </label> &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span></div>
                   
                       <div class="hidden" id="hid">
-                          <div class="script1"><strong>التعويضات</strong>
-                          <br>
-                          All TTS Tickets :-
- 
-                            <li>يتم التعويض عن مدة تبدأ من 12 ساعة يتم احتسابها من بداية تصعيد ال Case حتي ال 3rd Level Update علي ال Ticket. </li>
-                            <li>يجب عرض التعويض بـ الـ Quota اولاً علي العميل وفي حالة رفضه يتم عرض التعويض برصيد</li>
-                            <li> بنقدم طلب تعويض عن الفتره المدفوعة فقط لكل من الـ (FV & FBB)</li>
-                            <li> لازم يكون حساب العميل Active account</li>
-
-
-                          </div> 
+                      
                           <div class="wrapper" style="padding: 10px 0;">
                             <div class="radio_tabs">
                               <label class="radio_wrap" data-radio="radio_1">
-                                <input type="radio" name="sports" class="input">
-                                <span class="radio_mark">
+                                <input type="radio" name="sports" class="input" hidden>
+                                <div class="radio_mark">
                                   Normal Cycle
-                                </span>
+                                </div>
                               </label>
                               <label class="radio_wrap" data-radio="radio_2">
-                                <input type="radio" name="sports" class="input">
-                                <span class="radio_mark">
-                                  ON spot
-                                </span>
+                                <input type="radio" name="sports" class="input" hidden> 
+                                <div class="radio_mark" >
+                                 ON spot
+                                </div>
+                              </label>
+                              <label class="radio_wrap" data-radio="radio_8">
+                                <input type="radio" name="sports" class="input" hidden> 
+                                <div class="radio_mark" >
+                                 Outage 6 to 12 H
+                                </div>
+                              </label>
+                              <label class="radio_wrap" data-radio="radio_9">
+                                <input type="radio" name="sports" class="input" hidden> 
+                                <div class="radio_mark" >
+                                 Case 12 to 24 H
+                                </div>
+                              </label>
+                              <label class="radio_wrap" data-radio="radio_10">
+                                <input type="radio" name="sports" class="input" hidden> 
+                                <div class="radio_mark" >
+                                 Case More Than 24 H
+                                </div>
+                              </label>
+                              <label class="radio_wrap" data-radio="radio_11">
+                                <input type="radio" name="sports" class="input" hidden> 
+                                <div class="radio_mark" >
+                                 Double Satisaction Concession
+                                </div>
                               </label>
                             </div> <!-- /radio_tabs -->
 
@@ -875,10 +1010,126 @@
                                   </div>
                                 </div>
                                 <br>
-                             
-                             
-                              
-                                </div>
+                            
+                                </div> <!-- /"radio_content radio_2 -->
+  <!-- ------------------------------------------------------------------------------ Outage 6 to 12 ----------------------------------------------------------------------------------------- -->
+  <div class="radio_content radio_8"  id="r1">
+      <div style="border: 1px solid red; padding: 5px;">
+        
+        <p> في حالة مدة الاوتيج من 3 الي 12 ساعة سيتم تعويض العميل حسب الشكل التالي ولن يتم اضافة Double Satifaction</p>
+        
+        <table class="table table-bordered table-primary" dir="ltr" style="font-size: 14px; text-align: center; width: fit-content;">
+          <thead>
+            <tr>
+              <th scope="col">Main Plan</th>
+              <th scope="col">compensation GBs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Super/Mega/Ultra 140 GB</th>
+              <td>3 GB</td>
+            </tr>
+            <tr>
+              <th scope="row">Super 200 & Super/Mega/Ultra 250 GB</th>
+              <td>5 GB</td>
+            </tr>
+            <tr>
+              <th scope="row">Higher than Super/Mega/Ultra 250 GB</th>
+              <td>10 GB</td>
+            </tr>
+        
+          </tbody>
+        </table>
+      </div>  
+    </div>
+  <!-- ------------------------------------------------------------------------------ Case 12 to 24 H ----------------------------------------------------------------------------------------- -->
+  <div class="radio_content radio_9"  id="r1">
+      <div style="border: 1px solid red; padding: 5px;">
+          <div>
+            <li>يتم التعوييض عن مدة تبدأ من 12 ساعة يتم احتسابها من بداية الـ Outage او تصعيد الـ Case</li>
+            <li>في حالة كانت ال TTS معمولة من خلال الـ IVR وكان فيه تأخير في التصعيد لاي سبب من جانينا هيتم احتساب مدة التعويض من وقت انشاء الـ TTS</li>
+            <li> يتم اضافة Double Satisaction Concession</li>
+          </div>
+      
+        
+        <table class="table table-bordered table-primary" dir="ltr" style="font-size: 14px; text-align: center; width: fit-content;">
+          <thead>
+            <tr>
+              <th scope="col">Main Plan</th>
+              <th scope="col">compensation GBs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Super/Mega/Ultra 140 GB</th>
+              <td>3 GB</td>
+            </tr>
+            <tr>
+              <th scope="row">Super 200 & Super/Mega/Ultra 250 GB</th>
+              <td>5 GB</td>
+            </tr>
+            <tr>
+              <th scope="row">Higher than Super/Mega/Ultra 250 GB</th>
+              <td>10 GB</td>
+            </tr>
+        
+           
+
+          </tbody>
+
+        </table>
+      </div>  
+    </div>
+  <!-- ------------------------------------------------------------------------------ Case More Than 24 H ----------------------------------------------------------------------------------------- -->
+  <div class="radio_content radio_10"  id="r1">
+      <div style="border: 1px solid red; padding: 5px;">
+          <div>
+            <li>نقدر نعوض العميل بحد اقصي 20 GB او 12 جنية للـ Ticket الواحده او للـ Outage الواحد خلال المكالمة</li>
+            <li>يجب عرض التعويض بالـ Quota اولا علي العميل وفي حالة رفضة يتم عرض التعويض برصيد</li>
+            <li> يتم اضافة Double Satisaction Concession</li>
+          </div>
+          <button class="btn btn-primary"  onclick="hideUnhide('MoreThean')" id="we-mobile" style=" padding: 5px; border-radius: 10px;"> في حالة التعويض بـ اكثر من 20 GB </button>
+          <div class="hiddenBtn cloAll" id="MoreThean">
+            <li>20GB TO 50GB</li>
+            <li>12 حنيه الي 40 جنيه</li>
+            <li>هنعمل IR للـ Team Leader وسيتم تنفيذ الطلب خلال 30 دقيقه</li>
+                        <li> يتم اضافة Double Satisaction Concession</li>
+
+          </div>
+      </div>  
+    </div>
+  <!-- ------------------------------------------------------------------------------ Double Satisaction Concession ----------------------------------------------------------------------------------------- -->
+  <div class="radio_content radio_11"  id="r1">
+      <div style="border: 1px solid red; padding: 5px;">
+          <div>
+            <li>بعد حل المشكلة او قفل الـ Ticket ستم تعويض العميل علي مرتين</li>
+            <li>في حالة الـ Outage 6 to 12 لايتم التعويض في تلك الحالة علي مرتين</li>
+            <li>التعويض الاساسي (المره الاولي) سواء رصيد او جيجات</li>
+            <li>تعويض اضافي (المره الثانيه) وذلك بهدف الـ Satisaction للعميل مع مراعاة الشروط التاليه :</li>
+            <li>سيتم اضافة التعويض الاساسي والاضافي للعملاء المستحقين فقط</li>
+            <li>سواء كان التعويض الاساسي علي شكل رصيد او جيجات سيكون التعويض الاضافي جيجات فقط</li>
+            <li>يتم اضافة التعويض علي شكل Transactions 2 من الـ BSS : </li>
+            <dl>
+              <dt>
+                  الاولي :
+                  <dd><li>التعويض الاساسي.</dd>
+              </dt>
+              <dt>
+                الثانيه : 
+                <dd>
+                 <li>للتعويض  الاضافي </li>
+                 <li>في الـ Transaction الخاصة بالتعويض الاضافي يتم كتابة كلمة (Satisaction) قبل رقم الـ Ticket/Outage </li>
+                </dd>
+              </dt>
+            </dl>
+          </div>
+      </div>  
+    </div>
+      <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
                               </div>
                             </div> <!-- /wrapper -->
                       </div> <!-- /hid -->
@@ -1452,15 +1703,16 @@
                               <li> Delay Ticket دي بعملها لما الشكوي تكون عدت الـ SLA بتعها</li>
                               <p style="border: 1px solid red; padding: 5px; width: fit-content;"><mark>ملحوظة هامة :</mark> لازم ابحث الاول واشوف العميل دا معمول له Delay ولا لا لانه لو معموله مش هينفع تعمله واحده جديده</p>
                               <div class="wrapper">
-                                <div class="radio_tabs">
+                                <div class="radio_tabs2">
                                   <label class="radio_wrap" data-radio="radio_1">
-                                    <input type="radio" name="sports" class="input">
+                                    <input type="radio" name="sports" class="input" >
                                     <span class="radio_mark">
                                       في حالة كانت نتيجة البحث No record found
                                     </span>
                                   </label>
+                                  <br>
                                   <label class="radio_wrap" data-radio="radio_2">
-                                    <input type="radio" name="sports" class="input">
+                                    <input type="radio" name="sports" class="input" >
                                     <span class="radio_mark">
                                       في حالة كان العميل عنده Delay بالفعل
                                     </span>
@@ -1511,14 +1763,15 @@
 
 
                               <li> اول حاجه هعملها هنا هسرش بـ اسم السنترال <strong>(بقدر اجيب اسم السنترال من الماتريكس من كلمة pop)</strong></li> 
-                              <div class="wrapper">
-                                <div class="radio_tabs">
+                              <div class="wrappe">
+                                <div class="radio_tab">
                                   <label class="radio_wrap" data-radio="radio_1">
                                     <input type="radio" name="sports" class="input">
                                     <span class="radio_mark">
                                       في حالة كانت نتيجة البحث No record found
                                     </span>
                                   </label>
+                                  <br>
                                   <label class="radio_wrap" data-radio="radio_2">
                                     <input type="radio" name="sports" class="input">
                                     <span class="radio_mark">
