@@ -45,7 +45,7 @@
   display: none;
   position: absolute;
   border: 2px solid #ddd;
-  width: 325px;
+  width: 310px;
   height: 280px;
   top: 50%;
   left: 50%;
@@ -314,6 +314,7 @@ label:active{
 color: blueviolet;
 
 
+
 }
 #result , #result3{
 margin-top: 25px;
@@ -399,6 +400,7 @@ nav ul {
 .content{
 direction: rtl;
 
+
 }
 
 .scripts ,#box-we-mobile{
@@ -414,12 +416,20 @@ background-color: #e5cefa;
 
 }
 
+.radio_tabs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 240px;
+}
 .wrapper .radio_tabs label{
-margin-right: 15px;
+/* margin-right: 15px; */
 display: block;
 position: relative;
 cursor: pointer;
-padding-left: 28px;
+/* padding-left: 28px; */
+text-align: center;
+color: #fff;
 }
 
 .wrapper .radio_tabs .radio_mark:before{
@@ -435,10 +445,47 @@ height: 22px;
 
 label input:checked ~ .color2{
 color: #8a2be2;
+}
+.wrapper .radio_tabs label{
+  background-color: #38105e;
+  width:fit-content;
+  height: 35px;
+border-radius: 3px;
+
 
 }
+
+  
+  /* border: 2px solid red;
+  text-align: center; */
+.radio_content{
+  background-color: #ddd;
+  padding: 5px;
+}
+  .radio_mark{
+    height: 100%;
+    padding: 5px;
+
+  }
+.ce{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #8a2be2;
+
+
+  transform: translate(-50% , -50%);
+}
+
 .wrapper .radio_tabs label .input:checked ~ .radio_mark{
-color: #ff5d66;
+color: #fff;
+background-color: #8a2be2;
+width: fit-content;
+/* height: 20px; */
+
+border-radius: 3px;
+
+
 }
 
 .wrapper .radio_tabs label .input:checked ~ .radio_mark:before{
@@ -447,13 +494,18 @@ width: 22px;
 height: 22px;
 }
 
+
+
+
+
+
 .wrapper .content{
 width: 100%;
 height: calc(100% - 70px);
-background: #fff;
+/* background: #ddd; */
 border-radius: 5px;
 padding: 18px;
-box-shadow: 0 0 2px rgba(0,0,0,0.1);
+/* box-shadow: 0 0 2px rgba(0,0,0,0.1); */
 }
 
 .wrapper .content p{
@@ -467,7 +519,6 @@ margin-bottom: 15px;
   display: none;
   padding: 10px;
   border: 1px solid #ddd;
-  background-color: #ddd;
 
 }
 
