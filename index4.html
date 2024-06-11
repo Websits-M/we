@@ -54,7 +54,8 @@
             </div>
             <li> تعديلات في نظام التعويضات </li>
             <li>اضافة اكواد وامر لمشاكل الـ Slowness</li>
-            <li>تحسين تجربةالاستخدام للموقع</li>
+            <li>Add Rework</li>
+            <li>تحسين تجربة الاستخدام للموقع</li>
             
 
 
@@ -375,6 +376,7 @@
       </div>
 
       </div>
+  
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        saidPosition          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
         <div class="content-data">
@@ -916,42 +918,7 @@
                                       </div>
 
                                       </ol>
-                                        <button id="colorbtn2" onclick="hideUnhide('outage')"  style=" padding: 5px;  border-radius: 10px;">تعويض الـ Outage</button>    
-                                    <div class="hiddenBtn" id="outage">
-                                        <div style="padding-right: 20px;">
-                                          <ol>
-                                            <li>يتم تعويض العميل مباشرة لكل انواع الـ Outage ماعدا (Major fault Maintenance)</li>
-                                            <p style="border: 1px solid red;">يتم اخبار العميل بالانتظار لمدة 48 ساعة للتعويض التلقائي في حالة Majot fault Maintenance وفي حالة اتصال العميل بعد مرور 48 ساعة يتم التعويض On spot</p>
-                                            <li>في حالة اتصال العميل بعد 48  يتم اتباع الاتي لتعويضة On spot :</li>
-                                          </ol>
-                                          <li>مدة Outage تكون من 6 الي 12 ساعة او اكثر</li>
-                                          <li>في حالات الـ Down Outage ليس من الضروري مراجعة استهلاك العميل في اول 10 ايام</li>
-                                          <li>في حالات الـ Instability Outage يجب مراجعة استهلاك العميل اذا كان مر عليه اكثر من 24 ساعة (علي ان يكون الاستهلاك اقل من او يساوي 5 جيجا في اليوم)</li>
-                                          <strong>مدة الـ Outage لو من 6 الي 12 ساعة سيتم تعويض العميل بالشكل التالي :</strong>
-                                          <table class="table table-dark" dir="ltr" style="font-size: 11px;">
-                                            <thead>
-                                              <tr>
-                                                <th scope="col">الباقة لدي العميل</th>
-                                                <th scope="col">التعويض</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <th scope="row">Super/Mega/Ultra 140 GBs</th>
-                                                <td>3 GB</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Super 200 & Super/Mega/Ultra 250 GBs</th>
-                                                <td>5 GB</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Higher then Super/Mega/Ultra 250 GBs Packages</th>
-                                                <td>10 GB</td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </div>
-                                      </div>
+                                
                                      
 
 
@@ -1041,6 +1008,42 @@
         
           </tbody>
         </table>
+        <button id="colorbtn2" onclick="hideUnhide('outage')"  style=" padding: 5px;  border-radius: 10px;">تعويض الـ Outage</button>    
+        <div class="hiddenBtn" id="outage">
+            <div style="padding-right: 20px;">
+              <ol>
+                <li>يتم تعويض العميل مباشرة لكل انواع الـ Outage ماعدا (Major fault Maintenance)</li>
+                <p style="border: 1px solid red;">يتم اخبار العميل بالانتظار لمدة 48 ساعة للتعويض التلقائي في حالة Majot fault Maintenance وفي حالة اتصال العميل بعد مرور 48 ساعة يتم التعويض On spot</p>
+                <li>في حالة اتصال العميل بعد 48  يتم اتباع الاتي لتعويضة On spot :</li>
+              </ol>
+              <li>مدة Outage تكون من 6 الي 12 ساعة او اكثر</li>
+              <li>في حالات الـ Down Outage ليس من الضروري مراجعة استهلاك العميل في اول 10 ايام</li>
+              <li>في حالات الـ Instability Outage يجب مراجعة استهلاك العميل اذا كان مر عليه اكثر من 24 ساعة (علي ان يكون الاستهلاك اقل من او يساوي 5 جيجا في اليوم)</li>
+              <strong>مدة الـ Outage لو من 6 الي 12 ساعة سيتم تعويض العميل بالشكل التالي :</strong>
+              <table class="table table-dark" dir="ltr" style="font-size: 11px;">
+                <thead>
+                  <tr>
+                    <th scope="col">الباقة لدي العميل</th>
+                    <th scope="col">التعويض</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Super/Mega/Ultra 140 GBs</th>
+                    <td>3 GB</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Super 200 & Super/Mega/Ultra 250 GBs</th>
+                    <td>5 GB</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Higher then Super/Mega/Ultra 250 GBs Packages</th>
+                    <td>10 GB</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>  
       </div>  
     </div>
   <!-- ------------------------------------------------------------------------------ Case 12 to 24 H ----------------------------------------------------------------------------------------- -->
@@ -1701,7 +1704,47 @@
                           <div id="script-12" class="scripts">
                             <ul dir="rtl">
                               <li> Delay Ticket دي بعملها لما الشكوي تكون عدت الـ SLA بتعها</li>
-                              <p style="border: 1px solid red; padding: 5px; width: fit-content;"><mark>ملحوظة هامة :</mark> لازم ابحث الاول واشوف العميل دا معمول له Delay ولا لا لانه لو معموله مش هينفع تعمله واحده جديده</p>
+                              <li>بنحسب الشكوي بدأت امتي من تاريخ انتقالها للـ IU في الـ Item logs</li>
+                              <li>في حالة عمل Delay هنتابع مع العميل بعد ساعة وهنبلغ الاسكريبت دا <i class="fa-regular fa-hand-point-down"></i></li>
+                              <mark style="background-color: red; color: white;">بنعتذر لحضرتك عن التأخير في حل المشكلة وانا بنفسي هتواصل مع زملائي المسؤلين عن الاصلاح وهرجع اتواصل مع حضرتك في خلال ساعة ان شاء الله</mark>
+                              <br>
+                              
+                              <div class="wrapper">
+                                <div class="radio_tabs2">
+                                  <label class="radio_wrap" data-radio="radio_01">
+                                    <input type="radio" name="sports" class="input" >
+                                    <span class="radio_mark">
+                                      في حالة كانت النتيجه بعد ساعه Valid
+                                    </span>
+                                  </label>
+                                  <br>
+                                  <label class="radio_wrap" data-radio="radio_02">
+                                    <input type="radio" name="sports" class="input" >
+                                    <span class="radio_mark">
+                                      في حالة كانت النتيجه بعد ساعه Not Valid Or blank
+                                    </span>
+                                  </label>
+                                </div> <!-- /radio_tabs -->
+    
+                                <div class="content">
+                                  <div class="radio_content radio_01">
+                                    <div>
+                                       انا اتواصلت مع ادارة الاصلاحات يافندم و اتأكدت ان تم تصعيد الشكوي الفنيه للادارة وهيتم حلها والمتابعه مع حضرتك في خلال 24 ساعة
+                                    </div>
+                                   
+                                
+                                  </div>     
+                                        <!-- ------------------------------NOO---------------------------------------- -->
+                                  <div class="radio_content radio_02"  id="r1">
+                                    <div style="border: 1px solid red; padding: 5px; width: fit-content;"> 
+                                      في حالة اننا لقينا خانة الفالديشن فاضية او مكتوب فيها انها مش فالد هنقول للعميل سكريبت الديلاي عادي
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div> <!-- /wrapper -->
+                              <!-- ------- -->
+                              <li style="border: 1px solid red; padding: 5px; width: fit-content;"><mark>ملحوظة هامة :</mark> لازم ابحث الاول واشوف العميل دا معمول له Delay ولا لا لانه لو معموله مش هينفع تعمله واحده جديده</li>
+
                               <div class="wrapper">
                                 <div class="radio_tabs2">
                                   <label class="radio_wrap" data-radio="radio_1">
@@ -1747,6 +1790,86 @@
                                   </div>
                                 </div> <!-- /wrapper -->
                             </ul>
+                          </div>
+                          <hr>
+                          <!-- -------------------------------------------------------------------------- -->
+                          <label class="box"><input type="checkbox" id="q-36"><span class="color2" dir="rtl"> Rework</span></label>
+                          <div id="script-36" class="scripts">
+                            <strong>طلب استعجال</strong>
+                            <p style="border: 1px solid red; padding: 5px; width: fit-content;" > بعملها في حالة شكوي متكررة موجوده في الـ IU <mark>شرط ان لاتتعدي الشكوي الجديده وبين القديمه ال30 يوماً</mark></p> 
+                            <li>نخلي بالنا اي عميل Voice only مبنعملش له طلب استعجال</li>
+                            <li>منقدرش نعمل Dlelay / Rework والعميل عليه فواتير</li>
+                            <li>عشان نعمل ريورك لازم الشكوي تكون واخده FCC Number</li>
+                            <li>في حالة عمل Rework هنتابع مع العميل بعد ساعة وهنبلغ الاسكريبت دا <i class="fa-regular fa-hand-point-down"></i></li>
+                            <mark style="background-color: red; color: white;">بنعتذر لحضرتك عن التأخير في حل المشكلة وانا بنفسي هتواصل مع زملائي المسؤلين عن الاصلاح وهرجع اتواصل مع حضرتك في خلال ساعة ان شاء الله</mark>
+                            <br>
+                            
+                            <div class="wrapper">
+                              <div class="radio_tabs2">
+                                <label class="radio_wrap" data-radio="radio_01">
+                                  <input type="radio" name="sports" class="input" >
+                                  <span class="radio_mark">
+                                    في حالة كانت النتيجه بعد ساعه Valid
+                                  </span>
+                                </label>
+                                <br>
+                                <label class="radio_wrap" data-radio="radio_02">
+                                  <input type="radio" name="sports" class="input" >
+                                  <span class="radio_mark">
+                                    في حالة كانت النتيجه بعد ساعه Not Valid Or blank
+                                  </span>
+                                </label>
+                              </div> <!-- /radio_tabs -->
+  
+                              <div class="content">
+                                <div class="radio_content radio_01">
+                                  <div>
+                                     انا اتواصلت مع ادارة الاصلاحات يافندم و اتأكدت ان تم تصعيد الشكوي الفنيه للادارة وهيتم حلها والمتابعه مع حضرتك في خلال 24 ساعة
+                                  </div>
+                                 
+                              
+                                </div>     
+                                      <!-- ------------------------------NOO---------------------------------------- -->
+                                <div class="radio_content radio_02"  id="r1">
+                                  <div style="border: 1px solid red; padding: 5px; width: fit-content;"> 
+                                    في حالة اننا لقينا خانة الفالديشن فاضية او مكتوب فيها انها مش فالد هنقول للعميل نورمال SLA وهنتابع مع العميل عادي علي حسب الابديت الموجود او هبلغه بسكريبت الـ IU
+                                  </div>
+                                  </div>
+                                </div>
+                              </div> <!-- /wrapper -->
+                            <label class="box"><input type="checkbox" id="q-37"><span class="color2" dir="rtl"> في حالة الشكوي مش واخده FCC ؟</span></label>
+                            <div id="script-37" class="scripts">
+                              <li>هنستخدم الـ Force close من الـ BSS عشان نقفل الشكوي</li>
+                              <li>Sitemap</li>
+                              <li>Trouble Ticket</li>
+                              <li>Query TT</li>
+                              <li>هنبحث بالرقم الارضي FBB475---</li>
+                              <li>هنضغط علي SN ودا رقم ID الشكوي </li>
+                              <li>هنضغط علي اول علامه فوق علي اليمين <i class="fa-solid fa-arrow-right-from-bracket" style="color: #c69f10;"></i></li>
+                              <strong>SR</strong>
+                              <table class="table table-bordered table-primary" dir="ltr" style="font-size: 9px;">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Level 1</th>
+                                    <th scope="col">Level 2</th>
+                                    <th scope="col">Level 3</th>
+                             
+                                
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">FBB Tech Problem </th>
+                                    <th scope="row">System Issue </th>
+                                    <th scope="row">Force Close - FCC Issue </th>
+                               
+                                  </tr>
+                               
+                          
+                                </tbody>
+                              </table>
+                            </div>
+
                           </div>
                           <!-- -------------------------------------------------------------------------- -->
                           <hr>
