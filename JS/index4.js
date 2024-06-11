@@ -125,6 +125,10 @@ let q_34 = document.getElementById('q-34')
 let script_34 = document.getElementById('script-34')
 let q_35 = document.getElementById('q-35')
 let script_35 = document.getElementById('script-35')
+let q_36 = document.getElementById('q-36')
+let script_36 = document.getElementById('script-36')
+let q_37 = document.getElementById('q-37')
+let script_37 = document.getElementById('script-37')
 
 
 q_0.addEventListener("click" , ch1)
@@ -163,6 +167,8 @@ q_32.addEventListener("click" , ch1)
 q_33.addEventListener("click" , ch1)
 q_34.addEventListener("click" , ch1)
 q_35.addEventListener("click" , ch1)
+q_36.addEventListener("click" , ch1)
+q_37.addEventListener("click" , ch1)
 
 
 
@@ -205,6 +211,8 @@ q_35.addEventListener("click" , ch1)
         script_33.style.display = q_33.checked ? "block" : "none"
         script_34.style.display = q_34.checked ? "block" : "none"
         script_35.style.display = q_35.checked ? "block" : "none"
+        script_36.style.display = q_36.checked ? "block" : "none"
+        script_37.style.display = q_37.checked ? "block" : "none"
 
     }
 
@@ -329,7 +337,12 @@ window.addEventListener("load", () => {
 
         }
 
-    
+    function Tred(id){
+      let reds = document.getElementById(id)
+
+       reds.style.backgroundColor = "blue"
+
+    }
      
 
 
