@@ -213,9 +213,22 @@ q_37.addEventListener("click" , ch1)
         script_35.style.display = q_35.checked ? "block" : "none"
         script_36.style.display = q_36.checked ? "block" : "none"
         script_37.style.display = q_37.checked ? "block" : "none"
+        efict()
 
     }
+    function efict(){
+      let textC = document.getElementById('textC')
 
+      if(q_14.checked){
+        textC.innerHTML = "شكوي"
+        textC.style.color = "red"
+      }else if(q_19.checked){
+         textC.innerHTML = "Outage"
+      }else{
+        textC.innerHTML = "...."
+
+      }
+    }
 
 
 
@@ -555,10 +568,13 @@ function sh(){
   let con7 = document.querySelector('.con7')
   let con8 = document.querySelector('.con8')
   if(choose2.checked){
+
     con7.style.display = "block"
     con8.style.display = "none"
 
+
   }else if(choose3.checked){
+
     con8.style.display = "block"
     con7.style.display = "none"
 
