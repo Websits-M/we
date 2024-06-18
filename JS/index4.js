@@ -410,52 +410,55 @@ window.addEventListener("load", () => {
  
   function action1(){
    
-        green.style.backgroundColor = checkgreen.checked ? "#0bcf5d" : "#f87676"
-        green2.style.backgroundColor = checkgreen2.checked ? "#0bcf5d" : "#f87676"
-        green3.style.backgroundColor = checkgreen3.checked ? "#0bcf5d" : "#f87676"
-        green4.style.backgroundColor = checkgreen4.checked ? "#0bcf5d" : "#f87676"
-        green5.style.backgroundColor = checkgreen5.checked ? "#0bcf5d" : "#f87676"
-        green6.style.backgroundColor = checkgreen6.checked ? "#0bcf5d" : "#f87676"
+        // green.style.backgroundColor = checkgreen.checked ? "#0bcf5d" : "#f87676"
+        // green2.style.backgroundColor = checkgreen2.checked ? "#0bcf5d" : "#f87676"
+        // green3.style.backgroundColor = checkgreen3.checked ? "#0bcf5d" : "#f87676"
+        // green4.style.backgroundColor = checkgreen4.checked ? "#0bcf5d" : "#f87676"
+        // green5.style.backgroundColor = checkgreen5.checked ? "#0bcf5d" : "#f87676"
+        // green6.style.backgroundColor = checkgreen6.checked ? "#0bcf5d" : "#f87676"
         green7.style.backgroundColor = checkgreen7.checked ? "#0bcf5d" : "#f87676"
         green8.style.backgroundColor = checkgreen8.checked ? "#0bcf5d" : "#f87676"
         green9.style.backgroundColor = checkgreen9.checked ? "#0bcf5d" : "#f87676"
         green10.style.backgroundColor = checkgreen10.checked ? "#0bcf5d" : "#f87676"
-        green11.style.backgroundColor = checkgreen11.checked ? "#0bcf5d" : "#f87676"
-        green12.style.backgroundColor = checkgreen12.checked ? "#0bcf5d" : "#f87676"
-        green13.style.backgroundColor = checkgreen13.checked ? "#0bcf5d" : "#f87676"
-        green14.style.backgroundColor = checkgreen14.checked ? "#0bcf5d" : "#f87676"
-        green15.style.backgroundColor = checkgreen15.checked ? "#0bcf5d" : "#f87676"
-        green16.style.backgroundColor = checkgreen16.checked ? "#0bcf5d" : "#f87676"
-        green17.style.backgroundColor = checkgreen17.checked ? "#0bcf5d" : "#f87676"
-        green18.style.backgroundColor = checkgreen18.checked ? "#0bcf5d" : "#f87676"
-        green19.style.backgroundColor = checkgreen19.checked ? "#0bcf5d" : "#f87676"
-        green20.style.backgroundColor = checkgreen20.checked ? "#0bcf5d" : "#f87676"
-        green21.style.backgroundColor = checkgreen21.checked ? "#0bcf5d" : "#f87676"
-        green22.style.backgroundColor = checkgreen22.checked ? "#0bcf5d" : "#f87676"
-        green23.style.backgroundColor = checkgreen23.checked ? "#0bcf5d" : "#f87676"
-        green24.style.backgroundColor = checkgreen24.checked ? "#0bcf5d" : "#f87676"
-        green25.style.backgroundColor = checkgreen25.checked ? "#0bcf5d" : "#f87676"
-        green26.style.backgroundColor = checkgreen26.checked ? "#0bcf5d" : "#f87676"
-        green27.style.backgroundColor = checkgreen27.checked ? "#0bcf5d" : "#f87676"
-        green28.style.backgroundColor = checkgreen28.checked ? "#0bcf5d" : "#f87676"
+        // green11.style.backgroundColor = checkgreen11.checked ? "#0bcf5d" : "#f87676"
+        // green12.style.backgroundColor = checkgreen12.checked ? "#0bcf5d" : "#f87676"
+        // green13.style.backgroundColor = checkgreen13.checked ? "#0bcf5d" : "#f87676"
+        // green14.style.backgroundColor = checkgreen14.checked ? "#0bcf5d" : "#f87676"
+        // green15.style.backgroundColor = checkgreen15.checked ? "#0bcf5d" : "#f87676"
+        // green16.style.backgroundColor = checkgreen16.checked ? "#0bcf5d" : "#f87676"
+        // green17.style.backgroundColor = checkgreen17.checked ? "#0bcf5d" : "#f87676"
+        // green18.style.backgroundColor = checkgreen18.checked ? "#0bcf5d" : "#f87676"
+        // green19.style.backgroundColor = checkgreen19.checked ? "#0bcf5d" : "#f87676"
+        // green20.style.backgroundColor = checkgreen20.checked ? "#0bcf5d" : "#f87676"
+        // green21.style.backgroundColor = checkgreen21.checked ? "#0bcf5d" : "#f87676"
+        // green22.style.backgroundColor = checkgreen22.checked ? "#0bcf5d" : "#f87676"
+        // green23.style.backgroundColor = checkgreen23.checked ? "#0bcf5d" : "#f87676"
+        // green24.style.backgroundColor = checkgreen24.checked ? "#0bcf5d" : "#f87676"
+        // green25.style.backgroundColor = checkgreen25.checked ? "#0bcf5d" : "#f87676"
+        // green26.style.backgroundColor = checkgreen26.checked ? "#0bcf5d" : "#f87676"
+        // green27.style.backgroundColor = checkgreen27.checked ? "#0bcf5d" : "#f87676"
+        // green28.style.backgroundColor = checkgreen28.checked ? "#0bcf5d" : "#f87676"
         // green19.style.backgroundColor = checkgreen19.checked ? "#0bcf5d" : "#f87676"
 
-        if(checkgreen.checked && checkgreen2.checked && checkgreen3.checked && checkgreen4.checked && checkgreen5.checked && checkgreen6.checked  && checkgreen18.checked){
-            showStep.style.display = "block"
-        }else{
-            showStep.style.display = "none"
+        // if(checkgreen.checked && checkgreen2.checked && checkgreen3.checked && checkgreen4.checked && checkgreen5.checked && checkgreen6.checked  && checkgreen18.checked){
+        //     showStep.style.display = "block"
+        // }else{
+        //     showStep.style.display = "none"
 
-        }if( checkgreen7.checked && checkgreen8.checked && checkgreen9.checked && checkgreen10.checked && checkgreen11.checked)
-    {
+        // }
+        
+        if(checkgreen7.checked && checkgreen8.checked  && checkgreen9.checked && checkgreen10.checked){
         showStep2.style.display = "block"
     }else{
         showStep2.style.display = "none"
     }
-    if(checkgreen12.checked && checkgreen13.checked && checkgreen14.checked && checkgreen15.checked && checkgreen16.checked && checkgreen17.checked && checkgreen19.checked){
-        showStep3.style.display = "block"
-    }else{
-        showStep3.style.display = "none"
-    }
+
+
+    // if(checkgreen12.checked && checkgreen13.checked && checkgreen14.checked && checkgreen15.checked && checkgreen16.checked && checkgreen17.checked && checkgreen19.checked){
+    //     showStep3.style.display = "block"
+    // }else{
+    //     showStep3.style.display = "none"
+    // }
     
   }
 
@@ -544,4 +547,35 @@ function scrollY(){
 
     window.scroll( 0, Height);
   
+}
+
+let choose2 = document.getElementById('choose2')
+let choose3 = document.getElementById('choose3')
+function sh(){
+  let con7 = document.querySelector('.con7')
+  let con8 = document.querySelector('.con8')
+  if(choose2.checked){
+    con7.style.display = "block"
+    con8.style.display = "none"
+
+  }else if(choose3.checked){
+    con8.style.display = "block"
+    con7.style.display = "none"
+
+  }
+}
+let choose4 = document.getElementById('choose4')
+let choose5 = document.getElementById('choose5')
+function sh2(){
+  let con4 = document.querySelector('.con4')
+  let con5 = document.querySelector('.con5')
+  if(choose4.checked){
+    con4.style.display = "block"
+    con5.style.display = "none"
+
+  }else if(choose5.checked){
+    con5.style.display = "block"
+    con4.style.display = "none"
+
+  }
 }
