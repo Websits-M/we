@@ -422,7 +422,7 @@ background-color: #e5cefa;
   justify-content: space-evenly;
   height: 240px;
 }
-.wrapper .radio_tabs label{
+.wrapper .radio_tabs label {
 /* margin-right: 15px; */
 display: block;
 position: relative;
@@ -431,6 +431,7 @@ cursor: pointer;
 text-align: center;
 color: #fff;
 }
+
 
 .wrapper .radio_tabs .radio_mark:before{
 content: "";
@@ -640,4 +641,11 @@ footer div img{
   border-radius: 50%;
   top: -2px;
   left: 0;
+}
+
+.con7 , .con8{
+  display: none;
+  width: fit-content;
+  outline: 2px solid black;
+  padding: 5px;
 }
