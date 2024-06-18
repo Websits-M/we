@@ -407,7 +407,7 @@ direction: rtl;
 display: none;
 border: 2px solid black;
 width: fit-content;
-padding: 5px;
+padding: 4px;
 background-color: #e5cefa;
 }
 
@@ -460,7 +460,7 @@ border-radius: 3px;
   /* border: 2px solid red;
   text-align: center; */
 .radio_content{
-  background-color: #ddd;
+  /* background-color: #ddd; */
   padding: 5px;
 }
   .radio_mark{
@@ -646,6 +646,6 @@ footer div img{
 .con7 , .con8{
   display: none;
   width: fit-content;
-  outline: 2px solid black;
-  padding: 5px;
+  /* outline: 2px solid black; */
+  padding: 3px;
 }
