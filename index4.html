@@ -730,7 +730,7 @@
           <div><label  class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession </label> &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span></div>
                   
                       <div class="hidden" id="hid">
-                        <p>العميل عايز تعويض عن ..؟</p>
+                        <p>العميل عايز تعويض عن <span id="textC">...</span>؟</p>
                       <div>
                         <label class="box" style="color: red;"><input type="checkbox" id="q-14"><span class="color2"> شكوي </span></label>
                         <div id="script-14" class="scripts">
@@ -756,8 +756,8 @@
 
                                <div class="radio_content radio_B8">
 
-                                  <div style=" padding: 5px; text-wrap: balance; text-align: center; ">
-                                    <p style="outline: 1px solid red; padding: 5px;">هنبلغ العميل ان مش هينفع نعمل طلب التعويض الا لما الشكوي تتقفل</p>
+                                  <div style=" text-align: center; ">
+                                    <p style="outline: 1px solid red; padding: 3px;">هنبلغ العميل ان مش هينفع نعمل طلب التعويض الا لما الشكوي تتقفل</p>
                                   </div>
 
 
@@ -766,11 +766,11 @@
 
                                <div class="radio_content radio_B9">
 
-                                  <div style=" padding: 5px; text-wrap: balance; ">
+                                  <div style=" padding: 3px; ">
                                     <p style="color: red;">مدة قفل الشكوي <mark style="color: red;">من تاريخ اخر ابديت للشكوي :</mark> </p>
 
-                                    <label><input type="radio" name="w" id="choose2" onclick="sh()"> اكثر من 3 شهور</label><br>
-                                    <label><input type="radio" name="w" id="choose3"  onclick="sh()"> اقل من 3 شهور</label>
+                                    <label><input class="input" type="radio" name="w" id="choose2" onclick="sh()"> <span class="colr">اكثر من 3 شهور</span></label><br>
+                                    <label><input class="input" type="radio" name="w" id="choose3"  onclick="sh()"> <span  class="colr">اقل من 3 شهور</span></label>
                                       <div class="con7">
                                        <p style="color: red;"> هنبلغ العميل ان الشكوي عدي عليها اكثر من 3 شهور ومينفعش نقدم له طلب تعويض</p>
                                       </div>
@@ -783,7 +783,7 @@
                                                           <label><li id="green7"> الشكوي كانت في Third Level <input type="checkbox" id="checkgreen7" onclick="action1()"> <button class="btn-primary" onclick="hideUnhide('3rd-levelA')">3rd Level</button></li></label>
                                                           
                                                           <div id="3rd-levelA" class="hiddenBtn">
-                                                                <div style="padding: 0 15px; background-color: black; color: #fff;">
+                                                                <div style="padding:5px; background-color: black; color: #fff;">
                                                                     <p>IU</p>
                                                                     <p>NOC</p>
                                                                     <p>Pilot SLS</p>
@@ -826,14 +826,45 @@
                                       </ol>  
                                                            <div class="scripts" id="showStep2" dir="rtl" style="background: greenyellow;">
                                                             <strong style="display: block; border: 2px dotted black; text-align: center;">System Action</strong>
-                                                              <p>Open Excel Sheet </p>
+                                                              <p style="text-decoration: underline; text-align: center;">Open Excel Sheet </p>
                                                               <div dir="rtl">
-                                                                <label dir="rtl"><input type="radio" name="ws" id="choose4" onclick="sh2()"> التعويض اقل من 20 GB</label>
-                                                              <label dir="rtl"><input type="radio" name="ws" id="choose5"  onclick="sh2()"> التعويض اكثر من 20GB</label>
+                                                                <label  dir="rtl"><input class="input" type="radio" name="ws" id="choose4" onclick="sh2()"> <span class="colr">التعويض اقل من 20 GB</span></label>
+                                                              <label dir="rtl"><input  class="input" type="radio" name="ws" id="choose5"  onclick="sh2()"> <span class="colr">التعويض اكثر من 20GB</span></label>
                                                               </div>
 
                                                               <div class="con4 scripts" dir="rtl">
                                                                 <p style="color: red;"> هنعوض العميل خلال المكالمة (On Spot)</p>
+                                                                <label class="box"><input type="checkbox" id="q-0"><strong class="color2" dir="rtl"> عرض كيفية التعويض</strong></label>
+                                                                <br>
+                                                                <div id="script-0" class="scripts" style="padding-left:20px;">
+                                                                  <ol dir="ltr" >
+                                                                    <strong>BSS</strong>
+                                                                    <li>Sitemap</li>
+                                                                    <li>Account receivable</li>
+                                                                    <li>Adjustment Request</li>
+                                                                    <li>Subscriber</li>
+                                                                    <li>ثم نبحث بالرقم الارضي (بدون الـ0) ونعلم علي <br><label style="color: blue;"><input type="checkbox"> is FBB Subscriber </label> </li>
+                                                                    <li>Reason Categroy Name ==> <span style="color: red;"> Fix (Adjustment)</span></li>
+                                                                    <li> Reason ==> <span style="color: red;">ADSL Concession</span></li>
+                                                                    <li> 
+                                                                     
+                                                                      نكتب سبب التعويض في الـ 
+                                                                      <br>
+                                                                      Description
+                                                                    </li>
+                                                                    <li>Create instance هنا بختار التاريخ
+                                                                      <br>
+                                                                      <mark>Type -> <span style="color: red;">160</span></mark>
+                                                                      <br>
+                                                                      <mark>بعدين هنكب الجيجات الهنعوضه بيها بالـ بايت</mark>
+                              
+                                                                    </li>
+                                                                    <li>Save </li>
+                                                                    <li>submit</li>
+                                                                    <li>بعدين هنعمل IR </li>
+                                                                    <li><span style="color: blueviolet;"> SR </span>= FBB None Tech inqury -> Billing Adjustment -> Tech Concession On Spot</li>
+                                                                  </ol>
+                                                                </div>
                                                                </div>
                                                               <div class="con5 scripts" dir="rtl">
                                                                 <label class="box"><input type="checkbox" id="q-17"><span class="color2" dir="rtl">هنعمل IR للتيم ليدر</span></label>
@@ -872,11 +903,14 @@
                         </div>
                       </div>
                         <!--  -->
-                       <div>
-                        <label class="box" style="color: red;"><input type="checkbox" id="q-14" disabled ><span class="color2"> Outage </span></label>
-                        <div id="script-14" class="scripts">
+                      <div style="padding: 10px 0;">
+                        <label class="box"><input type="checkbox" id="q-19" ><span style="color: red;" dir="rtl"> Outage</span></label>
+                        <br>
+                        <div id="script-19" class="scripts">
+                          <span style="color: red;">                            سيتم الاضافة قريباً..                            </span>
                         </div>
-                       </div>
+                      </div>
+
 
 
 
@@ -1104,45 +1138,9 @@
                                     </div>
                                   </div>
                                   <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-                                  <label class="box"><input type="checkbox" id="q-0"><strong class="color2" dir="rtl"> عرض كيفية التعويض</strong></label>
-                                  <br>
-                                  <div id="script-0" class="scripts">
-                                    <ol dir="ltr" style="padding-left:20px;">
-                                      <strong>BSS</strong>
-                                      <li>Sitemap</li>
-                                      <li>Account receivable</li>
-                                      <li>Adjustment Request</li>
-                                      <li>Subscriber</li>
-                                      <li>ثم نبحث بالرقم الارضي (بدون الـ0) ونعلم علي <br><label style="color: blue;"><input type="checkbox"> is FBB Subscriber </label> </li>
-                                      <li>Reason Categroy Name ==> <span style="color: red;"> Fix (Adjustment)</span></li>
-                                      <li> Reason ==> <span style="color: red;">ADSL Concession</span></li>
-                                      <li> 
-                                       
-                                        نكتب سبب التعويض في الـ 
-                                        <br>
-                                        Description
-                                      </li>
-                                      <li>Create instance هنا بختار التاريخ
-                                        <br>
-                                        <mark>Type -> <span style="color: red;">160</span></mark>
-                                        <br>
-                                        <mark>بعدين هنكب الجيجات الهنعوضه بيها بالـ بايت</mark>
-
-                                      </li>
-                                      <li>Save </li>
-                                      <li>submit</li>
-                                      <li>بعدين هنعمل IR </li>
-                                      <li><span style="color: blueviolet;"> SR </span>= FBB None Tech inqury -> Billing Adjustment -> Tech Concession On Spot</li>
-                                    </ol>
-                                  </div>
-                                  <hr>
-                                  <label class="box"><input type="checkbox" id="q-19"><span class="color2" dir="rtl"> كيفية تقديم طلب تعويض من خلال Team Leader</span></label>
-                                  <br>
-                                  <div id="script-19" class="scripts">
-                                    <span style="color: red;">                            سيتم الاضافة قريباً..                            </span>
-                                  </div>
+                              
+                                 
                                 </div>
-                                <br>
                             
                                 </div> <!-- /"radio_content radio_2 -->
   <!-- ------------------------------------------------------------------------------ Outage 6 to 12 ----------------------------------------------------------------------------------------- -->
