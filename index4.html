@@ -730,7 +730,173 @@
           <div><label  class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession </label> &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span></div>
                   
                       <div class="hidden" id="hid">
-                      
+                        <p>العميل عايز تعويض عن ..؟</p>
+                      <div>
+                        <label class="box" style="color: red;"><input type="checkbox" id="q-14"><span class="color2"> شكوي </span></label>
+                        <div id="script-14" class="scripts">
+                          <div class="wrapper" style="padding: 10px 0;">
+                            <div class="radio_tabss">
+                              <label class="radio_wrap" data-radio="radio_B8">
+                                <input type="radio" name="sportsA1" class="input">
+                                <span class="radio_mark">
+                                 الشكوي مفتوحه
+                                </span>
+                              </label>
+
+                              <label class="radio_wrap" data-radio="radio_B9">
+                                <input type="radio" name="sportsA1" class="input">
+                                <span class="radio_mark">
+                                الشكوي مقفوله
+                                </span>
+                              </label>
+                    
+                            </div> <!-- /radio_tabs -->
+      
+                      <div class="content" style="color: black;">
+
+                               <div class="radio_content radio_B8">
+
+                                  <div style=" padding: 5px; text-wrap: balance; text-align: center; ">
+                                    <p style="outline: 1px solid red; padding: 5px;">هنبلغ العميل ان مش هينفع نعمل طلب التعويض الا لما الشكوي تتقفل</p>
+                                  </div>
+
+
+                              </div>    
+                                                                                              <!--  -->
+
+                               <div class="radio_content radio_B9">
+
+                                  <div style=" padding: 5px; text-wrap: balance; ">
+                                    <p style="color: red;">مدة قفل الشكوي <mark style="color: red;">من تاريخ اخر ابديت للشكوي :</mark> </p>
+
+                                    <label><input type="radio" name="w" id="choose2" onclick="sh()"> اكثر من 3 شهور</label><br>
+                                    <label><input type="radio" name="w" id="choose3"  onclick="sh()"> اقل من 3 شهور</label>
+                                      <div class="con7">
+                                       <p style="color: red;"> هنبلغ العميل ان الشكوي عدي عليها اكثر من 3 شهور ومينفعش نقدم له طلب تعويض</p>
+                                      </div>
+                                      <div class="con8">
+                                     
+                                                      <h5>هنكمل اجراءات التعويض :</h5>
+                                                    
+
+                                                        <ol class="cond2" dir="rtl" style="padding-right: 30px;">
+                                                          <label><li id="green7"> الشكوي كانت في Third Level <input type="checkbox" id="checkgreen7" onclick="action1()"> <button class="btn-primary" onclick="hideUnhide('3rd-levelA')">3rd Level</button></li></label>
+                                                          
+                                                          <div id="3rd-levelA" class="hiddenBtn">
+                                                                <div style="padding: 0 15px; background-color: black; color: #fff;">
+                                                                    <p>IU</p>
+                                                                    <p>NOC</p>
+                                                                    <p>Pilot SLS</p>
+                                                                    <p>installtion opration</p>
+                                                                    <p>DCU</p>
+                                                                    <p>Maintenance vist</p>
+                                                                </div>
+                                                          </div>
+                                                          <label><li id="green8">الـ Close code ينفع يتعوض عليه <input type="checkbox" id="checkgreen8" onclick="action1()"> <button class="btn-primary" id="colorbtn" onclick="hideUnhide('Close_code_a')" > شرح</button></li></label>
+                                                          <div class="hiddenBtn" id="Close_code_a" style ="background-color: black; color: #fff;">
+                                                            <p style=" width: fit-content; padding: 5px;"> 
+                                                              <span> بفتح Item Logs واشوف الـ Close code</span><br>
+                                                              <p>
+                                                                بعمل ctrl + f وبنكتب Close Code <br>
+                                                                وبنشوف هينفع يتعوض علي ال close code دا ولا لا
+                                                              </p>
+                                                              لو الـ Close Code موجود فيه CPE problem او العميل مردش علينا او اي مشكلة من جانب العميل مش هينفع نعوض العميل عليه ونقدر نعرف كل الاكواد من جدول الـ Close code
+                                                            </p>
+                                                           
+                                                          </div>
+                                                          <label><li id="green9">العميل متعوضش قبل كدا علي الشكوي <input type="checkbox" id="checkgreen9" onclick="action1()"></li></label>
+                                                          <label><li id="green10">مفيش تفتيش هندسي<input type="checkbox" id="checkgreen10" onclick="action1()"> <button class="btn-primary" id="colorbtn" onclick="hideUnhide('ENGa')" > شرح</button></li></label>
+                                                          <div class="hiddenBtn" id="ENGa" style ="background-color: black; color: #fff;">
+                                                            <p style=" width: fit-content; padding: 5px;"> 
+                                                              <mark style="display: block;">دي بعرفها من الـ Item Logs بعمل Ctrl + f  واكتب eng (لازم ميكونش فيه تفتيش هندسي)</mark>
+
+                                                          </div>
+                                                            <!-- <label><li id="green11">يمكن تعويض العميل مرتين فقط في الشهر شرط ان لاتكون نفس الشكوي <input type="checkbox"  id="checkgreen11" onclick="action1()"></li></label> 
+                                      
+                                                            <label><li id="green20"> يتم اضافة الهديه في حالة الـ Port Time Out حتي لو مكنش فيه Outage علي CST360<input type="checkbox"  id="checkgreen20" onclick="action1()"></li></label>
+                                                            <label><li id="green21"> يتم اضافة we mobile  في حالة تصعيد شكوي High Attenuation/BLQ/Instability <input type="checkbox"  id="checkgreen21" onclick="action1()"></li></label>
+                                                            <label><li id="green22">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Technical Dispatch<input type="checkbox"  id="checkgreen22" onclick="action1()"></li></label>
+                                                            <label><li id="green23">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Out of Service<input type="checkbox"  id="checkgreen23" onclick="action1()"></li></label>
+                                                            <label><li id="green24">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  No physical layer however - Fault exist<input type="checkbox"  id="checkgreen24" onclick="action1()"></li></label>
+                                                            <label><li id="green25">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  In BLQ cases<input type="checkbox"  id="checkgreen25" onclick="action1()"></li></label>
+                                                            <label><li id="green26">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Run real time profile optomozation<input type="checkbox"  id="checkgreen26" onclick="action1()"></li></label>
+                                                            <label><li id="green27">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  No enough data for evaluating stability<input type="checkbox"  id="checkgreen27" onclick="action1()"></li></label>
+                                                            <label><li id="green28">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Technical Dispatch is recommended<input type="checkbox"  id="checkgreen28" onclick="action1()"></li></label> 
+                                        -->
+                                      </ol>  
+                                                           <div class="scripts" id="showStep2" dir="rtl" style="background: greenyellow;">
+                                                            <strong style="display: block; border: 2px dotted black; text-align: center;">System Action</strong>
+                                                              <p>Open Excel Sheet </p>
+                                                              <div dir="rtl">
+                                                                <label dir="rtl"><input type="radio" name="ws" id="choose4" onclick="sh2()"> التعويض اقل من 20 GB</label>
+                                                              <label dir="rtl"><input type="radio" name="ws" id="choose5"  onclick="sh2()"> التعويض اكثر من 20GB</label>
+                                                              </div>
+
+                                                              <div class="con4 scripts" dir="rtl">
+                                                                <p style="color: red;"> هنعوض العميل خلال المكالمة (On Spot)</p>
+                                                               </div>
+                                                              <div class="con5 scripts" dir="rtl">
+                                                                <label class="box"><input type="checkbox" id="q-17"><span class="color2" dir="rtl">هنعمل IR للتيم ليدر</span></label>
+                                                                <div id="script-17" class="scripts">
+                                                                  <div  dir="rtl">
+                                                                    <li>من الويكي On spot بنجيب الـ IR</li>
+                                                                    <li>Agant Concession</li>
+                                                                    <li>Add New</li>
+                                                                    <li>Technical (NC ..)</li>
+                                                                    <li>Technical</li>
+                                                                    <li>TTS Number</li>
+                                                                    <li>BSS Ticket <span style="color: red;">ID SR</span></li>
+                                                                  </div>
+                                                                </div>
+                                                               </div>
+                                                        </div>
+                                                       
+                                                        
+                                                    
+                                                    
+                                      </div>
+
+                                      
+                                  </div>
+
+
+                              </div>    
+
+                             
+
+      <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+      
+                              </div>  <!-- /content -->
+                              
+                            </div> <!-- /wrapper -->
+                        </div>
+                      </div>
+                        <!--  -->
+                       <div>
+                        <label class="box" style="color: red;"><input type="checkbox" id="q-14" disabled ><span class="color2"> Outage </span></label>
+                        <div id="script-14" class="scripts">
+                        </div>
+                       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                           <div class="wrapper" style="padding: 10px 0;">
                             <div class="radio_tabs">
                               <label class="radio_wrap" data-radio="radio_1">
@@ -1264,39 +1430,7 @@
                     </div>
                     <hr>
                   
-                  <label class="box"><input type="checkbox" id="q-17"><span class="color2" dir="rtl"> جميع الحالات التي يجب اعطاء العميل هديه حال وجودها</span></label>
-                  <br>
-                  <div id="script-17" class="scripts">
-
-                    <ol class="cond2" dir="rtl" style="padding-right: 30px;">
-                      <label><li id="green7"> في حالة وجود شكوي في 3rd Level من وقت التصعيد والمشكلة لم يتم حلها <input type="checkbox" id="checkgreen7" onclick="action1()"></li></label>
-                      <label><li id="green8">نقدر برضو نعوض في حالة وجود Outage/Major Fault عدي الـ 24 ساعة والخدمة مرجعتش<input type="checkbox" id="checkgreen8" onclick="action1()"></li></label>
-                      <label><li id="green9"> في حالة وجود شكوي في 3rd Level وحصلها اعادة تصعيد مرة او اكتر من مره في خلال الـ SLA <input type="checkbox" id="checkgreen9" onclick="action1()"></li></label>
-                      <label>  <li id="green10">التعويض بيكون مره واحده بس علي الشكوي وينفع يتعوض تاني بشرط تكون شكوي مختلفة عن القديمة <input type="checkbox" id="checkgreen10" onclick="action1()"></li></label>
-                      <label><li id="green11">يمكن تعويض العميل مرتين فقط في الشهر شرط ان لاتكون نفس الشكوي <input type="checkbox"  id="checkgreen11" onclick="action1()"></li></label>
-
-                      <label><li id="green20"> يتم اضافة الهديه في حالة الـ Port Time Out حتي لو مكنش فيه Outage علي CST360<input type="checkbox"  id="checkgreen20" onclick="action1()"></li></label>
-                      <label><li id="green21"> يتم اضافة we mobile  في حالة تصعيد شكوي High Attenuation/BLQ/Instability <input type="checkbox"  id="checkgreen21" onclick="action1()"></li></label>
-                      <label><li id="green22">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Technical Dispatch<input type="checkbox"  id="checkgreen22" onclick="action1()"></li></label>
-                      <label><li id="green23">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Out of Service<input type="checkbox"  id="checkgreen23" onclick="action1()"></li></label>
-                      <label><li id="green24">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  No physical layer however - Fault exist<input type="checkbox"  id="checkgreen24" onclick="action1()"></li></label>
-                      <label><li id="green25">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  In BLQ cases<input type="checkbox"  id="checkgreen25" onclick="action1()"></li></label>
-                      <label><li id="green26">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Run real time profile optomozation<input type="checkbox"  id="checkgreen26" onclick="action1()"></li></label>
-                      <label><li id="green27">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  No enough data for evaluating stability<input type="checkbox"  id="checkgreen27" onclick="action1()"></li></label>
-                      <label><li id="green28">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Technical Dispatch is recommended<input type="checkbox"  id="checkgreen28" onclick="action1()"></li></label>
-
-                      <br>
-                       <p><mark>دي يعتبر هديه وليس تعويض يعني ملهاش علاقه بالتعويض الاساسي البينزل للعميل</mark> </p> 
-                              
-                       <div class="scripts" id="showStep2" dir="ltr" style="text-align: left;">
-                        <strong style="display: block; border: 2px dotted black; text-align: center;">System Action</strong>
-                          <p>Follow Next Step </p>
-                    </div>
-                    </ol>
-                    
-                
-                
-                  </div>
+            
                   <!-- -------------------------------------------------------------------------- -->
                   <hr>
                   <label class="box"><input type="checkbox" id="q-18"><span class="color2" dir="rtl"> كيفية التعويض من خلالنا؟</span></label>
