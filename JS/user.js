@@ -29,7 +29,6 @@ function log(){
    localStorage.getItem("username") == ("mahmoudAli22")||
    localStorage.getItem("username") == ("Saleh.26") ||
    localStorage.getItem("username") == ("osamaAhmed") ||
-   localStorage.getItem("username") == ("abdeLrhman") ||
    localStorage.getItem("username") == ("totySalem") ||
    localStorage.getItem("username") == ("nermeenN") ||
    localStorage.getItem("username") == ("ZaheR") ||
