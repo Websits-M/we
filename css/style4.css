@@ -11,7 +11,9 @@
  border-radius: 20px;
  background: var(--minColor)
 }
-
+body{
+  background: linear-gradient(  to right,  rgba(45, 24, 151, 0.873),  rgba(76, 0, 255, 0.697),  rgba(96, 18, 141, 0.736));
+}
 :root{
   --minColor : linear-gradient(  to right,  rgb(21, 3, 113),  rgb(76, 0, 255),  rgb(96, 18, 141));
   --secondColor : rgb(76, 0, 255);
@@ -259,11 +261,29 @@ header{
 
 
 }
+.AllBox{
+
+  width: fit-content;
+}
+
+.styleBox{
+  width: fit-content;
+   padding: 5px; 
+   background: linear-gradient(
+    to right,
+    rgb(21, 3, 113),
+    rgb(76, 0, 255),
+    rgb(96, 18, 141)
+  );
+   border-radius: 5px;
+}
+
+
 .lines{
   width: 250px;
-  height: 3px;
-  background-color: var(--textColorBlue);
-  margin: 20px 0;
+  height: 2px;
+  /* background-color: var(--textColorBlue); */
+  margin: 5px 0;
 }
 .c1{
   margin-right: 20px;
@@ -304,8 +324,10 @@ padding: 5px;
 .texx{
 padding-left: 5px;
 font-weight: bolder;
-color: #0082e6;
+/* color: #0082e6; */
+color: #fff;
 }
+
 label{
 cursor: pointer;
 
@@ -461,7 +483,7 @@ border-radius: 3px;
   /* border: 2px solid red;
   text-align: center; */
 .radio_content{
-  /* background-color: #ddd; */
+  background-color: #ffff;
   padding: 5px;
 }
   .radio_mark{
@@ -528,14 +550,24 @@ margin-bottom: 15px;
 .box-select{
   display: none;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid black;
+  /* background-color: #ddd; */
+  background : var(--minColor);
+  color: #fff;
+
 
 }
 
 #optionL{
   text-align: center;
   border-radius: 5px;
+  background : var(--minColor);
+  color: #fff;
 
+}
+#optionL option{
+  background-color: 
+    rgb(76, 0, 255);
 }
  img{
   width: 80vw; 
@@ -641,6 +673,7 @@ footer div img{
 }
 .lab{
   position: relative;
+  color: #fff;
 }
 .circl{
   position: absolute;
