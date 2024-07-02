@@ -16,11 +16,11 @@
   align-items: center;
   justify-content: center;
   background: #333333;
-  transition: opacity 1s, visibility 1s;
+  transition:  visibility 2s;
 }
 
 .loader--hidden {
-  opacity: 0;
+  /* opacity: 0; */
   visibility: hidden;
 }
 
@@ -31,7 +31,7 @@
   border: 15px solid #dddddd;
   border-top-color: #009578;
   border-radius: 50%;
-  animation: loading 1s ease infinite;
+  animation: loading 2s ease infinite;
 }
 
 @keyframes loading {
@@ -177,6 +177,7 @@ section {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.6);
   padding: 18px;
   overflow-y: scroll;
+  margin-bottom: 120px;
 
 }
 
@@ -214,6 +215,8 @@ input[type="search"]{
 
 }
 
+
+
 footer {
   background: linear-gradient(
     to right,
@@ -221,7 +224,7 @@ footer {
     rgb(76, 0, 255),
     rgb(96, 18, 141)
   );
-  height: 100px;
+  height: 90px;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -356,7 +359,11 @@ input:focus {
 }
 .userPhoto{
   color: #0082e6;
-  font-size: 30px;
+  font-size: 25px;
+}
+ #user{
+  font-size: 17px;
+  text-decoration: none;
 }
 
 .srbody{
