@@ -129,6 +129,8 @@ let q_36 = document.getElementById('q-36')
 let script_36 = document.getElementById('script-36')
 let q_37 = document.getElementById('q-37')
 let script_37 = document.getElementById('script-37')
+let q_38 = document.getElementById('q-38')
+let script_38 = document.getElementById('script-38')
 
 
 q_0.addEventListener("click" , ch1)
@@ -169,6 +171,7 @@ q_34.addEventListener("click" , ch1)
 q_35.addEventListener("click" , ch1)
 q_36.addEventListener("click" , ch1)
 q_37.addEventListener("click" , ch1)
+q_38.addEventListener("click" , ch1)
 
 
 
@@ -213,9 +216,19 @@ q_37.addEventListener("click" , ch1)
         script_35.style.display = q_35.checked ? "block" : "none"
         script_36.style.display = q_36.checked ? "block" : "none"
         script_37.style.display = q_37.checked ? "block" : "none"
+        script_38.style.display = q_38.checked ? "block" : "none"
         efict()
 
     }
+
+
+
+           
+                  
+
+                  
+ 
+
     function efict(){
       let textC = document.getElementById('textC')
 
@@ -428,7 +441,7 @@ window.addEventListener("load", () => {
         // green3.style.backgroundColor = checkgreen3.checked ? "#0bcf5d" : "#f87676"
         // green4.style.backgroundColor = checkgreen4.checked ? "#0bcf5d" : "#f87676"
         // green5.style.backgroundColor = checkgreen5.checked ? "#0bcf5d" : "#f87676"
-        // green6.style.backgroundColor = checkgreen6.checked ? "#0bcf5d" : "#f87676"
+        green6.style.backgroundColor = checkgreen6.checked ? "#0bcf5d" : "#f87676"
         green7.style.backgroundColor = checkgreen7.checked ? "#0bcf5d" : "#f87676"
         green8.style.backgroundColor = checkgreen8.checked ? "#0bcf5d" : "#f87676"
         green9.style.backgroundColor = checkgreen9.checked ? "#0bcf5d" : "#f87676"
@@ -460,7 +473,7 @@ window.addEventListener("load", () => {
 
         // }
         
-        if(checkgreen7.checked && checkgreen8.checked  && checkgreen9.checked && checkgreen10.checked){
+        if(checkgreen6.checked && checkgreen7.checked && checkgreen8.checked  && checkgreen9.checked && checkgreen10.checked){
         showStep2.style.display = "block"
     }else{
         showStep2.style.display = "none"
@@ -494,10 +507,9 @@ let BtnNotfaction = document.getElementById('BtnNotfaction')
 
 
 function updeted1(){
-  let circl = document.querySelector(".circl")
+  // let circl = document.querySelector(".circl")
 
   localStorage.getItem("notfaction")
-  circl.remove()
   
 
 
@@ -505,9 +517,17 @@ function updeted1(){
 }
 BtnNotfaction.addEventListener("click" , function(){
   notfaction.style.display = "none"
+  cer()
+
 
 })
 
+function cer(){
+  let circl = document.querySelector(".circl")
+  // circl.remove()
+  localStorage.setItem("circl" ,circl.remove())
+
+}
 function updeted2()  {
     Swal.fire({
         title: "<li>Add SR</li> <li>Add TT</li> <li>Update content</li>",
@@ -595,3 +615,20 @@ function sh2(){
 
   }
 }
+
+let radiobtns = document.querySelectorAll("input[name='Chos1']");
+let result  = document.getElementById("result55");
+let escalat  = document.getElementById("escalat");
+
+let findSelected = () => {
+  let selected = document.querySelector("input[name='Chos1']:checked").value;
+  result.textContent = ` ${selected}`;
+    escalat.style.display = "block"
+
+}
+
+radiobtns.forEach(radiobtn => {
+  radiobtn.addEventListener("change" , findSelected);
+});
+
+findSelected();
