@@ -307,6 +307,7 @@ border: 2px solid #ddd;
 padding: 5px;
 background-color: #f1f0f0; 
 border-radius: 5px;
+margin: auto;
 }
 #msg , #msg3{
 display: none;
@@ -355,7 +356,9 @@ padding: 5px;
 border: 1px solid red;
 
 }
-
+#escalat{
+  display: none;
+}
 .content-data{
   padding-top: 40px;
 
@@ -514,7 +517,13 @@ border-radius: 3px;
 
 
 }
-.wrapper .radio_tabss label .input:checked ~ .radio_mark{
+
+.wrapper .radio_tabss label .input:checked ~ .radio_mark ,.wrapper .radio_tabsOutage label .input:checked ~ .radio_markO {
+color: #c02be2;
+font-weight: 500;
+width: fit-content;
+}
+ label input:checked ~ .radio_mark{
 color: #c02be2;
 font-weight: 500;
 width: fit-content;
@@ -613,6 +622,19 @@ footer div img{
   margin: 10px 0;
 
 }
+.sper1{
+  margin-left: auto;
+  text-align: left;
+}
+.sper-ol{
+  direction: ltr;
+  text-align: left;
+  margin-left: 0;
+
+}
+.sper{
+  margin-left: auto;
+}
 .sper p{
   text-align: left;
 }
@@ -625,11 +647,16 @@ footer div img{
 .cond1 label , .cond2 label , .cond3 label{
   display: block;
 }
-.cond1 li ,.cond2 li , .cond3 li{
+.cond1 li , .cond3 li{
+  background-color: #ddd;
+  margin: 3px 0;
+}
+.cond2 li {
   background-color: #fba7a7;
   margin: 3px 0;
   padding: 0 3px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 5px;
 }
 .updated{
   font-family: 'Courier New', Courier, monospace;
